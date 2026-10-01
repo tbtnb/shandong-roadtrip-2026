@@ -19,7 +19,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.domElement.setAttribute('aria-label', '可旋转的立体海岸旅行手账，点击城市查看行程');
   renderer.domElement.setAttribute('role', 'img');
-  renderer.domElement.style.cssText = 'display:block;width:100%;height:100%;touch-action:pan-y pinch-zoom;outline:none;';
+  renderer.domElement.style.cssText = 'display:block;width:100%;height:100%;touch-action:pan-y;outline:none;';
   container.appendChild(renderer.domElement);
   const contextLost=()=>{visible=false;onError();};renderer.domElement.addEventListener('webglcontextlost',contextLost);
   const overviewCamera = new THREE.OrthographicCamera(-7, 7, 8, -8, .1, 90);
@@ -696,7 +696,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     if(entry||motion||Math.abs(cameraYaw-targetYaw)>.0001||Math.abs(cameraPitch-targetPitch)>.0001||drag)render(dt);
   }
   // Touch uses axis locking so vertical scrolling and browser pinch stay native.
-  // Observe the full gesture on window: a second finger can start outside the scene.
+  // Rotation stops for multiple fingers; the map wrapper handles pinch zoom.
   let touchId=null,touchAxis=null,touchBlocked=false,suppressClickUntil=0;
   function suppressClick(){suppressClickUntil=performance.now()+800;}
   function begin(x,y,isTouch,id,target){if(entry){finishEntry();render(0);}drag={x,y,yaw:targetYaw,pitch:targetPitch,isTouch,id,target};dragged=false;suppressClickUntil=0;}
@@ -739,7 +739,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     if(!touchAxis&&Math.max(Math.abs(dx),Math.abs(dy))>6)touchAxis=Math.abs(dx)>Math.abs(dy)?'rotate':'scroll';
     if(touchAxis==='scroll'){dragged=true;suppressClick();return;}
     if(touchAxis==='rotate'){
-      // Never cancel vertical scrolling or two-finger browser zoom. Once the
+      // Never cancel vertical scrolling here. Once the
       // browser owns a non-cancelable gesture, don't fight it with rotation.
       if(!e.cancelable){blockTouch();return;}
       e.preventDefault();applyMove(t.clientX,t.clientY);suppressClick();
@@ -767,6 +767,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     focusLandmark,
     getLandmarks(){return landmarkRegistry.map(({id,name,city,optional})=>({id,name,city,optional}))},
     clearLandmark(){focusedLandmark=null;cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;render(0)},
+    setZoom(value){const zoom=THREE.MathUtils.clamp(Number(value)||1,.75,3);overviewCamera.zoom=zoom;immersiveCamera.zoom=zoom;overviewCamera.updateProjectionMatrix();immersiveCamera.updateProjectionMatrix();render(0);},
     setDestination,
     setDayRoute,
     setViewMode,

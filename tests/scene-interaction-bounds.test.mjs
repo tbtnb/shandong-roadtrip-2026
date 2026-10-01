@@ -529,3 +529,16 @@ test('all 36 collected places have a model, with safe focus and no itinerary mov
   }finally{closeScene(api)}
  }
 });
+
+test('map zoom clamps both cameras and preserves the car route',()=>{
+ const api=openScene(390,340);
+ try{
+  const before=sceneState().carPosition;
+  api.setZoom(2);assert.equal(lastCamera.zoom,2);
+  api.setViewMode('immersive');assert.equal(lastCamera.zoom,2);assertFiniteCamera();
+  api.setZoom(99);assert.equal(lastCamera.zoom,3);
+  api.setZoom(.1);assert.equal(lastCamera.zoom,.75);
+  api.setZoom(1);assert.equal(lastCamera.zoom,1);
+  assert.deepEqual(sceneState().carPosition,before);
+ }finally{closeScene(api)}
+});

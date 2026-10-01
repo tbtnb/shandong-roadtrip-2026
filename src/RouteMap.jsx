@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useRef,useState} from 'react';
 import './landmark-map.css';
 import {Car,Compass,ArrowLeft,ArrowRight,ArrowCounterClockwise,Pause,Play,MapTrifold} from '@phosphor-icons/react';
 
@@ -13,6 +13,11 @@ export function FlatRoute({cities,activeCity,onCity,destination,origin='wuhu',mo
  </div>
 }
 export default function RouteMap({sceneRoot,scene,sceneError,sceneReady,viewMode,setViewMode,flat,setFlat,reducedMotion,motion,setMotion,cities,city,activeCity,onCity,itinerary,activeDay,chooseDay,days,chooseDays,scrollPlan}){
+ const canvasRoot=useRef(null),zoomRef=useRef(1);
+ const [zoom,setZoom]=useState(1);
+ function changeZoom(value){const next=Math.max(.75,Math.min(3,value));zoomRef.current=next;setZoom(next);scene.current?.setZoom?.(next)}
+ useEffect(()=>{if(sceneReady)scene.current?.setZoom?.(zoomRef.current)},[sceneReady]);
+ useEffect(()=>{const root=canvasRoot.current;if(!root)return;let pinch=null;const distance=t=>Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY);function wheel(e){e.preventDefault();changeZoom(zoomRef.current*Math.exp(-Math.max(-120,Math.min(120,e.deltaY*(e.deltaMode===1?16:1)))*.003))}function start(e){if(e.touches.length===2&&Array.from(e.touches).every(t=>root.contains(t.target))){pinch={distance:distance(e.touches),zoom:zoomRef.current};if(e.cancelable)e.preventDefault()}}function move(e){if(pinch&&e.touches.length===2){if(e.cancelable)e.preventDefault();changeZoom(pinch.zoom*distance(e.touches)/Math.max(1,pinch.distance))}}function end(){pinch=null}root.addEventListener('wheel',wheel,{passive:false});root.addEventListener('touchstart',start,{passive:false});root.addEventListener('touchmove',move,{passive:false});root.addEventListener('touchend',end);root.addEventListener('touchcancel',end);return()=>{root.removeEventListener('wheel',wheel);root.removeEventListener('touchstart',start);root.removeEventListener('touchmove',move);root.removeEventListener('touchend',end);root.removeEventListener('touchcancel',end)}},[]);
  const [landmarks,setLandmarks]=useState([]),[selectedLandmark,setSelectedLandmark]=useState('');
  useEffect(()=>{if(sceneReady)setLandmarks(scene.current?.getLandmarks?.()||[])},[sceneReady]);
  useEffect(()=>setSelectedLandmark(''),[activeCity]);
@@ -22,9 +27,10 @@ export default function RouteMap({sceneRoot,scene,sceneError,sceneReady,viewMode
  const day=itinerary.days[activeDay];const destination=cities.find(c=>c.name===day.sleep)?.id||'wuhu';const origin=activeDay===0?'wuhu':cities.find(c=>c.name===itinerary.days[activeDay-1].sleep)?.id||'wuhu';const useFlat=flat||sceneError;
  return <section className="route-first" aria-label="全程路线地图">
   <div className="route-world">
-   <div className="world-topline"><span><Compass size={17}/><span className="map-instructions">{useFlat?'可点击路线图':viewMode==='immersive'?(focused?'左右拖动看景点，上下滑动看行程':'左右拖动看城市，上下滑动看行程'):'左右拖动旋转地图，上下滑动看行程'}<small>城市位置为示意，请用导航确认路线 · 芜湖为长江内陆起点{reducedMotion?' · 减少动态':''}</small></span></span></div>
-   <div className="route-canvas"><div ref={sceneRoot} className={`scene ${useFlat?'scene-hidden':''}`} style={{position:'absolute'}} aria-hidden={useFlat} aria-label="芜湖至山东海岸的三维路线示意图"/>{useFlat&&<FlatRoute cities={cities} activeCity={activeCity} onCity={onCity} destination={destination} origin={origin} motion={motion}/>}{!sceneReady&&!sceneError&&!flat&&<div className="scene-loading"><Compass size={28}/><span>正在打开地图…</span><button className="secondary" onClick={()=>setFlat(true)}>先看 2D 路线</button></div>}
+   <div className="world-topline"><span><Compass size={17}/><span className="map-instructions">{useFlat?'点击选城市，滚轮或双指缩放':viewMode==='immersive'?(focused?'拖动看景点，滚轮或双指缩放':'拖动看城市，滚轮或双指缩放'):'拖动旋转，滚轮或双指缩放'}<small>城市位置为示意，请用导航确认路线 · 芜湖为长江内陆起点{reducedMotion?' · 减少动态':''}</small></span></span></div>
+   <div className="route-canvas" ref={canvasRoot} style={{'--map-zoom':zoom}}><div ref={sceneRoot} className={`scene ${useFlat?'scene-hidden':''}`} style={{position:'absolute'}} aria-hidden={useFlat} aria-label="芜湖至山东海岸的三维路线示意图"/>{useFlat&&<FlatRoute cities={cities} activeCity={activeCity} onCity={onCity} destination={destination} origin={origin} motion={motion}/>}{!sceneReady&&!sceneError&&!flat&&<div className="scene-loading"><Compass size={28}/><span>正在打开地图…</span><button className="secondary" onClick={()=>setFlat(true)}>先看 2D 路线</button></div>}
 
+   <div className="map-zoom-controls" role="group" aria-label="地图缩放"><button aria-label="放大地图" disabled={zoom>=3} onClick={()=>changeZoom(zoomRef.current*1.25)}>＋</button><button aria-label="恢复地图原始大小" onClick={()=>changeZoom(1)}>{Math.round(zoom*100)}%</button><button aria-label="缩小地图" disabled={zoom<=.75} onClick={()=>changeZoom(zoomRef.current/1.25)}>−</button></div>
    </div>
   </div>
   <div className="map-city-switcher" role="group" aria-label="选择地图城市">{cities.map(c=><button key={c.id} aria-pressed={activeCity===c.id} onClick={()=>onCity(c.id)}>{c.name}</button>)}</div>
