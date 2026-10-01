@@ -1,0 +1,121 @@
+{
+  "213018d688b0ca9eb5586a59580b85b8aabf2cc055be2d7d30ba03a4a290efce": {
+    "status": "accepted",
+    "id": "qingdao_haiyan_nainai",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "主图显示多种海鲜锅贴，与正文大虾、笔管、墨鱼、海胆内容对应"
+  },
+  "e64ce04127e65febc3fad3a7f563beeb190ae825a3bc0ff62976bf30062bf30b": {
+    "status": "accepted",
+    "id": "qingdao_shenghuolin",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "店面照片明确生活林招牌及门牌8号，与正文/评论河北路8号相符。"
+  },
+  "d3da54b5e68ae30a945341bbcbe05b32699fe08c1382ce2b62b9c6d13223090a": {
+    "status": "accepted",
+    "id": "qingdao_laofangzi",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "两只漏油网篮里的金黄炸馅饼，与专帖现炸馅饼描述匹配"
+  },
+  "a80d4532627bc3dbd264c7e578de9f31b28a16d3ec0a8fb6c425e65ac345ca7f": {
+    "status": "accepted",
+    "id": "qingdao_jiefujia",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "专帖第一张：米饭上辣椒五花肉，背景疙瘩汤，与正文菜品对应"
+  },
+  "044497a0ff90e4d04d87caf72d1e8c760152d1dc108d5a7101f7888c6c2d3af2": {
+    "status": "accepted",
+    "id": "weihai_dongyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "已实际查看原图：东源饭店金色门头与小区楼房、入门及菜单，店名清晰匹配专帖，地址门牌像16号而地图19-1，门牌读数待核不能替代地址"
+  },
+  "83308e3ed10461675569c8ce8bbd7cbd2d11dc9a3a301f7fa36776538a003f2c": {
+    "status": "accepted",
+    "id": "weihai_mixiaoqing",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "1440x1080拌冷面配半蛋、黄瓜、胡萝卜，左上猪排边缘；吻合该帖猪排饭与拌冷面正文"
+  },
+  "7990d9502e4d80725f6f9b05fde9de10c099915f4f5579a7c3855fc9cc428d4f": {
+    "status": "accepted",
+    "id": "lyg_xiaoshanghai",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "原图小上海糕点门头清楚，松糕/麻饼侧招牌可见，匹配本店"
+  },
+  "701b4e77668f79a136f2de237d01e6d243831e89e15104d8168b3feebd03a21c": {
+    "status": "accepted",
+    "id": "lyg_weifanglou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "主帖葱油拌面与鲜肉馄饨食物，与正文匹配"
+  },
+  "26b06a0efc12255bfe1d01b978650e43fd85a044462921eb9796ccb93d4f09e8": {
+    "status": "accepted",
+    "id": "rz_laodongfang",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "本地view_image核对实际原文件：绿色门头红字“老东方水饺海鲜城”，可见海鲜加工、海肠捞饭、鲅鱼水饺等招牌。本店身份直接匹配；不是此前截图显示的餐盘。"
+  },
+  "4aadb7153d66e84ba9dc1ba92496fa20201ddca3e360ba7e7f18ec09f0d3e0e2": {
+    "status": "accepted",
+    "id": "rz_tianrui",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "本地view_image核对木盘鱼渣配大葱与金属勺，和帖中餐图匹配；无店牌所以分店有限。"
+  },
+  "442188d21525ae5734bd19babfde0420f1f560d4886cdff135d2faa6dcc7efef": {
+    "status": "accepted",
+    "id": "wuhu_xiaojin",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "专帖左侧静态图为竹笼中粉蒸肉覆盖糯米豆皮的渣肉蒸饭，与小金帖正文匹配；分店未明确。"
+  },
+  "aeb66289e0379e40afc78d48ac02328c77b11419a84a9a19c7558f246d6c4296": {
+    "status": "accepted",
+    "id": "wuhu_gengfuxing",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "2026-10-01 view_image亲看本地下载文件：白盘内切块红皮鸭浸甜卤汁，木桌背景；本文作者明确耿福兴古城店，与正文红皮鸭子匹配。"
+  },
+  "ffe66f89e48745255ceb3cfd65f203915a4cc538599efac65f9ec0a01be07971": {
+    "status": "accepted",
+    "id": "huaian_puxian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对",
+    "visual_evidence": "本地原文件为一碗蒲菜肉圆菜汤，非门头；与蒲鲜专帖餐食对应。"
+  },
+  "e7486007885d6455b447cea653873edf69ea261c2680b92614d8e020ff0325e4": {
+    "status": "rejected",
+    "id": "wuhu_gengfuxing",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "reason": "原文件为芜湖古城装饰牌，非耿福兴食品或店面；已补正常下载红鸭原图，错误文件不展示。"
+  },
+  "1b0c00ec49d161d6b9d4a1ebd9b5350efa3e993a36c8db8461d4197ab743fd2a": {
+    "status": "accepted",
+    "id": "huaian_laohuaian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开查看，并核对文件SHA及来源记录",
+    "visual_evidence": "本地查看实际为白碗豆腐羹/汤近景，正文明确点名平桥豆腐；画面不能单独识别分店或确证菜名，来源为本店专帖；下载元素不等同轮播顺序"
+  }
+}

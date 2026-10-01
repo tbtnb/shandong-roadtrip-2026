@@ -1,11 +1,12 @@
-import React from 'react';import {afterEach,beforeEach,describe,it,expect,vi} from 'vitest';import {render,screen,fireEvent,cleanup,within} from '@testing-library/react';import fs from 'node:fs';
+import React from 'react';import {afterEach,beforeEach,describe,it,expect,vi} from 'vitest';import {render,screen,fireEvent,cleanup,within,waitFor} from '@testing-library/react';import fs from 'node:fs';
 vi.mock('../src/scene.js',()=>({createScene:vi.fn((el,{onReady})=>{onReady();return{selectCity:vi.fn(),setMotion:vi.fn(),setDestination:vi.fn(),setDayRoute:vi.fn(),rotate:vi.fn(),reset:vi.fn(),setViewMode:vi.fn(),dispose:vi.fn()}})}));
 import App from '../src/App.jsx';
 import {createScene} from '../src/scene.js';
 const data=JSON.parse(fs.readFileSync('public/data/official-route.json'));
 const media=JSON.parse(fs.readFileSync('public/data/attraction-media.json'));
+const food=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
 const xhs=JSON.parse(fs.readFileSync('public/data/xiaohongshu.json'));
-beforeEach(()=>{localStorage.clear();global.fetch=vi.fn(url=>Promise.resolve({ok:true,json:()=>Promise.resolve(String(url).includes('xiaohongshu')?xhs:String(url).includes('attraction-media')?media:data)}))});afterEach(cleanup);
+beforeEach(()=>{localStorage.clear();global.fetch=vi.fn(url=>Promise.resolve({ok:true,json:()=>Promise.resolve(String(url).includes('food-guide')?food:String(url).includes('xiaohongshu')?xhs:String(url).includes('attraction-media')?media:data)}))});afterEach(cleanup);
 async function ready(guideMode=true){
  render(<App/>);await screen.findByRole('heading',{name:/是时候/});
  if(guideMode){
@@ -47,7 +48,7 @@ describe('interruption and fallback resilience',()=>{
  it('saved stamps survive a remount and invalid storage values are ignored',async()=>{await ready();fireEvent.click(screen.getByRole('button',{name:'收藏这一站的章'}));cleanup();await ready();expect(screen.getByRole('button',{name:'已盖章 · 点按撤回'})).toBeTruthy();cleanup();localStorage.setItem('coastal-journal-v1',JSON.stringify({stamps:['unrecognized','wuhu','wuhu'],plans:{bad:{test:9999}}}));await ready();expect(JSON.parse(localStorage.getItem('coastal-journal-v1')).stamps).toEqual(['wuhu']);expect(JSON.parse(localStorage.getItem('coastal-journal-v1')).plans).toEqual({});});
 });
 
-it('system reduced motion has an honest disabled motion control',async()=>{const mq=vi.spyOn(window,'matchMedia').mockImplementation(()=>({matches:true,addEventListener(){},removeEventListener(){}}));try{await ready();expect(screen.getByRole('button',{name:'遵循系统减少动态设置'}).disabled).toBe(true);expect(vi.mocked(createScene).mock.calls.at(-1)[1].reducedMotion).toBe(true);}finally{mq.mockRestore()}});
+it('system reduced motion has an honest disabled motion control',async()=>{const mq=vi.spyOn(window,'matchMedia').mockImplementation(()=>({matches:true,addEventListener(){},removeEventListener(){}}));try{await ready();expect(screen.getByRole('button',{name:'遵循系统减少动态设置'}).disabled).toBe(true);await waitFor(()=>expect(vi.mocked(createScene).mock.calls.at(-1)[1].reducedMotion).toBe(true));}finally{mq.mockRestore()}});
 
 it('Banyue Bay exposes one source fallback and never duplicate failed embed loaders',async()=>{
  await ready();fireEvent.click(within(screen.getByLabelText('地图日期选择')).getAllByRole('button')[2]);

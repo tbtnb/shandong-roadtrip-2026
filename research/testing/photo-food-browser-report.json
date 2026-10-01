@@ -1,0 +1,10 @@
+{
+  "place_originals": 36,
+  "food_originals": 14,
+  "actual_local_http_hash_matches": 50,
+  "physical_iphone_tested": false,
+  "browser": "native Codex in-app browser",
+  "gallery": "default six-city previews, 36-item expansion, city filtering and per-photo author/note statuses checked",
+  "food": "native browser showed 14 total / target280, Qingdao filter3 recommendation candidates; exclude records available separately",
+  "test_boundary": "new DOM gallery/filter regressions and originals validation; previous gesture emulation retained, no new physical-iPhone proof"
+}
