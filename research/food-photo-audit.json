@@ -469,5 +469,157 @@
     "reviewer": "root",
     "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
     "visual_evidence": "root实看黄色门面、MONA PATISSERIE CAKE COFFEE GELATO两块招牌及原作者威海茉娜甜品叠字，保留原图标识；与韩乐坊具名专帖店面相符，不证明当前食品质量。暂排除记录不计推荐。"
+  },
+  "5956b0c7cea2d798b0a8a031eec4c749f3e9d3da51a03f835484da1ecec4dfe8": {
+    "status": "accepted",
+    "id": "qingdao_hongbaoshi",
+    "checked_at": "2026-10-01T08:16:02.333018+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "双视角栗子膏三角蛋糕，奶油和外卖盒；与记录中的栗子蛋糕对应，分店由原帖正文支持。"
+  },
+  "5717d53168760ee1cf188b78b56b5bc531ef6b82e51db38fe15292f1f4a1c66d": {
+    "status": "accepted",
+    "id": "qingdao_shunxing",
+    "checked_at": "2026-10-01T08:16:02.333628+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "顺兴服装字样和玻璃柜牛角包、老奶油面包，保留原价牌及水印；价牌不作当前售价。"
+  },
+  "7adf9bd499988d0786eaeea1672fb94c00d804540f46d19cb617650af6f3ea8b": {
+    "status": "accepted",
+    "id": "qingdao_wanhechun",
+    "checked_at": "2026-10-01T08:16:02.333631+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "陶砂锅大块排骨、米饭及桌面万和春品牌字样，与具体台东原帖菜品对应。"
+  },
+  "46bc6ffe6e0665d3e99b0c2e691c89c8a5a99e43698de6e55f8785614c1d0c4e": {
+    "status": "accepted",
+    "id": "qingdao_xujia",
+    "checked_at": "2026-10-01T08:16:02.333633+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "萝卜馅饼切面、黄色甜沫及原有早餐文字，正文和同帖店牌支持来源，非纯文字攻略。"
+  },
+  "c315c5c35e086deb7e0fa161cd877b1a54bd2720f201793e3549b9b6642bd538": {
+    "status": "accepted",
+    "id": "weihai_changxing",
+    "checked_at": "2026-10-01T08:16:02.333634+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "长兴烧烤发光门头、街边桌椅及食客；实际门店环境实拍，未冒称菜品近景。"
+  },
+  "373c5130f3161b73da5e3a6abcbaa199220736ecb35fb5579016b7c4522c2f6e": {
+    "status": "accepted",
+    "id": "weihai_haicheng",
+    "checked_at": "2026-10-01T08:16:02.333637+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "浅黑锅小鱼汤与金黄色饼子、香菜、花蛤，匹配鱼锅饼子正文；分店依正文与平台。"
+  },
+  "c7aac0fc01f7e3d9a28b955dd06304273cdda52d4672b0fa6ca09d8a1fef28dc": {
+    "status": "accepted",
+    "id": "weihai_shanhou",
+    "checked_at": "2026-10-01T08:16:02.333639+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "剖开薄皮海鲜包，虾仁与绿色菜丁等馅料；品类匹配，未凭图片确认门牌或全部食材。"
+  },
+  "9297dfaba41bff6b424d7a51b1fe6fd40fb331cb3869de5a4f836de87d19d2dc": {
+    "status": "accepted",
+    "id": "lyg_danjie",
+    "checked_at": "2026-10-01T08:16:02.333641+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "单姐凉粉黄色摊牌，纯绿豆凉粉、大豌豆、娃娃鱼菜单及调料台；真实摊位而非攻略封面。"
+  },
+  "3e53760de520ba620e6a9c30db6e7dc05559024e8cd2ef1b2383d24e0f62e176": {
+    "status": "accepted",
+    "id": "lyg_gucuo",
+    "checked_at": "2026-10-01T08:16:02.333643+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "甜汤、水果冰及炸卷实拍，有古厝原文店名，菜品与专帖记录匹配。"
+  },
+  "3afc0e118e9e6a82fd28b0fc05019b07ff3ffff86daabf972c69e13203fb935a": {
+    "status": "accepted",
+    "id": "lyg_xiaogu",
+    "checked_at": "2026-10-01T08:16:02.333644+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "两款肉馅热狗，小顾的热狗店原文字及水印；匹配正文菜品。"
+  },
+  "48b3f681017e49eb0c156debee27cd0bdead74444fd79e2d36095b6d9e812561": {
+    "status": "accepted",
+    "id": "lyg_yanheyan",
+    "checked_at": "2026-10-01T08:16:02.333647+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "捞汁海鲜、虾球腰果、狮子头、豆腐煲及红双喜盐河宴原店名文字，与正文对应。"
+  },
+  "25b37003dd9b843fbb19baaf97475b74e7c7beb6175092c2c9dbbc2afd834420": {
+    "status": "accepted",
+    "id": "rz_jufeng",
+    "checked_at": "2026-10-01T08:16:02.333648+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "羊肉羊杂与多道炒菜的开放选菜柜，红色菜牌实拍；具体旗舰店依正文，非图像单独证明。"
+  },
+  "107f5f91eb4100f781ecfae4faa3204cb8dc5a9115d95bfd415d9358a197b144": {
+    "status": "accepted",
+    "id": "rz_menshifu",
+    "checked_at": "2026-10-01T08:16:02.333650+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "手持饼夹豆皮、生菜及肉；匹配鸡蛋饼实吃，图无店牌，嘉阳与昭阳差异仍需核。"
+  },
+  "f821124bad7b87cafb7d2db7cb3a0ffdfe8d0b83310a3cc2a1388310946e36a6": {
+    "status": "accepted",
+    "id": "rz_shiqi",
+    "checked_at": "2026-10-01T08:16:02.333651+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "白碗羊汤、香菜、羊杂和金属汤勺，匹配羊汤专帖；门牌未仅凭图片确定。"
+  },
+  "aac7c0f205c4e7b0ab07bbebd95043f4c4e0cdeded67cde5d8fc9f34abe4aa19": {
+    "status": "accepted",
+    "id": "huaian_shier",
+    "checked_at": "2026-10-01T08:16:02.333654+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "施二馄饨专卖店门头与两公开店电话清楚，可与平台核对；店内就餐环境实拍。"
+  },
+  "5b0bbb6b8fd321d8e9a592d99413c7451cd93b2b23dc2331b812a7f5d580f4f8": {
+    "status": "accepted",
+    "id": "huaian_tangshigong",
+    "checked_at": "2026-10-01T08:16:02.333656+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "白碗扁臭干配棕色酱汁香菜，符合白色扁臭干正文；分店由同帖辅助门头及电话支持。"
+  },
+  "fdd0b5d4fbed49bd7116d514e1b829c82e6775d8afc1d345ccfadfb55523837d": {
+    "status": "accepted",
+    "id": "qingdao_laolicun_tuandao",
+    "checked_at": "2026-10-01T08:16:02.333658+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "蔚道老李村脂渣门头及商品柜，五花脆等实物、店名和原水印保留；2025价牌不当当前价。"
+  },
+  "708f3e076a460885983a37b5312e9b10ec750f61266141b2118db121b14e9488": {
+    "status": "accepted",
+    "id": "huaian_tanji",
+    "checked_at": "2026-10-01T08:16:02.333659+00:00",
+    "reviewer": "root",
+    "method": "逐张打开本地未经转换的原图；对照城市负责人专帖正文、分店及实际链接状态记录，导入器校验字节与哈希",
+    "visual_evidence": "两盘竹签炸串及酱汁碗，匹配驸马巷谭记具名正文，不以外观判断具体肉品。"
+  },
+  "dc74cb7615731351b02ec6734d00fa88ffd88ebde7e2e4f2023e8bd50964ccff": {
+    "status": "accepted",
+    "id": "lyg_chenjiawei",
+    "checked_at": "2026-10-01T08:16:43.710728+00:00",
+    "reviewer": "root",
+    "method": "逐张打开未经转换的本地原图；对照城市负责人专帖正文及实际平台记录",
+    "visual_evidence": "鸡爪、茄子、炒海兔的原拼图和陈家味特色小菜馆文字，对应具名正文；原水印保持。"
   }
 }

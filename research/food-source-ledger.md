@@ -2,12 +2,12 @@
 
 其余五城一城一位调研负责人；240家为目标。芜湖半天出发中转，按用户要求暂停补采，保留已有早餐参考，不计目标。正文、图片和入口记录齐全才导入。推荐等级另按口碑、分店和营业证据判断，暂不推荐的记录不进入默认筛选。全部原图保留作者与水印；采集时为私人旅行参考，用户于2026-10-01确认公开展示，原作者再使用许可未建立。
 
-- 青岛：10 / 60 家采集记录
-- 威海：11 / 80 家采集记录
-- 连云港：10 / 40 家采集记录
-- 日照：10 / 40 家采集记录
+- 青岛：15 / 60 家采集记录
+- 威海：14 / 80 家采集记录
+- 连云港：15 / 40 家采集记录
+- 日照：13 / 40 家采集记录
 - 芜湖：7 家出发早餐参考（暂停补采，无数量目标）
-- 淮安：9 / 20 家采集记录
+- 淮安：12 / 20 家采集记录
 
 ## 青岛 · 邓记一品生煎
 
@@ -42,6 +42,17 @@
 - 高德：[搜索备选](https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%E6%B5%B7%E7%87%95%E5%A5%B6%E5%A5%B6%E5%8F%B0%E4%B8%9C)。Chrome实际打开并加载搜索结果，匹配台东店
 - 图像原文件 SHA256：213018d688b0ca9eb5586a59580b85b8aabf2cc055be2d7d30ba03a4a290efce，1080×1440。主图显示多种海鲜锅贴，与正文大虾、笔管、墨鱼、海胆内容对应
 
+## 青岛 · 红宝石蛋糕店
+
+等级：caution。独立正文与原图明确湖北路，普通作者主页及口味反驳评论核查齐，点评当日营业；普通食客口味失望与3.9评分使其不列默认推荐，保留情怀/口味偏好选项。
+
+![红宝石蛋糕店原图](../public/assets/food/qingdao_hongbaoshi.webp)
+
+- 小红书：[青岛老字号红宝石 · 🐻兜兜里有糖🐻](https://www.xiaohongshu.com/explore/679b9a87000000002a00e70f)。本次Chrome无参数canonical单独打开显示当前笔记暂时无法浏览/请打开App扫码查看；搜索详情正文可读。
+- 点评：[具体门店](https://www.dianping.com/shop/jmP2AoOq5mUT5o0p)。本次青岛具体湖北路搜索取得真实链接后Chrome亲开，头部推荐菜可读。
+- 高德：[搜索备选](https://www.amap.com/ssr/search?query_type=TQUERY&query=%E9%9D%92%E5%B2%9B%E7%BA%A2%E5%AE%9D%E7%9F%B3%E8%9B%8B%E7%B3%95%E5%BA%97&city=330100&geoobj=119.806233%7C30.107939%7C120.684308%7C30.516621&zoom=11.1)。初次带空格查询误召回杭州，改用可见搜索框青岛红宝石蛋糕店后实际列湖北与徐州，点击湖北标注同址；无place直链。
+- 图像原文件 SHA256：5956b0c7cea2d798b0a8a031eec4c749f3e9d3da51a03f835484da1ecec4dfe8，1080×1615。双视角栗子膏三角蛋糕，奶油和外卖盒；与记录中的栗子蛋糕对应，分店由原帖正文支持。
+
 ## 青岛 · 姐夫家
 
 等级：caution。营业及地址已核实，但点评3.9，7月26日近三个月可见差评自述食材鲜度和性价比不佳；作者商业倾向与无评论使佐证有限。
@@ -74,6 +85,17 @@
 - 点评：[具体门店](https://www.dianping.com/shop/iDQsgJ0cZkcjDveJ)。Chrome亲开4.2/1959条/¥11，营业中05:30-14:00，四平路23甲
 - 高德：[搜索备选](https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E8%80%81%E6%96%B9%E5%AD%90%E9%A6%85%E9%A5%BC%E7%B2%A5%20%E5%9B%9B%E5%B9%B3%E8%B7%AF)。Chrome实际搜索匹配老方子馅饼粥台东店
 - 图像原文件 SHA256：d3da54b5e68ae30a945341bbcbe05b32699fe08c1382ce2b62b9c6d13223090a，1080×1920。两只漏油网篮里的金黄炸馅饼，与专帖现炸馅饼描述匹配
+
+## 青岛 · 蔚道老李村脂渣
+
+等级：optional。普通游客团岛具体正文、同店招牌商品实拍、完整作者及具体口感评论者主页核查，两平台地址一致，点评同分店当天营业。口味与新鲜范围不足，少量顺路试为限。
+
+![蔚道老李村脂渣原图](../public/assets/food/qingdao_laolicun_tuandao.webp)
+
+- 小红书：[有没有宝子帮忙代购一下团岛市场的蔚道脂渣 · 切丽切丽](https://www.xiaohongshu.com/explore/68dc86960000000007023c68)。Chrome亲开无参数链接显示暂时无法浏览/请打开App扫码，搜索详情正文图评论正常。
+- 点评：[具体门店](https://www.dianping.com/shop/H9TrdAx2FBuJVTho)。Chrome亲开真实同分店头部推荐菜可读
+- 高德：[搜索备选](https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%E8%94%9A%E9%81%93%E8%80%81%E6%9D%8E%E6%9D%91%E8%84%82%E6%B8%A3%E5%9B%A2%E5%B2%9B)。Chrome亲开精确检索，同店实际结果可读
+- 图像原文件 SHA256：fdd0b5d4fbed49bd7116d514e1b829c82e6775d8afc1d345ccfadfb55523837d，1080×1440。蔚道老李村脂渣门头及商品柜，五花脆等实物、店名和原水印保留；2025价牌不当当前价。
 
 ## 青岛 · 连记海鲜馄饨
 
@@ -119,6 +141,50 @@
 - 高德：[地点](https://ditu.amap.com/place/B0FFFRUEH2)。Chrome亲开完整地点页。
 - 图像原文件 SHA256：74bf788fc45b2780b68330281724516ab3ac73e3c7211bfc25710c8ecddd60c8，1440×1080。root实看食品柜台多排球酥，原品牌口味牌明确十三不靠、生椰拿铁、金沙芝士、榴莲乳酪、紫薯糯米；与台东昆明路店专帖相符，原标志与完整照片保留，图上2023旧价不当当前报价。
 
+## 青岛 · 顺兴食品
+
+等级：optional。主帖正文食物与同店门头原图、作者主页齐；补读台东口味对比与实际评论者个人主页，点评同店当日营业。以少量顺路试油酥面包为限，不泛化推荐全部。
+
+![顺兴食品原图](../public/assets/food/qingdao_shunxing.webp)
+
+- 小红书：[顺兴食品 · 乱七八糟](https://www.xiaohongshu.com/explore/6a510736000000001003f5df)。Chrome亲开无参数链接显示暂时无法浏览/App扫码，实际搜索详情可读。
+- 点评：[具体门店](https://www.dianping.com/shop/k5xKDCEpgWiMcuqe)。青岛具体搜索实际链接亲开头部推荐菜可读
+- 高德：[搜索备选](https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%E9%A1%BA%E5%85%B4%E9%A3%9F%E5%93%81%E9%A1%BA%E5%85%B4%E8%B7%AF100%E5%8F%B7)。Chrome亲开精确检索实际结果可读，无place直链
+- 图像原文件 SHA256：5717d53168760ee1cf188b78b56b5bc531ef6b82e51db38fe15292f1f4a1c66d，1440×1080。顺兴服装字样和玻璃柜牛角包、老奶油面包，保留原价牌及水印；价牌不作当前售价。
+
+## 青岛 · 万和春排骨砂锅米饭
+
+等级：optional。具体台东店实拍正文、评论及两位主页齐，两平台同地址当前正常营业；默认近期点评评价有正面体验但低分范围不足，顺路可选。
+
+![万和春排骨砂锅米饭原图](../public/assets/food/qingdao_wanhechun.webp)
+
+- 小红书：[惊！万和春竟然上糖水了😲（附菜单） · MapleSyrupWaffle](https://www.xiaohongshu.com/explore/6a957f05000000002a03b619)。Chrome亲开无签名链接显示暂时无法浏览/打开App扫码，搜索详情正文原图评论可读。
+- 点评：[具体门店](https://www.dianping.com/shop/k4wItWds68ZsFbh7)。青岛搜索实际店链接亲开完整店页
+- 高德：[地点](https://www.amap.com/place/B0FFFRR5R3)。Chrome亲开加载后完整店页可读
+- 图像原文件 SHA256：7adf9bd499988d0786eaeea1672fb94c00d804540f46d19cb617650af6f3ea8b，1080×1440。陶砂锅大块排骨、米饭及桌面万和春品牌字样，与具体台东原帖菜品对应。
+
+## 青岛 · 徐家老甜沫
+
+等级：optional。普通旅行账号独立正文食品原图与同帖店牌，补充精确宁化39；点评正常次日开门、高德06–11，当前营业安排可核，近期口碑不足保留顺路可选。
+
+![徐家老甜沫原图](../public/assets/food/qingdao_xujia.webp)
+
+- 小红书：[青岛早餐之徐家老甜沫 · ✨栩多多](https://www.xiaohongshu.com/explore/66496725000000001303e4b8)。Chrome本次单独无参数canonical显示当前笔记暂时无法浏览/请打开App扫码查看，实际搜索取得带签名详情可读。
+- 点评：[具体门店](https://www.dianping.com/shop/F15hclUyOFfnkMbs)。青岛具体宁化路搜索取得链接并亲开。
+- 高德：[地点](https://www.amap.com/place/B0FFF9PFAZ)。Chrome亲开完整商户页。
+- 图像原文件 SHA256：46bc6ffe6e0665d3e99b0c2e691c89c8a5a99e43698de6e55f8785614c1d0c4e，1080×1600。萝卜馅饼切面、黄色甜沫及原有早餐文字，正文和同帖店牌支持来源，非纯文字攻略。
+
+## 威海 · 长兴烧烤·老辈文登烧烤
+
+等级：caution。普通生活作者专帖实吃、真实门头图与唯一文登分店营业已核，主要偏咸口味争议；保留旧具体但未核实的处理卫生主张，近期口碑覆盖不足，仅谨慎候选不列必去。
+
+![长兴烧烤·老辈文登烧烤原图](../public/assets/food/weihai_changxing.webp)
+
+- 小红书：[文登长兴烧烤🥓🥩 · 好运biubiu莲](https://www.xiaohongshu.com/explore/68e39134000000000301dd31)。实际无签名主帖直链暂无法浏览/需App扫码，签名搜索入口正文可读，不处理扫码或落盘签名。
+- 点评：[具体门店](https://www.dianping.com/shop/k8NH7ABYVMipR8OU)。点评威海站内长兴烧烤唯一商户真实链接，实际亲开当前店基础与菜单。
+- 高德：[地点](https://www.amap.com/place/B0277151X0)。真实搜索发现place，实际Web只读亲开同址基础与1条旧评论，无当前营业字段；当前营业来自点评。
+- 图像原文件 SHA256：c315c5c35e086deb7e0fa161cd877b1a54bd2720f201793e3549b9b6642bd538，1080×1440。长兴烧烤发光门头、街边桌椅及食客；实际门店环境实拍，未冒称菜品近景。
+
 ## 威海 · 东源饭店
 
 等级：exclude。存在未独立证实的餐后健康投诉且近期差评核验不足，审慎从推荐名单排除；并非认定投诉因果已证实。
@@ -140,6 +206,17 @@
 - 点评：[具体门店](https://www.dianping.com/shop/90440838)。Chrome实际打开真实图集，点击店名读取门店基础信息和3条精选评论。
 - 高德：[地点](https://www.amap.com/place/B0FFHY4O66)。原榜单真实取得，本轮Chrome完整POI详情实读。
 - 图像原文件 SHA256：8a71a6cd1fd159a0587bb2b327fc33438094e579930a4d1edd3d3fcb2410672e，1080×1440。view_image实际查看本地文件：柜台前手持透明袋装黄豆粉覆盖圆包，后方冷藏柜同款包装；标签BREAD N与豆粉包专帖吻合。没有沙冰，不把沙冰评价当照片可见证据。
+
+## 威海 · 海诚饺子家常菜
+
+等级：optional。普通旅游生活作者具体多次实吃、首帖近大相框地域支持和实际食品原图，与点评高德同分店地址吻合，点评显示当前营业；一般口味和吐刺条件写清，旧体验及近期全量差评不足，不列必去。
+
+![海诚饺子家常菜原图](../public/assets/food/weihai_haicheng.webp)
+
+- 小红书：[海诚饺子馆｜威海的最后一顿饭 · 吃雪糕的彩虹糖](https://www.xiaohongshu.com/explore/685e29f1000000000d01b42c)。实际无签名主帖直链暂无法浏览需App扫码，签名搜索入口正文可读，不处理扫码或保存签名。
+- 点评：[具体门店](https://www.dianping.com/shop/l3dXwJ6igNWvrjR6)。威海站内海诚饺子2结果，亲开会展店及蒿泊同名店核排除，基础菜单可读。
+- 高德：[地点](https://www.amap.com/place/B027700YMU)。本輪实际Web只读亲开同址基础及1旧评，不使用其为当前营业依据。
+- 图像原文件 SHA256：373c5130f3161b73da5e3a6abcbaa199220736ecb35fb5579016b7c4522c2f6e，1440×1080。浅黑锅小鱼汤与金黄色饼子、香菜、花蛤，匹配鱼锅饼子正文；分店依正文与平台。
 
 ## 威海 · 韩仁阁米肠汤饭
 
@@ -196,6 +273,17 @@
 - 高德：[地点](https://www.amap.com/place/B0FFKK9G4I)。原真实链接本轮Chrome完整详情实读。
 - 图像原文件 SHA256：a5d38883b251230ffe6165150d06fb23f55651abccaac860b917f1110f8b0cb5，1440×1080。实际原图为七丼品牌碗内双拼肉饭，配泡菜沙拉汤，店名在碗沿清晰可见。
 
+## 威海 · 山后海菜包子
+
+等级：exclude。已核具体分店当前营业，但旧具体异物主张未独立证实或解决，普通正面独立背书偏弱，暂排除。旧指控不等于当前已确认隐患。
+
+![山后海菜包子原图](../public/assets/food/weihai_shanhou.webp)
+
+- 小红书：[荣成这家包子铺！！上新了！！！ · momo酱](https://www.xiaohongshu.com/explore/69510cbb000000001f00b4c1)。实际無签名直链显示笔记暂无法浏览需App扫码；签名搜索入口正文完整可读，未处理扫码，签名不落盘。
+- 点评：[具体门店](https://www.dianping.com/shop/H7uJnETSt5Zz4E2C)。站内真实14商户结果取得荣成店链接，亲开当前基础、菜单与团购。
+- 高德：[地点](https://www.amap.com/place/B0K6KSZNQH)。已实际Web只读亲开原始place页，地址电话及1旧评论可见；Chrome同一无参数入口仅地图框。没有把Web地址当当前营业依据，当前营业来自点评。
+- 图像原文件 SHA256：c7aac0fc01f7e3d9a28b955dd06304273cdda52d4672b0fa6ca09d8a1fef28dc，1080×1440。剖开薄皮海鲜包，虾仁与绿色菜丁等馅料；品类匹配，未凭图片确认门牌或全部食材。
+
 ## 威海 · 台北小城
 
 等级：caution。明确财富广场营业及专帖支持，但口味争议、品牌分店反面评价和当前全量低分不足，不列必去。
@@ -239,6 +327,39 @@
 - 点评：[具体门店](https://www.dianping.com/shop/l1vpU3wxpcX3HjeL)。本轮点评威海站内搜羽咖啡唯一商户取得真实链接，实开店页基础及3条精选。
 - 高德：[地点](https://www.amap.com/place/B0HANRMVFT)。站内搜威海羽咖啡取得唯一结果，点击完整详情读新址营业取得POI，再实际place无参数直链仅地图框；范围分开。 补充Web只读实开同一已知place直链：工具不可访问，未额外循环入口。
 - 图像原文件 SHA256：853a4ccb6f708cc3f358ad63f6426147af8a2d9d75ccc4857779e07b9cc9e2ac，1080×1440。root实看木桌上的绿色巴斯克蛋糕切块、冰淇淋和咖啡，纸盒羽品牌标志可见，原小红书标识保留；与专帖开心果巴斯克及冰淇淋描述相符。图片无门牌，新址依据两平台迁址核验，不把旧店当另一家。
+
+## 连云港 · 陈家味·特色小菜馆
+
+等级：optional。唯一品牌和菜单对应当前具体DP店营业；口味甜辣与预订服务限制明确，不列必去
+
+![陈家味·特色小菜馆原图](../public/assets/food/lyg_chenjiawei.webp)
+
+- 小红书：[连云港吃喝记录第3️⃣0️⃣弹 陈家味小菜馆 · 哈利波菜](https://www.xiaohongshu.com/explore/6a9ba39c00000000260309c7)。Chrome亲开web_error_page导航壳，没有笔记正文
+- 点评：[具体门店](https://www.dianping.com/shop/laTE5RDlnTEIMQ7p)。上轮搜索导航timeout，本轮直接读加载后搜索唯一陈家味并亲开店
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港陈家味特色小菜馆)。实际打开并Enter搜索，无门店列表
+- 图像原文件 SHA256：dc74cb7615731351b02ec6734d00fa88ffd88ebde7e2e4f2023e8bd50964ccff，1440×1080。鸡爪、茄子、炒海兔的原拼图和陈家味特色小菜馆文字，对应具名正文；原水印保持。
+
+## 连云港 · 单姐凉粉
+
+等级：optional。最新单店招牌照片与菜单明确，点评唯一凉粉摊当前营业；蒜味/分店门牌尾号和距离限制保留，非必去
+
+![单姐凉粉原图](../public/assets/food/lyg_danjie.webp)
+
+- 小红书：[连云港凉粉 · 小红薯FE7CCD9A](https://www.xiaohongshu.com/explore/6abc931e000000001c00f736)。Chrome亲开当前筆记暂时无法浏览需App扫码；签名搜索可读
+- 点评：[具体门店](https://www.dianping.com/shop/k832cPyuwvaFtiHa)。Chrome实际搜索唯一单姐凉粉摊与老街景区，亲开真实店link
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港老街单姐凉粉)。Chrome亲开合法搜索唯一民俗商业街店
+- 图像原文件 SHA256：9297dfaba41bff6b424d7a51b1fe6fd40fb331cb3869de5a4f836de87d19d2dc，1440×1080。单姐凉粉黄色摊牌，纯绿豆凉粉、大豌豆、娃娃鱼菜单及调料台；真实摊位而非攻略封面。
+
+## 连云港 · 古厝甜汤
+
+等级：optional。XHS近期真实菜图与店名明确，DP具体店营业可核，0互动且地图未找到不列必去
+
+![古厝甜汤原图](../public/assets/food/lyg_gucuo.webp)
+
+- 小红书：[连云港吃喝记录第3️⃣1️⃣弹 古厝甜汤 · 哈利波菜](https://www.xiaohongshu.com/explore/6ab79c05000000000100aecf)。Chrome亲开当前笔记暂时无法浏览需App扫码；主页签名帖子可读
+- 点评：[具体门店](https://www.dianping.com/shop/k1ohL1E5LDgCFRU0)。Chrome实际搜索唯一古厝店link并亲开
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港古厝甜汤)。Chrome实际搜索页面可读但返回杭州异店，未核本店
+- 图像原文件 SHA256：3e53760de520ba620e6a9c30db6e7dc05559024e8cd2ef1b2383d24e0f62e176，1080×1080。甜汤、水果冰及炸卷实拍，有古厝原文店名，菜品与专帖记录匹配。
 
 ## 连云港 · 汉中黄老头凉皮凉面
 
@@ -295,6 +416,17 @@
 - 高德：[搜索备选](https://www.amap.com/search?query=连云港祥和豆腐卷市民路)。Chrome实际查询并Enter返回唯一地点
 - 图像原文件 SHA256：26a48a64580d1e18670a612c376683b040df3f37e5997be9a1f83e510213f133，1080×1440。root实看藤编篮内薄皮蔬菜卷，背景筷子夹煎底蘸红酱与卤蛋；与祥和单店实访专帖卷类餐食一致。图无店牌，地址依据正文和两平台同址。
 
+## 连云港 · 小顾的热狗店
+
+等级：caution。两平台同嘉年华A116当前营业支持，但正反口味分歧、历史异物指控未核实，需要保留争议，不能列必去
+
+![小顾的热狗店原图](../public/assets/food/lyg_xiaogu.webp)
+
+- 小红书：[连云港吃喝记录第9️⃣弹 小顾的热狗店 · 哈利波菜](https://www.xiaohongshu.com/explore/68fb9a8000000000040077ee)。Chrome无参数亲开当前笔记暂时无法浏览需App扫码；搜索入口可读
+- 点评：[具体门店](https://www.dianping.com/shop/l5QJXFM0jPZgl81U)。Chrome实际搜索唯一嘉年华店link并亲开
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港小顾的热狗店嘉年华)。Chrome亲开查询唯一嘉年华同店
+- 图像原文件 SHA256：3afc0e118e9e6a82fd28b0fc05019b07ff3ffff86daabf972c69e13203fb935a，1080×1440。两款肉馅热狗，小顾的热狗店原文字及水印；匹配正文菜品。
+
 ## 连云港 · 小老头凉皮
 
 等级：optional。点评实测营业和近期口味提醒可见，高德位置对应宝泰；但主帖分店不明且无评论，不足必去
@@ -308,13 +440,13 @@
 
 ## 连云港 · 小上海糕点
 
-等级：exclude。营业尚未确认，按技能规则暂排除出已验证推荐；是可继续核实候选。
+等级：optional。原图清楚门头、XHS评论朝阳路门面与双平台同假日大厦具体店对应，点评营业亲核；松糕季节停售、门牌27/29差异保留，非必去
 
 ![小上海糕点原图](../public/assets/food/lyg_xiaoshanghai.webp)
 
 - 小红书：[连云港土特产之小上海糕点 · 海棠あ花影](https://www.xiaohongshu.com/explore/6a158aa8000000003502f5fa)。实际另开跳404，code300031当前笔记暂时无法浏览；签名搜索入口正文可读
-- 点评：[搜索备选](https://www.dianping.com/search/keyword/95/0_%E5%B0%8F%E4%B8%8A%E6%B5%B7%E7%B3%95%E7%82%B9)。web.open实际测试URL不可访问，未在Chrome测试
-- 高德：[搜索备选](https://www.amap.com/search?query=%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B0%8F%E4%B8%8A%E6%B5%B7%E7%B3%95%E7%82%B9)。web.open实际测试URL不可访问，未在Chrome测试
+- 点评：[具体门店](https://www.dianping.com/shop/H9MgSNLe4jEWUboL)。Chrome实际搜索取得朝阳中路具体店link并亲开
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港小上海糕点朝阳中路)。Chrome合法查询实际唯一朝阳中路店
 - 图像原文件 SHA256：7990d9502e4d80725f6f9b05fde9de10c099915f4f5579a7c3855fc9cc428d4f，1080×1440。原图小上海糕点门头清楚，松糕/麻饼侧招牌可见，匹配本店
 
 ## 连云港 · 兄弟酒家
@@ -338,6 +470,17 @@
 - 点评：[具体门店](https://www.dianping.com/shop/Ha8u3yCo9Po0lxYe)。Chrome实际搜索取得民主路店真实链接并亲开可读
 - 高德：[搜索备选](https://www.amap.com/search?query=连云港徐凤芹酸辣粉民主路店)。Chrome实际搜索显示唯一同名民主路分店
 - 图像原文件 SHA256：59f5959e3a1906fe6d07a89ada6d1cde1078db4c8248a53a180d14e8be1ba62d，1080×1080。本地view_image核查炸肉及鱿鱼串、酸辣粉白碗红汤肉丝香菜和徐凤芹橘红纸杯部分logo，匹配正文实吃
+
+## 连云港 · 红双喜海鲜·盐河宴·连云港菜
+
+等级：optional。当前具体点评分店营业已核，照片吻合；无互动与地图详情，不列必去
+
+![红双喜海鲜·盐河宴·连云港菜原图](../public/assets/food/lyg_yanheyan.webp)
+
+- 小红书：[连云港吃喝记录第2️⃣9️⃣弹 红双喜·盐河宴 · 哈利波菜](https://www.xiaohongshu.com/explore/6a88409800000000160252ed)。Chrome亲开web_error_page导航壳，没有笔记正文
+- 点评：[具体门店](https://www.dianping.com/shop/k5ItaAlI6Yy7GTgM)。实际搜索唯一盐河宴并打开
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港红双喜盐河宴)。亲开并Enter搜索，页面可读无门店结果
+- 图像原文件 SHA256：48b3f681017e49eb0c156debee27cd0bdead74444fd79e2d36095b6d9e812561，1080×1080。捞汁海鲜、虾球腰果、狮子头、豆腐煲及红双喜盐河宴原店名文字，与正文对应。
 
 ## 连云港 · 正兵饭店
 
@@ -405,6 +548,17 @@
 - 高德：[地点](https://www.amap.com/place/B0FFFPAN9M)。 inherited真实候选place入口Chrome亲测可读，web工具本轮不可访问与Chrome可读分别记录。
 - 图像原文件 SHA256：876df9ef90a9a55e84272faf0a50e43cd2c29b5189da8678930df6d878fa80ca，1080×1439。本地view_image实核红底黄字临沂金来糁馆门头，早餐午餐字样，电话15166171589与高德相同，店身份直接匹配。DOM swiper index=0。
 
+## 日照 · 巨峰大集羊汤
+
+等级：caution。明确旗舰店与当前营业齐，但高频探店营销倾向和近期同品牌未收束投诉需先核对；作为需先核对的候选，不计已充分核实的推荐。
+
+![巨峰大集羊汤原图](../public/assets/food/rz_jufeng.webp)
+
+- 小红书：[日照巨峰大集羊汤｜本地羊汤真的香迷糊✨ · 蒸蒸](https://www.xiaohongshu.com/explore/6a815a910000000022010783)。单独开规范链接显示当前笔记暂时无法浏览，请打开App扫码；搜索入口真实正文与独立LIVE静态原图可读。
+- 点评：[具体门店](https://www.dianping.com/shop/k3Zh1k3Kokn8wkyD)。站内真实搜索5结果，选明确日照旗舰店并实际开详情，休息中10-14:30/17-21:30。
+- 高德：[搜索备选](https://www.amap.com/search?query=%E6%97%A5%E7%85%A7%E5%B7%A8%E5%B3%B0%E5%A4%A7%E9%9B%86%E7%BE%8A%E6%B1%A4%E6%97%97%E8%88%B0%E5%BA%97)。真实搜索唯一旗舰店并点击详情，未取得place ID，保留合法搜索链接；当前营业安排10-14:30/17-21:30。
+- 图像原文件 SHA256：25b37003dd9b843fbb19baaf97475b74e7c7beb6175092c2c9dbbc2afd834420，1080×1440。羊肉羊杂与多道炒菜的开放选菜柜，红色菜牌实拍；具体旗舰店依正文，非图像单独证明。
+
 ## 日照 · 坤记熏酱大冷面
 
 等级：caution。专帖实吃与原图齐全，两平台营业时间一致且为唯一搜索店，但主帖无明确门牌、点评与高德地址写法不同；较多一般/偏甜偏咸反馈，作为需先核对的候选，不计已充分核实的推荐。
@@ -426,6 +580,28 @@
 - 点评：[具体门店](https://www.dianping.com/shop/9483943)。此前真实照片页取得shop入口；Chrome亲测店页可读。
 - 高德：[搜索备选](https://www.amap.com/search?query=%E6%97%A5%E7%85%A7%E8%80%81%E4%B8%9C%E6%96%B9%E6%B0%B4%E9%A5%BA%E6%B5%B7%E9%B2%9C%E5%9F%8E)。Chrome合法地点搜索亲测可读。
 - 图像原文件 SHA256：26b06a0efc12255bfe1d01b978650e43fd85a044462921eb9796ccb93d4f09e8，1080×1440。本地view_image核对实际原文件：绿色门头红字“老东方水饺海鲜城”，可见海鲜加工、海肠捞饭、鲅鱼水饺等招牌。本店身份直接匹配；不是此前截图显示的餐盘。
+
+## 日照 · 门师傅鸡蛋饼
+
+等级：caution。原图与近期实吃、两平台营业已实读；嘉阳路与昭阳路定位差异待核，作为需先核对的候选，不计已充分核实的推荐。
+
+![门师傅鸡蛋饼原图](../public/assets/food/rz_menshifu.webp)
+
+- 小红书：[今天吃了门师傅鸡蛋饼 · 橘子皮](https://www.xiaohongshu.com/explore/6abcdbcb000000001402c090)。单独打开当前笔记暂时无法浏览，请打开App扫码查看；搜索入口正文与静态原图实际可读。
+- 点评：[具体门店](https://www.dianping.com/shop/H8Bu2pMxGhzuMOh7)。站内实际搜索唯一昭阳居民区店并打开，休息中次日05:30开始营业。
+- 高德：[地点](https://www.amap.com/place/B0FFHLG32V)。实开详情休息中05:30-14:00，仍为有营业安排的店铺。
+- 图像原文件 SHA256：107f5f91eb4100f781ecfae4faa3204cb8dc5a9115d95bfd415d9358a197b144，1080×1918。手持饼夹豆皮、生菜及肉；匹配鸡蛋饼实吃，图无店牌，嘉阳与昭阳差异仍需核。
+
+## 日照 · 世起全羊
+
+等级：caution。两平台太原路51号当前营业相符，实读多篇日照同品牌实吃原图，但XHS门牌未收束，作为需先核对的候选，不计已充分核实的推荐。
+
+![世起全羊原图](../public/assets/food/rz_shiqi.webp)
+
+- 小红书：[日照 世起全羊 B+级 · 有毛不易](https://www.xiaohongshu.com/explore/6abd22ff000000001c01c148)。单独开规范链接显示当前笔记暂时无法浏览，请打开App扫码；站内搜索正文与原图实际可读。
+- 点评：[具体门店](https://www.dianping.com/shop/H2wfHlCzCm0rsVDy)。从实际Web店铺图片结果取得shop ID并Chrome实际打开详情，营业中10-21。
+- 高德：[地点](https://www.amap.com/place/B0FFFPA7VZ)。实际门店详情，休息中09:30-14:30、16:30-21；并非停业。
+- 图像原文件 SHA256：f821124bad7b87cafb7d2db7cb3a0ffdfe8d0b83310a3cc2a1388310946e36a6，1440×1080。白碗羊汤、香菜、羊杂和金属汤勺，匹配羊汤专帖；门牌未仅凭图片确定。
 
 ## 日照 · 天瑞原创菜
 
@@ -614,6 +790,17 @@
 - 高德：[搜索备选](https://www.amap.com/ssr/search?query=%E8%92%B2%E9%B2%9C%E8%8F%9C%E9%A6%86)。浏览器真实搜索可见1本店结果；未打开地点详情
 - 图像原文件 SHA256：ffe66f89e48745255ceb3cfd65f203915a4cc538599efac65f9ec0a01be07971，1080×1440。本地原文件为一碗蒲菜肉圆菜汤，非门头；与蒲鲜专帖餐食对应。
 
+## 淮安 · 施二馄饨专卖店
+
+等级：caution。原图明确施二门头，电话13626189128及13952371882与高德西长街专卖店一致；点评和高德同两段营业，街号差异、偏咸和尺寸负向评论保留
+
+![施二馄饨专卖店原图](../public/assets/food/huaian_shier.webp)
+
+- 小红书：[淮安施二馄饨 · 慷慨的积木](https://www.xiaohongshu.com/explore/6aa5f36e0000000011036a61)。清洁canonical实际打开当前笔记暂时无法浏览，App扫码；站内搜索专帖可读
+- 点评：[具体门店](https://www.dianping.com/shop/G7S2OcA6X5cPUyqC)。从实际淮安站内施二搜索3结果取得并亲开专卖店4.1/311条/10元，休息中两段营业，西长街134
+- 高德：[地点](https://www.amap.com/place/B0FFHX5QAG)。实际切换城市淮安后站内施二搜索取得并亲开独立地点链接，4.6/6评价/16元，休息中05-10、16-19
+- 图像原文件 SHA256：aac7c0f205c4e7b0ab07bbebd95043f4c4e0cdeded67cde5d8fc9f34abe4aa19，1080×1440。施二馄饨专卖店门头与两公开店电话清楚，可与平台核对；店内就餐环境实拍。
+
 ## 淮安 · 苏淮孙家面馆
 
 等级：caution。专帖明确小康城，地图位置及国庆营业时间可读；点评分店未匹配与近期评价不足
@@ -624,6 +811,28 @@
 - 点评：[具体门店](https://www.dianping.com/shop/G4vmGzS5ySIohVME)。真实相册链接门店亲开可读，但淮海第一城店与XHS小康城不是一店
 - 高德：[地点](https://www.amap.com/place/B02050SWCW)。浏览器地点详情亲开可读小康城总部地址及国庆营业时间
 - 图像原文件 SHA256：37511e3303bdc8c5b178b5ca4716dc46f5386e7af02fec612da16422dec98ea6，960×1280。本地view_image核为两碗肉蔬菜浇头面，碗沿苏淮孙家/孙家面馆字样，正文叉烧拆骨面与本店匹配
+
+## 淮安 · 唐士功臭干
+
+等级：caution。普通生活作者专帖、实拍菜和门头与同电话高德利苑店吻合；上海路补充帖、点评具体分店当前16时营业，高德16-23；门牌差异/点评3.8/近期低分缺口保留
+
+![唐士功臭干原图](../public/assets/food/huaian_tangshigong.webp)
+
+- 小红书：[淮安唐士功臭干 · 老皮皮小颖](https://www.xiaohongshu.com/explore/6a7d9ffc0000000006006bc3)。公开canonical实际打开当前笔记暂时无法浏览/App扫码；站内搜索主帖可读
+- 点评：[具体门店](https://www.dianping.com/shop/G7xNrwJHDAbBfxZy)。实际淮安站内搜索2结果取得上海路店并亲开3.8/65条/10元，休息中16:00开始营业
+- 高德：[地点](https://www.amap.com/place/B0FFJ7NF0P)。实际同一SSR搜索入口唐士功上海路正常出现利苑2区店，取得地点ID并亲开清洁place，4.2/13元，休息中16-23
+- 图像原文件 SHA256：5b0bbb6b8fd321d8e9a592d99413c7451cd93b2b23dc2331b812a7f5d580f4f8，1080×1920。白碗扁臭干配棕色酱汁香菜，符合白色扁臭干正文；分店由同帖辅助门头及电话支持。
+
+## 淮安 · 谭记小吃
+
+等级：caution。驸马巷专帖实际阅读及原图，作者普通生活/淮安倾向，点评同分店营业中06-21；高德阻断和近期低分缺口保留，不列必去
+
+![谭记小吃原图](../public/assets/food/huaian_tanji.webp)
+
+- 小红书：[住在驸马巷里的谭记小吃 · 发现美味的阿联酋](https://www.xiaohongshu.com/explore/6a7744f800000000050306ea)。清洁公开链接实际打开当前笔记暂时无法浏览，需App扫码；搜索入口正文可读
+- 点评：[具体门店](https://www.dianping.com/shop/lazo8xTUG7sm9vkM)。实际淮安站内搜索7结果，亲开明清商业步行街店，4.0/580条/30元，营业中06-21
+- 高德：[搜索备选](https://www.amap.com/ssr/search?query=%E6%B7%AE%E5%AE%89%E8%B0%AD%E8%AE%B0%E5%B0%8F%E5%90%83%E9%A9%B8%E9%A9%AC%E5%B7%B7)。实际亲开搜索入口无门店结果，切城市控件显示滑块验证，未操作验证
+- 图像原文件 SHA256：708f3e076a460885983a37b5312e9b10ec750f61266141b2118db121b14e9488，1080×1440。两盘竹签炸串及酱汁碗，匹配驸马巷谭记具名正文，不以外观判断具体肉品。
 
 ## 淮安 · 文楼·淮扬菜·淮安早茶
 
