@@ -1,0 +1,42 @@
+[
+  {
+    "id": "qingdao-may-wind",
+    "name": "五月的风",
+    "city": "山东·青岛·市南区·五四广场",
+    "note": "地标结构依据，原创低面几何演绎，不是实景照片或测绘模型",
+    "source": "青岛政务网：五四广场",
+    "url": "https://www.qingdao.gov.cn/yfqd/qdwl/cjfw/wyqgy/202009/t20200903_520360.shtml"
+  },
+  {
+    "id": "weihai-happiness-gate",
+    "name": "幸福门",
+    "city": "山东·威海·环翠区·幸福公园",
+    "note": "地标结构依据，原创低面几何演绎，不是实景照片或测绘模型",
+    "source": "威海新闻传媒中心：一城繁华半城海，带你飞越威海之门",
+    "url": "https://www.whnews.cn/news/node/2020-09/11/content_7150197.htm"
+  },
+  {
+    "id": "rizhao-lighthouse",
+    "name": "日照灯塔",
+    "city": "山东·日照·东港区·灯塔广场",
+    "note": "地标结构依据，原创低面几何演绎，不是实景照片或测绘模型",
+    "source": "日照东港发布：在石臼，遇见日照的夏",
+    "url": "https://m.thepaper.cn/baijiahao_7755542"
+  },
+  {
+    "id": "wuhu-zhongjiang-pagoda",
+    "name": "中江塔",
+    "city": "安徽·芜湖·镜湖区·青弋江与长江交汇处",
+    "note": "地标结构依据，原创低面几何演绎，不是实景照片或测绘模型",
+    "source": "芜湖媒体：芜湖这里，成City Walk热门区域（2026-03-02）",
+    "url": "https://www.thepaper.cn/newsDetail_forward_32684591"
+  },
+  {
+    "id": "qingdao-huilan-pavilion",
+    "name": "栈桥·回澜阁",
+    "city": "山东·青岛·市南区·青岛湾",
+    "note": "地标结构依据，原创低面几何演绎，不是实景照片或测绘模型",
+    "source": "青岛城市发展集团：栈桥及回澜阁",
+    "url": "https://www.qdcfjt.com/building/detail/48.html"
+  }
+]
