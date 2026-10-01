@@ -1,6 +1,6 @@
-# 是时候去看海了 · 私人旅行手账
+# 是时候去看海了 · 旅行手账
 
-基于用户提供的 `shandong-roadtrip-2026-source.zip` 继续维护的 React / Vite / Three.js 源码。私有仓库为 https://github.com/tbtnb/shandong-roadtrip-2026。本次没有配置或发布网站托管。
+基于用户提供的 `shandong-roadtrip-2026-source.zip` 继续维护的 React / Vite / Three.js 源码。公开源码仓库为 https://github.com/tbtnb/shandong-roadtrip-2026。用户于2026-10-01确认全部公开，在同仓库使用gh-pages成品分支部署Pages。
 
 ## 使用
 
@@ -27,9 +27,9 @@ npm run dev -- --host 127.0.0.1 --port 5188
 
 36 / 36 处均有至少一张地点匹配的小红书原始 JPEG，作者和图片对应的单篇原帖入口直接显示在卡片上。民主路、盐河巷使用 ZIP 中已有的两张原图，并重新打开原帖核对；另外 34 张通过本机浏览器的网站正常下载功能取得。餐饮街区使用该街区的具体实吃帖子。部分原文件为实景照片拼图，保留其原始文字、水印和完整像素；没有用视频转帧、图库或 AI 图替代小红书照片。
 
-逐点标题、作者、原图、文件 SHA256、识别依据及实测日期见 [36处来源清单](research/place-sources.md) 和 [机器可读清单](research/place-sources.json)。图片权利清单是 `PRIVATE-REFERENCE-FILES.json`，全部为私人参考用途；另保留的 20 张其他来源许可照片由 `MEDIA-PUBLISH-FILES.json` 管理，未计作小红书原图。
+逐点标题、作者、原图、文件 SHA256、识别依据及实测日期见 [36处来源清单](research/place-sources.md) 和 [机器可读清单](research/place-sources.json)。图片权利清单是 `PRIVATE-REFERENCE-FILES.json`，采集时均标记为私人参考用途；公开展示现已由用户确认，原作者再使用许可仍未建立；另保留的 20 张其他来源许可照片由 `MEDIA-PUBLISH-FILES.json` 管理，未计作小红书原图。
 
-采集者实际从站内搜索打开并阅读每篇对应帖子，并另行打开卡片采用的无参数链接。**本次 36 个无参数入口均返回无法浏览 / 404 / App 提示**，页面如实标注并提供标题和作者供站内搜索。搜索入口能读与无参数入口失败分别记录；没有保留签名链接、Cookie 或访问令牌。未验证匿名、App 内或真实 iPhone 打开。原帖正文只保留短摘要，原作者保留照片权利，不用于公开部署。
+采集者实际从站内搜索打开并阅读每篇对应帖子，并另行打开卡片采用的无参数链接。**本次 36 个无参数入口均返回无法浏览 / 404 / App 提示**，页面如实标注并提供标题和作者供站内搜索。搜索入口能读与无参数入口失败分别记录；没有保留签名链接、Cookie 或访问令牌。未验证匿名、App 内或真实 iPhone 打开。原帖正文只保留短摘要，原作者保留照片权利，用户于2026-10-01明确确认改为在GitHub Pages公开展示，保留作者和水印；这项确认不等于原作者授予公开再使用许可。
 
 ## 城市图库与美食库
 
@@ -57,3 +57,11 @@ npm run dev -- --host 127.0.0.1 --port 5188
 - `tests/`：数据、UI 和场景回归。
 
 `ATTRIBUTIONS.md` 保留许可图片署名；`THIRD_PARTY_NOTICES.md` 保留软件许可证；Ma Shan Zheng 字体的 SIL Open Font License 在 `public/assets/fonts/OFL.txt`。票务、营业、停车、天气和导航需要出行时重新核对，本项目未代订住宿或门票。
+
+## GitHub Pages 部署
+
+网站地址：https://tbtnb.github.io/shandong-roadtrip-2026/ 。源码仓库已按用户要求设为公开；`main` 保存源码，`gh-pages` 保存构建成品，Pages自动发布成品分支。
+
+`npm run build:pages` 构建并校验 Pages 子路径、字体、数据及原图哈希。修改源码后先提交，再运行 `npm run deploy:pages`，通过本机现有 Git 凭据把成品推送到同仓库 `gh-pages`，GitHub 随后部署。`deployment.json` 显示对应源码版本。需要 Node.js 22.12+、Git 和仓库写入权限；没有新增凭据或在源码内保存访问令牌。当前 OAuth 凭据没有自定义 workflow 写入权限，因此没有提交自定义 Actions 工作流。
+
+网站公开可访问，用户已明确确认原图公开展示并保留作者、水印及单帖入口。此确认不等于原作者授予图片许可，历史权利字段不改写为已获许可。美食收集仍持续进行，当前上线的是已审核快照；后续采集经导入并重新部署后才更新线上。
