@@ -8,6 +8,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {JSDOM} from 'jsdom';
 import * as Three from 'three';
+import {createRouteCurve,CAR_HALF_WIDTH} from '../src/landmarks/route.js';
 
 const dom = new JSDOM('<div id="scene-test-root"></div>');
 globalThis.window = dom.window;
@@ -50,7 +51,8 @@ const source = fs.readFileSync(new URL('../src/scene.js', import.meta.url), 'utf
   .replace("import * as THREE from 'three';", 'const THREE = globalThis.__COASTAL_INTERACTION_THREE__;')
   .replace("'three/addons/utils/BufferGeometryUtils.js'", JSON.stringify(pathToFileURL(path.resolve('node_modules/three/examples/jsm/utils/BufferGeometryUtils.js')).href));
 // Import in memory: the production source and checkout remain untouched.
-const {createScene} = await import('data:text/javascript;base64,' + Buffer.from(source).toString('base64'));
+const resolvedSource=source.replace(/from '(\.\/[^']+)'/g,(_,specifier)=>'from '+JSON.stringify(pathToFileURL(path.resolve('src',specifier)).href));
+const {createScene} = await import('data:text/javascript;base64,' + Buffer.from(resolvedSource).toString('base64'));
 const root = document.getElementById('scene-test-root');
 root.getBoundingClientRect = () => dimensions;
 function openScene(width, height, options = {}) {
@@ -109,7 +111,7 @@ function projectedBounds() {
   return bounds;
 }
 function labelPositions() {
-  return [...root.querySelectorAll('.coastal-city-tag')].map(label => ({
+  return [...root.querySelectorAll('.coastal-city-tag')].filter(label=>label.style.display!=='none').map(label => ({
     city: label.dataset.city,
     x: parseFloat(label.style.left),
     y: parseFloat(label.style.top),
@@ -128,7 +130,7 @@ function assertStableLabels(api) {
   }
 }
 function assertTouchTargetsDontOverlap() {
-  const boxes = [...root.querySelectorAll('.coastal-city-tag')].map(label => {
+  const boxes = [...root.querySelectorAll('.coastal-city-tag')].filter(label=>label.style.display!=='none').map(label => {
     const x = parseFloat(label.style.left), y = parseFloat(label.style.top);
     const halfWidth = label.offsetWidth / 2, halfHeight = Math.max(44, label.offsetHeight) / 2;
     return {city: label.dataset.city, left: x - halfWidth, right: x + halfWidth, top: y - halfHeight, bottom: y + halfHeight};
@@ -347,7 +349,7 @@ test('immersive Perspective mode roundtrip preserves selected city, car and day 
  }finally{closeScene(api);}
 });
 
-test('immersive city focus is finite, low to the ground, and faces its landmark',()=>{
+test('city view is finite, above the ground, and faces its destination',()=>{
  for(const [width,height] of [[360,370],[1280,530]]){
  const api=openScene(width,height,{viewMode:'immersive'});
  try{
@@ -360,7 +362,7 @@ test('immersive city focus is finite, low to the ground, and faces its landmark'
      assert.ok(Array.isArray(lastCamera.userData.focusPoint));
      const focus=new Three.Vector3(...lastCamera.userData.focusPoint),eye=lastCamera.position;
      assert.ok(focus.toArray().every(Number.isFinite));
-     assert.ok(eye.y-lastCamera.userData.groundHeight>0 && eye.y-lastCamera.userData.groundHeight<1.4,'eye remains at walking height');
+     assert.ok(eye.y-lastCamera.userData.groundHeight>0 && eye.y-lastCamera.userData.groundHeight<3,'eye remains above the buildings at a comfortable city view');
      const toward=focus.clone().sub(eye),forward=lastCamera.getWorldDirection(new Three.Vector3());
      assert.ok(toward.dot(forward)>0,'landmark is in front of the viewer');
      assert.ok(Math.abs(toward.y)/Math.max(.001,Math.hypot(toward.x,toward.z))<.65,'view is shallow rather than top-down');
@@ -371,7 +373,7 @@ test('immersive city focus is finite, low to the ground, and faces its landmark'
      assert.equal(visibleLabels.length,1);assert.equal(visibleLabels[0].dataset.city,id);
    }
    api.setViewMode('overview');assert.equal(lastCamera.name,'coastal-overview-camera');
-   assert.equal([...root.querySelectorAll('.coastal-city-tag')].filter(x=>x.style.display!=='none'&&!x.hidden).length,5);
+   assert.equal([...root.querySelectorAll('.coastal-city-tag')].filter(x=>x.style.display!=='none'&&!x.hidden).length,1);
  }finally{closeScene(api);}
  }
 });
@@ -435,7 +437,7 @@ test('normal-motion journey transition advances over frames and settles when dyn
    assert.equal(lastCamera.isPerspectiveCamera,true);assert.equal(lastCamera.userData.transitioning,false);
    const final=lastCamera.matrixWorld.elements.slice();
    assert.notDeepEqual(lastCamera.position.toArray(),middle,'journey has an intermediate camera position');
-   assert.ok(lastCamera.position.y<3,'journey finishes at walking height');
+   assert.ok(lastCamera.position.y<4,'journey finishes at the city view');
    advanceFrames(90);assert.deepEqual(lastCamera.matrixWorld.elements,final,'paused dynamics cannot strand transition or keep camera moving');
  }finally{closeScene(api);}
 });
@@ -446,7 +448,7 @@ test('city, mode and reset interrupt an in-flight journey safely',()=>{
    api.setMotion(false);api.setDayRoute('qingdao','weihai');
    const route=sceneState();
    api.setViewMode('immersive');advanceFrames(8);api.selectCity('qingdao');advanceFrames(110);
-   assertFiniteCamera();assert.equal(lastCamera.userData.focusCity,'qingdao');assert.ok(lastCamera.position.y<3);
+   assertFiniteCamera();assert.equal(lastCamera.userData.focusCity,'qingdao');assert.ok(lastCamera.position.y<4);
    assert.deepEqual(sceneState().carPosition,route.carPosition);assert.deepEqual(sceneState().routeChildren,route.routeChildren);
    api.setViewMode('overview');advanceFrames(8);api.setViewMode('immersive');advanceFrames(8);api.reset();advanceFrames(110);
    assertFiniteCamera();assert.equal(lastCamera.isPerspectiveCamera,true);assert.equal(lastCamera.userData.focusCity,'qingdao');
@@ -479,3 +481,51 @@ for (const [width, height] of [[288, 348], [330, 348], [360, 370], [400, 370], [
     } finally { closeScene(api); }
   });
 }
+
+
+test('the full car lane clears buildings, trees, parasols and raised paths',()=>{
+ const api=openScene(700,600);
+ try{
+  const curve=createRouteCurve(Three),geometry=lastScene.getObjectByName('static-world'),hits=[];
+  for(let i=0;i<=240;i++){
+   const p=curve.getPointAt(i/240),t=curve.getTangentAt(i/240);
+   for(const offset of [-CAR_HALF_WIDTH,0,CAR_HALF_WIDTH]){
+    const x=p.x-t.z*offset,z=p.z+t.x*offset;
+    const ray=new Three.Raycaster(new Three.Vector3(x,4,z),new Three.Vector3(0,-1,0));
+    const hit=ray.intersectObject(geometry,true)[0];
+    if(hit&&hit.point.y>p.y+.075)hits.push({progress:i/240,x,z,roadHeight:p.y,obstacleHeight:hit.point.y});
+   }
+  }
+  assert.deepEqual(hits,[],'nothing protrudes into the car corridor');
+ }finally{closeScene(api)}
+});
+
+test('all 36 collected places have a model, with safe focus and no itinerary movement',()=>{
+ const expected=JSON.parse(fs.readFileSync('public/data/attraction-media.json','utf8')).attractions.map(a=>a.id);
+ for(const [width,height] of [[360,330],[1100,600]]){
+  const api=openScene(width,height);
+  try{
+   const models=api.getLandmarks(),before=sceneState().carPosition;
+   assert.equal(new Set(models.map(m=>m.id)).size,models.length);
+   for(const id of expected)assert.ok(models.some(m=>m.id===id),`Missing collected place ${id}`);
+   assert.deepEqual(models.filter(m=>m.optional).map(m=>m.city),['huaian','huaian','huaian']);
+   for(const model of models){
+    api.focusLandmark(model.id);assertFiniteCamera();
+    assert.equal(lastCamera.userData.focusLandmark,model.id);
+    assert.equal(lastScene.getObjectByName('static-world').visible,false,'surrounding buildings cannot occlude the selected model');
+    const detail=lastScene.getObjectByName('landmark-detail');
+    assert.equal(detail.visible,true);assert.equal(detail.children.filter(child=>child.visible).length,1);
+    assert.deepEqual(sceneState().carPosition,before,'looking at a landmark cannot move the car');
+    const {bounds}=lastScene.userData.landmarks.find(m=>m.id===model.id);
+    for(const x of [bounds.min[0],bounds.max[0]])for(const y of [bounds.min[1],bounds.max[1]])for(const z of [bounds.min[2],bounds.max[2]]){
+     const corner=new Three.Vector3(x,y,z).project(lastCamera);
+     assert.ok(Math.abs(corner.x)<1&&Math.abs(corner.y)<1&&corner.z>-1&&corner.z<1,`${model.id} does not fit ${width}x${height}: ${corner.toArray()}`);
+    }
+   }
+   api.clearLandmark();assert.equal(lastCamera.userData.focusLandmark,null);
+   assert.equal(lastScene.getObjectByName('static-world').visible,true);
+   assert.equal(lastScene.getObjectByName('landmark-detail').visible,false);
+   assert.deepEqual(sceneState().carPosition,before);
+  }finally{closeScene(api)}
+ }
+});

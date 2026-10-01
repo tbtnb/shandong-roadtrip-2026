@@ -1,0 +1,8 @@
+.landmark-explorer{margin:10px 0 0;padding:12px 14px;background:var(--surface,#fff);border:1px solid #dbe4e4;border-radius:12px;color:#375760}
+.landmark-explorer label{display:flex;align-items:center;gap:12px;font-size:13px}
+.landmark-explorer label>span{white-space:nowrap}
+.landmark-explorer select{flex:1;min-width:0;min-height:44px;padding:8px 30px 8px 12px;border:1px solid #d5dfdf;border-radius:8px;background:#f8faf8;color:#284c58;font:inherit}
+.landmark-explorer>p{font-size:11px;line-height:1.6;color:#74838a;margin:8px 0 0}
+.landmark-caption{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;margin-top:8px}
+.landmark-caption button{min-height:44px;border:0;background:transparent;color:#245c69;text-decoration:underline;text-underline-offset:4px;font-size:12px;white-space:nowrap}
+@media(max-width:700px){.landmark-explorer{padding:10px 12px}.landmark-explorer label{gap:8px;font-size:12px}.landmark-caption{align-items:flex-start}}

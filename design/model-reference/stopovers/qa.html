@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Stopover paper landmarks QA</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f6edda;font:15px system-ui;color:#475953}header{padding:22px 30px;font-size:22px}main{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:0 20px 20px}.tile{position:relative;height:310px;background:#f9f2e5;border-radius:16px;overflow:hidden}.tile canvas{width:100%;height:100%}label{position:absolute;bottom:15px;left:18px;font-size:14px}small{display:block;font-size:11px;margin-top:5px;opacity:.65}
+</style></head><body><header>沿途地标 · 真实几何纸质模型</header><main></main><script type="module">
+import * as THREE from '/node_modules/three/build/three.module.js';import {createStopoverLandmarks} from '/src/landmarks/stopovers.js';
+const labels=['民主路老街','盐河巷','万平口','东夷小镇','里运河 · 国师塔','淮安御码头','河下古镇','芜湖江滨码头 · 概念'];
+const models=createStopoverLandmarks(THREE);window.qaAssets=[];
+models.forEach((a,i)=>{const tile=document.createElement('div');tile.className='tile';document.querySelector('main').append(tile);
+ const label=document.createElement('label');label.textContent=labels[i];const sub=document.createElement('small');sub.textContent=(a.city==='huaian'?'途中备选 · ':'')+a.id;label.append(sub);tile.append(label);
+ const scene=new THREE.Scene();scene.background=new THREE.Color('#f9f2e5');scene.add(a.group);
+ scene.add(new THREE.AmbientLight(0xffffff,1.8));const light=new THREE.DirectionalLight(0xffffff,3.1);light.position.set(-2,4,3);scene.add(light);
+ const camera=new THREE.OrthographicCamera(-.85,.85,.85,-.85,.01,20);camera.position.set(2.5,2.3,3.4);camera.lookAt(0,.25,0);
+ const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(tile.clientWidth,tile.clientHeight);renderer.setPixelRatio(1.5);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1;tile.prepend(renderer.domElement);
+ const geo=new THREE.PlaneGeometry(5,5),mat=new THREE.MeshStandardMaterial({color:0xf9f2e5,roughness:1});const plane=new THREE.Mesh(geo,mat);plane.rotation.x=-Math.PI/2;plane.position.y=-.004;scene.add(plane);
+ const render=()=>{camera.left=-.85*tile.clientWidth/tile.clientHeight;camera.right=.85*tile.clientWidth/tile.clientHeight;camera.updateProjectionMatrix();renderer.render(scene,camera)};render();
+ window.qaAssets.push({id:a.id,triangles:renderer.info.render.triangles,footprint:a.footprint,height:a.height});
+});window.qaReady=true;
+</script></body></html>

@@ -1,5 +1,10 @@
 import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import {ROAD_POINTS,createRouteCurve} from './landmarks/route.js';
+import {placeLandmarks} from './landmarks/layout.js';
+import {createQingdaoLandmarks} from './landmarks/qingdao.js';
+import {createWeihaiLandmarks} from './landmarks/weihai.js';
+import {createStopoverLandmarks} from './landmarks/stopovers.js';
 
 /** A small, real-time paper world. Everything in the diorama is modeled geometry. */
 export function createScene(container, { onSelect = () => {}, onReady = () => {}, onError = () => {}, reducedMotion = false, viewMode = 'overview' } = {}) {
@@ -11,7 +16,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.23;
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.domElement.setAttribute('aria-label', '可旋转的立体海岸旅行手账，点击城市查看行程');
   renderer.domElement.setAttribute('role', 'img');
   renderer.domElement.style.cssText = 'display:block;width:100%;height:100%;touch-action:pan-y pinch-zoom;outline:none;';
@@ -19,12 +24,12 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   const contextLost=()=>{visible=false;onError();};renderer.domElement.addEventListener('webglcontextlost',contextLost);
   const overviewCamera = new THREE.OrthographicCamera(-7, 7, 8, -8, .1, 90);
   overviewCamera.name='coastal-overview-camera';
-  const immersiveCamera = new THREE.PerspectiveCamera(60,1,.05,90);
+  const immersiveCamera = new THREE.PerspectiveCamera(60,1,.15,60);
   immersiveCamera.name='coastal-immersive-camera';
   let mode=viewMode==='immersive'?'immersive':'overview';
   let camera=mode==='immersive'?immersiveCamera:overviewCamera;
   const world = new THREE.Group(); scene.add(world);
-  const staticRoot = new THREE.Group(); world.add(staticRoot);
+  const staticRoot = new THREE.Group();staticRoot.name='static-world'; world.add(staticRoot);
   const movingRoot = new THREE.Group(); world.add(movingRoot);
   let seed = 271828;
   const random = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 4294967296; };
@@ -150,20 +155,14 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     patch(x,z,rx*1.18,rz*1.13,random()>.5?M.meadow:M.meadowLight,y+.002);
     for(let i=0;i<n;i++){const a=between(0,6.28),r=Math.sqrt(random());tree(x+Math.cos(a)*rx*r,z+Math.sin(a)*rz*r,between(.55,.94)*scale,random()>.67?'pine':'round',y);}
   }
-  grove(-3.28,-5.78,12,.61,1.05,.95);
-  grove(-2.82,-3.28,11,.89,1.04,.83);
-  grove(-2.94,-.65,10,.69,.69,.82);
-  grove(-2.94,1.28,9,.69,.76,.82);
-  grove(-2.63,3.08,9,.78,.59,.77);
   grove(.32,6.22,10,.59,.64,.70);
-  grove(-3.5,6.7,5,.33,.35,.6);
   // Folded inland hill range; distinct from the eastern shoreline.
   function mountain(x,z,s,y=.58) {
     const g=new THREE.ConeGeometry(s,s*1.27,5); const o=mesh(g,M.leafDark,x,y+s*.56,z);o.rotation.y=between(0,6);o.scale.z=.78;
     const o2=mesh(new THREE.ConeGeometry(s*.66,s*.76,4),M.leaf,x+s*.29,y+s*.34,z+.14);o2.rotation.y=.6;
     rock(x-s*.48,y,z+s*.42,s*.27,M.meadowLight);
   }
-  mountain(-3.08,4.2,.88);mountain(-3.5,3.65,.63);mountain(-3.47,-6.5,.7);
+  // Inland space is reserved for the named landmark collection.
   for(let i=0;i<22;i++){let z=between(-6.8,6.9);rock(coastX(z)-between(.13,.39),.56,z,between(.06,.15),i%3?M.rockLight:M.rock);}
 
   // Shandong's northern cape is visibly higher than the flatter southern coast.
@@ -183,7 +182,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   function roofGeometry(w,h,d) {
     const v=[[-w/2,0,-d/2],[w/2,0,-d/2],[0,h,-d/2],[-w/2,0,d/2],[w/2,0,d/2],[0,h,d/2]];
     const indices=[0,1,2,5,4,3,0,2,5,0,5,3,2,1,4,2,4,5,3,4,1,3,1,0];
-    const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(indices.flatMap(i=>v[i]),3));g.computeVertexNormals();return g;
+    const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(indices.flatMap((_,i)=>v[indices[Math.floor(i/3)*3+(2-i%3)]]),3));g.computeVertexNormals();return g;
   }
   function house(x,z,{w=.43,d=.38,h=.48,roof=M.roof,y=.59,angle=0,wall=M.cream,floors=2,chimney=true}={}) {
     const g=new THREE.Group();g.position.set(x,y,z);g.rotation.y=angle;staticRoot.add(g);
@@ -213,7 +212,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   house(-.40,-1.63,{w:.38,d:.36,h:.62,angle:-.1});
   house(-1.72,.38,{w:.48,d:.39,h:.48,angle:.04,roof:M.roofLight});
   house(-1.10,.53,{w:.44,d:.38,h:.43,angle:.12});
-  house(-.55,.43,{w:.39,d:.36,h:.45,angle:.12});
+  house(-.95,.43,{w:.39,d:.36,h:.45,angle:.12});
   const cathedral=new THREE.Group();cathedral.position.set(-1.58,.59,-2.05);cathedral.rotation.y=.08;staticRoot.add(cathedral);
   box(.63,.65,.58,M.cream,0,.325,0,cathedral);mesh(roofGeometry(.68,.3,.63),M.roof,0,.65,0,cathedral);
   for(const x of [-.29,.29]) {
@@ -225,7 +224,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   cyl(.071,.071,.018,M.navy,0,.64,.308,12,cathedral).rotation.x=Math.PI/2;
   box(.17,.25,.014,M.trunk,0,.125,.306,cathedral);
   for(let i=0;i<4;i++)box(.49+i*.065,.035,.115,M.paperEdge,0,.10-i*.025,.48+i*.08,cathedral);
-  tree(-2.10,-1.84,.7,'pine');tree(-2.09,-.6,.6);tree(-.11,-1.58,.5,'pine');
+  tree(-.90,-1.58,.5,'pine');
   // Stone seafront plaza and wooden boardwalk.
   cyl(.58,.6,.065,M.paperEdge,1.25,.61,.32,32);
   cyl(.51,.51,.015,M.cream,1.25,.657,.32,32);
@@ -295,12 +294,12 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   for(let i=0;i<11;i++)box(.012,.28,.012,gateEdge,-.48+i*.096,1.34,.176,gate);
   for(let i=0;i<3;i++)box(1.28+i*.08,.02,.10,M.paperEdge,0,.045-i*.02,.4+i*.073,gate);
 
-  house(1.09,-4.69,{w:.5,d:.43,h:.5,roof:M.blueRoof,y:1.21,angle:-.17});
+  house(1.35,-5.20,{w:.5,d:.43,h:.5,roof:M.blueRoof,y:1.21,angle:-.17});
   house(.48,-5.58,{w:.39,d:.35,h:.47,roof:M.blueRoof,y:1.21,angle:-.10});
   house(1.39,-6.15,{w:.39,d:.33,h:.43,roof:M.roofLight,y:1.21,angle:.08});
-  for(const [x,z] of [[2.27,-5.26],[2.29,-4.66],[1.85,-4.31],[.5,-4.45]])tree(x,z,.51,random()>.4?'pine':'round',1.21);
+  for(const [x,z] of [[2.27,-5.26],[2.29,-4.66],[1.85,-4.31],[.08,-4.45]])tree(x,z,.51,random()>.4?'pine':'round',1.21);
   // Northern terrace path with a small rail at the edge.
-  line([[.29,1.23,-4.85],[.88,1.23,-4.32],[1.7,1.23,-4.41],[1.93,1.23,-4.93]],M.road,.115);
+  ribbon(new THREE.CatmullRomCurve3([[.29,1.216,-4.85],[.88,1.216,-4.32],[1.7,1.216,-4.41],[1.93,1.216,-4.93]].map(p=>new THREE.Vector3(...p))),.16,M.road,64);
   line([[1.4,1.40,-3.99],[1.9,1.40,-4.03],[2.46,1.40,-4.26]],M.cream,.016);
   for(let i=0;i<7;i++)cyl(.014,.014,.18,M.cream,1.4+i*.16,1.32,-3.99-i*.036,5);
 
@@ -385,10 +384,8 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     line([[-.53,.26,z],[-.3,.37,z],[0,.415,z],[.3,.37,z],[.53,.26,z]],M.cream,.023,bridge);
     for(let i=0;i<7;i++){const x=-.51+i*.17,y=.24+.15*(1-(x/.54)**2);cyl(.018,.018,.15,M.cream,x,y+.025,z,5,bridge);}
   }
-  house(-3.7,5.08,{w:.38,d:.36,h:.44,roof:M.blueRoof,angle:.3});
-  house(-3.61,5.7,{w:.40,d:.39,h:.38,roof:M.blueRoof,angle:.3});
   house(-1.15,6.25,{w:.37,d:.33,h:.4,roof:M.blueRoof,angle:-.3});
-  tree(-1.3,5.3,.70);tree(-3.65,6.12,.63);tree(-1.82,4.59,.67,'pine');
+  tree(-1.3,5.3,.70);tree(-1.82,4.59,.67,'pine');
   // Lianyungang: harbor cranes and a breakwater beneath green foothills.
   patch(-.81,3.94,.66,.59,M.meadowLight);
   mountain(-1.50,3.41,.45);mountain(-1.87,3.66,.34);
@@ -409,7 +406,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   const sun=mesh(new THREE.TorusGeometry(.17,.024,5,20),M.gold,.79,1.055,2.54);sun.rotation.y=.22;
   for(let i=0;i<12;i++){const a=i/12*6.28;const ray=box(.022,.125,.027,M.gold,.79+Math.sin(a)*.244,1.055+Math.cos(a)*.244,2.54);ray.rotation.z=-a;}
   for(let i=0;i<3;i++){
-    const x=.40+i*.3,z=3.06+i*.05;cyl(.011,.011,.20,M.trunk,x,.70,z,5);
+    const x=.68+i*.3,z=3.06+i*.05;cyl(.011,.011,.20,M.trunk,x,.70,z,5);
     cyl(0,.15,.08,i%2?M.cream:M.coral,x,.84,z,8);
     const chair=box(.105,.025,.22,M.cream,x-.08,.62,z+.09);chair.rotation.x=-.15;
   }
@@ -437,8 +434,8 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   tree(-1.22,2.00,.66);tree(-.54,1.91,.58,'pine');
 
   // Smooth paper road climbs onto the north cape. The coral dashes remain geometry.
-  const roadPoints=[[-2.29,.633,6.31],[-1.5,.633,5.97],[-.57,.633,5.2],[-.26,.633,4.58],[-.04,.633,3.83],[.23,.633,3.2],[.07,.633,2.57],[-.08,.633,1.84],[-.31,.633,1.19],[-.28,.633,.63],[.04,.633,-.03],[.21,.633,-.72],[.06,.633,-1.45],[.06,.633,-2.1],[.43,.66,-2.8],[.56,.87,-3.35],[.61,1.23,-3.99],[.98,1.235,-4.46],[1.43,1.235,-4.68]];
-  const routeCurve=new THREE.CatmullRomCurve3(roadPoints.map(p=>new THREE.Vector3(...p)),false,'catmullrom',.38);
+  const roadPoints=ROAD_POINTS;
+  const routeCurve=createRouteCurve(THREE);
   ribbon(routeCurve,.39,M.ochre,260,-.015);ribbon(routeCurve,.34,M.road,260,.006);
   const routeLength=routeCurve.getLength();
   for(let d=0;d<routeLength;d+=.28){
@@ -455,7 +452,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(vv,3));geo.computeVertexNormals();mesh(geo,M.sand);
   }
   // A tiny, fully modeled blue station wagon.
-  const car = new THREE.Group();car.name='route-car';car.scale.setScalar(1.5);movingRoot.add(car);
+  const car = new THREE.Group();car.name='route-car';car.scale.setScalar(.9);movingRoot.add(car);
   box(.225,.10,.40,M.car,0,.09,0,car);
   box(.203,.10,.225,M.car,0,.18,-.015,car);
   box(.175,.07,.012,M.glass,0,.184,.103,car).rotation.x=-.20;
@@ -494,7 +491,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   }
   // Little paper clouds complete the pop-up silhouette, kept away from city names.
   function cloud(x,y,z,s){const g=new THREE.Group();g.position.set(x,y,z);g.scale.setScalar(s);staticRoot.add(g);for(const [dx,dy,r]of[[-.28,0,.28],[.02,.11,.34],[.3,0,.25]]){const c=ico(r,M.warmWhite,dx,dy,0,1,g);c.scale.set(1,.8,.30);}box(.69,.11,.11,M.warmWhite,.01,-.09,0,g);return g;}
-  cloud(-2.1,2.75,-6.35,.80);cloud(-3.7,1.56,1.3,.65);
+  cloud(-3.7,1.56,1.3,.45);
 
   // Tangible dots pair with readable HTML labels. Both are interactive.
   const cityData = [
@@ -529,6 +526,35 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     c.el=el;c.marker=g;c.halo=halo;c.worldTag=new THREE.Vector3(...c.tag);
   });
 
+  // Reference-led models replace generic filler without changing the driving route.
+  const additions=placeLandmarks(THREE,[...createQingdaoLandmarks(THREE),...createWeihaiLandmarks(THREE),...createStopoverLandmarks(THREE)],staticRoot);
+  staticRoot.updateMatrixWorld(true);
+  const existing=[
+    ['qd_zhanqiao','栈桥 · 回澜阁','qingdao',pavilion],
+    ['qd_st_michaels','圣弥厄尔教堂','qingdao',cathedral],
+    ['qd_mayfour_square','五四广场 · 五月的风','qingdao',mayWind],
+    ['wh_happiness_gate','幸福门','weihai',gate],
+    ['rz_lighthouse','日照灯塔','rizhao',rzLight],
+    ['wh_zhongjiang_pagoda','中江塔','wuhu',pagoda],
+  ].map(([id,name,city,group])=>{const bounds=new THREE.Box3().setFromObject(group);return{id,name,city,group,bounds,focus:bounds.getCenter(new THREE.Vector3()).toArray(),optional:false}});
+  const landmarkRegistry=[...existing,...additions];
+  const detailRoot=new THREE.Group();detailRoot.name='landmark-detail';detailRoot.visible=false;world.add(detailRoot);
+  const detailPreviews=new Map();
+  landmarkRegistry.forEach(landmark=>{
+    const preview=landmark.group.clone(true);
+    preview.traverse(o=>{if(o.isMesh)o.geometry=o.geometry.clone()});
+    preview.matrixAutoUpdate=false;preview.matrix.copy(landmark.group.matrixWorld);preview.visible=false;
+    detailRoot.add(preview);detailPreviews.set(landmark.id,preview);
+  });
+  const landmarkTargets=[];
+  const hitMaterial=new THREE.MeshBasicMaterial({visible:false});materialCache.set('landmark-hit-target',hitMaterial);
+  landmarkRegistry.forEach(landmark=>{
+    const size=landmark.bounds.getSize(new THREE.Vector3());
+    const target=new THREE.Mesh(new THREE.BoxGeometry(size.x,Math.max(.12,size.y),size.z),hitMaterial);
+    target.position.fromArray(landmark.focus);target.userData.landmarkId=landmark.id;movingRoot.add(target);landmarkTargets.push(target);
+  });
+  scene.userData.landmarks=landmarkRegistry.map(({id,name,city,optional,bounds})=>({id,name,city,optional,bounds:{min:bounds.min.toArray(),max:bounds.max.toArray()}}));
+
   // Merge immutable paper pieces by material: hundreds of small details, few draw calls.
   staticRoot.updateMatrixWorld(true);
   const batches=new Map();
@@ -548,7 +574,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
 
   let selected='weihai',motion=!reducedMotion,disposed=false,width=1,height=1,raf=0,lastTime=0,time=0;
   let cameraYaw=0,cameraPitch=0,targetYaw=0,targetPitch=0,drag=null,dragged=false,visible=true;
-  let carProgress=0,targetCarProgress=0,carDirection=1,entry=null;
+  let carProgress=0,targetCarProgress=0,carDirection=1,entry=null,focusedLandmark=null;
   const cityProgress=Object.fromEntries(cityData.map(c=>{let best=0,dist=Infinity;const pos=new THREE.Vector3(...c.p);for(let i=0;i<=600;i++){const t=i/600,d=routeCurve.getPointAt(t).distanceToSquared(pos);if(d<dist){dist=d;best=t;}}return[c.id,best]}));
   const routeFocus=new THREE.Group();routeFocus.name='day-route-highlight';movingRoot.add(routeFocus);
   const focusMat=new THREE.MeshBasicMaterial({color:'#b95e3e',toneMapped:false});materialCache.set('day-route-focus',focusMat);
@@ -558,9 +584,9 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     const from=cityProgress[fromId],to=cityProgress[toId];if(from===undefined||to===undefined)return;finishEntry();
     routeFocus.traverse(o=>{if(o.isMesh)o.geometry.dispose()});routeFocus.clear();
     if(Math.abs(to-from)>.005){
-      const pts=Array.from({length:72},(_,i)=>{const p=routeCurve.getPointAt(from+(to-from)*i/71);p.y+=.065;return p;});
-      const segment=new THREE.CatmullRomCurve3(pts);ribbon(segment,.18,focusMat,96,.012,routeFocus);
-      for(const at of [.34,.74]){const t=from+(to-from)*at,p=routeCurve.getPointAt(t),v=routeCurve.getTangentAt(t).multiplyScalar(to>from?1:-1);const arrow=mesh(new THREE.ConeGeometry(.105,.26,3),focusMat,p.x,p.y+.09,p.z,routeFocus);arrow.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3(v.x,0,v.z).normalize());}
+      const pts=Array.from({length:72},(_,i)=>{const p=routeCurve.getPointAt(from+(to-from)*i/71);p.y+=.012;return p;});
+      const segment=new THREE.CatmullRomCurve3(pts);ribbon(segment,.12,focusMat,96,.006,routeFocus);
+      for(const at of [.34,.74]){const t=from+(to-from)*at,p=routeCurve.getPointAt(t),v=routeCurve.getTangentAt(t).multiplyScalar(to>from?1:-1);const arrow=mesh(new THREE.ConeGeometry(.05,.14,3),focusMat,p.x-v.z*.23,p.y+.06,p.z+v.x*.23,routeFocus);arrow.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3(v.x,0,v.z).normalize());}
     }
     carProgress=from;setDestination(toId);
   }
@@ -569,28 +595,28 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   // Standing on the paper road beside each city, facing its modeled landmark.
   // City changes jump between safe viewpoints instead of flying through buildings.
   const immersiveViews={
-    wuhu:{eye:[-.9,1.43,7],focus:[-2.05,1.75,5.45],ground:.59},
-    lianyungang:{eye:[.2,1.43,5],focus:[1.66,.98,4.04],ground:.59},
-    rizhao:{eye:[-.15,1.43,3.65],focus:[1.10,1.34,1.83],ground:.59},
-    qingdao:{eye:[.2,1.43,1.9],focus:[1.25,1.25,.32],ground:.59},
-    weihai:{eye:[1.43,2.05,-3.4],focus:[1.66,2.08,-5.22],ground:1.21},
+    wuhu:{eye:[.9,2.4,7.3],focus:[-2.05,1.1,5.45],ground:.59},
+    lianyungang:{eye:[.8,2.4,5.9],focus:[-1.4,.98,3.9],ground:.59},
+    rizhao:{eye:[1.4,2.5,4.1],focus:[-1.0,1.05,2.1],ground:.59},
+    qingdao:{eye:[3.25,3.2,3.7],focus:[-.8,1.15,-.65],ground:.59},
+    weihai:{eye:[3.4,3.8,-2.3],focus:[-.4,1.4,-5.4],ground:1.21},
   };
   const immersiveEye=new THREE.Vector3(),immersiveDirection=new THREE.Vector3(),immersiveTarget=new THREE.Vector3();
   const baseCamera=new THREE.Vector3(5.7,23.8,21.8),lookAt=new THREE.Vector3(0,.48,-.05);
   function finishEntry(){
-    if(!entry)return;entry=null;immersiveCamera.fov=60;immersiveCamera.updateProjectionMatrix();
+    if(!entry)return;entry=null;immersiveCamera.fov=width/height<1?68:60;immersiveCamera.updateProjectionMatrix();
     immersiveCamera.userData.transitioning=false;immersiveCamera.userData.transitionProgress=1;
   }
-  function yawLimit(){return mode==='immersive'?.68:.25;}
+  function yawLimit(){return mode==='immersive'?.42:.25;}
   function positionCamera(){
     if(mode==='immersive'){
-      const view=immersiveViews[selected];
-      camera.userData.focusCity=selected;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
+      const view=focusedLandmark?landmarkView(focusedLandmark):immersiveViews[selected];
+      camera.userData.focusCity=focusedLandmark?.city||selected;camera.userData.focusLandmark=focusedLandmark?.id||null;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
       if(entry){
         const progress=Math.min(1,entry.elapsed/1.15),ease=progress*progress*(3-2*progress);
         camera.position.copy(entry.eye).lerp(immersiveEye.fromArray(view.eye),ease);
         immersiveTarget.copy(entry.focus).lerp(immersiveDirection.fromArray(view.focus),ease);camera.lookAt(immersiveTarget);
-        camera.fov=THREE.MathUtils.lerp(entry.fov,60,ease);camera.updateProjectionMatrix();
+        camera.fov=THREE.MathUtils.lerp(entry.fov,width/height<1?68:60,ease);camera.updateProjectionMatrix();
         camera.userData.transitioning=true;camera.userData.transitionProgress=progress;camera.updateMatrixWorld(true);return;
       }
       camera.userData.transitioning=false;camera.userData.transitionProgress=1;immersiveEye.fromArray(view.eye);
@@ -599,7 +625,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
       immersiveDirection.y+=cameraPitch*immersiveDirection.length();
       immersiveTarget.copy(immersiveEye).add(immersiveDirection);
       camera.position.copy(immersiveEye);camera.lookAt(immersiveTarget);
-      camera.userData.focusCity=selected;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
+      camera.userData.focusCity=focusedLandmark?.city||selected;camera.userData.focusLandmark=focusedLandmark?.id||null;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
       camera.updateMatrixWorld(true);return;
     }
     const offset=baseCamera.clone();if(width/height>1.75)offset.x=12;else if(width/height<.95)offset.x=2.4;offset.applyAxisAngle(new THREE.Vector3(0,1,0),cameraYaw);offset.y+=cameraPitch*10;camera.position.copy(offset);camera.lookAt(lookAt);camera.updateMatrixWorld(true);
@@ -611,24 +637,17 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     const vertical=aspect<.8?16.65:aspect<1.05?16.0:aspect>1.75?14.6:15.4;
     // Projected bounds include the rings and elevated lighthouse; narrow views remain uncut.
     const halfH=Math.max(vertical/2,(aspect<.95?6.2:7.0)/aspect)*(width<320?1.18:width<600?1.10:1),halfW=halfH*aspect;
-    overviewCamera.left=-halfW;overviewCamera.right=halfW;overviewCamera.top=halfH;overviewCamera.bottom=-halfH;overviewCamera.updateProjectionMatrix();immersiveCamera.aspect=aspect;immersiveCamera.updateProjectionMatrix();positionCamera();render(0);
+    overviewCamera.left=-halfW;overviewCamera.right=halfW;overviewCamera.top=halfH;overviewCamera.bottom=-halfH;overviewCamera.updateProjectionMatrix();immersiveCamera.aspect=aspect;immersiveCamera.fov=aspect<1?68:60;immersiveCamera.updateProjectionMatrix();positionCamera();render(0);
   }
   function updateLabels(){
-    cityData.forEach(c=>{c.el.style.display=mode==='immersive'&&c.id!==selected?'none':'';});
-    if(mode==='immersive'){
-      const c=cityData.find(c=>c.id===selected);
-      const halfW=(c.el.offsetWidth||140)/2;
-      c.el.style.left=`${width<600?Math.min(width/2,halfW+14):width/2}px`;
-      c.el.style.top=`${height-36}px`;c.el.style.zIndex='2';return;
-    }
-    const items=cityData.map(c=>{projected.copy(c.worldTag).applyMatrix4(world.matrixWorld).project(camera);const halfW=(c.el.offsetWidth||80)/2+5,halfH=Math.max(44,c.el.offsetHeight||44)/2;return{c,x:Math.max(halfW,Math.min(width-halfW,(projected.x*.5+.5)*width)),y:(-projected.y*.5+.5)*height,halfH,depth:projected.z}}).sort((a,b)=>a.y-b.y);
-    const top=height<420?63:57,bottom=height-14,gap=5;
-    for(let i=0;i<items.length;i++){const item=items[i];item.y=Math.max(top+item.halfH,Math.min(bottom-item.halfH,item.y));if(i){const p=items[i-1];item.y=Math.max(item.y,p.y+p.halfH+item.halfH+gap);}}
-    for(let i=items.length-1;i>=0;i--){const item=items[i];if(i===items.length-1)item.y=Math.min(item.y,bottom-item.halfH);else{const next=items[i+1];item.y=Math.min(item.y,next.y-next.halfH-item.halfH-gap);}}
-    for(const item of items){item.c.el.style.left=`${item.x}px`;item.c.el.style.top=`${item.y}px`;item.c.el.style.zIndex=String(Math.round((1-item.depth)*100));}
+    cityData.forEach(c=>{c.el.style.display=focusedLandmark||c.id!==selected?'none':'';});
+    if(focusedLandmark)return;
+    const c=cityData.find(c=>c.id===selected),halfW=(c.el.offsetWidth||140)/2;
+    c.el.style.left=`${Math.min(width/2,halfW+14)}px`;
+    c.el.style.top=`${height-42}px`;c.el.style.zIndex='2';
   }
   function selectCity(id){
-    if(!cityData.some(c=>c.id===id))return;const changed=selected!==id;selected=id;
+    if(!cityData.some(c=>c.id===id))return;const changed=selected!==id;selected=id;focusedLandmark=null;
     if(changed&&mode==='immersive'){finishEntry();cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;cancel();}
     cityData.forEach(c=>{const active=c.id===id;c.el.dataset.selected=String(active);c.el.setAttribute('aria-pressed',String(active));c.marker.scale.setScalar(active?1.16:1);c.halo.visible=active;});
     if(!motion||mode==='immersive')render(0);
@@ -636,6 +655,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   function setViewMode(value){
     if(value!=='immersive'&&value!=='overview')return;
     if(value===mode)return;
+    focusedLandmark=null;
     const entering=value==='immersive'&&!reducedMotion;
     finishEntry();cancel();
     if(entering){
@@ -646,11 +666,25 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     }
     mode=value;camera=mode==='immersive'?immersiveCamera:overviewCamera;cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;render(0);
   }
+  function landmarkView(landmark){
+    const size=landmark.bounds.getSize(new THREE.Vector3()),focus=landmark.focus;
+    const radius=Math.max(size.x,size.z,size.y,.55);
+    const distance=radius*(width/height<.85?2.4:1.95);
+    return {focus,eye:[focus[0]+distance*.76,focus[1]+distance*.85,focus[2]+distance],ground:landmark.bounds.min.y};
+  }
+  function focusLandmark(id){
+    const landmark=landmarkRegistry.find(item=>item.id===id);if(!landmark)return;
+    finishEntry();cancel();focusedLandmark=landmark;mode='immersive';camera=immersiveCamera;
+    cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;render(0);
+    container.dispatchEvent(new window.CustomEvent('landmarkselect',{detail:{id:landmark.id,name:landmark.name,city:landmark.city,optional:landmark.optional}}));
+  }
   function render(dt){
+    staticRoot.visible=!focusedLandmark;movingRoot.visible=!focusedLandmark;detailRoot.visible=Boolean(focusedLandmark);
+    detailPreviews.forEach((preview,id)=>{preview.visible=id===focusedLandmark?.id});
     if(entry){entry.elapsed+=dt;if(entry.elapsed>=1.15)finishEntry();}
     cameraYaw+=(targetYaw-cameraYaw)*(reducedMotion?1:.09);cameraPitch+=(targetPitch-cameraPitch)*(reducedMotion?1:.09);positionCamera();
     if(motion&&dt){time+=dt;carProgress+=(targetCarProgress-carProgress)*Math.min(1,dt*2.8);if(Math.abs(targetCarProgress-carProgress)<.0002)carProgress=targetCarProgress;}
-    const cp=routeCurve.getPointAt(carProgress),ct=routeCurve.getTangentAt(carProgress);car.position.copy(cp);car.position.y+=.05;carHalo.position.set(cp.x,cp.y+.10,cp.z);car.rotation.y=Math.atan2(ct.x*carDirection,ct.z*carDirection);
+    const cp=routeCurve.getPointAt(carProgress),ct=routeCurve.getTangentAt(carProgress);car.position.copy(cp);car.position.y+=.018;carHalo.position.set(cp.x,cp.y+.025,cp.z);car.rotation.set(-Math.atan2(ct.y*carDirection,Math.hypot(ct.x,ct.z)),Math.atan2(ct.x*carDirection,ct.z*carDirection),0,'YXZ');
     boats.forEach((b,i)=>{b.rotation.z=motion?Math.sin(time*.8+i*1.3)*.025:0;b.position.y=.43+(motion?Math.sin(time*1.1+i)*.012:0);});
     gulls.forEach((g,i)=>{g.rotation.z=motion?Math.sin(time*.45+i)*.045:0;});
     cityData.forEach(c=>{if(c.id===selected&&motion)c.halo.scale.setScalar(1+Math.sin(time*2)*.075);});
@@ -671,7 +705,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     if(Math.abs(dx)+Math.abs(dy)>6)dragged=true;
     if(dragged){targetYaw=THREE.MathUtils.clamp(drag.yaw-dx*(drag.isTouch?.0025:.0015),-yawLimit(),yawLimit());if(!drag.isTouch)targetPitch=THREE.MathUtils.clamp(drag.pitch+dy*.001,mode==='immersive'?-.22:-.14,mode==='immersive'?.22:.14);renderer.domElement.style.cursor='grabbing';}
   }
-  function pick(x,y){const r=renderer.domElement.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects(targets,false)[0];if(hit){selectCity(hit.object.userData.cityId);onSelect(hit.object.userData.cityId);}}
+  function pick(x,y){if(focusedLandmark)return;const r=renderer.domElement.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects([...targets,...landmarkTargets],false)[0];if(hit){const landmarkId=hit.object.userData.landmarkId;if(landmarkId){focusLandmark(landmarkId);return;}selectCity(hit.object.userData.cityId);onSelect(hit.object.userData.cityId);}}
   function down(e){
     if(e.pointerType==='touch'||e.button!==0||drag||touchBlocked)return;
     const target=e.target===renderer.domElement?renderer.domElement:e.target.closest?.('.coastal-city-tag');
@@ -730,6 +764,9 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   requestAnimationFrame(()=>{if(!disposed)onReady({renderer:'three.js',objects:scene.children.length,triangles:renderer.info.render.triangles});});
   return {
     selectCity,
+    focusLandmark,
+    getLandmarks(){return landmarkRegistry.map(({id,name,city,optional})=>({id,name,city,optional}))},
+    clearLandmark(){focusedLandmark=null;cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;render(0)},
     setDestination,
     setDayRoute,
     setViewMode,
@@ -738,7 +775,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     reset(){finishEntry();cancel();targetYaw=0;targetPitch=0;if(reducedMotion){cameraYaw=0;cameraPitch=0;}render(0);},
     dispose(){
       disposed=true;entry=null;cancelAnimationFrame(raf);resizeObserver.disconnect();observer?.disconnect();cancel();container.removeEventListener('pointerdown',down);container.removeEventListener('lostpointercapture',pointerCancel);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',pointerCancel);window.removeEventListener('touchstart',touchStart);container.removeEventListener('touchmove',touchMove);window.removeEventListener('touchend',touchEnd);window.removeEventListener('touchcancel',touchCancel);container.removeEventListener('click',preventDragClick,true);
-      scene.traverse(o=>{if(o.isMesh)o.geometry.dispose();});new Set([...materialCache.values(),shadow.material]).forEach(m=>m.dispose());renderer.domElement.removeEventListener('webglcontextlost',contextLost);renderer.dispose();renderer.domElement.remove();labels.remove();style.remove();
+      const usedMaterials=new Set([...materialCache.values(),shadow.material]);scene.traverse(o=>{if(o.isMesh){o.geometry.dispose();for(const material of Array.isArray(o.material)?o.material:[o.material])usedMaterials.add(material)}});usedMaterials.forEach(m=>m.dispose());renderer.domElement.removeEventListener('webglcontextlost',contextLost);renderer.dispose();renderer.domElement.remove();labels.remove();style.remove();
     },
   };
 }

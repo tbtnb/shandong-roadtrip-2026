@@ -1,0 +1,142 @@
+{
+  "totalTriangles": 13356,
+  "totalMeshes": 76,
+  "assets": [
+    {
+      "id": "lyg_democracy_road",
+      "city": "lianyungang",
+      "triangles": 1288,
+      "meshes": 7,
+      "footprint": [
+        0.9197373986244202,
+        0.5899999737739563
+      ],
+      "height": 0.7080143094062805,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "lyg_yanhe_lane",
+      "city": "lianyungang",
+      "triangles": 2588,
+      "meshes": 10,
+      "footprint": [
+        0.9998292922973633,
+        0.6800000071525574
+      ],
+      "height": 0.4699999988079071,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "rz_wanpingkou",
+      "city": "rizhao",
+      "triangles": 708,
+      "meshes": 8,
+      "footprint": [
+        1.0292672514915466,
+        0.7300000190734863
+      ],
+      "height": 0.3840000033378601,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "rz_dongyi_town",
+      "city": "rizhao",
+      "triangles": 1220,
+      "meshes": 9,
+      "footprint": [
+        0.9782398045063019,
+        0.6200000047683716
+      ],
+      "height": 0.5463637113571167,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "ha_li_canal",
+      "city": "huaian",
+      "triangles": 2172,
+      "meshes": 10,
+      "footprint": [
+        0.8500000238418579,
+        0.699999988079071
+      ],
+      "height": 0.9789999723434448,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "ha_yumatou",
+      "city": "huaian",
+      "triangles": 2324,
+      "meshes": 12,
+      "footprint": [
+        1.0378761291503906,
+        0.6800000071525574
+      ],
+      "height": 0.526363730430603,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "ha_hexia_town",
+      "city": "huaian",
+      "triangles": 2120,
+      "meshes": 9,
+      "footprint": [
+        0.8500000238418579,
+        0.699999988079071
+      ],
+      "height": 0.4615591764450073,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    },
+    {
+      "id": "wuhu_riverside",
+      "city": "wuhu",
+      "triangles": 936,
+      "meshes": 11,
+      "footprint": [
+        1,
+        0.7400000095367432
+      ],
+      "height": 0.47236374020576477,
+      "ground": 0,
+      "center": [
+        0,
+        0
+      ],
+      "nonFiniteCoordinates": 0
+    }
+  ]
+}

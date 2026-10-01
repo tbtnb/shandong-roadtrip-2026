@@ -1,0 +1,186 @@
+{
+  "checkedAt": "2026-10-01T08:52:22.023Z",
+  "source": "createWeihaiLandmarks(THREE) runtime traversal",
+  "totalTriangles": 8208,
+  "totalMeshes": 436,
+  "checks": [
+    "12 required ids in contract order",
+    "local y=0 and x/z centered",
+    "footprints 0.5–1.0, heights 0.3–1.0",
+    "finite positions/normals",
+    "all MeshStandardMaterial flatShading FrontSide",
+    "no degenerate triangles",
+    "bounds metadata matches geometry",
+    "combined triangle budget <18000"
+  ],
+  "assets": [
+    {
+      "id": "wh_banyue_bay",
+      "name": "半月湾",
+      "triangles": 398,
+      "meshes": 19,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.344,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "草伞、弧形沙岸与离岸岛礁的组合示意，非测绘地形。"
+    },
+    {
+      "id": "wh_maotou_hill",
+      "name": "猫头山",
+      "triangles": 498,
+      "meshes": 26,
+      "footprint": [
+        0.975813,
+        0.86
+      ],
+      "height": 0.472557,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "按照片概括低矮岩岬、松树与观景路径；不声称山体形状或步道位置精确。"
+    },
+    {
+      "id": "wh_international_beach",
+      "name": "国际海水浴场",
+      "triangles": 290,
+      "meshes": 17,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.343,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "海滩与日落观海活动意象，遮阳伞为风格化辅助元素。"
+    },
+    {
+      "id": "wh_torch_eighth",
+      "name": "火炬八街",
+      "triangles": 760,
+      "meshes": 50,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.524,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "通海下坡路、白楼与彩色屋顶；房屋数量、立面与坡度已缩尺概括。"
+    },
+    {
+      "id": "wh_liugong_island",
+      "name": "刘公岛",
+      "triangles": 600,
+      "meshes": 41,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.405,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "以已查看的港口照片提炼岛岸、码头和坡屋顶建筑；非具体甲午史迹建筑复刻。"
+    },
+    {
+      "id": "wh_naxianghai",
+      "name": "那香海",
+      "triangles": 600,
+      "meshes": 23,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.315,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "结合授权草顶亭照片与私人浅水照片的海滩组合；棚亭位置已概括。"
+    },
+    {
+      "id": "wh_bluewis",
+      "name": "布鲁维斯号",
+      "triangles": 760,
+      "meshes": 44,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.581593,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "保留照片中黑色货轮、锈红水线、四座吊机与艉楼；不含船名纹理或精确船体测量。"
+    },
+    {
+      "id": "wh_hanlefang",
+      "name": "韩乐坊",
+      "triangles": 948,
+      "meshes": 59,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.495,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "照片可辨认的绿瓦牌楼与两列夜市摊位；招牌纹样与街道尺寸简化。"
+    },
+    {
+      "id": "wh_weihai_park",
+      "name": "威海公园",
+      "triangles": 840,
+      "meshes": 38,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.6875,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "照片中的两手巨型画框及海滨栏杆；手指与金属雕塑纹路已几何化。"
+    },
+    {
+      "id": "wh_yuehai_park",
+      "name": "悦海公园",
+      "triangles": 1690,
+      "meshes": 66,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.872,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "据照片保留白色渐缩塔身、双层栏台、灯室和塔旁草顶亭；未采用参考板的红色塔顶。"
+    },
+    {
+      "id": "wh_oulefang",
+      "name": "欧乐坊",
+      "triangles": 480,
+      "meshes": 29,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.396,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "按现有清悠面馆实拍提炼玻璃门、横招牌和门前摊位；仅餐饮街区示意，不声称欧乐坊入口复刻。"
+    },
+    {
+      "id": "wh_city_museum",
+      "name": "威海市博物馆",
+      "triangles": 344,
+      "meshes": 24,
+      "footprint": [
+        0.96,
+        0.86
+      ],
+      "height": 0.365,
+      "groundY": 0,
+      "degenerateTriangles": 0,
+      "simplification": "依据现有室内石质题字墙、服务台与盖章桌做剖面示意；不宣称文化艺术中心外立面精确复刻，几何符号不是可读题字。"
+    }
+  ]
+}

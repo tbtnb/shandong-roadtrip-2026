@@ -1,0 +1,151 @@
+{
+  "assets": 11,
+  "triangles": 10108,
+  "anchor": "XZ centered, y=0, group.position=0 and scale=1",
+  "materials": "MeshStandardMaterial, flatShading, FrontSide",
+  "records": [
+    {
+      "id": "qd_zhongshan_road",
+      "name": "中山路",
+      "triangles": 896,
+      "meshes": 59,
+      "footprint": [
+        0.96,
+        0.72
+      ],
+      "height": 0.592,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_badaguan",
+      "name": "八大关",
+      "triangles": 920,
+      "meshes": 57,
+      "footprint": [
+        0.96,
+        0.7754
+      ],
+      "height": 0.8677,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_second_beach",
+      "name": "第二海水浴场",
+      "triangles": 636,
+      "meshes": 35,
+      "footprint": [
+        0.96,
+        0.7174
+      ],
+      "height": 0.4589,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_olympic_sailing",
+      "name": "奥帆中心",
+      "triangles": 476,
+      "meshes": 25,
+      "footprint": [
+        0.96,
+        0.7047
+      ],
+      "height": 0.5811,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_fushan_bay",
+      "name": "浮山湾",
+      "triangles": 2204,
+      "meshes": 161,
+      "footprint": [
+        0.96,
+        0.7225
+      ],
+      "height": 0.7007,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_signal_hill",
+      "name": "信号山",
+      "triangles": 956,
+      "meshes": 56,
+      "footprint": [
+        0.7379,
+        0.6548
+      ],
+      "height": 0.94,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_xiaoyu_hill",
+      "name": "小鱼山",
+      "triangles": 712,
+      "meshes": 40,
+      "footprint": [
+        0.8447,
+        0.7321
+      ],
+      "height": 0.94,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_laoshan",
+      "name": "崂山",
+      "triangles": 1136,
+      "meshes": 77,
+      "footprint": [
+        0.96,
+        0.7745
+      ],
+      "height": 0.8946,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_underwater",
+      "name": "青岛海底世界",
+      "triangles": 528,
+      "meshes": 27,
+      "footprint": [
+        0.96,
+        0.7385
+      ],
+      "height": 0.8647,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_minjiang_road",
+      "name": "闽江路餐饮街区",
+      "triangles": 632,
+      "meshes": 40,
+      "footprint": [
+        0.96,
+        0.7518
+      ],
+      "height": 0.4973,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    },
+    {
+      "id": "qd_yunxiao_road",
+      "name": "云霄路餐饮街区",
+      "triangles": 1012,
+      "meshes": 63,
+      "footprint": [
+        0.96,
+        0.7144
+      ],
+      "height": 0.4833,
+      "degenerate": 0,
+      "inwardMeshes": 0
+    }
+  ]
+}

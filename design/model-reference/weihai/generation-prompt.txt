@@ -1,0 +1,26 @@
+Built-in image_gen; generated 2026-10-01 08:40:28Z; transparent_background=false.
+Original: /Users/bit_1/.codex/generated_images/01a0f69d-7078-74b1-acef-aeef7ebe03f7/exec-e17115a0-31ae-4b2f-9bc7-c2fb9dc96789.png
+
+Use case: stylized-concept
+Asset type: low-poly 3D landmark model reference board for a Three.js travel map
+Primary request: Create one cohesive 4-by-3 grid design board of twelve miniature Weihai landmark dioramas, in this exact reading order from top-left to bottom-right:
+1) Banyue Bay beach: crescent sand, three straw parasols, small offshore rocky islet;
+2) Maotou Hill: rugged twin sea cliffs, pine trees, tiny lookout path;
+3) Weihai International Bathing Beach: broad sandy beach, layered shallow waves, two simple coral-and-cream beach umbrellas;
+4) Torch 8th Street: a steep road descending toward the sea, flanked by white and pastel coral/blue low-rise houses;
+5) Liugong Island history: compact island cliff with pines and a restrained red-roof historic coastal courtyard, an interpretive ensemble rather than a claimed exact replica;
+6) Naxianghai: clear shallow-water beach, gentle surf bands, a few colorful swim rings and a simple white sculptural canopy;
+7) BLUEWAYS ship: a large dark navy and rust-coral grounded cargo ship listing slightly, four cargo cranes, simplified readable ship silhouette;
+8) Hanlefang: traditional green-roof market gate framing two rows of warm-lit night-market stalls;
+9) Weihai Park: monumental bronze-green picture-frame sculpture held by two oversized hands, on a sea promenade;
+10) Yuehai Park: tall tapered cream cylindrical lighthouse with two ring balconies and a small grass-roof pavilion at its base;
+11) Oulefang: compact lively food-street block with a broad entrance arch, small shopfronts and canopy stalls, no legible commercial signs;
+12) Weihai City Museum: restrained modern cultural-building massing with a broad pale stone entrance wall and stepped volumes, clearly a conceptual museum marker rather than an exact architectural replica.
+Scene/backdrop: warm off-white paper studio background, each miniature centered on its own thin irregular cream paper plinth with generous spacing, no shared landscape, no labels.
+Style/medium: polished low-poly 3D paper-clay maquette, faceted geometry, crisp silhouettes, game-ready shape language, orthographic isometric three-quarter view, consistent scale and camera angle.
+Lighting/mood: soft daylight from upper left, gentle ambient occlusion, quiet premium travel-guide feel.
+Color palette: creamy white, coral, marine blue-green, sage green, warm sand, muted bronze, very limited charcoal and rust for the ship.
+Materials/textures: matte paper and chalky clay, subtle cut-paper edges, flat shaded facets, no gloss.
+Composition/framing: landscape board, 4 columns x 3 rows, all twelve dioramas fully visible and isolated, identical camera and lighting, each icon occupying a similar visual area.
+Constraints: exactly twelve cells and twelve distinct landmark dioramas; preserve the ordered mapping; modelable shapes; front, side, and top surfaces easy to read; no text, no labels, no people, no cars, no watermark, no logos, no floating parts, no photorealism.
+Avoid: dense background scenery, tiny fussy details, neon overload, realistic photographic water, gradients painted onto objects, buildings that resemble famous landmarks from other cities.

@@ -20,7 +20,7 @@ test('public data does not expose private login workflow or internal file locati
   const raw=fs.readFileSync(`public/data/${path}.json`,'utf8');
   assert.ok(!/\/workspace\/|\/Users\/|access_token|已登录云|researcher|public_link_status|成年男性/.test(raw));
  }
- assert.match(JSON.stringify(data.itineraries),/按一位司机分段规划/);
+ assert.match(JSON.stringify(data.itineraries),/按一位司机安排/);
 });
 
 test('public XHS URLs are parameter-free and do not imply verified direct access',()=>{
