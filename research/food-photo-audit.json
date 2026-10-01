@@ -621,5 +621,221 @@
     "reviewer": "root",
     "method": "逐张打开未经转换的本地原图；对照城市负责人专帖正文及实际平台记录",
     "visual_evidence": "鸡爪、茄子、炒海兔的原拼图和陈家味特色小菜馆文字，对应具名正文；原水印保持。"
+  },
+  "ce8713dbf68cb025323c2d8d83e4dabc88d5706ceb8ccffa864d467247d1f2ac": {
+    "status": "accepted",
+    "id": "qingdao_chunhelou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "原图为春和楼外立面，店名字样与中山路146号蓝门牌可见；这是门店照片，不是菜品照片。"
+  },
+  "f32dfd4d6919e91bd2fd87eb23470219f0f0e32d6bd4deceb753a61422572d89": {
+    "status": "accepted",
+    "id": "qingdao_fuxishan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "红底付喜善朝鲜面门头、86号门牌及13105180036电话可见，与记录对应。"
+  },
+  "870b84f5a950cb49055105e628be15cba691f3f518bd1f12154999a3c7e88f63": {
+    "status": "accepted",
+    "id": "qingdao_yuji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "一碗黄褐色浓汤与汤勺，保留原猫贴纸和文字；与原帖甜沫描述一致，图片本身不证明分店。"
+  },
+  "733677df9ea147e4239a01cf768826d034d968c07d3cfd2586a57f59156abd58": {
+    "status": "accepted",
+    "id": "qingdao_haomeiwei",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "砂锅内有馄饨、紫菜和香菜，与同帖描述对应；店址依靠正文，未从食物图推断。"
+  },
+  "7e004f3a646042cc03c91c5861061660f671f2c8e787fcfaa2f44d76de39d364": {
+    "status": "accepted",
+    "id": "qingdao_wangjie",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "金属托盘上有刷酱鱿鱼串和肉串，与原帖菜品一致；分店依据保留在来源记录。"
+  },
+  "af0e35984ba12381bbf6d3654934d2938387e15131b465c9947d73aedc0558fd": {
+    "status": "accepted",
+    "id": "qingdao_laojimo901",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "纸垫托盘上的裹面刷酱炸串，与具名原帖相符；图片不独立证明分店。"
+  },
+  "1a8be102fc5f671bb70f46c27a78e7b63b5199d6e1e4849e1cd8bedd4ea310d4": {
+    "status": "accepted",
+    "id": "qingdao_wanzhongyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "骨肉、米饭、汤和小菜及餐具标识可见，与万众源午餐原帖对应。"
+  },
+  "09320b78a6b39e7acb71dd2a04e3599d5b19e88da63738d3c947309a5f9f3bab": {
+    "status": "accepted",
+    "id": "weihai_sandian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "四格原拼图为香菜肉菜、茄子、炸肉片和薄土豆片，与原帖四菜描述对应。"
+  },
+  "5831f243b305fcd3981b6abe48f4c9e459780d97fed33ddd29c555e466cba289": {
+    "status": "accepted",
+    "id": "weihai_qunfa",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "夜间粉色QF群发饺子招牌与店内场景明确；作为门店原图使用。"
+  },
+  "e7385cf26d0af6ceb5085dd9033e8c241dc6e48fb0c9028e6b3040f188a899d8": {
+    "status": "accepted",
+    "id": "weihai_quandu",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "保留REC等原拼图文字，上部葱油饼、下部汤碗与正文对应；未从图确认门牌。"
+  },
+  "39b025ab6e86ff5a1ef14d1ec55fdc59f23132864079b2426ae6dcad7a6dd041": {
+    "status": "accepted",
+    "id": "weihai_zhenwei",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "黑石锅汤、米饭和小菜，背景双玩偶，与真味米肠具名原帖的这餐对应。"
+  },
+  "da15989f3677ac2484b917dc42f4f19beea02c81e694aeb15df83fca492e50eb": {
+    "status": "accepted",
+    "id": "weihai_ruojian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "木托盘上三碗不同甜品与小奶壶，与原帖甜品描述相符；不据照片确认当前营业。"
+  },
+  "42ed94161a632e0f64190d742ba01b97f6f0bc8a5c93c105b5cc9f6367da2420": {
+    "status": "accepted",
+    "id": "lyg_xinxingyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "大碗海鲜汤菜、旁边鸡爪与铁板菜，与同一餐的正文菜品对应。"
+  },
+  "71731f828ef121e2e8ca449eb1c11f61358360d66c147cea4ba189c1a8ee54ac": {
+    "status": "accepted",
+    "id": "lyg_dasao",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "主线程逐张打开原始图片，核对已保存的原帖摘要与门店记录；导入时另验哈希和尺寸",
+    "visual_evidence": "两种面食的原拼图带大嫂特色面馆文字，浓卤面与宽面对应正文描述。"
+  },
+  "aafae29b77d411378c28788485cd18a5082bbc645192a6c7770ef60116987fb7": {
+    "status": "accepted",
+    "id": "lyg_qinji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "手持炸饼夹肉与蔬菜，背景有黄色挂件；无店牌，店名依正文匹配。"
+  },
+  "82cb6cc0d66ac49a7b08156929361336787d1c3236c3f9cfff279180160dd56b": {
+    "status": "accepted",
+    "id": "lyg_jianwei",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "原拼图有间味字样及多盘饭菜、烤鱼；保留原水印。"
+  },
+  "dc017a1497660b1886c045a1652fe62c9231b3582e071c03250b7b0d72102acd": {
+    "status": "accepted",
+    "id": "lyg_daguanyun",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "桌上清蒸鱼、贝类、虾、面和汤，与套餐正文相符；店名依订单证据。"
+  },
+  "a40a44014f839d828d9c6adbd0a8eec1ce2aefa4875848804fec5fa4327a1862": {
+    "status": "accepted",
+    "id": "lyg_hongxia",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "右侧大碗汤米线；左侧炸串与后方炒面不归本店。"
+  },
+  "8682e8948b932f288ca5c59a61500eb0f9470de984135a76f1257db1bfceb832": {
+    "status": "accepted",
+    "id": "rz_doufuyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "黄色海鲜豆腐园门头，原石臼市场店及电话13863347216可见。"
+  },
+  "00c1cfbf15e2db481f8aa4d98a907567b36ed7ad3ca9e49a7e3c562b85469439": {
+    "status": "accepted",
+    "id": "rz_linfuji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "锅贴、油条、鸡蛋及肉汤；保留原贴纸，无门牌，分店仍待核。"
+  },
+  "16b57fc03e02bf262785823feb0208c4c15e426dc04b7af8cc6ec2c9c6b20128": {
+    "status": "accepted",
+    "id": "rz_panji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "红底金字潘记手工打面门头、副字次坞打面可见，无街道门牌。"
+  },
+  "7d9c6fa3c26701a88e30498e26e53dc11d48a8ce45cfb90601a6a1e22696bc43": {
+    "status": "accepted",
+    "id": "rz_mianlaoguai",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "白底红字面老怪辣子鸡拌面店牌清晰。"
+  },
+  "0d2b7368d79f053a9b71f0b8d7e4375e0d4fbb7fb2ae5aa757931411bee33167": {
+    "status": "accepted",
+    "id": "rz_laobo",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "白格红字老博菜馆门头，旁有羊棒骨字样，无街道门牌。"
+  },
+  "4fee31ae8a42cdbea47e567aaeba314a9c40a5ba9f255cae83a8e65218e0bdf1": {
+    "status": "accepted",
+    "id": "huaian_penpenxiang",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "两只黑砂锅内粉丝、豆皮、青菜和肉酱，一锅香肠片；旁边串烧与饮品不归本店。"
+  },
+  "c859c13cc7626a283c5d63b248c9f7154b7104a3ec53e72f63759483492df890": {
+    "status": "accepted",
+    "id": "huaian_babaozhou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "青花碗里杂粮粥、豆类与花生清晰，无店牌，依同帖证据匹配。"
+  },
+  "a387e47fbdcc1317f0ad890bd005aa521d07026e8f4c8e3b291b80c98f38a0b2": {
+    "status": "accepted",
+    "id": "huaian_nanyue",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "原拼图上方南岳盖浇面馆店牌，下方汤面与浇头，原贴纸保留。"
+  },
+  "cfae03fcf92073e0826cada83d37a247f39e7c7c17a452ef1e0eecc24b4d4e7d": {
+    "status": "accepted",
+    "id": "huaian_huajie",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "逐张查看本地原始文件并核对源记录的正文、分店边界与图片证据；导入时校验哈希",
+    "visual_evidence": "竹蒸笼中蒸饺、粥和香菜蘸汁，闭合饺子外观不用于判断馅种。"
   }
 }
