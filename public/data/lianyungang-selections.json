@@ -1,0 +1,9 @@
+{
+ "source":"用户上传的四张旅行清单；通过原始封面缩略图匹配并目视核对标题，非按人数推断",
+ "lists":[
+  {"id":"list-1","label":"清单 1","file":"照片 1.jpg","places":["lyg_chenjiawei","lyg_daguanyun","lyg_dasao","lyg_hongxia","lyg_qinji","lyg_suji","lyg_weifanglou","lyg_xinxingyuan","lyg_xufengqin","lyg_yanheyan"]},
+  {"id":"list-2","label":"清单 2","file":"照片 2.jpg","places":["lyg_democracy_road","lyg_chenjiawei","lyg_daguanyun","lyg_dasao","lyg_hongxia","lyg_jianwei","lyg_qinji","lyg_suji","lyg_xianghe","lyg_xufengqin"]},
+  {"id":"list-3","label":"清单 3","file":"照片 3.jpg","places":["lyg_danjie","lyg_dasao","lyg_gucuo","lyg_hongxia","lyg_huanglaotou","lyg_jianwei","lyg_qinji","lyg_qiutian","lyg_suji","lyg_weifanglou","lyg_xianghe","lyg_xiaogu","lyg_xiongdi","lyg_xufengqin","lyg_zhengbing"]},
+  {"id":"list-4","label":"清单 4","file":"照片 4.jpg","places":["lyg_democracy_road","lyg_chenjiawei","lyg_daguanyun","lyg_dasao","lyg_gucuo","lyg_hongxia","lyg_qiutian","lyg_suji","lyg_yanheyan"]}
+ ]
+}

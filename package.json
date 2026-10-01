@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "node scripts/verify-assets.mjs && node scripts/verify-food-assets.mjs && node scripts/verify-editorial.mjs && vite build",
     "preview": "vite preview",
-    "test": "node --test tests/content.test.mjs tests/food-records.test.mjs",
+    "test": "node --test tests/content.test.mjs tests/food-records.test.mjs tests/lianyungang.test.mjs",
     "test:ui": "vitest run --config vitest.config.mjs",
     "test:scene": "node scripts/smoke-scene.mjs && node --test tests/scene-interaction-bounds.test.mjs",
     "check": "npm test && npm run test:ui && npm run test:scene && npm run build",
@@ -18,6 +18,9 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
     "@vitejs/plugin-react": "5.0.4",
+    "gcoord": "1.0.7",
+    "leaflet": "1.9.4",
+    "leaflet.markercluster": "1.5.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "three": "^0.186.1",

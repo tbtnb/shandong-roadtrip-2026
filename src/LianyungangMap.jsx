@@ -1,0 +1,34 @@
+import React,{useEffect,useMemo,useRef,useState} from 'react';
+import L from 'leaflet';
+import 'leaflet.markercluster';
+import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
+import {makeCards} from './collection-model.js';
+import {rankSelections,gcjToWgs} from './lianyungang-model.js';
+import EditorialDetails from './EditorialDetails.jsx';
+import './lianyungang-map.css';
+const B=import.meta.env.BASE_URL;
+const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+export default function LianyungangMap({food,media}){
+ const [selection,setSelection]=useState(null),[locations,setLocations]=useState({}),[error,setError]=useState(''),[minimum,setMinimum]=useState(1),[opened,setOpened]=useState(null),[tileError,setTileError]=useState(false);
+ const mapRoot=useRef(null),map=useRef(null),layer=useRef(null),markers=useRef(new Map()),lastFit=useRef(null);
+ useEffect(()=>{let gone=false;Promise.all(['lianyungang-selections','lianyungang-locations'].map(n=>fetch(`${B}data/${n}.json`).then(r=>{if(!r.ok)throw Error('地图资料暂时无法载入，请刷新重试');return r.json()}))).then(([s,p])=>{if(!gone){setSelection(s);setLocations(p.places)}}).catch(e=>{if(!gone)setError(e.message)});return()=>{gone=true}},[]);
+ const cards=useMemo(()=>makeCards(media,food),[media,food]);
+ const ranked=useMemo(()=>rankSelections(selection?.lists||[],cards).map(p=>({...p,location:locations[p.id],card:p.card?{...p.card,navigation:locations[p.id]}:null})),[selection,cards,locations]);
+ const shown=ranked.filter(p=>p.votes>=minimum),points=shown.filter(p=>p.card&&p.location?.gcj02);
+ useEffect(()=>{if(!mapRoot.current||!selection)return;const m=L.map(mapRoot.current,{scrollWheelZoom:false}).setView([34.62,119.20],12);map.current=m;lastFit.current=null;
+ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'}).on('tileerror',()=>setTileError(true)).on('tileload',()=>setTileError(false)).addTo(m);
+ L.control.scale({imperial:false}).addTo(m);const observer=new ResizeObserver(()=>m.invalidateSize());observer.observe(mapRoot.current);return()=>{observer.disconnect();m.remove();map.current=null}},[!!selection]);
+ useEffect(()=>{const m=map.current;if(!m)return;layer.current?.remove();markers.current.clear();const group=L.markerClusterGroup({maxClusterRadius:48,zoomToBoundsOnClick:false,showCoverageOnHover:false,spiderfyOnMaxZoom:true,spiderfyDistanceMultiplier:1.8,iconCreateFunction:c=>{const children=c.getAllChildMarkers(),best=children.reduce((a,b)=>a.options.priority<b.options.priority?a:b);return L.divIcon({className:'lyg-cluster',html:`${best.options.photoHtml}<b>${best.options.priority}</b><span>+${children.length-1}</span>`,iconSize:[66,58],iconAnchor:[33,58]})}});group.on('clusterclick',e=>{if(m.getZoom()>=18)e.layer.spiderfy();else m.fitBounds(e.layer.getBounds(),{padding:[36,36],maxZoom:Math.min(18,m.getZoom()+3),animate:false})});layer.current=group;
+ for(const p of points){const src=p.card.photo?.url;const photoHtml=src?`<img src="${esc(src.startsWith('http')?src:B+src)}" alt=""/>`:'';const marker=L.marker(gcjToWgs(p.location.gcj02),{title:`${p.number} · ${p.card.name} · ${p.votes}份清单`,alt:`${p.number} · ${p.card.name}，打开详情`,priority:p.number,photoHtml,icon:L.divIcon({className:`lyg-marker votes-${p.votes}`,html:`${photoHtml}<b>${p.number}</b>`,iconSize:[54,58],iconAnchor:[27,58]})}).on('add',e=>e.target.getElement()?.setAttribute('aria-label',`${p.number} · ${p.card.name}，打开详情`)).bindTooltip(`${p.number} · ${esc(p.card.name)}`,{direction:'top',offset:[0,-55]}).on('click',()=>setOpened(p.card));group.addLayer(marker);markers.current.set(p.id,marker)}m.addLayer(group);if(points.length&&lastFit.current!==minimum){m.fitBounds(group.getBounds(),{padding:[48,48],maxZoom:14,animate:false});lastFit.current=minimum}
+ return()=>group.remove();
+ },[ranked,minimum,!!selection]);
+ function locate(p){const marker=markers.current.get(p.id);if(marker){layer.current.zoomToShowLayer(marker,()=>marker.openTooltip());mapRoot.current?.scrollIntoView({block:'center',behavior:'smooth'})}}
+ if(error)return <p role="alert">{error}</p>;if(!selection)return <p role="status">正在展开连云港地图…</p>;
+ return <section className="lyg-page"><header className="lyg-heading"><div><p className="eyebrow">OUR LIANYUNGANG / 四份心愿清单</p><h1>连云港，先去这里。</h1><p>把大家选中的地方，放回真实的城市地图。</p></div><div className="lyg-total"><strong>{ranked.length}</strong><span>个想去的地方</span></div></header>
+ <div className="lyg-toolbar"><div role="group" aria-label="按重叠次数筛选">{[[1,'全部 20 个'],[3,'优先去 · 3–4 份'],[4,'都选了 · 4 份']].map(([n,title])=><button key={n} aria-pressed={minimum===n} onClick={()=>setMinimum(n)}>{title}</button>)}</div><button onClick={()=>{if(layer.current?.getLayers().length)map.current?.fitBounds(layer.current.getBounds(),{padding:[48,48],maxZoom:14,animate:false})}}>看全部位置</button></div>
+ <p className="lyg-help">序号越小，重复入选越多；相同次数同优先级。点击小图或序号看详情，带「+」的标记可展开相邻地点。</p>
+ <div className="lyg-layout"><div className="lyg-map-shell"><div ref={mapRoot} className="lyg-map" aria-label="连云港心愿地点地图"/>{tileError&&<p className="lyg-map-warning" role="status">底图暂未完整载入，仍可从右侧清单查看详情及高德位置。</p>}<p className="lyg-map-caption">拖动浏览 · 双击或使用 + / − 放大 · 标记位置来自公开地图</p></div><div className="lyg-list" aria-label="按优先级排列的地点">{shown.map(p=><article key={p.id} className={`lyg-item votes-${p.votes}`}><button className="lyg-item-main" disabled={!p.card} onClick={()=>setOpened(p.card)}><span className="lyg-number">{p.number}</span>{p.card?.photo?.url&&<img src={p.card.photo.url.startsWith('http')?p.card.photo.url:B+p.card.photo.url} alt="" loading="lazy"/>}<span><strong>{p.card?.name||'正在载入地点…'}</strong><small>{p.votes} / 4 份清单选中</small><em>{p.location?.branch||p.card?.raw?.branch||p.card?.address}</em></span></button><div className="lyg-item-foot"><span>{p.location?.note||(!p.location?.gcj02?'位置待核实':'点击查看照片与介绍')}</span>{p.location?.gcj02&&<button onClick={()=>locate(p)} aria-label={`定位${p.card?.name}`}>定位 ↗</button>}</div></article>)}</div></div>
+ <details className="lyg-audit"><summary>看看每份清单选了什么，以及编号规则</summary><p>按入选清单数从多到少编号。同票以首次出现在上传清单中的顺序排列，属于同一优先级；编号不是建议驾车顺序。</p><div className="lyg-table-scroll"><table><thead><tr><th>地点</th>{selection.lists.map(s=><th key={s.id}>{s.label}</th>)}</tr></thead><tbody>{ranked.map(p=><tr key={p.id}><th>{p.number}. {p.card?.name||p.id}</th>{selection.lists.map(s=><td key={s.id}>{p.lists.includes(s.id)?'●':'—'}</td>)}</tr>)}</tbody></table></div><p>分店尚有歧义的地点会在卡片中标明。请在高德中核对店名、地址与当日营业情况。</p></details>
+ {opened&&<EditorialDetails card={opened} onClose={()=>setOpened(null)}/>}</section>;
+}
