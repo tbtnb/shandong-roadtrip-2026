@@ -341,5 +341,133 @@
     "reviewer": "root",
     "method": "本地view_image逐张查看实际原图，核对来源专帖与SHA",
     "visual_evidence": "root实看原文件为白盘切块卤猪蹄、木桌及青花茶杯，符合专帖该餐；正文明确海纳对面，地图对应黄海一路店。图片无店牌，不能只凭盘子证明分店。"
+  },
+  "f0d509d9aa08d64b98754323e241b3c1a6f7aee5d2377d05e26b6e110ce5f9f3": {
+    "status": "accepted",
+    "id": "weihai_laoqian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对正文、作者及SHA",
+    "visual_evidence": "root实看黄色门头红字老前玉米面与环翠区老前小吃店，玻璃门黄牌写9:00–19:30/周五周六17:30，与主帖具名门店及地图时间相符；原图作者打卡文字完整保留。这是门面照片，不是面碗。"
+  },
+  "5b4eb1e57fb7c9d3475f713b89d9a163cf3531fe44046665115a917c834a31a9": {
+    "status": "accepted",
+    "id": "qingdao_jinmaiyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图并核对来源专帖及SHA",
+    "visual_evidence": "root实看手持咬开的白芝麻夹馅面包，内馅可见碎颗粒，符合具名金麦园专帖白芝麻花生面包描述；图片本身无店牌，分店依据正文安徽路18甲及点评/地图同址核验，非凭面包外观判分店。"
+  },
+  "c0dfed71a09f2afcfc547fb45552a7689ccc15f95d34e737e1a8e57c213af94a": {
+    "status": "accepted",
+    "id": "huaian_chenwu",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对正文、店名及SHA",
+    "visual_evidence": "root实看白盘上的单个大汤包，筷子靠在包口；与陈五具名专帖汤包实吃相符，不凭画面确认蟹黄含量或具体街号，原作者小红书标志保留。"
+  },
+  "8f8a93f30c4ffc85b7490a3de666036e60b12795115a5ceac48338c16b76f447": {
+    "status": "accepted",
+    "id": "lyg_qiutian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对正文、店名及SHA",
+    "visual_evidence": "root实看秋田店内面包货架、9 QIUTIAN BAKERY标识与秋田汉字，画面中下部©Zhang Peng Photography及右上YUMMY LAB均完整保留；符合专帖青年路9号实访描述，属于店内食品实景照片。"
+  },
+  "9cd3ddf2fdf7ff116d05f928a5717eacc5f5ed4510bdf967367e78ed8b40ef40": {
+    "status": "accepted",
+    "id": "rz_kunji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对来源专帖与SHA",
+    "visual_evidence": "root实看白盘锅包肉近景，胡萝卜丝及少量绿叶、木桌边缘可见；与坤记单店专帖锅包肉餐食描述相符。照片无店牌，不以食品外观确认具体街号或分店。"
+  },
+  "830c2d2eb2f5fdba4da03b7a3bc7cd10d8036f3ce143a4573ab20dcb7c283f66": {
+    "status": "accepted",
+    "id": "rz_yahong",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对来源专帖、作者及SHA",
+    "visual_evidence": "root实看两盘鸡蛋火腿炒面/炒粉配大片豆干，图中文字明确雅宏炒面（啤酒厂家属院店）；左侧烤串与右侧凉拌菜在正文为邻店产品，不当雅宏菜品。原作者完整注释及原图保留。"
+  },
+  "881009cc7821937c9dac2e38e54648bcf415227cf53bb782a08984375ecf4cc0": {
+    "status": "accepted",
+    "id": "qingdao_dengji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对来源专帖、作者及SHA",
+    "visual_evidence": "root实看外卖盒内两排共六只黑芝麻生煎，盒盖压字一品生煎可见；与邓记具名中山路专帖外卖餐食描述相符，具体门店依据正文与点评同址，不凭食品外观单独证明。"
+  },
+  "46715456f4061000de5625dc371031a58feb6d0d1c6061e81d156aaca7ae9e8c": {
+    "status": "accepted",
+    "id": "weihai_tianye",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对来源专帖、作者及SHA",
+    "visual_evidence": "root实看花纹白盘上三块舒芙蕾、奶油及白色团子，撒浅色粉，田埜冰屋品牌插旗清楚，木桌背景；匹配正文豆乳舒芙蕾。具体韩乐坊分店依据帖子标题与平台地址，图片本身不证明街号。"
+  },
+  "853a4ccb6f708cc3f358ad63f6426147af8a2d9d75ccc4857779e07b9cc9e2ac": {
+    "status": "accepted",
+    "id": "weihai_yukafe",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看木桌上的绿色巴斯克蛋糕切块、冰淇淋和咖啡，纸盒羽品牌标志可见，原小红书标识保留；与专帖开心果巴斯克及冰淇淋描述相符。图片无门牌，新址依据两平台迁址核验，不把旧店当另一家。"
+  },
+  "b257c2905964fbbc3b9fdf11baa1786a17713cdbd02fc71e3d7f7be74dd88656": {
+    "status": "accepted",
+    "id": "lyg_suji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看前方青花碗内深色小鱼状凉粉、榨菜粒及芝麻汤汁，后方青花碗凉面凉皮；匹配苏记单店专帖实吃，无店牌，保留具体分店待核状态。"
+  },
+  "ac5131a3141f5f0ff8fce3b0b90bdfc1b119cc76b2162cccf0a82bad0295eaa4": {
+    "status": "accepted",
+    "id": "huaian_hongze",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看四格实际餐食：红烧肉、鱼段粉丝及贴饼、腊肉菜饭、白色长条鱼圆汤，原作者大字洪泽老鱼馆完整保留；与正文人民南路荷花池一店餐食相符，四格均为食品实拍而非纯文字攻略。"
+  },
+  "54ac0f026b7339fab5c84e6db2d3ff94b453faa725a83f90bb4901ce6f57fb7b": {
+    "status": "accepted",
+    "id": "rz_fumai",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看两层奶油蛋糕，上有焦糖布蕾和灯笼果，品牌牌/底板Fullmarket馥麦及彩色鸟包装完整可见，符合本店专帖订蛋糕实物；不凭蛋糕确定具体门牌。"
+  },
+  "74bf788fc45b2780b68330281724516ab3ac73e3c7211bfc25710c8ecddd60c8": {
+    "status": "accepted",
+    "id": "qingdao_shisanbukao",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看食品柜台多排球酥，原品牌口味牌明确十三不靠、生椰拿铁、金沙芝士、榴莲乳酪、紫薯糯米；与台东昆明路店专帖相符，原标志与完整照片保留，图上2023旧价不当当前报价。"
+  },
+  "d1b96820b69751c55b57b49b3112debb4ff8ce5807e13cb0988d3db7a221e285": {
+    "status": "accepted",
+    "id": "wuhu_sijichun",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看补充原图，核对来源及SHA；仅作分店证据，不充新店或主图数量",
+    "visual_evidence": "root实看上下两块四季春/四季春酒店牌匾、两层木廊、龙纹梁和玻璃门，与同帖具名品牌相符。分店外观对照由采集者实际点评门面图支持，照片无门牌，不作为街号独立实证。"
+  },
+  "26a48a64580d1e18670a612c376683b040df3f37e5997be9a1f83e510213f133": {
+    "status": "accepted",
+    "id": "lyg_xianghe",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看藤编篮内薄皮蔬菜卷，背景筷子夹煎底蘸红酱与卤蛋；与祥和单店实访专帖卷类餐食一致。图无店牌，地址依据正文和两平台同址。"
+  },
+  "13b6f0f1620422426dbc0f2d6667dc7c315ff2b23aed20d35c781e129b80b3be": {
+    "status": "accepted",
+    "id": "weihai_mona",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原文件，核对专帖正文、作者及SHA",
+    "visual_evidence": "root实看黄色门面、MONA PATISSERIE CAKE COFFEE GELATO两块招牌及原作者威海茉娜甜品叠字，保留原图标识；与韩乐坊具名专帖店面相符，不证明当前食品质量。暂排除记录不计推荐。"
   }
 }

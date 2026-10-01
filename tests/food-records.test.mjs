@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {validateRecord,publicRecord} from '../scripts/food-records.mjs';
+import {targets,validateRecord,publicRecord} from '../scripts/food-records.mjs';
 const data=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
 const e=data.entries[0],b=fs.readFileSync('public/'+e.photo.url);
 test('all imported originals preserve source identity and original dimensions/hash',()=>{for(const row of data.entries)validateRecord(row,fs.readFileSync('public/'+row.photo.url));});
@@ -18,4 +18,11 @@ test('public records recursively remove research paths while preserving source e
  assert.deepEqual(published.xhs.additional_posts[0].supporting_photos,[]);assert.deepEqual(published.xhs.additional_posts[0].supporting_photo_metadata,[{author:'原作者',sha256:'extra-hash'}]);
  assert(!('local_file' in published.photo));assert.equal(raw.photo.local_file,'/Users/research/images/main.webp');
  for(const row of data.entries)assert.deepEqual(publicRecord(row),row,'Published data must contain no research paths');
+});
+test('pausing Wuhu collection preserves its existing originals without a food quota',()=>{
+ assert(!Object.hasOwn(targets,'芜湖'));assert.deepEqual(data.targets,targets);
+ assert.equal(Object.values(targets).reduce((sum,n)=>sum+n,0),240);
+ const origin=data.entries.filter(row=>row.city==='芜湖');assert(origin.length>0,'Existing departure references must remain');
+ for(const row of origin)validateRecord(row,fs.readFileSync('public/'+row.photo.url));
+ assert(data.city_notes['芜湖'].includes('暂停补采'));
 });

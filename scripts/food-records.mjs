@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
-export const targets={'青岛':60,'威海':80,'连云港':40,'日照':40,'芜湖':40,'淮安':20};
+export const cities=['青岛','威海','连云港','日照','芜湖','淮安'];
+export const targets={'青岛':60,'威海':80,'连云港':40,'日照':40,'淮安':20};
 export function publicRecord(value){
  if(typeof value==='string')return /^(?:\/|file:\/\/|[A-Za-z]:[\\/])/.test(value)||/\/(?:Users|home)\//.test(value)?undefined:value;
  if(Array.isArray(value))return value.map(publicRecord).filter(v=>v!==undefined);
@@ -24,7 +25,7 @@ function inspectPrivateParameters(value){
  else if(value&&typeof value==='object')for(const [k,v] of Object.entries(value)){assert(!/^(cookie|access_token|authorization|xsec_token|session_token)$/i.test(k),`Credential field forbidden: ${k}`);inspectPrivateParameters(v);}
 }
 export function validateRecord(e,b){
- assert(/^[a-z0-9_-]+$/.test(e.id),'Safe record ID');assert(targets[e.city],`Unknown city: ${e.city}`);assert(e.name&&e.local_character&&e.why&&e.level_reason);
+ assert(/^[a-z0-9_-]+$/.test(e.id),'Safe record ID');assert(cities.includes(e.city),`Unknown city: ${e.city}`);assert(e.name&&e.local_character&&e.why&&e.level_reason);
  assert(['snack','meal','dessert'].includes(e.category));assert(['must','optional','caution','exclude'].includes(e.level));assert.equal(e.status,'complete');
  assert(e.xhs?.body_read&&e.xhs.comments_checked&&e.xhs.author_profile_checked,'Body/comments/profile actually checked');
  assert(/^[a-f0-9]{24}$/.test(e.xhs.note_id));assert.equal(e.xhs.url,`https://www.xiaohongshu.com/explore/${e.xhs.note_id}`);assert(e.xhs.title&&e.xhs.author&&e.xhs.canonical_status);assert.equal(typeof e.xhs.canonical_readable,'boolean');
