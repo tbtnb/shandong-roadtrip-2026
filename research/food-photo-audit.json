@@ -245,5 +245,61 @@
     "reviewer": "root",
     "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
     "visual_evidence": "实际原图为淮安李记豆腐脑招牌与完整门面，右下平台水印保留。"
+  },
+  "3949c21ab712be94de4830cf98e101400fe443fbc6fade05ecc91e0cc4117b07": {
+    "status": "accepted",
+    "id": "weihai_taibeixiaocheng",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地view_image实看：前景红汤海鲜炒码面带虾贝蔬菜，中部小碗拌开的炸酱面、后方未拌炸酱面，旁边糖醋肉和泡菜。与财富广场明确专帖正文吻合；未将旧未定分店原图作主图。"
+  },
+  "59f5959e3a1906fe6d07a89ada6d1cde1078db4c8248a53a180d14e8be1ba62d": {
+    "status": "accepted",
+    "id": "lyg_xufengqin",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地view_image核查炸肉及鱿鱼串、酸辣粉白碗红汤肉丝香菜和徐凤芹橘红纸杯部分logo，匹配正文实吃"
+  },
+  "1356be7be699dc815a99213bb9ee96096dd2cc3f381877aa7922b4dc2ebcfb31": {
+    "status": "accepted",
+    "id": "rz_fuqimeishi",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地view_image核实红底黑字夫妻美食门头，右上石臼所老街，20年老店、2005.8.15开业与09:00-20:30牌，菜牌含米肠冷面拌饭。DOM swiper index=0。"
+  },
+  "876df9ef90a9a55e84272faf0a50e43cd2c29b5189da8678930df6d878fa80ca": {
+    "status": "accepted",
+    "id": "rz_jinlai",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地view_image实核红底黄字临沂金来糁馆门头，早餐午餐字样，电话15166171589与高德相同，店身份直接匹配。DOM swiper index=0。"
+  },
+  "6091fc0c76ece77c7f875de49282df08e90e16402a28c855e8db14017c4c18a1": {
+    "status": "accepted",
+    "id": "wuhu_koufu",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "已本地view_image确认两笼汤包、鸭肉盒、煮干丝和饮品在木桌，图中文字口福汤包馆，与专帖实吃场景一致；具体分店仅正文步行街描述，未过度确认。"
+  },
+  "37511e3303bdc8c5b178b5ca4716dc46f5386e7af02fec612da16422dec98ea6": {
+    "status": "accepted",
+    "id": "huaian_sunjia",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地view_image核为两碗肉蔬菜浇头面，碗沿苏淮孙家/孙家面馆字样，正文叉烧拆骨面与本店匹配"
+  },
+  "69fd0bb565eb16aece0faa4d4fa0203dc8a9d5269aa030f3b83e2e1976280f6d": {
+    "status": "accepted",
+    "id": "qingdao_haiping",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "本地原图为汤碗中勺子夹起一只大馄饨，背景多只馄饨，作者封面字样；同note正文明确湖北路分店。"
   }
 }

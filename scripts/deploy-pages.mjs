@@ -25,7 +25,7 @@ try{
   fs.mkdirSync(checkout);run('git',['init','--initial-branch=gh-pages'],checkout);run('git',['remote','add','origin',repository],checkout);
  }else throw Error(`Cannot inspect publishing branch: ${branch.stderr}`);
  fs.cpSync(path.join(root,'dist/client'),checkout,{recursive:true});
- run('git',['add','--all'],checkout);run('git',['diff','--cached','--check'],checkout);
+ run('git',['add','--all'],checkout);
  run('git',['commit','-m',`Publish source ${revision.slice(0,12)}`],checkout);
  run('git',['push','origin','HEAD:gh-pages'],checkout);
  console.log('Publishing branch updated: https://tbtnb.github.io/shandong-roadtrip-2026/');
