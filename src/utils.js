@@ -1,0 +1,8 @@
+export const cityIds={芜湖:'wuhu',连云港:'lianyungang',青岛:'qingdao',威海:'weihai',日照:'rizhao',淮安:'huaian'};
+export const cityNames=Object.fromEntries(Object.entries(cityIds).map(([name,id])=>[id,name]));
+export function itineraryFor(data,days){return data.itineraries.find(x=>x.days.length===Number(days))??data.itineraries[0]}
+export function safeExternal(url){try{return ['http:','https:'].includes(new URL(url).protocol)}catch{return false}}
+export function filterSources(entries,{city='全部',type='全部',query=''}={}){const q=query.trim().toLocaleLowerCase();return entries.filter(e=>(city==='全部'||e.city===city||e.city?.includes(city))&&(type==='全部'||e.category===type||e.type===type)&&(!q||[e.title,e.summary,e.note,e.city,e.author,...(e.tags||[])].join(' ').toLocaleLowerCase().includes(q)))}
+export function budgetEstimate({nights=5,rooms=2,roomPrice=450,people=4,foodDay=120,km=2000,consumption=8,oilPrice=8,extras=500}){const hotel=Math.max(0,nights*rooms*roomPrice),food=Math.max(0,(nights+1)*people*foodDay),fuel=Math.max(0,km*consumption/100*oilPrice),total=hotel+food+fuel+Math.max(0,extras);return {hotel,food,fuel,extras,total,perPerson:total/Math.max(1,people)}}
+export const range=(xs,suffix='')=>Array.isArray(xs)?`${xs.join('–')}${suffix}`:'待核对';
+export function normalizedXhs(raw){return (raw.entries||raw.notes||[]).map((e,i)=>({...e,id:e.id||`xhs-${i}`,title:e.title||e.note_title||'未命名笔记',url:e.url||e.link||e.canonical_url,summary:e.summary||e.original_summary||e.read_summary||'',category:'小红书',type:'小红书',city:e.city||e.destination||'沿途',checked_date:e.checked_date||e.read_at||raw.checked_at,published_at:e.published_at||e.published_date||e.visible_date||'页面未显示',tags:e.tags||[]})).filter(e=>safeExternal(e.url))}

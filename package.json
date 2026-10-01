@@ -1,0 +1,31 @@
+{
+  "name": "shandong-roadtrip-2026",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/verify-assets.mjs && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/content.test.mjs",
+    "test:ui": "vitest run --config vitest.config.mjs",
+    "test:scene": "node scripts/smoke-scene.mjs && node --test tests/scene-interaction-bounds.test.mjs",
+    "check": "npm test && npm run test:ui && npm run test:scene && npm run build"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "@vitejs/plugin-react": "5.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "^0.186.1",
+    "vite": "6.4.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

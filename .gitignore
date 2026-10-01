@@ -1,8 +1,4 @@
 node_modules/
 dist/
-.env
-.env.*
+.env*
 .DS_Store
-*.har
-*storage-state*
-*cookies*

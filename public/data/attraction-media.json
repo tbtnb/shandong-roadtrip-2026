@@ -1,0 +1,1735 @@
+{
+  "updated_at": "2026-09-30T21:11:35.245084+00:00",
+  "status": "media_research_in_progress",
+  "note": "每张实景图保留摄影作者与许可。图片齐备不等于景点专帖或手机链接已经核验。",
+  "attractions": [
+    {
+      "id": "lyg_democracy_road",
+      "city": "连云港",
+      "name": "民主路老街",
+      "aliases": [
+        "民主路"
+      ],
+      "route_role": "first_night_optional",
+      "day_ids": [
+        "d1"
+      ],
+      "preferred_note_id": "6a4f6bf5000000001503ccf8",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6a4f6bf5000000001503ccf8",
+          "title": "慢逛民主路，解锁港城烟火与复古浪漫",
+          "author": "巧克力爱好者",
+          "url": "https://www.xiaohongshu.com/explore/6a4f6bf5000000001503ccf8",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "07-09",
+          "copy_fallback": "慢逛民主路，解锁港城烟火与复古浪漫 巧克力爱好者",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6a7ed07900000000260342ea",
+          "title": "🚶‍♀️连云港民主路老街漫步指南",
+          "author": "海州商业街区",
+          "url": "https://www.xiaohongshu.com/explore/6a7ed07900000000260342ea",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-14",
+          "copy_fallback": "🚶‍♀️连云港民主路老街漫步指南 海州商业街区",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6a82ba04000000002402cebe",
+          "title": "连云港｜免费民国老街✨民主路逛拍全攻略",
+          "author": "南通户外徒步领队：镜禾📸",
+          "url": "https://www.xiaohongshu.com/explore/6a82ba04000000002402cebe",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-17",
+          "copy_fallback": "连云港｜免费民国老街✨民主路逛拍全攻略 南通户外徒步领队：镜禾📸",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ],
+      "private_reference_images": [
+        {
+          "url": "assets/places/xhs_lyg_democracy_road.jpg",
+          "source_url": "https://www.xiaohongshu.com/explore/6a4f6bf5000000001503ccf8",
+          "note_id": "6a4f6bf5000000001503ccf8",
+          "author": "巧克力爱好者",
+          "source_name": "小红书",
+          "source_label": "慢逛民主路，解锁港城烟火与复古浪漫 · 首图",
+          "alt": "民主路老街 · 巧克力爱好者的小红书原帖图片",
+          "reuse_status": "private_personal_reference",
+          "public_reuse_permission": "not_established",
+          "visual_verified": true,
+          "display_mode": "local_private_reference",
+          "width": 1080,
+          "height": 1440,
+          "capture_year": null,
+          "changes": "保持原文件；保留平台文字和水印",
+          "attribution": "巧克力爱好者 / 小红书《慢逛民主路，解锁港城烟火与复古浪漫》",
+          "usage_scope": "仅私人旅行参考；不配置网站托管，不上传公开仓库",
+          "origin_type": "xiaohongshu_personal_reference",
+          "license": null,
+          "public_publish_allowed": false
+        }
+      ]
+    },
+    {
+      "id": "lyg_yanhe_lane",
+      "city": "连云港",
+      "name": "盐河巷",
+      "aliases": [],
+      "route_role": "first_night_optional",
+      "day_ids": [
+        "d1"
+      ],
+      "preferred_note_id": "6a508849000000001503d45d",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "69f6bb1e000000003700ca0f",
+          "title": "盐河巷停车攻略！外地自驾游客必看",
+          "author": "长得像鲁迅",
+          "url": "https://www.xiaohongshu.com/explore/69f6bb1e000000003700ca0f",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "05-02",
+          "copy_fallback": "盐河巷停车攻略！外地自驾游客必看 长得像鲁迅",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        },
+        {
+          "note_id": "6a508849000000001503d45d",
+          "title": "连云港盐河巷夜市",
+          "author": "行走的摄影师",
+          "url": "https://www.xiaohongshu.com/explore/6a508849000000001503d45d",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "07-09",
+          "copy_fallback": "连云港盐河巷夜市 行走的摄影师",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ],
+      "private_reference_images": [
+        {
+          "url": "assets/places/xhs_lyg_yanhe_lane.jpg",
+          "source_url": "https://www.xiaohongshu.com/explore/6a508849000000001503d45d",
+          "note_id": "6a508849000000001503d45d",
+          "author": "行走的摄影师",
+          "source_name": "小红书",
+          "source_label": "连云港盐河巷夜市 · 首图",
+          "alt": "盐河巷 · 行走的摄影师的小红书原帖图片",
+          "reuse_status": "private_personal_reference",
+          "public_reuse_permission": "not_established",
+          "visual_verified": true,
+          "display_mode": "local_private_reference",
+          "width": 1080,
+          "height": 1620,
+          "capture_year": null,
+          "changes": "保持原文件；保留平台文字和水印",
+          "attribution": "行走的摄影师 / 小红书《连云港盐河巷夜市》",
+          "usage_scope": "仅私人旅行参考；不配置网站托管，不上传公开仓库",
+          "origin_type": "xiaohongshu_personal_reference",
+          "license": null,
+          "public_publish_allowed": false
+        }
+      ]
+    },
+    {
+      "id": "qd_zhanqiao",
+      "city": "青岛",
+      "name": "栈桥 · 回澜阁",
+      "aliases": [
+        "栈桥",
+        "回澜阁"
+      ],
+      "route_role": "default_short_walk",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": "6a7c4b6500000000250018a7",
+      "images": [
+        {
+          "url": "assets/places/qd_zhanqiao_landmark.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:20240729_Zhanqiao_02.jpg",
+          "author": "Windmemories",
+          "alt": "栈桥桥身与回澜阁实景，画面可见夏季游客",
+          "caption": "桥身与回澜阁",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 640,
+          "capture_year": "2024",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Windmemories / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6a7c4b6500000000250018a7",
+          "title": "青岛栈桥游览➕拍照攻略✅",
+          "author": "云帆见山海",
+          "url": "https://www.xiaohongshu.com/explore/6a7c4b6500000000250018a7",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于 08-13",
+          "copy_fallback": "青岛栈桥游览➕拍照攻略✅ 云帆见山海",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "qd_zhongshan_road",
+      "city": "青岛",
+      "name": "中山路",
+      "aliases": [],
+      "route_role": "default_short_walk",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": "6aba8a1d0000000014030470",
+      "images": [
+        {
+          "url": "assets/places/qd_zhongshan_road.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:20240730_Zhongshan_Road,_Qingdao_01.jpg",
+          "author": "Windmemories",
+          "alt": "青岛中山路沿街建筑实景",
+          "caption": "中山路街景",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 640,
+          "capture_year": "2024",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Windmemories / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6aba8a1d0000000014030470",
+          "title": "青岛中山路，把秋天走成一首慢诗🍂",
+          "author": "璞韵书斋",
+          "url": "https://www.xiaohongshu.com/explore/6aba8a1d0000000014030470",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "2天前 山东",
+          "copy_fallback": "青岛中山路，把秋天走成一首慢诗🍂 璞韵书斋",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "qd_st_michaels",
+      "city": "青岛",
+      "name": "圣弥厄尔教堂外观",
+      "aliases": [
+        "天主教堂",
+        "教堂外观"
+      ],
+      "route_role": "optional_on_route",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_st_michaels.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Qingdao._Cathedral.jpg",
+          "author": "Adong0826",
+          "alt": "圣弥厄尔教堂双塔与广场外观",
+          "caption": "教堂外观",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 500,
+          "height": 667,
+          "capture_year": "2018",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Adong0826 / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_badaguan",
+      "city": "青岛",
+      "name": "八大关",
+      "aliases": [],
+      "route_role": "replaces_old_town",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_badaguan.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Badaguan,_Qingdao.jpg",
+          "author": "M. Weitzel",
+          "alt": "八大关花石楼石砌外观",
+          "caption": "花石楼外观；图片不表示已安排入内",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 2.5",
+          "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 500,
+          "height": 667,
+          "capture_year": "2007",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "M. Weitzel / Wikimedia Commons / CC BY-SA 2.5"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_second_beach",
+      "city": "青岛",
+      "name": "第二海水浴场",
+      "aliases": [
+        "第二浴场"
+      ],
+      "route_role": "replaces_old_town",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_second_beach_wide.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:20240729_Qingdao_No._2_Beach_01.jpg",
+          "author": "Windmemories",
+          "alt": "第二海水浴场海湾与远处花石楼，夏季实景",
+          "caption": "第二浴场海湾；不表示十月可下海",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 640,
+          "capture_year": "2024",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Windmemories / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_mayfour_square",
+      "city": "青岛",
+      "name": "五四广场 · 五月的风",
+      "aliases": [
+        "五四广场",
+        "五月的风"
+      ],
+      "route_role": "optional_near_hotel",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": "6a55680b000000001101eba9",
+      "images": [
+        {
+          "url": "assets/places/qd_mayfour_square.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E4%BA%94%E5%9B%9B%E5%B9%BF%E5%9C%BA_-_%E4%BA%94%E6%9C%88%E7%9A%84%E9%A3%8E%E9%9B%95%E5%A1%91_-_2023-08-25_01.jpg",
+          "author": "瑞丽江的河水",
+          "alt": "五四广场五月的风红色雕塑实景",
+          "caption": "五月的风雕塑（黄震作品）",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 720,
+          "capture_year": "2023",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "瑞丽江的河水 / Wikimedia Commons / CC BY-SA 4.0；雕塑《五月的风》：黄震"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6a55680b000000001101eba9",
+          "title": "青岛五四广场｜0元城市地标极简攻略",
+          "author": "青岛小兵逛山海",
+          "url": "https://www.xiaohongshu.com/explore/6a55680b000000001101eba9",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "07-14",
+          "copy_fallback": "青岛五四广场｜0元城市地标极简攻略 青岛小兵逛山海",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6aac9cee0000000025036238",
+          "title": "青岛五四广场周边停车省钱攻略",
+          "author": "人～从～众",
+          "url": "https://www.xiaohongshu.com/explore/6aac9cee0000000025036238",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "09-17 山东",
+          "copy_fallback": "青岛五四广场周边停车省钱攻略 人～从～众",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        }
+      ]
+    },
+    {
+      "id": "qd_olympic_sailing",
+      "city": "青岛",
+      "name": "奥帆中心",
+      "aliases": [
+        "奥帆"
+      ],
+      "route_role": "optional_near_hotel",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_olympic_sailing.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Qingdao_Olympic_Sailing_Center.JPG",
+          "author": "风之清扬",
+          "alt": "青岛奥帆中心码头、旗杆与奥运火炬实景",
+          "caption": "奥帆中心旧照，2009年",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 640,
+          "capture_year": "2009",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "风之清扬 / Wikimedia Commons / CC BY-SA 3.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_fushan_bay",
+      "city": "青岛",
+      "name": "浮山湾夜景",
+      "aliases": [
+        "浮山湾"
+      ],
+      "route_role": "optional_near_hotel",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_fushan_bay.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fushan_Bay_at_night.jpg",
+          "author": "K.Y.K.Z.K.",
+          "alt": "浮山湾夜间楼宇灯光映在海面",
+          "caption": "浮山湾夜景旧照，非2026年节目预览",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 540,
+          "capture_year": "2019",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "K.Y.K.Z.K. / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_signal_hill",
+      "city": "青岛",
+      "name": "信号山",
+      "aliases": [],
+      "route_role": "deprioritized_candidate",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_signal_hill.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E5%B2%9B%E4%BF%A1%E5%8F%B7%E5%B1%B1%E5%85%AC%E5%9B%AD%E2%80%94%E2%80%94%E6%97%8B%E8%BD%AC%E8%A7%82%E6%99%AF%E6%A5%BC.jpg",
+          "author": "Sprt98",
+          "alt": "信号山红色球形旋转观景楼外观",
+          "caption": "旋转观景楼外观",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 500,
+          "height": 667,
+          "capture_year": "2024",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Sprt98 / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_xiaoyu_hill",
+      "city": "青岛",
+      "name": "小鱼山",
+      "aliases": [],
+      "route_role": "deprioritized_candidate",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_xiaoyu_hill.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E9%B1%BC%E5%B1%B1%E5%85%AC%E5%9B%AD%E2%80%94%E2%80%94%E7%A2%A7%E6%B3%A2%E4%BA%AD.jpg",
+          "author": "Sprt98",
+          "alt": "小鱼山碧波亭外观",
+          "caption": "碧波亭外观",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 500,
+          "height": 667,
+          "capture_year": "2025",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Sprt98 / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_laoshan",
+      "city": "青岛",
+      "name": "崂山",
+      "aliases": [],
+      "route_role": "excluded_default_candidate",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_laoshan.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Laoshan.jpg",
+          "author": "风之清扬",
+          "alt": "崂山入口海上名山第一石刻实景",
+          "caption": "崂山入口标志；全景图片继续补充",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 720,
+          "capture_year": null,
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "风之清扬 / Wikimedia Commons / CC BY-SA 3.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_underwater",
+      "city": "青岛",
+      "name": "青岛海底世界",
+      "aliases": [
+        "海底世界"
+      ],
+      "route_role": "interest_and_opening_conditional",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/qd_underwater.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E9%9D%92%E5%B2%9B%E6%B0%B4%E6%97%8F%E9%A6%86%E2%80%94%E2%80%94%E6%B5%B7%E5%BA%95%E4%B8%96%E7%95%8C%E5%86%85%E9%83%A801.jpg",
+          "author": "Sprt98",
+          "alt": "青岛海底世界水下观赏隧道实景",
+          "caption": "海底世界隧道，非实时客流",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 718,
+          "capture_year": "2024",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Sprt98 / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "wh_banyue_bay",
+      "city": "威海",
+      "name": "半月湾",
+      "aliases": [],
+      "route_role": "default_north_coast",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6aac711f000000002502fb9d",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6aac711f000000002502fb9d",
+          "title": "威海 Day4｜半月湾日出｜日出攻略🌅",
+          "author": "春山山",
+          "url": "https://www.xiaohongshu.com/explore/6aac711f000000002502fb9d",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "09-18 山东",
+          "copy_fallback": "威海 Day4｜半月湾日出｜日出攻略🌅 春山山",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ],
+      "embeds": [
+        {
+          "provider": "Getty Images",
+          "asset_id": "2271058841",
+          "display_mode": "external_source_link",
+          "author": "shuige",
+          "source_url": "https://www.gettyimages.co.nz/detail/photo/the-ban-yue-bay-scenic-area-royalty-free-image/2271058841",
+          "terms_url": "https://www.gettyimages.co.nz/company/terms",
+          "license": "Getty Images noncommercial embed only",
+          "alt": "作者标注半月湾景区的岩石海岸",
+          "title": "The Ban Yue Bay Scenic Area",
+          "capture_date": "05 April, 2026",
+          "website_load_verified": false,
+          "mobile_load_verified": false
+        }
+      ]
+    },
+    {
+      "id": "wh_maotou_hill",
+      "city": "威海",
+      "name": "猫头山",
+      "aliases": [],
+      "route_role": "default_north_coast",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6a7d5ccb0000000006004101",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6a00a9030000000036032f29",
+          "title": "威海猫头山自驾车目前不能沿海开了",
+          "author": "躺不平坐不起",
+          "url": "https://www.xiaohongshu.com/explore/6a00a9030000000036032f29",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于05-14（当前年页面）",
+          "copy_fallback": "威海猫头山自驾车目前不能沿海开了 躺不平坐不起",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6abc9ba8000000001402e874",
+          "title": "威海猫头山今天还是别来了",
+          "author": "姜大仁",
+          "url": "https://www.xiaohongshu.com/explore/6abc9ba8000000001402e874",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "正文明确26.9.30 13:15更新；页面相对时间显示昨天，存在呈现差异",
+          "copy_fallback": "威海猫头山今天还是别来了 姜大仁",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6a7d5ccb0000000006004101",
+          "title": "威海猫头山不废腿半日游",
+          "author": "黄油水煎包",
+          "url": "https://www.xiaohongshu.com/explore/6a7d5ccb0000000006004101",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-13",
+          "copy_fallback": "威海猫头山不废腿半日游 黄油水煎包",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6a6ec7360000000005028304",
+          "title": "威海猫头山 | 又给上了一课",
+          "author": "圈圈",
+          "url": "https://www.xiaohongshu.com/explore/6a6ec7360000000005028304",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-01",
+          "copy_fallback": "威海猫头山 | 又给上了一课 圈圈",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        },
+        {
+          "note_id": "6aba92de000000001b01cb5f",
+          "title": "猫头山停车",
+          "author": "额尔古纳河右岸",
+          "url": "https://www.xiaohongshu.com/explore/6aba92de000000001b01cb5f",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "2天前 山东",
+          "copy_fallback": "猫头山停车 额尔古纳河右岸",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        }
+      ]
+    },
+    {
+      "id": "wh_happiness_gate",
+      "city": "威海",
+      "name": "幸福门",
+      "aliases": [
+        "幸福公园"
+      ],
+      "route_role": "arrival_optional_near_hotel",
+      "day_ids": [
+        "d3"
+      ],
+      "preferred_note_id": "699be005000000001d026622",
+      "images": [
+        {
+          "url": "assets/places/wh_happiness_gate.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Weihai-Xingfu_men.jpg",
+          "author": "Popolon",
+          "alt": "威海幸福门建筑正面实景",
+          "caption": "幸福门旧照，2011年，装饰与周边现状可能变化",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 540,
+          "capture_year": "2011",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Popolon / Wikimedia Commons / CC BY-SA 3.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "699be005000000001d026622",
+          "title": "威海打卡幸福门最佳机位",
+          "author": "笋笋Daaachshund",
+          "url": "https://www.xiaohongshu.com/explore/699be005000000001d026622",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "02-22",
+          "copy_fallback": "威海打卡幸福门最佳机位 笋笋Daaachshund",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_weihai_park",
+      "city": "威海",
+      "name": "威海公园",
+      "aliases": [],
+      "route_role": "arrival_optional_near_hotel",
+      "day_ids": [
+        "d3"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "wh_yuehai_park",
+      "city": "威海",
+      "name": "悦海公园",
+      "aliases": [
+        "悦海"
+      ],
+      "route_role": "arrival_optional_near_hotel",
+      "day_ids": [
+        "d3"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "wh_international_beach",
+      "city": "威海",
+      "name": "国际海水浴场",
+      "aliases": [
+        "国际浴场"
+      ],
+      "route_role": "optional_second_area",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6aa15022000000001203ca01",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6aa15022000000001203ca01",
+          "title": "9.9号国际海水浴场日落",
+          "author": "不想早起",
+          "url": "https://www.xiaohongshu.com/explore/6aa15022000000001203ca01",
+          "topic_scope": "single_attraction_photo_post",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "09-09 山东",
+          "copy_fallback": "9.9号国际海水浴场日落 不想早起",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_torch_eighth",
+      "city": "威海",
+      "name": "火炬八街",
+      "aliases": [],
+      "route_role": "optional_second_area",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6a83054b0000000028030f27",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6ab5cf2f0000000015007e8f",
+          "title": "火炬八街停车",
+          "author": "额尔古纳河右岸",
+          "url": "https://www.xiaohongshu.com/explore/6ab5cf2f0000000015007e8f",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "5天前 安徽",
+          "copy_fallback": "火炬八街停车 额尔古纳河右岸",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        },
+        {
+          "note_id": "6a715da4000000003300a2b3",
+          "title": "火炬八街停车别来官方停车场！！！",
+          "author": "mono",
+          "url": "https://www.xiaohongshu.com/explore/6a715da4000000003300a2b3",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "正文页面08-03；搜索列表08-04",
+          "copy_fallback": "火炬八街停车别来官方停车场！！！ mono",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        },
+        {
+          "note_id": "6a83054b0000000028030f27",
+          "title": "威海火炬八街",
+          "author": "妞妞妈",
+          "url": "https://www.xiaohongshu.com/explore/6a83054b0000000028030f27",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-17",
+          "copy_fallback": "威海火炬八街 妞妞妈",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_liugong_island",
+      "city": "威海",
+      "name": "刘公岛",
+      "aliases": [],
+      "route_role": "whole_day_replacement",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6aba46c7000000001b0218dc",
+      "images": [
+        {
+          "url": "assets/places/wh_liugong_island.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Weihai.port_de_Liugong_dao.jpg",
+          "author": "Popolon",
+          "alt": "从海面看刘公岛港口建筑与游船",
+          "caption": "刘公岛港口旧照，2011年",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 540,
+          "capture_year": "2011",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Popolon / Wikimedia Commons / CC BY-SA 3.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6aba46c7000000001b0218dc",
+          "title": "D4 威海刘公岛",
+          "author": "若若梨",
+          "url": "https://www.xiaohongshu.com/explore/6aba46c7000000001b0218dc",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于2天前 山东",
+          "copy_fallback": "D4 威海刘公岛 若若梨",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "68e137bb0000000004020421",
+          "title": "刘公岛10月4日等船排队2h多",
+          "author": "额",
+          "url": "https://www.xiaohongshu.com/explore/68e137bb0000000004020421",
+          "topic_scope": "queue_and_transport_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "2025-10-04",
+          "copy_fallback": "刘公岛10月4日等船排队2h多 额",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        },
+        {
+          "note_id": "6a72ca1a000000002500313e",
+          "title": "刘公岛3小时速游攻略",
+          "author": "花椒爱和平",
+          "url": "https://www.xiaohongshu.com/explore/6a72ca1a000000002500313e",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "正文08-04，搜索列表08-05",
+          "copy_fallback": "刘公岛3小时速游攻略 花椒爱和平",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_naxianghai",
+      "city": "威海",
+      "name": "那香海",
+      "aliases": [],
+      "route_role": "whole_day_replacement",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6a40ff97000000000e021800",
+      "images": [
+        {
+          "url": "assets/places/wh_naxianghai.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Naxianghai_in_Weihai_20180711.jpg",
+          "author": "Sunyiming",
+          "alt": "那香海宽沙滩、草顶遮阳亭和海岸实景",
+          "caption": "那香海沙滩旧照，2018年",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 540,
+          "capture_year": "2018",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Sunyiming / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6a40ff97000000000e021800",
+          "title": "不吹不黑 那香海避雷及推荐",
+          "author": "韩江雪",
+          "url": "https://www.xiaohongshu.com/explore/6a40ff97000000000e021800",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于06-29",
+          "copy_fallback": "不吹不黑 那香海避雷及推荐 韩江雪",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_bluewis",
+      "city": "威海",
+      "name": "布鲁维斯号",
+      "aliases": [
+        "沉船"
+      ],
+      "route_role": "east_route_optional",
+      "day_ids": [
+        "d4"
+      ],
+      "preferred_note_id": "6abd2f820000000015002217",
+      "images": [
+        {
+          "url": "assets/places/wh_bluewis.jpg",
+          "source_url": "https://www.pexels.com/photo/abandoned-cargo-ship-17538349/",
+          "author": "lee starry",
+          "alt": "布鲁维斯号搁浅货轮实景，船艏可见BLUEWAYS英文名",
+          "caption": "布鲁维斯号实景；照片拍摄日期未明确，不代表当前风浪与岸边通行状况",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Pexels",
+          "source_label": "授权实景图 · Pexels（非小红书图）",
+          "license": "Pexels License",
+          "license_url": "https://www.pexels.com/license/",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 1125,
+          "height": 750,
+          "capture_year": null,
+          "changes": "未裁剪、未调色；采用Pexels公开页面提供的压缩尺寸",
+          "attribution": "Photo by lee starry / Pexels"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6a6e2503000000002203170e",
+          "title": "威海布鲁威斯号 | 游玩一个半小时",
+          "author": "圈圈",
+          "url": "https://www.xiaohongshu.com/explore/6a6e2503000000002203170e",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于08-01",
+          "copy_fallback": "威海布鲁威斯号 | 游玩一个半小时 圈圈",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6abd2f820000000015002217",
+          "title": "威海 | 布鲁威斯落地签已拍不欠~附攻略🌊",
+          "author": "哒哒有颗桃子🍑（小月龄）",
+          "url": "https://www.xiaohongshu.com/explore/6abd2f820000000015002217",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "4小时前；作者评论说明照片是前段时间拍的",
+          "copy_fallback": "威海 | 布鲁威斯落地签已拍不欠~附攻略🌊 哒哒有颗桃子🍑（小月龄）",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_hanlefang",
+      "city": "威海",
+      "name": "韩乐坊",
+      "aliases": [],
+      "route_role": "meal_area_near_hotel_only",
+      "day_ids": [
+        "d3",
+        "d4"
+      ],
+      "preferred_note_id": "6a942512000000002501adb1",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6a942512000000002501adb1",
+          "title": "威海狂吃篇（韩乐坊版）",
+          "author": "林澈",
+          "url": "https://www.xiaohongshu.com/explore/6a942512000000002501adb1",
+          "topic_scope": "single_attraction_food_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "08-30",
+          "copy_fallback": "威海狂吃篇（韩乐坊版） 林澈",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "food"
+        }
+      ],
+      "embeds": [
+        {
+          "provider": "Getty Images",
+          "asset_id": "1545593384",
+          "display_mode": "external_source_link",
+          "author": "li dekun",
+          "source_url": "https://www.gettyimages.co.nz/detail/photo/the-hanlefang-night-market-in-weihai-city-shandong-royalty-free-image/1545593384",
+          "terms_url": "https://www.gettyimages.co.nz/company/terms",
+          "license": "Getty Images noncommercial embed only",
+          "alt": "韩乐坊夜市人流与摊位实景",
+          "title": "The Hanlefang Night Market in Weihai City, Shandong Province is packed with people",
+          "capture_date": "18 June, 2023",
+          "website_load_verified": false,
+          "mobile_load_verified": false
+        }
+      ]
+    },
+    {
+      "id": "wh_oulefang",
+      "city": "威海",
+      "name": "欧乐坊",
+      "aliases": [],
+      "route_role": "meal_area_near_hotel_only",
+      "day_ids": [
+        "d3",
+        "d4"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "wh_city_museum",
+      "city": "威海",
+      "name": "威海市博物馆",
+      "aliases": [],
+      "route_role": "unconfirmed_rain_candidate",
+      "day_ids": [
+        "d3",
+        "d4"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "rz_wanpingkou",
+      "city": "日照",
+      "name": "万平口",
+      "aliases": [],
+      "route_role": "return_night_optional",
+      "day_ids": [
+        "d5"
+      ],
+      "preferred_note_id": "6aa8fbb8000000000b00c0a4",
+      "images": [
+        {
+          "url": "assets/places/rz_wanpingkou.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Wanpingkou,_Rizhao.jpg",
+          "author": "Leiem",
+          "alt": "万平口沙滩游客与海岸实景",
+          "caption": "万平口阴天旧照，2018年，非实时客流",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 720,
+          "capture_year": "2018",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Leiem / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6aa8fbb8000000000b00c0a4",
+          "title": "🏝日照万平口游玩攻略🔶🆙",
+          "author": "Emma",
+          "url": "https://www.xiaohongshu.com/explore/6aa8fbb8000000000b00c0a4",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于09-15 江苏",
+          "copy_fallback": "🏝日照万平口游玩攻略🔶🆙 Emma",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "69f09d95000000001f004043",
+          "title": "日照📍避雷这个停车场🅿️",
+          "author": "未完^待续",
+          "url": "https://www.xiaohongshu.com/explore/69f09d95000000001f004043",
+          "topic_scope": "parking_only",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "04-28",
+          "copy_fallback": "日照📍避雷这个停车场🅿️ 未完^待续",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "transport"
+        }
+      ]
+    },
+    {
+      "id": "rz_dongyi_town",
+      "city": "日照",
+      "name": "东夷小镇",
+      "aliases": [],
+      "route_role": "return_night_optional",
+      "day_ids": [
+        "d5"
+      ],
+      "preferred_note_id": "6a8bb07b000000003400f92d",
+      "images": [],
+      "xhs_notes": [
+        {
+          "note_id": "6a8bb07b000000003400f92d",
+          "title": "勇闯日照东夷小镇",
+          "author": "姜小月半",
+          "url": "https://www.xiaohongshu.com/explore/6a8bb07b000000003400f92d",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于08-23",
+          "copy_fallback": "勇闯日照东夷小镇 姜小月半",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "6ababf72000000001802e1c7",
+          "title": "东夷小镇，没逛对？",
+          "author": "cookiclin在路上🐙",
+          "url": "https://www.xiaohongshu.com/explore/6ababf72000000001802e1c7",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "2天前 山东",
+          "copy_fallback": "东夷小镇，没逛对？ cookiclin在路上🐙",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "rz_lighthouse",
+      "city": "日照",
+      "name": "日照灯塔",
+      "aliases": [],
+      "route_role": "visual_landmark_only",
+      "day_ids": [],
+      "preferred_note_id": "69aed4680000000026031788",
+      "images": [
+        {
+          "url": "assets/places/rz_lighthouse_unsplash.jpg",
+          "source_url": "https://unsplash.com/photos/white-and-black-tower-under-blue-sky-during-daytime-NUDsQGoVD0M",
+          "author": "Laputa Z",
+          "alt": "日照灯塔仰视实景，暮蓝天空下灯塔亮灯",
+          "caption": "日照灯塔实景，2021年发布；不代表当前天气或灯光安排",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Unsplash",
+          "source_label": "授权实景图 · Unsplash（非小红书图）",
+          "license": "Unsplash License",
+          "license_url": "https://unsplash.com/license",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 327,
+          "height": 581,
+          "capture_year": null,
+          "changes": "未裁剪、未调色；将平台公开展示的327×581 AVIF转JPEG以兼容网页",
+          "attribution": "Photo by Laputa Z / Unsplash"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "68a5d1a3000000001b022c3a",
+          "title": "日照看日出攻略灯塔广场万平口我有话要说！",
+          "author": "行走的绣花鞋",
+          "url": "https://www.xiaohongshu.com/explore/68a5d1a3000000001b022c3a",
+          "topic_scope": "single_attraction_experience",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "编辑于2025-09-07",
+          "copy_fallback": "日照看日出攻略灯塔广场万平口我有话要说！ 行走的绣花鞋",
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        },
+        {
+          "note_id": "69aed4680000000026031788",
+          "title": "日照 | 灯塔广场 | 老人与海",
+          "author": "听风继续吹",
+          "url": "https://www.xiaohongshu.com/explore/69aed4680000000026031788",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "03-09",
+          "copy_fallback": "日照 | 灯塔广场 | 老人与海 听风继续吹",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "wh_zhongjiang_pagoda",
+      "city": "芜湖",
+      "name": "中江塔",
+      "aliases": [],
+      "route_role": "visual_landmark_only",
+      "day_ids": [],
+      "preferred_note_id": "6aa00b75000000000b00c053",
+      "images": [
+        {
+          "url": "assets/places/wh_zhongjiang_pagoda.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Wuhu-wuhu-zhongjiangta.jpg",
+          "author": "Admornish",
+          "alt": "青弋江畔的芜湖中江塔实景",
+          "caption": "中江塔与青弋江",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 640,
+          "capture_year": "2018",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Admornish / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": [
+        {
+          "note_id": "6aa00b75000000000b00c053",
+          "title": "江南古塔系列｜芜湖·中江塔，中国式灯塔",
+          "author": "江南紫云英",
+          "url": "https://www.xiaohongshu.com/explore/6aa00b75000000000b00c053",
+          "topic_scope": "single_attraction_guide",
+          "dedicated_topic_verified": true,
+          "dedicated_scenery_post": true,
+          "official_share_reopen_verified": false,
+          "anonymous_access_verified": false,
+          "public_url_verified": false,
+          "mobile_link_verified": false,
+          "date_visible": "09-08 江苏",
+          "copy_fallback": "江南古塔系列｜芜湖·中江塔，中国式灯塔 江南紫云英",
+          "link_kind": "specific_note_token_free",
+          "link_availability": "not_reverified",
+          "historical_read_verified": true,
+          "link_status_label": "已读原帖；此入口去除了分享参数，可用性未重验，可能需 App / 登录",
+          "topic_kind": "scenery"
+        }
+      ]
+    },
+    {
+      "id": "ha_li_canal",
+      "city": "淮安",
+      "name": "里运河文化长廊",
+      "aliases": [
+        "里运河"
+      ],
+      "route_role": "stopover_comparison_only",
+      "day_ids": [],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "ha_yumatou",
+      "city": "淮安",
+      "name": "御码头",
+      "aliases": [],
+      "route_role": "stopover_comparison_only",
+      "day_ids": [],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "ha_hexia_town",
+      "city": "淮安",
+      "name": "河下古镇",
+      "aliases": [],
+      "route_role": "stopover_comparison_only",
+      "day_ids": [],
+      "preferred_note_id": null,
+      "images": [
+        {
+          "url": "assets/places/ha_hexia_town.jpg",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E6%B2%B3%E4%B8%8B%E5%8F%A4%E9%95%87%E5%A4%9C%E6%99%AF.jpg",
+          "author": "Whisper of the heart",
+          "alt": "淮安河下古镇砖墙巷道夜景",
+          "caption": "河下古镇夜景旧照，2019年",
+          "origin_type": "licensed_real_photo",
+          "source_name": "Wikimedia Commons",
+          "source_label": "授权实景图 · Wikimedia Commons（非小红书图）",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "reuse_status": "explicitly_licensed",
+          "display_mode": "local_licensed_asset",
+          "load_verified": true,
+          "mobile_load_verified": false,
+          "visual_verified": true,
+          "width": 960,
+          "height": 720,
+          "capture_year": "2019",
+          "changes": "未裁剪、未调色；采用Commons原站缩略图尺寸",
+          "attribution": "Whisper of the heart / Wikimedia Commons / CC BY-SA 4.0"
+        }
+      ],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_minjiang_road",
+      "city": "青岛",
+      "name": "闽江路餐饮街区",
+      "aliases": [],
+      "route_role": "meal_area_near_hotel_only",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    },
+    {
+      "id": "qd_yunxiao_road",
+      "city": "青岛",
+      "name": "云霄路餐饮街区",
+      "aliases": [],
+      "route_role": "meal_area_near_hotel_only",
+      "day_ids": [
+        "d2"
+      ],
+      "preferred_note_id": null,
+      "images": [],
+      "xhs_notes": []
+    }
+  ]
+}
