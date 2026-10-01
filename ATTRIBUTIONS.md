@@ -208,6 +208,6 @@ Ma Shan Zheng（马善政楷书），来自 Google Fonts。SIL Open Font License
 
 重新分发或修改媒体时，保留作者、来源、许可与改动说明，并遵守对应许可的条件。
 
-## 小红书私人参考图（非公开转载许可）
+## 小红书原图（保留采集时的私人参考标记）
 
-作者、原帖及使用范围保存在 public/data/attraction-media.json 的 private_reference_images。图片保持原文件和水印；只用于私人旅行参考，不宣称公共转载许可。
+作者、原帖及使用范围保存在 public/data/attraction-media.json 的 private_reference_images。图片保持原文件和水印；采集时用于私人旅行参考，用户于2026-10-01确认改为公开展示。此确认不等于原作者授予公共转载许可，原始权利标记保留。
