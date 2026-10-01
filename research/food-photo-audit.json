@@ -333,5 +333,13 @@
     "reviewer": "root",
     "method": "本地view_image逐张查看实际原图，核对专帖与店牌照片描述及SHA",
     "visual_evidence": "root实看原文件为手持透明杯红豆酒酿，底部红豆及金属勺，木桌红白砖背景；专帖首张店牌明确双桐巷店，饮品与正文餐食及同帖现场相符，照片本身不单独证明分店。"
+  },
+  "261425598081840706c6c6bc7d9ebc0bea65a49924396ef03e3e0e887ce48fd7": {
+    "status": "accepted",
+    "id": "rz_hujia",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对来源专帖与SHA",
+    "visual_evidence": "root实看原文件为白盘切块卤猪蹄、木桌及青花茶杯，符合专帖该餐；正文明确海纳对面，地图对应黄海一路店。图片无店牌，不能只凭盘子证明分店。"
   }
 }

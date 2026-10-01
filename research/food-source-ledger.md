@@ -4,8 +4,8 @@
 
 - 青岛：7 / 60 家采集记录
 - 威海：7 / 80 家采集记录
-- 连云港：6 / 40 家采集记录
-- 日照：6 / 40 家采集记录
+- 连云港：7 / 40 家采集记录
+- 日照：7 / 40 家采集记录
 - 芜湖：7 / 40 家采集记录
 - 淮安：7 / 20 家采集记录
 
@@ -207,6 +207,17 @@
 - 高德：[搜索备选](https://www.amap.com/search?query=%E8%BF%9E%E4%BA%91%E6%B8%AF%E5%B0%8F%E4%B8%8A%E6%B5%B7%E7%B3%95%E7%82%B9)。web.open实际测试URL不可访问，未在Chrome测试
 - 图像原文件 SHA256：7990d9502e4d80725f6f9b05fde9de10c099915f4f5579a7c3855fc9cc428d4f，1080×1440。原图小上海糕点门头清楚，松糕/麻饼侧招牌可见，匹配本店
 
+## 连云港 · 兄弟酒家
+
+等级：caution。海昌路分店XHS明确，点评当前时间表与地图地址匹配；可有条件正餐备选，近期投诉大厅吸烟喧闹和排队服务，未达必去
+
+![兄弟酒家原图](../public/assets/food/lyg_xiongdi.webp)
+
+- 小红书：[连云港老店新吃之兄弟酒家 · 能能](https://www.xiaohongshu.com/explore/6a69ee72000000001101ec3c)。Chrome实际单独打开当前笔记暂时无法浏览，需扫码App；签名搜索可读
+- 点评：[具体门店](https://www.dianping.com/shop/kaJfhd7VbRgRNPX0)。Chrome实际搜索海昌路分店获得真实链接并亲开
+- 高德：[搜索备选](https://www.amap.com/search?query=连云港兄弟酒家海昌路店)。Chrome亲开显示唯一同名海昌路店
+- 图像原文件 SHA256：1c7586eaf1978b95a6e9b3f24e30d65fff0fbf497d891f10132aed127e2c3b41，1440×1080。root逐张查看实际原文件：鱼籽青椒小碗旁吊饼，背景海蜇黄瓜菜，与专帖海昌路店餐食描述匹配；照片本身不证明具体分店，分店仍依赖正文及平台核验。
+
 ## 连云港 · 徐凤芹酸辣粉
 
 等级：exclude。实际可读多帖和原图齐全，但分店匹配与营业未确认，口味争议明显，先保留候选不做确定推荐
@@ -239,6 +250,17 @@
 - 点评：[具体门店](https://www.dianping.com/shop/l89nIiLqhg7k5J0q)。Chrome实际搜索唯一店取得并打开，详情摘要可读。
 - 高德：[地点](https://www.amap.com/place/B0FFJURZZZ)。来自已存真实候选place链接，Chrome本轮亲测详情可读。
 - 图像原文件 SHA256：1356be7be699dc815a99213bb9ee96096dd2cc3f381877aa7922b4dc2ebcfb31，1440×1080。本地view_image核实红底黑字夫妻美食门头，右上石臼所老街，20年老店、2005.8.15开业与09:00-20:30牌，菜牌含米肠冷面拌饭。DOM swiper index=0。
+
+## 日照 · 胡家猪蹄店
+
+等级：optional。明确海纳对面专帖实吃原图、长期日照用餐作者、地图同址当前营业可选，负面反查相关帖实际指大学城未名摊，不误归胡家。点评只能真实搜索fallback，缺近3月差评不升必去。
+
+![胡家猪蹄店原图](../public/assets/food/rz_hujia.webp)
+
+- 小红书：[日照｜胡家猪蹄 · 请叫我大王](https://www.xiaohongshu.com/explore/69fdb3f2000000003601cf2e)。Chrome单独打开当前笔记暂时无法浏览/App扫码；搜索入口实际正文照片可读。
+- 点评：[搜索备选](https://www.dianping.com/search/keyword/153/0_%E8%83%A1%E5%AE%B6%E7%8C%AA%E8%B9%84)。2026-10-01 Chrome亲测搜索0匹配，推荐列表非本店，不能借评分。
+- 高德：[地点](https://www.amap.com/place/B02790OVBM)。Chrome直接打开真实place入口详情可读，已亲核当前营业与地址。
+- 图像原文件 SHA256：261425598081840706c6c6bc7d9ebc0bea65a49924396ef03e3e0e887ce48fd7，1080×1440。root实看原文件为白盘切块卤猪蹄、木桌及青花茶杯，符合专帖该餐；正文明确海纳对面，地图对应黄海一路店。图片无店牌，不能只凭盘子证明分店。
 
 ## 日照 · 葭窑面包JiaYao
 
