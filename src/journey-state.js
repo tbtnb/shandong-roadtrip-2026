@@ -33,7 +33,7 @@ export function journeyReducer(state,action){
   }
   case 'OVERVIEW':return {...state,step:'overview',screen:'journey',camera:'overview'};
   case 'MODE':return {...state,mode:action.mode,screen:'journey'};
-  case 'SCREEN':return ['journey','photos','food','prepare','sources'].includes(action.screen)?{...state,screen:action.screen}:state;
+  case 'SCREEN':return ['journey','photos','food','prepare','sources','collections'].includes(action.screen)?{...state,screen:action.screen}:state;
   case 'CAMERA':return ['overview','immersive'].includes(action.camera)?{...state,camera:action.camera}:state;
   default:return state;
  }
