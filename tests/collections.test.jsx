@@ -8,6 +8,7 @@ import {layoutExport} from '../src/collection-export.js';
 const media=JSON.parse(fs.readFileSync('public/data/attraction-media.json'));
 const food=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
 const props={media,food};
+function photoPointer(target,type,props){const e=new Event(type,{bubbles:true,cancelable:true});Object.assign(e,{pointerId:1,...props});fireEvent(target,e)}
 afterEach(()=>{cleanup();localStorage.clear();vi.restoreAllMocks()});
 it('includes every attraction and food in six distinct collections, including excluded records',()=>{
  const cards=makeCards(media,food);expect(cards).toHaveLength(139);expect(new Set(cards.map(c=>c.key)).size).toBe(139);expect(cards.filter(c=>c.raw.level==='exclude').map(c=>c.raw.id).sort()).toEqual(food.entries.filter(e=>e.level==='exclude').map(e=>e.id).sort());
@@ -44,4 +45,10 @@ it('horizontal swipe selects, while vertical movement and cancelled gestures do 
  pointer(card,'pointerdown',100,100);pointer(card,'pointermove',230,105);pointer(card,'pointercancel',230,105);pointer(card,'pointerup',230,105);expect(screen.getByRole('button',{name:'已喜欢 0'})).toBeTruthy();
  pointer(card,'pointerdown',100,100);pointer(card,'pointermove',230,105);pointer(card,'pointerup',230,105);expect(screen.getByRole('button',{name:'已喜欢 1'})).toBeTruthy();
  card=screen.getByRole('article');pointer(card,'pointerdown',230,100);pointer(card,'pointermove',100,105);pointer(card,'pointerup',100,105);expect(Object.values(JSON.parse(localStorage.getItem(COLLECTION_KEY)))).toEqual(['like','dislike']);
+});
+
+it('first card visit teaches photo taps, likes advance, and the guide stays dismissed',()=>{
+ const view=render(<CardCollections {...props}/>);fireEvent.click(screen.getByRole('button',{name:'打开青岛卡片集合'}));expect(screen.getByRole('dialog',{name:'卡片操作引导'})).toBeTruthy();fireEvent.click(screen.getByRole('button',{name:'知道了，开始选'}));const first=screen.getByRole('article').getAttribute('aria-label');
+ const album=screen.getByRole('region',{name:/照片$/});photoPointer(album,'pointerdown',{button:0,clientX:250,clientY:30});photoPointer(album,'pointerup',{clientX:40,clientY:30});expect(screen.getByRole('article').getAttribute('aria-label')).not.toBe(first);expect(Object.values(JSON.parse(localStorage.getItem(COLLECTION_KEY)))).toEqual(['dislike']);
+ fireEvent.click(screen.getByRole('button',{name:'喜欢当前卡片'}));expect(screen.getByRole('article').getAttribute('aria-label')).not.toBe(first);view.unmount();render(<CardCollections {...props}/>);fireEvent.click(screen.getByRole('button',{name:'打开青岛卡片集合'}));expect(screen.queryByRole('dialog',{name:'卡片操作引导'})).toBeNull();
 });

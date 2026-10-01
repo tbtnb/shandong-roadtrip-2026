@@ -1,25 +1,21 @@
 import React,{useEffect,useRef,useState} from 'react';
-import {X,ArrowLeft,ArrowRight,MagnifyingGlassPlus} from '@phosphor-icons/react';
+import {X,MagnifyingGlassPlus} from '@phosphor-icons/react';
 import {safeExternal} from './utils.js';
-import {albumImages,editorialFor,mediaUrl,useEditorial} from './editorial.js';
+import {albumImages,editorialFor,useEditorial} from './editorial.js';
 import './editorial-details.css';
+import OriginalImage from './OriginalImage.jsx';
+import SwipePhotos from './SwipePhotos.jsx';
+export {default as OriginalImage} from './OriginalImage.jsx';
 function Source({url,children}){return safeExternal(url)?<a href={url} aria-label={typeof children==='string'?children:undefined} target="_blank" rel="noopener noreferrer">{children} ↗</a>:<span>{children} · 来源链接待补</span>}
-export function OriginalImage({photo,className=''}){
- const [attempt,setAttempt]=useState(0),url=mediaUrl(photo?.url),fallback=mediaUrl(photo?.fallback_url);
- useEffect(()=>setAttempt(0),[url,fallback]);
- const activeUrl=attempt===0?url:attempt===1?fallback:'';
- return activeUrl?<img className={className} src={activeUrl} alt={photo.caption||photo.alt||'原帖实拍'} loading="lazy" referrerPolicy="no-referrer" draggable="false" onError={()=>setAttempt(a=>a===0&&fallback&&fallback!==url?1:2)}/>:<div className={`ed-image-error ${className}`} role="status">{url?'原图加载失败，请稍后重试或查看来源原帖。':'暂无可显示的原图。'}</div>;
-}
 export function SourceAlbum({card,entry}){
- const images=albumImages(card,entry),[source,setSource]=useState('all'),[index,setIndex]=useState(0),[zoom,setZoom]=useState(false),gesture=useRef(null),lightbox=useRef(null),zoomPrior=useRef(null);
+ const images=albumImages(card,entry),[source,setSource]=useState('all'),[index,setIndex]=useState(0),[zoom,setZoom]=useState(false),lightbox=useRef(null),zoomPrior=useRef(null);
  useEffect(()=>{if(!zoom)return;const previous=zoomPrior.current;lightbox.current?.querySelector('button')?.focus();return()=>previous?.focus?.()},[zoom]);
  const groups=[...new Map(images.map(p=>[p.source_id,p.source_name])).entries()];
  const shown=images.filter(p=>source==='all'||p.source_id===source),at=Math.min(index,Math.max(0,shown.length-1)),photo=shown[at];
- const move=n=>setIndex(i=>(i+n+shown.length)%Math.max(1,shown.length));
  useEffect(()=>{setSource('all');setIndex(0);setZoom(false)},[card.key]);
- return <section className="ed-album" aria-label={`${card.name}多来源相册`} onPointerDown={e=>{e.stopPropagation();gesture.current={x:e.clientX,y:e.clientY}}} onPointerUp={e=>{e.stopPropagation();const g=gesture.current;gesture.current=null;if(g&&!e.target.closest('button,a,select')&&Math.abs(e.clientX-g.x)>60&&Math.abs(e.clientX-g.x)>Math.abs(e.clientY-g.y)*1.5)move(e.clientX<g.x?1:-1)}} onPointerCancel={()=>{gesture.current=null}} onKeyDown={e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){if(e.target.closest('select'))return;e.stopPropagation();e.preventDefault();move(e.key==='ArrowRight'?1:-1)}}}>
+ return <section className="ed-album" aria-label={`${card.name}多来源相册`}>
  <h3>实拍相册 · {images.length} 张</h3><label className="ed-source-filter">照片来源<select aria-label="筛选照片来源" value={source} onChange={e=>{setSource(e.target.value);setIndex(0)}}><option value="all">全部来源 · {images.length} 张</option>{groups.map(([id,name])=><option key={id} value={id}>{name} · {images.filter(p=>p.source_id===id).length} 张</option>)}</select></label>
- {photo?<><div className="ed-album-stage"><OriginalImage photo={photo}/><button className="ed-enlarge" aria-label="放大查看原图" onClick={()=>{zoomPrior.current=document.activeElement;setZoom(true)}}><MagnifyingGlassPlus size={20}/> 放大</button></div><div className="ed-album-controls"><button aria-label="上一张照片" disabled={shown.length<2} onClick={()=>move(-1)}><ArrowLeft size={20}/><span>上一张</span></button><span role="status">{at+1} / {shown.length}{source!=='all'?` · 总共 ${images.length} 张`:''}</span><button aria-label="下一张照片" disabled={shown.length<2} onClick={()=>move(1)}><span>下一张</span><ArrowRight size={20}/></button></div><div className="ed-photo-credit"><p>{photo.caption}</p><p>摄影：{photo.author} · {photo.source_name}</p><Source url={photo.source_url}>照片原帖</Source>{photo.license&&<small>{photo.source_name} · <Source url={photo.license_url}>{photo.license}</Source> · {photo.changes||'见原图来源许可'}</small>}<small>图片完整显示，水印保留；部分点评图片为网页预览尺寸。历史影像不代表当前客流、天气或营业。</small></div><div className="ed-thumbnails" aria-label="照片缩略图">{shown.map((p,i)=><button key={p.url} aria-label={`查看第 ${i+1} 张照片`} aria-pressed={i===at} onClick={()=>setIndex(i)}><OriginalImage photo={p}/><span>{i+1}</span></button>)}</div></>:<p role="status">此条记录尚无可显示的原图。</p>}
+ {photo?<><div className="ed-album-stage"><SwipePhotos photos={shown} index={at} onChange={setIndex} label={`${card.name}照片`}/><button className="ed-enlarge" aria-label="放大查看原图" onClick={()=>{zoomPrior.current=document.activeElement;setZoom(true)}}><MagnifyingGlassPlus size={20}/> 放大</button></div><div className="ed-photo-credit"><p>{photo.caption}</p><p>摄影：{photo.author} · {photo.source_name}</p><Source url={photo.source_url}>照片原帖</Source>{photo.license&&<small>{photo.source_name} · <Source url={photo.license_url}>{photo.license}</Source> · {photo.changes||'见原图来源许可'}</small>}<small>图片完整显示，水印保留；部分点评图片为网页预览尺寸。历史影像不代表当前客流、天气或营业。</small></div></>:<p role="status">此条记录尚无可显示的原图。</p>}
  {zoom&&photo&&<div className="ed-lightbox" ref={lightbox} role="dialog" aria-modal="true" aria-label="原图放大查看" tabIndex={-1} onKeyDown={e=>{if(e.key==='Escape'){e.preventDefault();e.stopPropagation();setZoom(false)}if(e.key==='Tab'){const nodes=[...e.currentTarget.querySelectorAll('button,a[href]')],first=nodes[0],last=nodes.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}}}} onClick={e=>{if(e.target===e.currentTarget)setZoom(false)}}><button autoFocus aria-label="关闭放大查看" onClick={()=>setZoom(false)}><X size={24}/></button><OriginalImage photo={photo}/><p>摄影：{photo.author} · <Source url={photo.source_url}>{photo.source_name}</Source></p></div>}
  </section>;
 }

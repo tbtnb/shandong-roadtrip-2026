@@ -7,16 +7,20 @@ import PhotosGallery from '../src/PhotosGallery.jsx';
 import {mediaUrl,albumImages} from '../src/editorial.js';
 const card={key:'spot:fixture',id:'fixture',kind:'spot',name:'海岸测试',city:'青岛',summary:'旧介绍',raw:{}};
 const entry={id:'fixture',kind:'spot',overview:['两段完整介绍之一','两段完整介绍之二'],highlights:['沿海步道'],practical:['坐公交到达'],cautions:['浪大时不下礁石'],review_summary:{xiaohongshu:'小红书正文与两位作者经验对照',dianping:'点评分店尚未确认，未读取近期差评',coverage:'两篇可读原帖；门店近期评价未读'},sources:[{platform:'小红书',title:'甲的海边记录',author:'作者甲',url:'https://example.com/post/a',read_scope:'正文和全部三张原图'},{platform:'大众点评',title:'乙的门店页',url:'https://example.com/shop/b',read_scope:'只读到门店页照片，评价未读'}],images:Array.from({length:5},(_,i)=>({url:`https://example.com/photo/${i}.jpg`,source_id:i<3?'a':'b',source_name:i<3?'甲的海边记录':'乙的门店页',source_url:i<3?'https://example.com/post/a':'https://example.com/shop/b',author:i<3?'作者甲':'作者乙',caption:`第${i+1}张实景`,permission:'user_confirmed'}))};
+function photoPointer(target,type,props){const e=new Event(type,{bubbles:true,cancelable:true});Object.assign(e,{pointerId:1,...props});fireEvent(target,e)}
 afterEach(()=>{cleanup();vi.unstubAllGlobals()});
 it('resolves local paths under base and keeps HTTPS remote paths intact while rejecting unsafe protocols',()=>{
  expect(mediaUrl('assets/a.jpg','/trip/')).toBe('/trip/assets/a.jpg');expect(mediaUrl('/assets/a.jpg','/trip/')).toBe('/trip/assets/a.jpg');expect(mediaUrl('https://example.com/a.jpg','/trip/')).toBe('https://example.com/a.jpg');for(const url of ['javascript:alert(1)','data:image/png;base64,abc','http://example.com/a','//evil.com/a','../a','\\evil'])expect(mediaUrl(url)).toBe('');
 });
-it('five images from two sources filter, wrap, select thumbnails, and enlarge with source attribution',()=>{
+it('photos use progress dots, source filtering and attributed enlargement without previous/next buttons',()=>{
  render(<SourceAlbum card={card} entry={entry}/>);
- expect(screen.getByText('实拍相册 · 5 张')).toBeTruthy();const stage=()=>document.querySelector('.ed-album-stage img');expect(stage().getAttribute('src')).toBe(entry.images[0].url);
- fireEvent.click(screen.getByRole('button',{name:'上一张照片'}));expect(stage().getAttribute('src')).toBe(entry.images[4].url);fireEvent.click(screen.getByRole('button',{name:'下一张照片'}));expect(stage().getAttribute('src')).toBe(entry.images[0].url);
- fireEvent.change(screen.getByLabelText('筛选照片来源'),{target:{value:'b'}});expect(screen.getByRole('status').textContent).toContain('1 / 2');expect(stage().getAttribute('src')).toBe(entry.images[3].url);expect(screen.getByText('摄影：作者乙 · 乙的门店页')).toBeTruthy();
- fireEvent.click(screen.getByRole('button',{name:'查看第 2 张照片'}));expect(stage().getAttribute('src')).toBe(entry.images[4].url);fireEvent.click(screen.getByRole('button',{name:'放大查看原图'}));const zoom=screen.getByRole('dialog',{name:'原图放大查看'});expect(within(zoom).getByRole('img').getAttribute('src')).toBe(entry.images[4].url);fireEvent.keyDown(zoom,{key:'Escape'});expect(screen.queryByRole('dialog')).toBeNull();
+ const stage=()=>document.querySelector('.swipe-slide[aria-hidden="false"] img');
+ expect(stage().getAttribute('src')).toBe(entry.images[0].url);
+ expect(screen.queryByRole('button',{name:'下一张照片'})).toBeNull();
+ fireEvent.click(screen.getByRole('button',{name:'查看第 5 张照片'}));expect(stage().getAttribute('src')).toBe(entry.images[4].url);
+ fireEvent.change(screen.getByLabelText('筛选照片来源'),{target:{value:'b'}});expect(screen.getByRole('status').textContent).toBe('1 / 2');expect(stage().getAttribute('src')).toBe(entry.images[3].url);
+ fireEvent.click(screen.getByRole('button',{name:'查看第 2 张照片'}));expect(stage().getAttribute('src')).toBe(entry.images[4].url);
+ fireEvent.click(screen.getByRole('button',{name:'放大查看原图'}));const zoom=screen.getByRole('dialog',{name:'原图放大查看'});expect(within(zoom).getByRole('img').getAttribute('src')).toBe(entry.images[4].url);fireEvent.keyDown(zoom,{key:'Escape'});expect(screen.queryByRole('dialog')).toBeNull();
  fireEvent.change(screen.getByLabelText('筛选照片来源'),{target:{value:'all'}});expect(screen.getAllByRole('button',{name:/查看第 .* 张照片/})).toHaveLength(5);
 });
 it('remote image uses no referer, retries local backup once, then shows an explicit error and resets on new photo',()=>{
@@ -40,7 +44,12 @@ it('food and photo libraries open the shared full detail dialog from their own e
  render(<PhotosGallery media={{attractions:[{id:'fixture',name:'海岸测试',city:'青岛',description:'旧介绍',private_reference_images:[{url:'assets/shore.jpg',visual_verified:true,author:'海边作者'}]}]}} expanded onExpanded={()=>{}}/>);
  fireEvent.click(screen.getByRole('button',{name:/阅读完整详情/}));expect(screen.getByRole('dialog',{name:'海岸测试详情'})).toBeTruthy();fireEvent.click(screen.getByRole('button',{name:'关闭详情'}));expect(screen.queryByRole('dialog')).toBeNull();
 });
-it('album pointer gestures and arrow keys stay inside the gallery interaction boundary',()=>{
+it('photo taps, swipes and keys stay inside the album, with bounded ends and no vertical-swipe selection',()=>{
  const bubble=vi.fn();render(<div onPointerUp={bubble} onKeyDown={bubble}><SourceAlbum card={card} entry={entry}/></div>);
- const stage=document.querySelector('.ed-album-stage');fireEvent.pointerDown(stage,{clientX:200,clientY:30});fireEvent.pointerUp(stage,{clientX:40,clientY:30});expect(bubble).not.toHaveBeenCalled();fireEvent.keyDown(screen.getByRole('button',{name:'下一张照片'}),{key:'ArrowRight'});expect(bubble).not.toHaveBeenCalled();
+ const stage=screen.getByRole('region',{name:'海岸测试照片'});stage.getBoundingClientRect=()=>({left:0,width:300});Object.defineProperty(stage,'clientWidth',{value:300});
+ const tap=x=>{photoPointer(stage,'pointerdown',{button:0,clientX:x,clientY:30});photoPointer(stage,'pointerup',{clientX:x,clientY:30})};
+ tap(250);expect(screen.getByRole('status').textContent).toBe('2 / 5');tap(30);expect(screen.getByRole('status').textContent).toBe('1 / 5');tap(30);expect(screen.getByRole('status').textContent).toBe('1 / 5');
+ photoPointer(stage,'pointerdown',{button:0,clientX:250,clientY:30});photoPointer(stage,'pointerup',{clientX:40,clientY:30});expect(screen.getByRole('status').textContent).toBe('2 / 5');
+ photoPointer(stage,'pointerdown',{button:0,clientX:150,clientY:30});photoPointer(stage,'pointerup',{clientX:155,clientY:250});expect(screen.getByRole('status').textContent).toBe('2 / 5');
+ fireEvent.keyDown(stage,{key:'ArrowRight'});expect(screen.getByRole('status').textContent).toBe('3 / 5');expect(bubble).not.toHaveBeenCalled();
 });
