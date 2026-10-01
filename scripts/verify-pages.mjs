@@ -5,7 +5,8 @@ import {createHash} from 'node:crypto';
 const root='dist/client',base=process.argv[2]||'/shandong-roadtrip-2026/';
 const index=fs.readFileSync(path.join(root,'index.html'),'utf8');
 function local(url){
- if(url.startsWith('data:')||url.startsWith('https:')||url.startsWith('http:'))return;
+ // Fragment-only CSS references (e.g. Leaflet's legacy VML behavior) are not file requests.
+ if(url.startsWith('#')||url.startsWith('data:')||url.startsWith('https:')||url.startsWith('http:'))return;
  assert(url.startsWith(base),`Resource misses Pages subpath: ${url}`);
  const relative=url.slice(base.length).split(/[?#]/)[0];
  assert(!relative.includes('..'));assert(fs.statSync(path.join(root,relative)).isFile(),`Missing resource: ${url}`);
