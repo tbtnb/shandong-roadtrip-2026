@@ -1,18 +1,16 @@
 import React from 'react';
-import {ArrowLeft,ArrowRight} from '@phosphor-icons/react';
-
-export default function JourneyGuide({step,days,chooseDays,day,activeDay,itinerary,chooseDay,onStep,onOverview,onPrepare,headingRef,cities,activeCity,onCity}){
- const number={overview:1,day:2,spots:3,finish:4}[step];
- const titles={overview:'先选天数，看看全程',day:`第 ${activeDay+1} 天 · 先读当天路书`,spots:`第 ${activeDay+1} 天 · 看看这一站`,finish:'旅程预览完成'};
- const hints={overview:'从芜湖出发，沿山东海岸向北，再分段回家。选好节奏，就开始逐日预览。',day:'先看转场、休息和天气备选，准备好再翻这一站的景点。',spots:'翻开感兴趣的景点，再把适合的项目放进当天安排。浏览不会记录为真实到访。',finish:`已经走完 ${days} 天的行程预览。接下来核对住宿、天气与预约，让计划更踏实。`};
- const dayOptions=<div className="journey-day-options" aria-label="地图日期选择">{itinerary.days.map((d,i)=><button key={d.date} aria-pressed={i===activeDay} onClick={()=>chooseDay(i)}><small>第 {i+1} 天</small><strong>{d.date.slice(5).replace('-','.')}</strong><span>{i===days-1?'回芜湖':d.sleep}</span></button>)}</div>;
- const duration=<div className="days-toggle" aria-label="行程天数"><button aria-pressed={days===5} onClick={()=>chooseDays(5)}>5 天</button><button aria-pressed={days===6} onClick={()=>chooseDays(6)}>6 天<span>更从容</span></button></div>;
- return <section id="journey-guide" className="journey-guide" aria-labelledby="journey-stage-title">
-  <div className="journey-progress" aria-label={`步骤 ${number} / 4`}><span>步骤 {number} / 4</span><span>{step==='overview'?`${days} 天 · 全程路线`:`${day.date} · 第 ${activeDay+1} 天`}</span></div>
-  <div className="journey-guide-body"><div><h2 id="journey-stage-title" ref={headingRef} tabIndex={-1}>{titles[step]}</h2><p>{hints[step]}</p></div>{step==='overview'&&duration}</div>
-  <div className={`journey-actions ${step!=='overview'?'journey-actions-fixed':''}`}>{step!=='overview'&&<button className="secondary" onClick={()=>step==='spots'?onStep('day'):step==='finish'?onStep('spots'):onOverview()}><ArrowLeft size={18}/>{step==='day'?'上一步 · 全程路线':step==='spots'?'上一步 · 当天路书':'上一步 · 最后一站'}</button>}
-   <button className="primary" onClick={()=>step==='overview'?onStep('day'):step==='day'?onStep('spots'):step==='spots'?(activeDay<days-1?chooseDay(activeDay+1):onStep('finish')):onPrepare()}>{step==='overview'?'开始旅程':step==='day'?'看看这一站':step==='spots'?(activeDay<days-1?`继续第 ${activeDay+2} 天`:'完成旅程预览'):'出发准备'}<ArrowRight size={18}/></button>
-  </div>
-  {step!=='overview'&&<div className="journey-adjustments"><details><summary>跳转日期</summary>{dayOptions}</details><details><summary>调整旅程</summary>{duration}<p>5 天版少一个威海完整游玩日；切换保留当前有效日期和景点安排。</p><label>浏览其他城市<select aria-label="浏览其他城市" value={activeCity} onChange={e=>onCity(e.target.value)}>{cities.map(c=><option key={c.id} value={c.id}>{c.name}</option>)}</select></label><button className="secondary" onClick={onOverview}>返回全图</button></details></div>}
- </section>
+import {ArrowLeft,ArrowRight,MapPin} from '@phosphor-icons/react';
+export function TripDays({days,chooseDays}){return <div className="days-toggle" aria-label="行程天数"><button aria-pressed={days===5} onClick={()=>chooseDays(5)}>5 天</button><button aria-pressed={days===6} onClick={()=>chooseDays(6)}>6 天<span>更从容</span></button></div>}
+export function DayNavigator({itinerary,activeDay,chooseDay}){
+ function keys(e,i){let next;if(e.key==='ArrowRight')next=(i+1)%itinerary.days.length;else if(e.key==='ArrowLeft')next=(i-1+itinerary.days.length)%itinerary.days.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=itinerary.days.length-1;else return;e.preventDefault();chooseDay(next);document.getElementById(`trip-day-${next}`)?.focus();}
+ return <div className="trip-day-navigation" role="tablist" aria-label="选择查看哪一天">{itinerary.days.map((day,i)=><button id={`trip-day-${i}`} role="tab" key={day.date} tabIndex={activeDay===i?0:-1} aria-selected={activeDay===i} aria-controls="journey-content" onKeyDown={e=>keys(e,i)} onClick={()=>chooseDay(i)}><small>{day.date.slice(5).replace('-','.')}</small><strong>第 {i+1} 天</strong><span>{i===itinerary.days.length-1?'回芜湖':day.sleep}</span></button>)}</div>;
+}
+export default function JourneyGuide({step,days,chooseDays,day,activeDay,onStep,onNext,onBack,onPrepare,headingRef,mode}){
+ if(step==='overview'&&mode==='guided')return <section id="journey-guide" className="journey-welcome" aria-labelledby="journey-stage-title"><p className="eyebrow">2026 · 国庆自驾手账</p><h1 id="journey-stage-title" ref={headingRef} tabIndex={-1}>是时候去看海了。</h1><p>从芜湖出发，沿海岸一路向北。先看看全程，准备好后走进立体书，逐日挑选想逛、想吃的地方。</p><TripDays days={days} chooseDays={chooseDays}/><p className="duration-note">{days===6?'6 天更从容，威海多留一个完整游玩日。':'5 天少一个威海完整游玩日，保留沿途休息。'}</p><ol className="welcome-flow"><li>读当天路书</li><li>挑景点</li><li>找美食</li></ol><button className="primary journey-begin" onClick={()=>onStep('day')}>开始旅程<ArrowRight size={20}/></button><small className="welcome-tip">也可以在页顶切换攻略模式，直接展开所有资料。</small></section>;
+ const labels={day:'当天路书',spots:'景点与自选',food:'这一站吃什么'};
+ return <section id="journey-guide" className="journey-stage" aria-labelledby="journey-stage-title"><div className="trip-context"><span><MapPin size={16}/>{day.sleep} · {day.date}</span><span>第 {activeDay+1} / {days} 天</span></div><h2 id="journey-stage-title" tabIndex={-1} ref={headingRef}>{step==='finish'?'旅程预览完成':mode==='guide'?`第 ${activeDay+1} 天 · 全部攻略`:`第 ${activeDay+1} 天 · ${labels[step]||labels.day}`}</h2>{mode==='guide'?<p>路书、景点和美食均已展开。上方选择日期，切回沉浸体验可继续当前步骤。</p>:step==='finish'?<p>预览已完成，准备事项可以随时核对。自选和印章保留在当前浏览器。</p>:<div className="trip-stage-tabs" role="group" aria-label="当天浏览步骤">{Object.entries(labels).map(([id,label],i)=><button key={id} aria-pressed={step===id} onClick={()=>onStep(id)}><span>{i+1}</span>{label}</button>)}</div>}</section>;
+}
+export function JourneyActions({step,activeDay,days,onNext,onBack,onPrepare}){
+ const next={day:'挑选景点',spots:'看看当地美食',food:activeDay<days-1?`继续第 ${activeDay+2} 天`:'完成旅程预览',finish:'检查出发准备'};
+ return <div className="journey-step-actions"><button className="secondary" onClick={onBack}><ArrowLeft size={18}/>{step==='day'?'返回全程':step==='spots'?'返回路书':step==='food'?'返回景点':'返回最后一天'}</button><button className="primary" onClick={step==='finish'?onPrepare:onNext}>{next[step]}<ArrowRight size={18}/></button></div>;
 }
