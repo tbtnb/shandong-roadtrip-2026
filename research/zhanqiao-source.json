@@ -1,0 +1,28 @@
+{
+  "location": "青岛栈桥",
+  "title": "青岛栈桥🌁9.30实况",
+  "author": "畅🌈",
+  "source_url": "https://www.xiaohongshu.com/explore/6abd1e43000000000a026902",
+  "post_images": 12,
+  "downloaded_image_index": 1,
+  "local_file": "research/photos/zhanqiao-chang-01.jpg",
+  "download_method": "网站照片右键菜单 → 下载图片；页面提示已开始下载，已核实 Downloads 文件落盘",
+  "watermark": "网站正常下载的原文件；未裁切或修改，未见明显水印",
+  "visual": "竖幅栈桥、回澜阁、礁石、海面实拍，无攻略文字封面",
+  "body_summary": "9月30日早上去了栈桥，人不多；无海鸥；桥上收费拍照海鸥为P图；旁边中山路步行17分钟至天主教堂；天气忽晴忽阴。",
+  "status": "单张样本已下载；无参数原帖入口在当前登录 Chrome 环境不可直接浏览；未批量采集",
+  "source_url_role": "无参数原帖入口；不能标记为已验证可读直链",
+  "source_validation": {
+    "date": "2026-10-01",
+    "method": "原生 mcp__cua_repl，独立 Chrome tab 1770998062 实际 goto 无参数 source_url",
+    "environment": "此前同一 Chrome 登录环境可在站内搜索打开原帖；本次未访问 cookie/token，未提交凭据",
+    "result": "重定向至网站 /404 页面；当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "error_code": "300031",
+    "readable": false,
+    "login_prompt_observed": false,
+    "app_required_prompt_observed": true,
+    "boundary": "仅验证当前已登录 Chrome 环境；没有验证无登录/其它浏览器环境。先前正文与下载能力来自站内搜索点击结果，不能归属到此无参数入口。"
+  },
+  "sha256": "95aa87fb6afe3939527a6b8b74b753122836a85b0475bfd2f342bd39aa3293cd",
+  "use_scope": "私人旅行资料；未取得公开转载授权；平台正常下载原文件，像素未修改"
+}
