@@ -1,0 +1,157 @@
+{
+  "checked_at": "2026-10-01",
+  "food_count": 30,
+  "scope": "实际localhost HTTP照片响应与已核对原图SHA逐一比较；不代表平台原帖再次验证或真实iPhone测试",
+  "photos": [
+    {
+      "id": "qingdao_haiyan_nainai",
+      "sha256": "213018d688b0ca9eb5586a59580b85b8aabf2cc055be2d7d30ba03a4a290efce",
+      "http_original_match": true
+    },
+    {
+      "id": "qingdao_jiefujia",
+      "sha256": "a80d4532627bc3dbd264c7e578de9f31b28a16d3ec0a8fb6c425e65ac345ca7f",
+      "http_original_match": true
+    },
+    {
+      "id": "qingdao_laofangzi",
+      "sha256": "d3da54b5e68ae30a945341bbcbe05b32699fe08c1382ce2b62b9c6d13223090a",
+      "http_original_match": true
+    },
+    {
+      "id": "qingdao_lianji",
+      "sha256": "45b04812ebb83a251b31dec1474ccc37134e78b498d6cb5251fe3d790c0cdddf",
+      "http_original_match": true
+    },
+    {
+      "id": "qingdao_pichaiyuan",
+      "sha256": "ce045941b8896b78f40c31a92772c7a2469aa769e1f098ef5f48ab9de6e3aec1",
+      "http_original_match": true
+    },
+    {
+      "id": "qingdao_shenghuolin",
+      "sha256": "e64ce04127e65febc3fad3a7f563beeb190ae825a3bc0ff62976bf30062bf30b",
+      "http_original_match": true
+    },
+    {
+      "id": "weihai_dongyuan",
+      "sha256": "044497a0ff90e4d04d87caf72d1e8c760152d1dc108d5a7101f7888c6c2d3af2",
+      "http_original_match": true
+    },
+    {
+      "id": "weihai_fulaitian",
+      "sha256": "8a71a6cd1fd159a0587bb2b327fc33438094e579930a4d1edd3d3fcb2410672e",
+      "http_original_match": true
+    },
+    {
+      "id": "weihai_hanrenge",
+      "sha256": "dbcc64e3d484569bbfa91a964418f6176f6b7c5bbdca4f8be5e6259f640f4ca7",
+      "http_original_match": true
+    },
+    {
+      "id": "weihai_mixiaoqing",
+      "sha256": "83308e3ed10461675569c8ce8bbd7cbd2d11dc9a3a301f7fa36776538a003f2c",
+      "http_original_match": true
+    },
+    {
+      "id": "weihai_qidong",
+      "sha256": "a5d38883b251230ffe6165150d06fb23f55651abccaac860b917f1110f8b0cb5",
+      "http_original_match": true
+    },
+    {
+      "id": "lyg_huanglaotou",
+      "sha256": "3afecc8e7db8b8f1b575609ec335e33773357534e7fdcebac47588d57cdf52ae",
+      "http_original_match": true
+    },
+    {
+      "id": "lyg_weifanglou",
+      "sha256": "701b4e77668f79a136f2de237d01e6d243831e89e15104d8168b3feebd03a21c",
+      "http_original_match": true
+    },
+    {
+      "id": "lyg_xiaolaotou",
+      "sha256": "f4a52ee753508a7cacf914bfc479e3397fcffdb607ba189bbbe29e2c2a180eeb",
+      "http_original_match": true
+    },
+    {
+      "id": "lyg_xiaoshanghai",
+      "sha256": "7990d9502e4d80725f6f9b05fde9de10c099915f4f5579a7c3855fc9cc428d4f",
+      "http_original_match": true
+    },
+    {
+      "id": "lyg_zhengbing",
+      "sha256": "f9a4c4edd59a88a4f1d6e2db8c1c65c443712e7c291204af0e7db0f3636d039e",
+      "http_original_match": true
+    },
+    {
+      "id": "rz_jiayao",
+      "sha256": "ddc3061c1b106f8e5e32caac28fe652e053e9f755a1ba64a995711b5832a3982",
+      "http_original_match": true
+    },
+    {
+      "id": "rz_laodongfang",
+      "sha256": "26b06a0efc12255bfe1d01b978650e43fd85a044462921eb9796ccb93d4f09e8",
+      "http_original_match": true
+    },
+    {
+      "id": "rz_tianrui",
+      "sha256": "4aadb7153d66e84ba9dc1ba92496fa20201ddca3e360ba7e7f18ec09f0d3e0e2",
+      "http_original_match": true
+    },
+    {
+      "id": "rz_yijiaxiang",
+      "sha256": "1c7f9ec444c34bbea9a5349c9f8d00e30f1e036046c3acb99a3f334978c63d5d",
+      "http_original_match": true
+    },
+    {
+      "id": "wuhu_gengfuxing",
+      "sha256": "aeb66289e0379e40afc78d48ac02328c77b11419a84a9a19c7558f246d6c4296",
+      "http_original_match": true
+    },
+    {
+      "id": "wuhu_sijichun",
+      "sha256": "1f38bb7b28d4dab5d69805c78efd03c3ff23a0240e31f1fa8fe48f7962fd1755",
+      "http_original_match": true
+    },
+    {
+      "id": "wuhu_xiaogao",
+      "sha256": "56fe68d9fad76c08ac4c70e12bf69f2e4ce4637b4dd444f057545bd58ca3f872",
+      "http_original_match": true
+    },
+    {
+      "id": "wuhu_xiaojin",
+      "sha256": "442188d21525ae5734bd19babfde0420f1f560d4886cdff135d2faa6dcc7efef",
+      "http_original_match": true
+    },
+    {
+      "id": "wuhu_xiaoma",
+      "sha256": "263d8711281dbca84ca0547d539c0f1b54274a925ae91165c9871a7293051134",
+      "http_original_match": true
+    },
+    {
+      "id": "huaian_fangfang",
+      "sha256": "a4b38e5656473d83a7661cacdc4b1189e044051a50c8a71daaf8754280e144b7",
+      "http_original_match": true
+    },
+    {
+      "id": "huaian_laohuaian",
+      "sha256": "1b0c00ec49d161d6b9d4a1ebd9b5350efa3e993a36c8db8461d4197ab743fd2a",
+      "http_original_match": true
+    },
+    {
+      "id": "huaian_liji",
+      "sha256": "1005ee3bf2962f82836235fc7c59efbcaec2281b5aace7b615f5dd0b438f482c",
+      "http_original_match": true
+    },
+    {
+      "id": "huaian_nanlian",
+      "sha256": "0ce788b3b62d83bb199c506f0c51ca2cbab729caa8600d8f4f02725157d46281",
+      "http_original_match": true
+    },
+    {
+      "id": "huaian_puxian",
+      "sha256": "ffe66f89e48745255ceb3cfd65f203915a4cc538599efac65f9ec0a01be07971",
+      "http_original_match": true
+    }
+  ]
+}

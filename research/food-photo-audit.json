@@ -117,5 +117,133 @@
     "reviewer": "root",
     "method": "本地原始文件逐张展开查看，并核对文件SHA及来源记录",
     "visual_evidence": "本地查看实际为白碗豆腐羹/汤近景，正文明确点名平桥豆腐；画面不能单独识别分店或确证菜名，来源为本店专帖；下载元素不等同轮播顺序"
+  },
+  "ddc3061c1b106f8e5e32caac28fe652e053e9f755a1ba64a995711b5832a3982": {
+    "status": "accepted",
+    "id": "rz_jiayao",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录",
+    "visual_evidence": "本地view_image核对：整桌塑封面包甜点，杏仁片薄酥、盒装吐司、布丁塔等；包装袋有葭窑标识，与主帖邮购清单对应。DOM data-swiper-slide-index=0明确第一张。"
+  },
+  "f9a4c4edd59a88a4f1d6e2db8c1c65c443712e7c291204af0e7db0f3636d039e": {
+    "status": "accepted",
+    "id": "lyg_zhengbing",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录",
+    "visual_evidence": "本地view_image核查为白盘虾滑青笋木耳汤，与正文虾滑笋片汤匹配"
+  },
+  "3afecc8e7db8b8f1b575609ec335e33773357534e7fdcebac47588d57cdf52ae": {
+    "status": "accepted",
+    "id": "lyg_huanglaotou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录",
+    "visual_evidence": "本地view_image实际核查：凉面制作摊玻璃柜、面筋凉面黄瓜配料；与主帖店内场景匹配，未把人物作为菜品"
+  },
+  "1f38bb7b28d4dab5d69805c78efd03c3ff23a0240e31f1fa8fe48f7962fd1755": {
+    "status": "accepted",
+    "id": "wuhu_sijichun",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录",
+    "visual_evidence": "view_image本地亲看：白碗虾籽面，面上褐色虾籽、汤中葱段，金属桌面；同专帖首图四季春店牌，正文吃面对应。"
+  },
+  "ce045941b8896b78f40c31a92772c7a2469aa769e1f098ef5f48ab9de6e3aec1": {
+    "status": "accepted",
+    "id": "qingdao_pichaiyuan",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应",
+    "visual_evidence": "本地实际为四格锅贴实拍拼图：剖开虾仁/肉馅与一盘煎锅贴，盘子印劈柴院锅贴；同note另保存门头原图，与正文精确沈阳路分店关联。"
+  },
+  "8a71a6cd1fd159a0587bb2b327fc33438094e579930a4d1edd3d3fcb2410672e": {
+    "status": "accepted",
+    "id": "weihai_fulaitian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应",
+    "visual_evidence": "view_image实际查看本地文件：柜台前手持透明袋装黄豆粉覆盖圆包，后方冷藏柜同款包装；标签BREAD N与豆粉包专帖吻合。没有沙冰，不把沙冰评价当照片可见证据。"
+  },
+  "a4b38e5656473d83a7661cacdc4b1189e044051a50c8a71daaf8754280e144b7": {
+    "status": "accepted",
+    "id": "huaian_fangfang",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应",
+    "visual_evidence": "本地view_image核对为青椒塞肉夹在筷子上、米饭蓝白盘背景，与正文推荐青椒塞肉对应；没有单独分店标识"
+  },
+  "263d8711281dbca84ca0547d539c0f1b54274a925ae91165c9871a7293051134": {
+    "status": "accepted",
+    "id": "wuhu_xiaoma",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件展开核查：鸭肉与鸭杂面实拍，核对文件SHA及单篇来源",
+    "visual_evidence": "view_image本地亲看白盘红皮鸭、鸭杂面与香菜血块汤，木桌背景；匹配本专帖晓马红鸭自驾实吃，具体分店未明。"
+  },
+  "dbcc64e3d484569bbfa91a964418f6176f6b7c5bbdca4f8be5e6259f640f4ca7": {
+    "status": "accepted",
+    "id": "weihai_hanrenge",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源",
+    "visual_evidence": "view_image实看下载文件：黑色汤碗中葱韭菜与内脏切片，筷子夹米饭肉片，右侧红色辣炒肉片洋葱及盘中泡菜/小菜。照片无门头或店名，店关联依赖原帖标题，不能凭图片确认分店。"
+  },
+  "0ce788b3b62d83bb199c506f0c51ca2cbab729caa8600d8f4f02725157d46281": {
+    "status": "accepted",
+    "id": "huaian_nanlian",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源",
+    "visual_evidence": "本地view_image核对为店内座位窗边与宝宝椅，墙上屏幕可见南涟品牌字样，对应本店环境；不能单独确定分店"
+  },
+  "f4a52ee753508a7cacf914bfc479e3397fcffdb607ba189bbbe29e2c2a180eeb": {
+    "status": "accepted",
+    "id": "lyg_xiaolaotou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源",
+    "visual_evidence": "本地view_image核查凉面黄瓜外卖碗，碗盖小老头字样清晰，匹配实吃主帖"
+  },
+  "45b04812ebb83a251b31dec1474ccc37134e78b498d6cb5251fe3d790c0cdddf": {
+    "status": "accepted",
+    "id": "qingdao_lianji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "实际原图为蛋黄馄饨清汤，碗沿LIANJI，右下平台水印完整，与专帖正文对应。"
+  },
+  "a5d38883b251230ffe6165150d06fb23f55651abccaac860b917f1110f8b0cb5": {
+    "status": "accepted",
+    "id": "weihai_qidong",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "实际原图为七丼品牌碗内双拼肉饭，配泡菜沙拉汤，店名在碗沿清晰可见。"
+  },
+  "1c7f9ec444c34bbea9a5349c9f8d00e30f1e036046c3acb99a3f334978c63d5d": {
+    "status": "accepted",
+    "id": "rz_yijiaxiang",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "实际原图为三只火烧与豆浆咸菜，符合单店实吃正文；保留平台原图。"
+  },
+  "56fe68d9fad76c08ac4c70e12bf69f2e4ce4637b4dd444f057545bd58ca3f872": {
+    "status": "accepted",
+    "id": "wuhu_xiaogao",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "实际原图为粉蒸肉、千张与糯米饭，后方豆腐脑；店铺关联以单店正文为依据，图片无分店牌。"
+  },
+  "1005ee3bf2962f82836235fc7c59efbcaec2281b5aace7b615f5dd0b438f482c": {
+    "status": "accepted",
+    "id": "huaian_liji",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
+    "visual_evidence": "实际原图为淮安李记豆腐脑招牌与完整门面，右下平台水印保留。"
   }
 }

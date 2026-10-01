@@ -1,0 +1,18 @@
+
+> shandong-roadtrip-2026@0.0.0 test:ui
+> vitest run --config vitest.config.mjs
+
+
+ RUN  v3.2.4 /Users/bit_1/Documents/Codex/2026-10-01/cloudflare-plugin-cloudflare-openai-curated-remote-2/outputs/shandong-roadtrip-2026
+
+ ✓ tests/ui.test.jsx (19 tests) 4789ms
+   ✓ interactive travel journal (simulated DOM; not visual/WebGL QA) > loads default six-day route then switches to safe five-day route  326ms
+   ✓ guided journey visible stages and reading-mode state > starts with a single journey CTA, progresses through a day and spots, and completes  393ms
+   ✓ guided journey visible stages and reading-mode state > reading mode roundtrip preserves current day, expanded card, stamp and separate five/six-day plans  666ms
+ ✓ tests/photo-food-library.test.jsx (2 tests) 135ms
+ ✓ tests/getty.test.jsx (2 tests) 39ms
+
+ Test Files  3 passed (3)
+      Tests  23 passed (23)
+   Start at  13:46:12
+   Duration  8.01s (transform 165ms, setup 14ms, collect 2.06s, tests 4.96s, environment 629ms, prepare 92ms)

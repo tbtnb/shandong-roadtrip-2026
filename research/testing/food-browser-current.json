@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-01",
+  "browser": "原生Codex In-app Browser",
+  "page": "http://127.0.0.1:5188/",
+  "food_records_visible": 30,
+  "city_counts": {
+    "青岛": 6,
+    "威海": 5,
+    "连云港": 5,
+    "日照": 4,
+    "芜湖": 5,
+    "淮安": 5
+  },
+  "filter": "青岛 / 全部类别 / 推荐候选",
+  "visible_cards": 5,
+  "all_filtered_original_images_loaded": true,
+  "screenshot": "food-library-current.jpg",
+  "scope": "DOM筛选与图片加载、最新计数；未验证真实iPhone手势；平台入口实測来自各条采集记录"
+}

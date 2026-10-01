@@ -1,6 +1,6 @@
 {
   "status": "research_in_progress",
-  "updated_at": "2026-10-01T05:21:08.047Z",
+  "updated_at": "2026-10-01T05:52:51.387Z",
   "targets": {
     "青岛": 60,
     "威海": 80,
@@ -302,6 +302,216 @@
       "status": "complete"
     },
     {
+      "id": "qingdao_lianji",
+      "city": "青岛",
+      "name": "连记海鲜馄饨",
+      "branch": "自由港湾店",
+      "district": "市北区小港",
+      "category": "snack",
+      "specialties": [
+        "蛋黄馄饨",
+        "海鲜馄饨",
+        "mini肉夹馍"
+      ],
+      "local_character": "青岛地方馄饨连锁，完整主页评论者有青岛日常生活内容",
+      "why": "自由港湾附近早餐简餐，专帖写蛋黄馄饨量多可吃饱",
+      "risks": [
+        "主帖作者为专业多平台美食达人，商业内容风险高",
+        "偏清淡或清甜口；点评近三个月差评筛选未读取",
+        "品牌负面帖称肉馅气孔不紧实，分店不明确，不能归于本店"
+      ],
+      "scene": [
+        "早餐",
+        "简餐"
+      ],
+      "level": "caution",
+      "level_reason": "精确分店正文、食物原图、营业及地图已核；专业达人主帖，评论仅简单口味认可，品牌负面分店不明。",
+      "address": "市北区新疆路8号自由港·湾F1层",
+      "price_cny_per_person": 24,
+      "price_basis": "2026-10-01 Chrome点评及高德均¥24/人",
+      "opening": "大众点评营业中06:00-21:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a366421000000002101b407",
+        "title": "美食真探NO.519~青岛：连记馄饨（小港店）",
+        "author": "闲不住的真探官",
+        "url": "https://www.xiaohongshu.com/explore/6a366421000000002101b407",
+        "body_summary": "6月20日专帖明确自由港湾，连锁统一装修、明档制作、酒店附近下单主动送餐；蛋黄馄饨个头不大数量多，吃饱无问题，性价比还行。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome亲开无参数explore为web_error_page，签名站内搜索入口全文和评论可读",
+        "comments_summary": "共6条，机器猫不会飞山东称好吃/不理解游客去网红店，作者回复经济实惠；卿苏染山东称好吃，另北京/浙江简单不错好吃，无具体菜品细节。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "复用当日已完整核查的同作者主页：山东IP、自述青岛，多平台认证美食达人/内容合伙人，1万粉2.2万赞藏，多城编号探店，不能视普通本地食客。",
+        "commenter_check": "完整打开机器猫不会飞主页：山东IP、60粉121赞藏91笔记，青岛涡喷嘉年华、市北崂山街区差异、装修/地板等生活内容，普通本地倾向为推断；没有具体菜品实吃细节。",
+        "reverse_search": "Chrome实搜 连记馄饨 自由港湾 避雷，结果含品牌官方、多分店与泛自由港湾内容；未确认精确本店负面正文。先前亲开品牌负面岐岐帖，分店未知，单列不归本店。",
+        "additional_posts": [
+          {
+            "note_id": "68c7f5b6000000001d008d78",
+            "title": "连记馄饨",
+            "author": "岐岐",
+            "url": "https://www.xiaohongshu.com/explore/68c7f5b6000000001d008d78",
+            "body_summary": "2025-09-15编辑，作者称曾喜蛋黄皮蛋双拼，久未去后肉馅像海绵有气孔不紧实、番茄汤浓；作者2025-12-26再称不如以前。分店未明确，评论有人到台东，不能归自由港湾店；仅个人体验，不据此确认食品工艺。",
+            "comments_summary": "共3条含作者补充及到台东的无味道信息留言；未核作者主页",
+            "canonical_readable": null
+          },
+          {
+            "note_id": "663a342c000000001e025422",
+            "title": "觅食记：连记馄饨（自由港湾店）",
+            "author": "旅行达人萧萧",
+            "url": "https://www.xiaohongshu.com/explore/663a342c000000001e025422",
+            "body_summary": "亲开签名入口正文，2024-04-11体验/05-07发帖，明确新疆路8号，称皮薄馅大、虾仁馄饨/肉夹馍/小酥肉；旧体验且旅行达人，不作为今天价格营业证据。",
+            "canonical_readable": null
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/98074948",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome亲开4.2/673条/¥24，营业中06:00-21:00，新疆路8号",
+        "matched_branch": true,
+        "rating": 4.2,
+        "price_cny_per_person": 24,
+        "recent_negative_review_scope": "仅默认3评论可读；未筛近三个月差评，不能称无差评",
+        "summary": "3天前MrsLee称肉夹馍更好、馄饨偏淡；6月23日栅口听叶落称清甜、不排队；5月5日条鹅在吃饭称明档丰富实惠。后两条不是近三个月证据。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E8%BF%9E%E8%AE%B0%E6%B5%B7%E9%B2%9C%E9%A6%84%E9%A5%A8%20%E8%87%AA%E7%94%B1%E6%B8%AF%E6%B9%BE",
+        "kind": "search_fallback",
+        "readable": true,
+        "status": "Chrome实搜匹配连记海鲜馄饨自由港湾店",
+        "summary": "新疆路8号自由港·湾F1层，¥24/人；无营业时间显示"
+      },
+      "photo": {
+        "note_id": "6a366421000000002101b407",
+        "author": "闲不住的真探官",
+        "image_index": null,
+        "width": 1080,
+        "height": 1441,
+        "bytes": 68676,
+        "sha256": "45b04812ebb83a251b31dec1474ccc37134e78b498d6cb5251fe3d790c0cdddf",
+        "download_method": "CUA DOM观察专帖1080图src后locator.downloadMedia，保持原始WEBP，view_image实际下载文件核验",
+        "watermark": "保留平台右下角小红书标识，无裁切转换",
+        "visual_evidence": "实际原图为蛋黄馄饨清汤，碗沿LIANJI，右下平台水印完整，与专帖正文对应。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
+        },
+        "url": "assets/food/qingdao_lianji.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_qd_oldtown",
+      "status": "complete"
+    },
+    {
+      "id": "qingdao_pichaiyuan",
+      "city": "青岛",
+      "name": "劈柴院锅贴",
+      "branch": "沈阳路店",
+      "district": "市北区台东",
+      "category": "snack",
+      "specialties": [
+        "虾仁锅贴",
+        "牛肉锅贴",
+        "虾虎锅贴"
+      ],
+      "local_character": "品牌历史展板与沈阳路专帖线索，普通本地身份未确认",
+      "why": "青岛传统海鲜馅锅贴具体味道比较",
+      "risks": [
+        "专帖作者认证美食达人、内容合伙人，商业内容风险高；非普通本地身份",
+        "具体分店帖二两起售与另一同品牌帖称一两冲突，点单先问",
+        "虾虎海鲜味重，作者评价虾仁更佳，等餐约20分钟为3月个人体验",
+        "点评近三个月差评未读取；停车标签和正文体验有差异"
+      ],
+      "scene": [
+        "早餐",
+        "本地小吃"
+      ],
+      "level": "caution",
+      "level_reason": "精确沈阳路专帖、原食物和门头照片及点评营业齐；达人来源和简单评论佐证弱，点单规则/排队有不确定。",
+      "address": "市北区沈阳路28号",
+      "price_cny_per_person": 30,
+      "price_basis": "2026-10-01 Chrome点评¥30；高德¥20有差异",
+      "opening": "大众点评营业中07:30-21:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "69acf57a000000001a01f5ba",
+        "title": "美食真探NO.369~青岛：劈柴院锅贴沈阳路店",
+        "author": "闲不住的真探官",
+        "url": "https://www.xiaohongshu.com/explore/69acf57a000000001a01f5ba",
+        "body_summary": "亲开签名入口正文：沈阳路、不好停车、等待约20min、一两4个但单品二两起售；虾仁好、牛肉正常、虾虎/扇贝普通；好吃不拔尖。历史与冻虾虎肉为作者说法未验证。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome亲开固定explore显示当前笔记暂时无法浏览/App扫码；签名站内搜索入口正文可读",
+        "comments_summary": "共2条：酷5好心动广西、小怡每天要开心不错哦山东，均无具体菜品/实吃信息。另主帖1条评论者海外文化博主，不能本地佐证。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "完整主页：山东IP、自述山东青岛；大众四星/高德认证美食达人/城市品鉴官/携程内容合伙人/去哪认证，1万粉、2.2万赞藏，持续多城编号探店；明显达人职业内容倾向，不能视普通本地食客。",
+        "commenter_check": "精确分店帖2评论均无细节，未核其主页；已核另一同品牌帖唯一评论者吕泳橙的澳洲万花筒：澳洲地产人文化博主，多墨尔本生活，非青岛普通本地。",
+        "reverse_search": "Chrome实搜 劈柴院锅贴 沈阳路 避雷，混入众品、其它分店、泛青岛测评；未确认本分店负面正文，不能称无差评",
+        "additional_posts": [
+          {
+            "note_id": "6a269865000000001702f506",
+            "title": "青岛包浆饭店系列-劈柴院锅贴",
+            "author": "雨汐和小皮的大朋友",
+            "url": "https://www.xiaohongshu.com/explore/6a269865000000001702f506",
+            "body_summary": "6月8日专帖点牛肉/虾仁/虾虎，称家常口味，皮脆面积小打包易软；虾虎海味重本人不太喜欢；称一口味可要一两，不必四两16个。没有正文明确分店。",
+            "author_risk": "170笔记/136粉/6024赞藏，首屏多青岛食堂小馆与旅行、带娃优惠餐、生活内容，有褒贬，主页头部IP未完整摘取，普通本地倾向不能确认",
+            "comments_summary": "1条：吕泳橙的澳洲万花筒称喜欢这家，澳大利亚IP，不含菜品/分店细节。",
+            "canonical_readable": false
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/2384992",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome亲开4.1/1628条/¥30，营业中07:30-21:00，沈阳路28",
+        "matched_branch": true,
+        "rating": 4.1,
+        "price_cny_per_person": 30,
+        "recent_negative_review_scope": "网页版仅推荐菜，近三个月差评未读",
+        "summary": "牛肉、虾仁、虾虎等51菜品与正文菜品一致；免费停车标签与专帖难停车体验并存，现场停车未确认"
+      },
+      "gaode": {
+        "url": "https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E5%8A%88%E6%9F%B4%E9%99%A2%E9%94%85%E8%B4%B4%20%E6%B2%88%E9%98%B3%E8%B7%AF28",
+        "kind": "search_fallback",
+        "readable": true,
+        "status": "Chrome实搜匹配劈柴院锅贴沈阳路店",
+        "summary": "沈阳路28近利津路长途站，¥20；无营业时段显示"
+      },
+      "photo": {
+        "note_id": "69acf57a000000001a01f5ba",
+        "author": "闲不住的真探官",
+        "image_index": null,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 200478,
+        "sha256": "ce045941b8896b78f40c31a92772c7a2469aa769e1f098ef5f48ab9de6e3aec1",
+        "download_method": "CUA locator.downloadMedia 下载DOM已显示该精确沈阳路帖封面对应1080图；原始WEBP并经view_image验证",
+        "watermark": "保持作者原有四格拼图、三代传承&匠心制作等字样与平台标识，无裁切转换",
+        "visual_evidence": "本地实际为四格锅贴实拍拼图：剖开虾仁/肉馅与一盘煎锅贴，盘子印劈柴院锅贴；同note另保存门头原图，与正文精确沈阳路分店关联。",
+        "supporting_original": "/Users/bit_1/Documents/Codex/2026-10-01/cloudflare-plugin-cloudflare-openai-curated-remote-2/work/food-research/food_qd_oldtown/images/pichaiyuan-shenyang-front.webp",
+        "supporting_visual": "原图门头劈柴院锅贴、订餐电话13770888889，正文沈阳路专帖；非本机生成拼图",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应"
+        },
+        "url": "assets/food/qingdao_pichaiyuan.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_qd_oldtown",
+      "status": "complete"
+    },
+    {
       "id": "qingdao_shenghuolin",
       "city": "青岛",
       "name": "生活林",
@@ -484,6 +694,190 @@
       "status": "complete"
     },
     {
+      "id": "weihai_fulaitian",
+      "city": "威海",
+      "name": "福来天",
+      "branch": "韩乐坊店",
+      "district": "经区韩乐坊/威海站",
+      "category": "dessert",
+      "specialties": [
+        "豆粉吉士糯米包",
+        "黄油夹心棒",
+        "地瓜蛋糕",
+        "年糕雪花冰"
+      ],
+      "local_character": "韩乐坊韩式面包甜品店，高德旧消费者称威海多分店，按同品牌一店计。明确分店专帖有包装原图。",
+      "why": "韩乐坊逛吃后买糯米豆粉包可考虑，偏甜需按口味选择。",
+      "risks": [
+        "豆乳吉士偏甜的反面口碑多，沙冰奶味不足为专帖个人评价。",
+        "反搜一条评论称馅料发酸担心变质，无检验、保存条件或店内售出状态证据，不能认定店方售出变质食品；购买时问清保冷与期限。",
+        "完整近期低分范围未读取；精选称招牌09:30售卖且可能售罄，仅个人体验。"
+      ],
+      "scene": [
+        "下午茶",
+        "饭后甜品",
+        "韩乐坊逛吃"
+      ],
+      "level": "caution",
+      "level_reason": "两平台分店吻合且原图实看，但甜度分歧、未核实保存讨论及近期完整差评不足。",
+      "address": "威海市环翠区韩乐坊乐天世纪城7号109室",
+      "price_cny_per_person": 25,
+      "price_basis": "点评店页25元/人，高德29元/人；精选消费者豆粉包10元为历史单项体验，非消费保证。",
+      "opening": "点评与高德均显示营业中08:30-22:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a69fc6e000000001101e473",
+        "title": "福来天 韩乐坊店",
+        "author": "羁绊",
+        "url": "https://www.xiaohongshu.com/explore/6a69fc6e000000001101e473",
+        "body_read": true,
+        "body_summary": "07-29编辑，豆粉包确实甜，作者冷藏后更喜欢；沙冰没什么奶味，个人不喜欢。明确韩乐坊分店。",
+        "comments_checked": true,
+        "comments_summary": "页面显示这是一片荒地，无评论，无本帖消费者背书。",
+        "author_profile_checked": true,
+        "author_risk": "实际完整主页IP浙江，209粉丝717关注6383获赞收藏，自介平凡的每天都是幸运的一天。猫咪、烘焙、宁波市场/抹茶节、印尼旅行和威海烟台青岛餐饮批次。有正反体验，较像个人旅行分享，不能确认威海本地或无合作。",
+        "commenter_check": "本帖无评论；反搜黑色西米露称豆粉甜而巧克力长卷不太甜、儿子喜欢。已实开主页，IP山东，自标山东济南，92粉丝311关注1011获赞。济南演唱会/领养、穿搭育儿烘焙，个人生活线索但非威海本地证明。",
+        "canonical_readable": false,
+        "canonical_status": "无参数Chrome实开显示当前笔记暂时无法浏览，请打开App扫码查看；带签名搜索笔记正文已读。",
+        "reverse_search": "店名搜索实际打开6a3e5a560000000007026070《威海 福来天 面包理性购买……》，声生不息🥥06-26，称实惠但豆乳吉士太甜。27评论，多人同感，另有便宜好吃/地瓜蛋糕/杏仁核桃/巧克力卷推荐。一条07-15称馅酸担心坏，作者回复不放冰箱易坏。未明确同分店，保存讨论未独立核实。",
+        "additional_posts": [
+          "https://www.xiaohongshu.com/explore/6a3e5a560000000007026070"
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/90440838",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome实际打开真实图集，点击店名读取门店基础信息和3条精选评论。",
+        "matched_branch": true,
+        "rating": 3.9,
+        "price_cny_per_person": 25,
+        "recent_negative_review_scope": "实读9月19日匿名很糟糕，主要塑料勺子易断但认可性价比味道；9月9日两条讨论偏甜/09:30供应/排队。日期未显示年份，非全部近期三个月低分。",
+        "summary": "BREAD N福来天蛋糕咖啡韩乐坊店，583评价，味3.9环境4.0服务3.8；乐天世纪城7号109，距威海站步行930m；08:30-22:00。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFHY4O66",
+        "kind": "place",
+        "readable": true,
+        "status": "原榜单真实取得，本轮Chrome完整POI详情实读。",
+        "summary": "福来天韩乐坊店，乐天世纪城7号109室，0631-5217273/15726118544；4.6分10评价29元/人，营业中08:30-22:00。最新可见2024-11-15五星、2024-09-02认可面包及服务冷淡两种；2023更旧，不是近期三个月。"
+      },
+      "photo": {
+        "note_id": "6a69fc6e000000001101e473",
+        "author": "羁绊",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 166534,
+        "sha256": "8a71a6cd1fd159a0587bb2b327fc33438094e579930a4d1edd3d3fcb2410672e",
+        "download_method": "CUA Chrome .note-slider-img img[loading=eager] first downloadMedia正常媒体下载",
+        "watermark": "原文件完整保留未裁切转码修改，包装标签与右下原标记保留。",
+        "visual_evidence": "view_image实际查看本地文件：柜台前手持透明袋装黄豆粉覆盖圆包，后方冷藏柜同款包装；标签BREAD N与豆粉包专帖吻合。没有沙冰，不把沙冰评价当照片可见证据。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应"
+        },
+        "url": "assets/food/weihai_fulaitian.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wh_hanlefang",
+      "status": "complete"
+    },
+    {
+      "id": "weihai_hanrenge",
+      "city": "威海",
+      "name": "韩仁阁米肠汤饭",
+      "branch": "韩乐坊店（点评/高德匹配，XHS未写分店）",
+      "district": "经区韩乐坊",
+      "category": "meal",
+      "specialties": [
+        "米肠汤饭",
+        "鱼饼炒年糕",
+        "石锅拌饭",
+        "蔬菜烤牛肉"
+      ],
+      "local_character": "韩乐坊米肠汤饭、内脏汤与小菜韩餐店，独立消费者专帖和地图旧评价均提服务教调小料、份量足。",
+      "why": "想吃热汤与韩式家常菜可列候选，能接受内脏的人更合适。",
+      "risks": [
+        "XHS专帖仅店名与威海标签，没有分店文字或门头；同名搜索仅一个高德结果，分店推断仍需注意。",
+        "点评地址上海路乐天世纪城22号C113，高德韩国风情街C1-4，地址写法不一致；晚间结束时间点评23:00、高德22:00，出发前确认。",
+        "未读取点评近期三个月全量低分；高德最新可见2025-02-07仍旧，无法保证近期无负面。"
+      ],
+      "scene": [
+        "热汤补餐",
+        "韩式正餐",
+        "两人聚餐"
+      ],
+      "level": "optional",
+      "level_reason": "独立专帖图文实读，两平台可读并有6天前精选好评，但本地消费背书与完整近期差评不足，且分店/时间地址有边界。",
+      "address": "点评：上海路乐天世纪城22号C113；高德：经济开发区韩国风情街C1-4",
+      "price_cny_per_person": 52,
+      "price_basis": "本轮点评52元/人，高德56元/人；均页面参考非保证。",
+      "opening": "点评营业中09:00-23:00；高德营业中09:00-22:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a6410b3000000000100dbef",
+        "title": "韩仁阁米肠汤饭",
+        "author": "zzza再吃一口💕",
+        "url": "https://www.xiaohongshu.com/explore/6a6410b3000000000100dbef",
+        "body_read": true,
+        "body_summary": "07-25编辑，称店员热情教吃法、汤鲜、内脏不腥、杂多。只有威海/米肠汤饭/韩餐标签，没有分店文字。",
+        "comments_checked": true,
+        "comments_summary": "页面显示这是一片荒地，无评论，无消费评论背书。",
+        "author_profile_checked": true,
+        "author_risk": "实开完整主页IP江苏，35粉丝57关注1352获赞，26岁，自介好好爱自己天天开心。威海旅游vlog/来威海求推荐、韩仁阁/韩香福/巧克力渔家，其他日常涂色运动猫咪影视饮品。较像个人游客，不确认威海本地或无合作。",
+        "commenter_check": "本专帖无评论；本轮反搜未得到同店有用消费评论，没有可进一步核查的评论者。",
+        "canonical_readable": false,
+        "canonical_status": "Chrome实际无参数直链显示当前笔记暂时无法浏览，请打开App扫码查看；带搜索签名正文已读。",
+        "reverse_search": "实际搜索韩仁阁 避雷，看到推荐合集、店方同名账号以及盛仁阁韩餐踩雷（不同店名不归入此店）。打开6a5e428000000000040295d7《宝子们，避雷这一家！！！》后正文仅网购避雷标签与作者评论，未明确韩仁阁，排除为无关，不能说无避雷。",
+        "additional_posts": []
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/127940820",
+        "kind": "shop",
+        "readable": true,
+        "status": "真实图集入口实际打开，点韩乐坊店店名读取完整门店基础及3条精选。",
+        "matched_branch": true,
+        "rating": 4.6,
+        "price_cny_per_person": 52,
+        "recent_negative_review_scope": "仅3条精选正面：6天前、5月6日、8月19日；未读全量近期三个月低分。6天前认可份量/肋排但称现烤等待久；不能据此称无近期差评。",
+        "summary": "韩仁阁米肠汤饭韩乐坊店457评价，口味4.5环境4.5服务4.6；上海路乐天世纪城22号C113，距威海站步行1.2km，09:00-23:00，有包厢大桌付费停车。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFKNXYUM",
+        "kind": "place",
+        "readable": true,
+        "status": "本轮高德原生搜索威海韩仁阁，唯一结果点击实读取得真实POI B0FFKNXYUM，再实开place直链确认。",
+        "summary": "韩仁阁米肠汤饭，韩国风情街C1-4，15163123188；4.3分8评价56元/人，营业中09:00-22:00。最新可见2025-02-07认可汤饭但认为价高；2024/2023多好评，2023称豆腐汤不入味，均非近期三个月。"
+      },
+      "photo": {
+        "note_id": "6a6410b3000000000100dbef",
+        "author": "zzza再吃一口💕",
+        "image_index": 1,
+        "width": 1440,
+        "height": 1080,
+        "bytes": 208732,
+        "sha256": "dbcc64e3d484569bbfa91a964418f6176f6b7c5bbdca4f8be5e6259f640f4ca7",
+        "download_method": "CUA Chrome .note-slider-img img[loading=eager] first downloadMedia正常浏览器下载",
+        "watermark": "原文件完整保留，无可见署名水印，未裁切转码修改。",
+        "visual_evidence": "view_image实看下载文件：黑色汤碗中葱韭菜与内脏切片，筷子夹米饭肉片，右侧红色辣炒肉片洋葱及盘中泡菜/小菜。照片无门头或店名，店关联依赖原帖标题，不能凭图片确认分店。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源"
+        },
+        "url": "assets/food/weihai_hanrenge.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wh_hanlefang",
+      "status": "complete"
+    },
+    {
       "id": "weihai_mixiaoqing",
       "city": "威海",
       "name": "米笑情",
@@ -573,6 +967,189 @@
       },
       "checked_at": "2026-10-01",
       "collector": "food_wh_hanlefang",
+      "status": "complete"
+    },
+    {
+      "id": "weihai_qidong",
+      "city": "威海",
+      "name": "七丼DONG烧肉丼饭",
+      "branch": "韩乐坊店",
+      "district": "经区韩乐坊",
+      "category": "meal",
+      "specialties": [
+        "能量满满双拼",
+        "菲力盖饭",
+        "心意款款牛五花",
+        "鎏金赤焰烧鸟饭"
+      ],
+      "local_character": "韩乐坊日式烧肉饭小店，餐碗有七丼字样；作者主页自标威海并有同城生活内容，但商业合作不能排除，品牌区域规模未核不靠分店凑数。",
+      "why": "韩乐坊一人简餐或赶站补餐可作为候选，需结合旧反面口碑自主选择。",
+      "risks": [
+        "2024-08-28避雷帖个人称鸡肉焦屑、牛肉嚼不烂、煎蛋青绿部分、座位和调料瓶灰尘。其关于半成品和未清锅均为个人推测，未独立验证，不能推定当前仍同样。",
+        "点评近期三个月全量低分未读；地图最新可见2024-10-13，不能用精选好评保证当前卫生。",
+        "点评中间休息15:00-16:30/闭店20:30，高德全天10:00-21:00不一致，出发前确认。"
+      ],
+      "scene": [
+        "单人简餐",
+        "韩乐坊午餐",
+        "威海站补餐"
+      ],
+      "level": "caution",
+      "level_reason": "有同店旧卫生与肉质反面经历，当前完整低分范围不足，虽有4天前精选好评也不列必去。",
+      "address": "点评韩乐坊南街乐天双子星D2-19号底商；高德韩乐坊乐天双子星负二层北6-19",
+      "price_cny_per_person": 37,
+      "price_basis": "本轮点评37元/人，高德31元/人，非消费保证。",
+      "opening": "点评10:00-15:00、16:30-20:30；高德10:00-21:00，均页面显示营业中",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "67e76b45000000001c00e76e",
+        "title": "韩乐坊七丼烧肉饭",
+        "author": "宇宙无敌超可爱吃饭神",
+        "url": "https://www.xiaohongshu.com/explore/67e76b45000000001c00e76e",
+        "body_read": true,
+        "body_summary": "2025-03-29编辑，点能量满满双拼和菲力盖饭，称肉嫩配温泉蛋滑，套餐含沙拉味增汤。作者健康减脂选择属个人描述，不当营养判断。",
+        "comments_checked": true,
+        "comments_summary": "共1条魔魔Momo👑哇哇哇，未见到店消费内容。",
+        "author_profile_checked": true,
+        "author_risk": "实开完整主页IP山东，自标山东威海/美食博主，79粉丝1143关注6690获赞。自介减肥之余吃逛，内容威海韩餐、福来天、猪蹄、新威附路与宠物购物测评、徐州北京济南旅行，有正面推荐及踩雷。较有同城生活线索，仍不能排除合作。",
+        "commenter_check": "本帖唯一评论无实用消费推荐或反驳；避雷帖无评论，无有用评论者可进一步核查。",
+        "canonical_readable": false,
+        "canonical_status": "本轮Chrome无参数canonical实开显示当前笔记暂时无法浏览，请App扫码；搜索签名正文已读。",
+        "reverse_search": "店名搜索实际打开66cf3e61000000001d03a71c《避雷威海韩乐坊七丼》，Z.2024-08-28，明确双子星楼下同店。个人称肉质、焦屑/煎蛋颜色及灰尘问题；半成品、锅未清理为作者推断，未独立验证。无评论。属于2024旧经历，不当当前事实。",
+        "additional_posts": [
+          "https://www.xiaohongshu.com/explore/66cf3e61000000001d03a71c"
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/H6zkM9gwQhcAXELa",
+        "kind": "shop",
+        "readable": true,
+        "status": "威海首页原生搜索七丼得到唯一真实门店，实开详情可读。",
+        "matched_branch": true,
+        "rating": 4.4,
+        "price_cny_per_person": 37,
+        "recent_negative_review_scope": "仅3条精选正面：4天前、8月29日、9月10日；后两未显示年份，未读全部近期三个月低分。9月10日提出餐需等，8月29日提点评打卡活动可能影响分享动机。",
+        "summary": "1356评价，口味环境服务均4.4；双子星D2-19底商，距威海站步行1.1km，10:00-15:00/16:30-20:30。4天前评牛五花/烧鸟饭；点餐后计时器及份量由消费者描述。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFKK9G4I",
+        "kind": "place",
+        "readable": true,
+        "status": "原真实链接本轮Chrome完整详情实读。",
+        "summary": "七丼DONG烧肉丼饭韩乐坊店，负二层北6-19；15588370970/17562608803，4.2分4评价31元/人；10:00-21:00营业中。最新2024-10-13赞套餐，另2023及2019年旧评价，不是近期三个月。"
+      },
+      "photo": {
+        "note_id": "67e76b45000000001c00e76e",
+        "author": "宇宙无敌超可爱吃饭神",
+        "image_index": 1,
+        "width": 1440,
+        "height": 1080,
+        "bytes": 206476,
+        "sha256": "a5d38883b251230ffe6165150d06fb23f55651abccaac860b917f1110f8b0cb5",
+        "download_method": "CUA Chrome .note-slider-img img[loading=eager] first downloadMedia正常媒体下载",
+        "watermark": "原文件完整保留，七丼碗字及所有画面未裁切转码修改，无可见作者署名水印。",
+        "visual_evidence": "实际原图为七丼品牌碗内双拼肉饭，配泡菜沙拉汤，店名在碗沿清晰可见。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
+        },
+        "url": "assets/food/weihai_qidong.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wh_hanlefang",
+      "status": "complete"
+    },
+    {
+      "id": "lyg_huanglaotou",
+      "city": "连云港",
+      "name": "汉中黄老头凉皮凉面",
+      "branch": null,
+      "district": "海州新浦解放路",
+      "category": "snack",
+      "specialties": [
+        "糖醋凉面",
+        "凉皮",
+        "重辣面筋"
+      ],
+      "local_character": "连云港糖醋凉面口味；店名汉中但作者明确糖醋口味，和小老头凉皮是不同店",
+      "why": "个人作者反复购买，评论补充多年复购与糖醋重辣风味",
+      "risks": [
+        "不是小老头凉皮，注意避免近名混店",
+        "糖醋口偏甜酸、重辣需要主动说明",
+        "主帖评论人称卫生不行，作者补充烟味；这是未独立核实的个人体验",
+        "点评2025年12月可见卫生一般反馈，当前差评未充分读取"
+      ],
+      "scene": [
+        "扫街",
+        "小吃"
+      ],
+      "level": "caution",
+      "level_reason": "个人复购及地址相互支持，点评营业可见，但卫生体验争议且近三月差评未覆盖，谨慎选择",
+      "address": "新河路7号",
+      "price_cny_per_person": 9,
+      "price_basis": "2026-10-01点评实测人均9，高德显示14；平台口径不同，不保证实际消费",
+      "opening": "点评显示营业中08:00-20:00；高德无营业字段",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a8d9bb10000000021033906",
+        "title": "个人觉得连云港最好吃的凉面！！！",
+        "author": "懿.",
+        "url": "https://www.xiaohongshu.com/explore/6a8d9bb10000000021033906",
+        "body_summary": "作者强调个人推荐，吃过多次；评论明确汉中黄老头、糖醋口，与小老头不是一家",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome亲开当前笔记暂时无法浏览要求扫码App，签名搜索可读",
+        "comments_summary": "30条，作者9月21日又买，迟遇推荐重辣，茉璃称多年复购；艺宁称卫生不行，作者补充抽烟烟味；有人说不好吃，作者纠正错认成小老头。主观评论非已证实事实",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "江苏IP191粉丝，健身做饭和连云港在海一方生活内容，非纯营销；本地普通个人倾向为推断",
+        "commenter_check": "艺宁老师的日常主页1722粉丝，江苏IP，高中英语老师自述；婚礼摄影健身与连云港咖啡美食生活，推断当地个人非纯探店",
+        "reverse_search": "XHS实际搜汉中黄老头凉皮避雷，显示2024专帖、作者7月复购帖与合集，未见明确匹配负帖标题；主帖卫生烟味争议已纳入，不能认为无风险",
+        "additional_posts": []
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/k2XE5ID5VStxw1H3",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome店名搜索真实取得链接并亲开",
+        "matched_branch": true,
+        "rating": 3.5,
+        "price_cny_per_person": 9,
+        "recent_negative_review_scope": "仅页面展示2025年12月12日卫生一般，9月20日偏辣、8月8日酸甜不习惯；未覆盖近期3月",
+        "summary": "23评，人均9，营业中08:00-20:00，新河路7号"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=连云港汉中黄老头凉皮凉面",
+        "kind": "search_fallback",
+        "readable": true,
+        "status": "Chrome亲开后店名查询实际结果可见",
+        "summary": "汉中黄老头凉皮凉面新河路7号，人均14；无营业字段"
+      },
+      "photo": {
+        "note_id": "6a8d9bb10000000021033906",
+        "author": "懿.",
+        "image_index": 11,
+        "width": 1080,
+        "height": 1920,
+        "bytes": 171482,
+        "sha256": "3afecc8e7db8b8f1b575609ec335e33773357534e7fdcebac47588d57cdf52ae",
+        "download_method": "Chrome轮播img downloadMedia原始WebP未转换；data-swiper-slide-index10即11图",
+        "watermark": "原样保留，下载图未见明显作者文字水印",
+        "visual_evidence": "本地view_image实际核查：凉面制作摊玻璃柜、面筋凉面黄瓜配料；与主帖店内场景匹配，未把人物作为菜品",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录"
+        },
+        "url": "assets/food/lyg_huanglaotou.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_lyg_snacks",
       "status": "complete"
     },
     {
@@ -666,6 +1243,103 @@
           "method": "本地原始文件查看，批量总览并对新增及有疑问图片逐张展开；哈希与源记录核对"
         },
         "url": "assets/food/lyg_weifanglou.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_lyg_snacks",
+      "status": "complete"
+    },
+    {
+      "id": "lyg_xiaolaotou",
+      "city": "连云港",
+      "name": "小老头凉皮",
+      "branch": "宝泰新村店（平台，XHS外卖分店未明确）",
+      "district": "海州新浦民主路",
+      "category": "snack",
+      "specialties": [
+        "糖醋凉皮凉面",
+        "牛筋面"
+      ],
+      "local_character": "连云港甜辣糖醋凉面，点评9月13日食客称两代人老店，但历史是评论主张",
+      "why": "主帖外卖实吃，原图小老头盖标清晰，甜辣口适合扫街尝试",
+      "risks": [
+        "不能吃辣需提前少辣，点评9月1日称正常辣很辣且偏咸",
+        "点评称店小座位少、饭点排队、晚些凉皮面筋可能缺货",
+        "XHS反搜合集抱怨露天排长队，似墟沟片区，不能套在宝泰分店",
+        "主帖外卖未明确分店；高德旧2017口味低评不可代表当前"
+      ],
+      "scene": [
+        "扫街",
+        "小吃"
+      ],
+      "level": "optional",
+      "level_reason": "点评实测营业和近期口味提醒可见，高德位置对应宝泰；但主帖分店不明且无评论，不足必去",
+      "address": "浦西街道民主中路401-1号109-1室（点评宝泰新村店，XHS待匹配）",
+      "price_cny_per_person": 10,
+      "price_basis": "2026-10-01点评当前可见人均，非消费保证",
+      "opening": "点评显示营业中07:00-20:00；高德网页未显示营业",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a1959510000000035020826",
+        "title": "吃上了小老头凉面！",
+        "author": "男生宿舍寝室长",
+        "url": "https://www.xiaohongshu.com/explore/6a1959510000000035020826",
+        "body_summary": "作者乘高铁前点外卖，称甜甜辣辣不错；9分钟送达只代表该次不能承诺效率",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome亲开当前笔记暂时无法浏览要求扫码App，签名搜索可读",
+        "comments_summary": "页面显示这是一片荒地，无可见评论",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "浙江IP89粉丝，家人生日、小孩、旅行做饭等生活，推断普通旅行个人非连云港本地证明",
+        "commenter_check": "主帖无评论，无有用评论人可核查",
+        "reverse_search": "实际XHS搜小老头凉皮避雷，打开699986690000000015039e04差点饿死在连云港，提露天两三桌排长队放弃；作者随后说兰舍酒店隔壁老渔民片区，主帖外卖分店不明确，不归为宝泰差评",
+        "additional_posts": [
+          {
+            "note_id": "699986690000000015039e04",
+            "url": "https://www.xiaohongshu.com/explore/699986690000000015039e04",
+            "body_read": true,
+            "title": "差点饿死在连云港！！！！！",
+            "scope": "排队反向线索，分店未匹配，canonical未单独测试"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/H5ger9Tkw146Tjoh",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome实际搜索取得真实宝泰新村店链接并亲开",
+        "matched_branch": false,
+        "rating": 4,
+        "price_cny_per_person": 10,
+        "recent_negative_review_scope": "页面展示8月17日、9月1日、9月13日，9月1日评论提偏咸很辣、饭点排队、18点可能缺货；无全量近期差评扫描",
+        "summary": "180评，4.0，人均10，营业中07:00-20:00，民主中路401-1号109-1室；店面胡同小座位少"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFFPKIGH",
+        "kind": "place",
+        "readable": true,
+        "status": "web工具实际亲开可读店名与地址",
+        "summary": "宝泰新村东南门旁；只有2017-04-11个人口味低评，不代表当前；营业字段未显示"
+      },
+      "photo": {
+        "note_id": "6a1959510000000035020826",
+        "author": "男生宿舍寝室长",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1439,
+        "bytes": 361126,
+        "sha256": "f4a52ee753508a7cacf914bfc479e3397fcffdb607ba189bbbe29e2c2a180eeb",
+        "download_method": "Chrome轮播img nth1 downloadMedia，data-swiper-slide-index0，原WebP未转码",
+        "watermark": "右下角小红书水印原样保留",
+        "visual_evidence": "本地view_image核查凉面黄瓜外卖碗，碗盖小老头字样清晰，匹配实吃主帖",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源"
+        },
+        "url": "assets/food/lyg_xiaolaotou.webp",
         "reuse_status": "private_personal_reference",
         "public_reuse_permission": "not_established"
       },
@@ -770,6 +1444,202 @@
           "summary": "历史追溯1955年、主打五仁月饼马蹄酥松糕；仅背景材料"
         }
       ]
+    },
+    {
+      "id": "lyg_zhengbing",
+      "city": "连云港",
+      "name": "正兵饭店",
+      "branch": "新海花园店（点评，XHS未明确匹配）",
+      "district": "海州新浦盐河路",
+      "category": "meal",
+      "specialties": [
+        "热炝八爪鱼",
+        "鱼籽卷饼",
+        "软兜长鱼",
+        "海蛎肉抱蛋",
+        "虾滑笋片汤"
+      ],
+      "local_character": "小区下家常淮扬海鲜菜馆，自然旅行作者和单位团建评论线索；非已证实当地身份",
+      "why": "四人聚餐菜量较大，主帖详细描述芥末和黑胡椒风味",
+      "risks": [
+        "芥末与黑胡椒明显，口味偏好需考虑",
+        "评论主张价格上涨环境普通，不作已证实事实",
+        "点评8月4日可见排队拼桌厕所卫生体验负评，负面范围有限",
+        "高德验证无法核对，XHS具体分店未明确对应点评"
+      ],
+      "scene": [
+        "正餐",
+        "家庭聚餐"
+      ],
+      "level": "caution",
+      "level_reason": "点评实测营业可见，主帖自然分享，但高德验证阻断且分店匹配未完成，有环境排队争议",
+      "address": "陇海西路新海花园c7-9号（点评地址，XHS待匹配）",
+      "price_cny_per_person": 88,
+      "price_basis": "2026-10-01点评亲开可见人均，非消费保证",
+      "opening": "点评营业中11:00-13:30,16:30-21:00；高德未确认",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6999d754000000001a022bb9",
+        "title": "连云港正兵饭店，爆好吃",
+        "author": "谭谈弹",
+        "url": "https://www.xiaohongshu.com/explore/6999d754000000001a022bb9",
+        "body_summary": "作者春节青岛自驾盐城经过，四人点四菜一汤；推荐热呛八爪鱼、鱼籽卷饼、软兜、海蛎肉抱蛋、虾滑笋片汤。八爪鱼芥末与鳝鱼黑胡椒明显；环境普通，老板给菜量建议。作者称11点营业、12点排队。",
+        "body_read": true,
+        "comments_summary": "42条评论；陈灵杉称价格偏高、离家不足一公里但很少去；不吃芫荽称单位团建常去，人多划算、环境一般。评论观点非已证实事实。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页实际可读：132粉丝，138笔记，简介手工/户外/旅游/凤凰传奇；近期河西走廊自驾、拼豆、减肥等个人生活。推断普通旅行个人号，非连云港本地身份。",
+        "commenter_check": "陈灵杉主页实际可读，江苏IP94粉丝，汽车彩妆月饼生日等生活帖，推断普通个人；自称家近，常住未证实",
+        "canonical_status": "Chrome亲开当前笔记暂时无法浏览，要求扫码App；签名搜索可读",
+        "canonical_readable": false,
+        "reverse_search": "XHS实际搜正兵饭店避雷，主要正向帖；打开海肠捞饭刺客69f86225000000003502a71d，正文明确世纪饭店，排除与正兵错误归属；主帖评论有价格环境争议",
+        "additional_posts": []
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/Hal7MYUCnoU4OOyK",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome实际搜索取得真实门店链接，亲开可读",
+        "matched_branch": false,
+        "rating": 4.7,
+        "price_cny_per_person": 88,
+        "recent_negative_review_scope": "可见8月4日SadeCarinio：等30分钟拼桌，口味预期落差，厕所卫生与吸烟体验不佳；未全量扫描近3月差评",
+        "summary": "新海花园店1011评，人均88，营业中11:00-13:30,16:30-21:00；陇海西路新海花园c7-9，八爪鱼时令价格波动提示；免费停车仅平台标签非保证"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=%E8%BF%9E%E4%BA%91%E6%B8%AF%E6%AD%A3%E5%85%B5%E9%A5%AD%E5%BA%97",
+        "kind": "search_fallback",
+        "readable": false,
+        "status": "Chrome亲开出现滑块验证，未操作已报告root",
+        "summary": "具体位置营业未能通过高德读取"
+      },
+      "photo": {
+        "note_id": "6999d754000000001a022bb9",
+        "author": "谭谈弹",
+        "image_index": 6,
+        "width": 1440,
+        "height": 1080,
+        "bytes": 122272,
+        "sha256": "f9a4c4edd59a88a4f1d6e2db8c1c65c443712e7c291204af0e7db0f3636d039e",
+        "download_method": "Chrome网站轮播img downloadMedia原WebP未转换；DOM data-swiper-slide-index5即第6图",
+        "watermark": "右下角原小红书淡色水印保留",
+        "visual_evidence": "本地view_image核查为白盘虾滑青笋木耳汤，与正文虾滑笋片汤匹配",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录"
+        },
+        "url": "assets/food/lyg_zhengbing.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_lyg_snacks",
+      "status": "complete"
+    },
+    {
+      "id": "rz_jiayao",
+      "city": "日照",
+      "name": "葭窑面包JiaYao",
+      "branch": null,
+      "district": "东港区/文登路五莲路",
+      "category": "dessert",
+      "specialties": [
+        "日照绿茶水果酥",
+        "巴斯克蛋糕吐司",
+        "香葱肉松卷",
+        "窑烤面包"
+      ],
+      "local_character": "日照独立窑烤面包店，点评列日照绿茶酥；评论者自称日照本地爱好者，主页仅山东属地，未独立确认居民身份。",
+      "why": "日照绿茶与窑烤面包有地方特色，实吃反馈丰富，适合顺路试小份。",
+      "risks": [
+        "口味分化：主帖后续编辑认为多款偏甜，盐卷也甜；DP近期摘录对毛毛虫口味不喜欢。",
+        "价格争议帖指80元/斤大型潘娜托尼，评论解释这是特殊品类，不应套用于全部面包。",
+        "晚到可能售罄，DP7月23日摘录称19:30已无太多面包；非每日保证。",
+        "XHS主帖为陕西消费者邮购实吃，不是到店实吃；未完整审查近3个月差评。"
+      ],
+      "scene": [
+        "特色伴手礼",
+        "下午茶"
+      ],
+      "level": "optional",
+      "level_reason": "真实实吃及DP/Gaode位置营业可核对，但本地居民身份有限、口味偏甜争议，近期差评未完整读取，不列必去。",
+      "address": "文登路与五莲路交叉口西南角古月清风东侧",
+      "price_cny_per_person": 40,
+      "price_basis": "DP当前40元/人；高德37元/人。具体单品价现场确认。",
+      "opening": "点评09:00-20:00；高德周一至周五09:00-20:00、周末08:30-20:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "694de02d0000000022031a44",
+        "title": "面包测评|日照葭窑，你为什么要谋害朕😱",
+        "author": "熊猫🐼（减脂版）",
+        "url": "https://www.xiaohongshu.com/explore/694de02d0000000022031a44",
+        "body_summary": "消费者充卡邮购，列布丁塔、栗子碱水球、杏仁瓦片酥、巴斯克吐司等初次觉得好吃，吐槽乳酪棒与拐杖造型；2026年1月2日补充认为其他几款太甜、盐卷糖多。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "单独Chrome打开显示暂时无法浏览、请打开App扫码查看；搜索入口正文评论可读。",
+        "comments_summary": "22条，可见作者6月12日回复整体不太合口味；小郑爱开箱自称日照本地爱好者推荐会员日；店家回复回购认可；另消费者认为布丁挞噎。未把商家回复当独立口碑。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页IP陕西、自述西安爱美食，231粉丝，持续跨城面包测评和植物咖啡日常；自述真金白银不是独立付款证明。不是日照本地。",
+        "commenter_check": "小郑爱开箱主页已读，IP山东、987粉丝，自述开箱补货家居护肤博主；公开列表大量日常开箱，评论自称本地但主页无独立日照地点证据。",
+        "reverse_search": "日照葭窑搜索实际出现并打开价格争议帖6958c5db000000001e02440e，正文80元/斤大型面包和10元鲜花饼；157条评论多围绕潘娜托尼成本和规格，非卫生事实。主帖标题负面实际主要造型和甜度。",
+        "additional_posts": [
+          {
+            "note_id": "6958c5db000000001e02440e",
+            "title": "坐标日照一家面包店，怀疑人生了",
+            "body_read": true,
+            "summary": "价格争议，不能认定所有面包80元/斤。"
+          },
+          {
+            "note_id": "6a7eea6f00000000330324bb",
+            "title": "日照网红葭窑面包怎么样？！真实测评！",
+            "body_read": true,
+            "summary": "视频正文只有标签，未凭正文杜撰视频口味；4条评论作者称两家味道还可以。作者青岛美食旅行博主，不是日照居民。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/iqi6uRitMEUMhUuA",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome实际搜索取得唯一店铺并单独打开详情可读。",
+        "matched_branch": true,
+        "rating": 4.7,
+        "price_cny_per_person": 40,
+        "recent_negative_review_scope": "仅详情3条摘录：9月23日、7月23日、1小时前；最近一条飞鱼籽法棍好吃但毛毛虫和巧克力软塌不再买。未翻全部近3月差评。",
+        "summary": "763评价、4.7、40元/人，营业中09-20，地址五莲路文登路西南角。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=%E6%97%A5%E7%85%A7%E8%91%AD%E7%AA%91%E9%9D%A2%E5%8C%85",
+        "kind": "search_fallback",
+        "readable": true,
+        "status": "Chrome合法搜索唯一葭窑面包，点击打开详情已读；未取得place canonical。",
+        "summary": "地址精确匹配DP，4.7、37元/人、17评价；周一至五09-20、周末08:30-20。可见评价主要2021-2024年，含价格高、偏甜和2024-09-05服务指责，非近期完整范围。"
+      },
+      "photo": {
+        "note_id": "694de02d0000000022031a44",
+        "author": "熊猫🐼（减脂版）",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1109,
+        "bytes": 215338,
+        "sha256": "ddc3061c1b106f8e5e32caac28fe652e053e9f755a1ba64a995711b5832a3982",
+        "download_method": "CUA正常网站locator.downloadMedia，原WebP未转码",
+        "watermark": "原图右下角淡小红书水印保留，未裁切或处理。",
+        "visual_evidence": "本地view_image核对：整桌塑封面包甜点，杏仁片薄酥、盒装吐司、布丁塔等；包装袋有葭窑标识，与主帖邮购清单对应。DOM data-swiper-slide-index=0明确第一张。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录"
+        },
+        "url": "assets/food/rz_jiayao.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_rz_meals",
+      "status": "complete"
     },
     {
       "id": "rz_laodongfang",
@@ -955,6 +1825,103 @@
       "status": "complete"
     },
     {
+      "id": "rz_yijiaxiang",
+      "city": "日照",
+      "name": "宜嘉香肉火烧",
+      "branch": "日照店",
+      "district": "石臼/黄海二路",
+      "category": "snack",
+      "specialties": [
+        "牛肉芹菜火烧",
+        "猪肉洋葱火烧",
+        "豆腐脑",
+        "现磨豆浆"
+      ],
+      "local_character": "日照站附近早餐火烧店；游客称司机推荐，尚无独立本地居民评论确认。",
+      "why": "低价早饭，牛肉芹菜火烧和豆浆有明确实吃反馈。",
+      "risks": [
+        "主帖觉得火烧不酥脆、茄子寡淡，萝卜咸菜太咸，主观口味意见。",
+        "DP摘录称全部2元与XHS8月23日牛肉4元猪肉3元有价差，不用旧价作保证。"
+      ],
+      "scene": [
+        "早餐"
+      ],
+      "level": "optional",
+      "level_reason": "专店实吃和两平台营业位置核对齐；口味分化、非本地居民确认、DP完整近3月差评未读，列可选。",
+      "address": "黄海二路远东医院旁/汽车站沿街西",
+      "price_cny_per_person": 7,
+      "price_basis": "DP7元/人、高德8元/人；XHS8月23日牛肉芹菜4元、猪肉洋葱3元、豆浆2元，非当前保证。",
+      "opening": "05:30-14:00（DP和高德）",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a8a559c000000003302bd28",
+        "title": "日照｜宜嘉香肉火烧",
+        "author": "每天吃饱饱",
+        "url": "https://www.xiaohongshu.com/explore/6a8a559c000000003302bd28",
+        "body_summary": "8月23日实吃列牛肉芹菜4元、猪肉洋葱3元、土豆约2元、豆浆2元，偏爱牛肉芹菜。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome单开显示暂时无法浏览、请App扫码；搜索入口正文可读。",
+        "comments_summary": "页面这是一片荒地，0条。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页58粉丝自述挑食小孩吃饭日记，发布平邑/淄博/徐州/日照等专店食记，未观察到合作标记，不认定日照居民；IP页面未显示。",
+        "commenter_check": "无评论，无可核查有用评论者。",
+        "reverse_search": "实际搜索日照宜嘉香避雷，多全城合集及其他店名负面，打开同店6a8a559c000000003302bd28，牛肉芹菜最好吃，0评论；没有将其他店负面归本店。",
+        "additional_posts": [
+          {
+            "note_id": "6a6491cf000000000f004345",
+            "title": "日照早餐---宜嘉香肉火烧(日照站附近)",
+            "author": "无山",
+            "body_read": true,
+            "author_profile_checked": true,
+            "summary": "游客25年7月由司机推荐，觉得便宜豆腐脑好喝；牛肉芹菜尚可、茄子淡，饼不酥脆像烫面馅饼，萝卜丝咸。主页IP江苏149粉丝、摄影和跨城旅游，0评论。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/HavhqQz13uAAYSO5",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome真实搜索唯一宜嘉香日照店，亲自打开详情。",
+        "matched_branch": true,
+        "rating": 4.2,
+        "price_cny_per_person": 7,
+        "recent_negative_review_scope": "仅详情3条摘录8月7日/8月19日/4月19日，都是正面；未翻全部近3月差评。",
+        "summary": "102评价，黄海二路远东医院旁，营业中05:30-14。推荐牛肉芹菜火烧、猪肉火烧豆腐脑。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFFPA80Y",
+        "kind": "place",
+        "readable": true,
+        "status": "真实web来源取得place，Chrome亲测详情。",
+        "summary": "宜嘉香日照店黄海二路汽车站沿街西，4.5、8元/人，05:30-14营业；可见仅2025年2月2条及2023年10月1条旧评价。"
+      },
+      "photo": {
+        "note_id": "6a8a559c000000003302bd28",
+        "author": "每天吃饱饱",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1419,
+        "bytes": 117312,
+        "sha256": "1c7f9ec444c34bbea9a5349c9f8d00e30f1e036046c3acb99a3f334978c63d5d",
+        "download_method": "正常网站downloadMedia取得LIVE配套静态WebP，未转换未截帧",
+        "watermark": "原图未观察到明显作者水印，保持原文件未处理。",
+        "visual_evidence": "实际原图为三只火烧与豆浆咸菜，符合单店实吃正文；保留平台原图。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
+        },
+        "url": "assets/food/rz_yijiaxiang.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_rz_meals",
+      "status": "complete"
+    },
+    {
       "id": "wuhu_gengfuxing",
       "city": "芜湖",
       "name": "耿福兴",
@@ -1070,6 +2037,218 @@
       }
     },
     {
+      "id": "wuhu_sijichun",
+      "city": "芜湖",
+      "name": "四季春",
+      "branch": "美食街店（店面照片与凤凰美食街对应；正文未写分店）",
+      "district": "凤凰美食街",
+      "category": "snack",
+      "specialties": [
+        "虾籽面",
+        "小笼汤包",
+        "煮干丝"
+      ],
+      "local_character": "芜湖商务局2021老字号认定公示列四季春；作者主页安徽芜湖并有多次芜湖餐食发帖，属于同城倾向，不等于常住身份验证。",
+      "why": "传统虾籽面与汤包早餐，原帖家庭回访称清淡、汤包量足。",
+      "risks": [
+        "2025原帖作者偏重口味，评价整体偏淡，个人口味不适于泛化",
+        "可见评论称贵，作者回应芜湖物价如此；没有精确价目",
+        "2026-09-07反查实读另一帖：作者称10只汤包8只粘垫易破，评论有相同经历；该帖未确认具体分店，作为品牌体验风险而非美食街店现状",
+        "当前营业时间未取得；2016高德旧差评不能代替近期点评差评",
+        "正福斋产品在四季春销售，同门店不能拆成两个计数"
+      ],
+      "scene": [
+        "早餐",
+        "扫街"
+      ],
+      "level": "exclude",
+      "level_reason": "专帖及作者/评论人主页、食物原图、反查帖实读齐全，但当前营业、点评近期差评和XHS分店精确确认不足。",
+      "address": "凤凰美食街1号（高德美食街店）",
+      "price_cny_per_person": null,
+      "price_basis": "unknown；只见评论价格偏贵未见价目",
+      "opening": null,
+      "opening_checked": false,
+      "xhs": {
+        "note_id": "684ef71800000000120006ee",
+        "title": "芜湖美食探店——四季春",
+        "author": "Ruan",
+        "url": "https://www.xiaohongshu.com/explore/684ef71800000000120006ee",
+        "body_summary": "作者一家三口时隔十多年回访，觉得面食整体清淡，汤包馅量足且不甜，重口味食客或觉得无感。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome独立打开显示当前笔记暂时无法浏览，请打开App扫码查看；签名搜索入口正文实读成功",
+        "comments_summary": "3条；可见无言称好贵，作者回应芜湖都这物价。1条嵌套回复未展开。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页写安徽芜湖、好吃包手作设计师，53粉丝；多手工商品及芜湖火啫啫、星隆牛肉汤探店，推断同城生活倾向，未见该餐商单标记，广告状态不能保证。",
+        "commenter_check": "无言主页实读：IP安徽，42粉丝、304获赞，未显示可读发布内容；不能确认芜湖当地人。",
+        "reverse_search": "Chrome搜索芜湖 四季春 避雷，真实点开恼人的芜湖四季春小笼汤包并读正文/3评论；另服务态度等标题只作线索。",
+        "additional_posts": [
+          {
+            "note_id": "6a9e85c2000000001001e9ce",
+            "title": "恼人的芜湖四季春小笼汤包。",
+            "author": "馋师",
+            "url": "https://www.xiaohongshu.com/explore/6a9e85c2000000001001e9ce",
+            "body_read": true,
+            "summary": "09-07作者称十只汤包八只粘草垫，需两人分离以免破皮漏汤；momo称常遇到，作者归因蒸过头，瓷石串给出不行的主观评价。未精确分店，作者主页未核。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/l8LT4M6pQlHl4R0O/photos",
+        "kind": "shop",
+        "readable": true,
+        "status": "亲开照片页可读四季春美食街店及图标签；主店页超时",
+        "matched_branch": true,
+        "rating": null,
+        "price_cny_per_person": null,
+        "recent_negative_review_scope": "未能读取当前评分价格与近期差评",
+        "summary": "具体美食街店链接真实取得；可见汤包虾籽面标签，不把图标签当点评评论"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B02290HXJG",
+        "kind": "place",
+        "readable": true,
+        "status": "亲开可读四季春美食街店及凤凰美食街1号，无当前营业时间",
+        "summary": "2016旧服务差评可见但过旧，不作当下断言；现营业unknown"
+      },
+      "photo": {
+        "note_id": "684ef71800000000120006ee",
+        "author": "Ruan",
+        "image_index": 2,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 107662,
+        "sha256": "1f38bb7b28d4dab5d69805c78efd03c3ff23a0240e31f1fa8fe48f7962fd1755",
+        "download_method": "Chrome正文DOM轮播真实第二图nth(2)正常downloadMedia原WebP下载，未转码",
+        "watermark": "右下小红书水印保留，未裁切编辑",
+        "visual_evidence": "view_image本地亲看：白碗虾籽面，面上褐色虾籽、汤中葱段，金属桌面；同专帖首图四季春店牌，正文吃面对应。",
+        "local_view_checked": true,
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开查看，核对原图与正文内容、文件SHA和来源记录"
+        },
+        "url": "assets/food/wuhu_sijichun.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wuhu_snacks",
+      "status": "complete"
+    },
+    {
+      "id": "wuhu_xiaogao",
+      "city": "芜湖",
+      "name": "小高渣肉蒸饭",
+      "branch": "黄山中路老一中店",
+      "district": "黄山中路/老一中",
+      "category": "snack",
+      "specialties": [
+        "渣肉蒸饭",
+        "豆腐脑",
+        "千张"
+      ],
+      "local_character": "芜湖渣肉蒸饭由粉蒸肉、千张、糯米饭组成；主帖明确老一中店，点评与高德可读黄山中路老一中分店。",
+      "why": "当地碳水早餐候选，千张与浇汁糯米饭是实际比较帖的特色。",
+      "risks": [
+        "主帖作者主页仅三篇安徽老字号介绍，文案推广感强，未确认个人亲尝或商业合作；不能把本地人从小吃到大表述当身份确认。",
+        "2025-04-23土兔兔比较帖主观报告小高餐具残渣、肉不如小金嫩；食品添加剂猜测无证据，未采作事实。",
+        "比较帖评论渡阅百草称搬到路南周记隔壁后烧卖味道变化，属个人口味意见，主页无内容不能确认本地身份。",
+        "高德页面没有营业信息，点评近期差评正文未读取；主帖06:00开门仅作者声明，与辅助搜索营业说法冲突不能当当前营业。",
+        "另69e4622b000000001a031812正文选小高但首图店牌小金，故排除该图。"
+      ],
+      "scene": [
+        "早餐",
+        "早午餐"
+      ],
+      "level": "exclude",
+      "level_reason": "原始照片和专帖采集完成，但主帖营销倾向、比较帖卫生体验争议且当前营业未核实，按技能排除推荐等级。",
+      "address": "黄山中路17号盛峰大厦",
+      "price_cny_per_person": 14,
+      "price_basis": "2026-05-03主帖作者人均14元声明，非点评当前价格或当前保证",
+      "opening": null,
+      "opening_checked": false,
+      "xhs": {
+        "note_id": "69f6ba2b00000000350325d0",
+        "title": "小高渣肉蒸饭",
+        "author": "皖美食客",
+        "url": "https://www.xiaohongshu.com/explore/69f6ba2b00000000350325d0",
+        "body_summary": "实际读05-03单店正文，介绍粉蒸五花肉、千张丝和糯米饭，搭豆腐脑雪菜；写老一中店、人均14、早6点开门，叙述营销感明显，历史及开门说法未独立证明。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "auxTab单独亲开无参canonical显示当前笔记暂时无法浏览/打开App扫码；搜索签名入口正文可读。",
+        "comments_summary": "主帖共1评论，樱桃小子只@朋友，没有推荐/反驳内容。另实读比较帖可见三好推荐、小金更好偏好、搬迁后烧卖口味变等。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页67540b25000000001d02d941，0粉丝16获赞收藏，简介【安徽美食】帮你找到最值得吃的那一口，3篇小高/蓝义兴/耿福兴，像美食介绍号；无本地生活证据，商业合作unknown。",
+        "commenter_check": "主帖无实质评论；实读比较帖有具体补充的渡阅百草主页61fbccd5000000001000f10c，793关注60粉0获赞，无简介未发布，不能验证本地背景。",
+        "reverse_search": "实际搜索芜湖 小高渣肉蒸饭 避雷，见小高VS小金、芜湖你真的让我很失望等结果；前者已正文评论实读，后者仅标题未冒充内容。",
+        "additional_posts": [
+          {
+            "note_id": "68083a64000000001c01f78b",
+            "title": "小高渣肉蒸饭VS小金蒸饭",
+            "author": "土兔兔",
+            "url": "https://www.xiaohongshu.com/explore/68083a64000000001c01f78b",
+            "body_read": true,
+            "body_summary": "2025-04-23主观比较：小高糯米粒粒分明、另外浇汁、千张柔韧；小金肉更嫩米更软。报告小高餐具残渣；添加剂推测没有依据不采作事实。",
+            "comments_summary": "可见30条总数的部分：momo两人推荐三好；小橘子喜欢小金；渡阅百草说从学校门口搬路南周记隔壁后烧卖变差，主观偏好；若干回复未展开。"
+          },
+          {
+            "note_id": "69006f830000000004006f25",
+            "title": "所以一中对面的小高和小金，到底谁更胜一筹",
+            "author": "呜呼路可爱",
+            "url": "https://www.xiaohongshu.com/explore/69006f830000000004006f25",
+            "body_read": true,
+            "body_summary": "作者在一中读3年但本次实际只吃小金，不能作小高亲尝；正文肯定小金肉嫩、烧卖不油。",
+            "comments_summary": "9评论，可见松松偏小高、黄喉腌辣酱以前喜欢小金现在喜欢小高，其余偏小金，身份未核实。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/4281767/photos",
+        "kind": "shop",
+        "readable": true,
+        "status": "web.open照片页可读具体店名/渣肉蒸饭标签；主店超时",
+        "matched_branch": true,
+        "rating": null,
+        "price_cny_per_person": null,
+        "recent_negative_review_scope": "未读当前近期差评正文",
+        "summary": "黄山中路老一中店可见，照片分类不可替代评分及近期口碑核验。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFLJMPW7",
+        "kind": "place",
+        "readable": true,
+        "status": "2026-10-01 web.open亲开具体地点可读",
+        "summary": "小高渣肉蒸饭黄山中路老一中店，黄山中路17号盛峰大厦；无现营业状态；2023-04-23旧评价不当近期。"
+      },
+      "photo": {
+        "note_id": "69f6ba2b00000000350325d0",
+        "author": "皖美食客",
+        "image_index": 1,
+        "width": 1050,
+        "height": 1331,
+        "bytes": 87234,
+        "sha256": "56fe68d9fad76c08ac4c70e12bf69f2e4ce4637b4dd444f057545bd58ca3f872",
+        "download_method": "CUA Chrome已打开帖子.note-slider-img img nth(1).downloadMedia正常媒体下载，原始WebP未转换",
+        "watermark": "下载原图未见显著文字水印，保持全部原始像素",
+        "visual_evidence": "实际原图为粉蒸肉、千张与糯米饭，后方豆腐脑；店铺关联以单店正文为依据，图片无分店牌。",
+        "local_view_checked": true,
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
+        },
+        "url": "assets/food/wuhu_xiaogao.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wuhu_snacks",
+      "status": "complete"
+    },
+    {
       "id": "wuhu_xiaojin",
       "city": "芜湖",
       "name": "小金蒸饭",
@@ -1087,7 +2266,8 @@
         "本帖作者对咸蛋黄烧卖糯米和面皮不满意，属于单人体验",
         "同名外卖帖子评论提醒可能非荟萃中学正店，不能将其评价移用于该店",
         "本帖分店未明确，照片与荟萃中学分店对应尚不能确认",
-        "当前营业及点评近期差评unknown"
+        "当前营业及点评近期差评unknown",
+        "携程辅助页亲开休息中/明天5点营业与搜索摘要营业中状态冲突，不能据此确认当前营业"
       ],
       "scene": [
         "早餐"
@@ -1150,6 +2330,7 @@
         "download_method": "CUA Chrome locator.downloadMedia正常DOM原WebP下载，未转码",
         "watermark": "保留网站源文件未编辑水印",
         "visual_evidence": "专帖左侧静态图为竹笼中粉蒸肉覆盖糯米豆皮的渣肉蒸饭，与小金帖正文匹配；分店未明确。",
+        "local_view_checked": true,
         "independent_review": {
           "checked_at": "2026-10-01",
           "reviewer": "root",
@@ -1163,7 +2344,226 @@
       "collector": "food_wuhu_snacks",
       "status": "complete",
       "photo_local_view_checked": true,
-      "photo_local_view_evidence": "2026-10-01 view_image亲看保存WebP：竹蒸笼内裹米粉粉蒸肉覆糯米饭，背景金属桌面，符合该小金渣肉蒸饭帖食物照片"
+      "photo_local_view_evidence": "2026-10-01 view_image亲看保存WebP：竹蒸笼内裹米粉粉蒸肉覆糯米饭，背景金属桌面，符合该小金渣肉蒸饭帖食物照片",
+      "auxiliary_platform": {
+        "name": "携程",
+        "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2015285/56931.html",
+        "checked_at": "2026-10-01",
+        "readable": true,
+        "address": "黄山中路盛峰大厦3号",
+        "opening": "亲开显示休息中/明天05:00营业；搜索摘要营业中05:00-18:00，状态矛盾不保证现营业",
+        "price_cny_per_person": 14,
+        "price_basis": "携程页面人均，不能当现菜单价格",
+        "visible_review_scope": "页面3条：口味稳定/蒸饭香/豆腐脑调料没配好；均无可见日期，不当近期差评"
+      }
+    },
+    {
+      "id": "wuhu_xiaoma",
+      "city": "芜湖",
+      "name": "晓马鸭店",
+      "branch": "新芜路店（平台候选；XHS正文未明确分店）",
+      "district": "新芜路",
+      "category": "snack",
+      "specialties": [
+        "红皮鸭子",
+        "鸭杂面",
+        "兰花干子"
+      ],
+      "local_character": "2021芜湖商务局老字号认定公示列晓马鸭店；澎湃2022文章追溯1984新芜路卤鸭摊。芜湖甜卤红皮鸭代表，未凭攻略自称当地人确认。",
+      "why": "老牌甜口红皮鸭，实吃作者及同行认可味道，适合偏甜卤味食客。",
+      "risks": [
+        "2025专帖作者称饭点等座、店内烟味重及店员未劝阻，为个人当次体验，未精确分店，不能断言现况",
+        "作者从合肥自驾来，不是芜湖当地人；评论小琛主页安徽芜湖但仅同城倾向，其味道一般评价属于主观",
+        "反搜实读2026-05-30吐槽堂食打包盒收费和计重；无照片、未注明具体分店，不把未证实商品问题当事实指控",
+        "未取得精确高德店铺；当前营业、点评评分价格近期差评unknown"
+      ],
+      "scene": [
+        "正餐",
+        "扫街"
+      ],
+      "level": "exclude",
+      "level_reason": "XHS主帖及有用评论人/作者主页、原图、实际反查和平台链接状态齐全，但分店未确定且现营业未核，暂不作已验证推荐。",
+      "address": "新芜路华盛小区7号楼（携程辅助；2025银行线索7幢6号）",
+      "price_cny_per_person": null,
+      "price_basis": "unknown；携程用户反馈33元不作当前菜单",
+      "opening": null,
+      "opening_checked": false,
+      "xhs": {
+        "note_id": "687df8390000000012015682",
+        "title": "芜湖晓马鸭店很好，但不会再去了",
+        "author": "一只喵虎",
+        "url": "https://www.xiaohongshu.com/explore/687df8390000000012015682",
+        "body_summary": "合肥朋友自驾到芜湖吃红皮鸭，觉得甜口味不错；饭点需找位，因店内吸烟气味转移座位，希望餐饮店禁烟。具体分店未写。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome独立打开显示当前笔记暂时无法浏览、请打开App扫码查看；搜索签名入口正文实读成功",
+        "comments_summary": "4条可见；小琛认为晓马不好吃、偏好小区鸭摊，作者愿再尝别店。momo问谁推荐，作者称朋友攻略。主观口味不当客观排名。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "一只喵虎主页IP安徽、49粉丝，生活碎片发帖，正文明确合肥自驾游客；非芜湖土著确认，未核广告状态。",
+        "commenter_check": "小琛主页实际读：安徽芜湖、IP安徽，17粉丝，吃喝及生活碎片，推断同城倾向，不能保证常住/专业性。",
+        "reverse_search": "Chrome芜湖 晓马鸭店 避雷，实际打开芜湖晓马鸭店坑客户操作并读正文和评论；其余排队等标题仅线索。",
+        "additional_posts": [
+          {
+            "note_id": "6a1ae102000000003501c79f",
+            "title": "芜湖晓马鸭店坑客户操作",
+            "author": "红火7922",
+            "url": "https://www.xiaohongshu.com/explore/6a1ae102000000003501c79f",
+            "body_read": true,
+            "summary": "05-30称堂食预先拒绝塑料盒仍被收1元盒费及计重疑问，评论提醒看现场切、另有评论说小区摊也放盒。未注明具体分店，作者自称无照片；未核实的食品指控不作事实。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/23892639/photos",
+        "kind": "shop",
+        "readable": true,
+        "status": "web.open亲开可读新芜路店及菜标签；非近期评论页",
+        "matched_branch": true,
+        "rating": null,
+        "price_cny_per_person": null,
+        "recent_negative_review_scope": "未能读取当前评分价格和近期差评",
+        "summary": "实际可见具体店名及红鸭、鸭杂面、兰花干子、赤豆酒酿图标签"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=%E8%8A%9C%E6%B9%96%E6%99%93%E9%A9%AC%E9%B8%AD%E5%BA%97%E6%96%B0%E8%8A%9C%E8%B7%AF",
+        "kind": "search_fallback",
+        "readable": false,
+        "status": "精确店点未找到；web.open实际搜索入口不可访问",
+        "summary": "具体高德位置营业unknown"
+      },
+      "photo": {
+        "note_id": "687df8390000000012015682",
+        "author": "一只喵虎",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 378086,
+        "sha256": "263d8711281dbca84ca0547d539c0f1b54274a925ae91165c9871a7293051134",
+        "download_method": "Chrome轮播含首尾克隆，真实第一图nth(1)正常downloadMedia原WebP下载，未转码",
+        "watermark": "原WebP完整保留，未裁切或修改水印",
+        "visual_evidence": "view_image本地亲看白盘红皮鸭、鸭杂面与香菜血块汤，木桌背景；匹配本专帖晓马红鸭自驾实吃，具体分店未明。",
+        "local_view_checked": true,
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件展开核查：鸭肉与鸭杂面实拍，核对文件SHA及单篇来源"
+        },
+        "url": "assets/food/wuhu_xiaoma.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "auxiliary_platform": {
+        "name": "携程",
+        "url": "https://you.ctrip.com/food/457/56986.html",
+        "readable": true,
+        "summary": "亲开新芜路店华盛小区7号楼，用户反馈人均33，唯一可见2019评论；无现营业"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_wuhu_snacks",
+      "status": "complete"
+    },
+    {
+      "id": "huaian_fangfang",
+      "city": "淮安",
+      "name": "芳芳私房菜·精做淮扬菜",
+      "branch": "承德路店",
+      "district": "清江浦区承德北路",
+      "category": "meal",
+      "specialties": [
+        "软兜长鱼",
+        "平桥豆腐",
+        "砂锅蒲菜",
+        "红豆煲",
+        "石磨芋粉卷",
+        "青椒塞肉"
+      ],
+      "local_character": "点评与地图本店菜品及XHS专帖均有长鱼、平桥豆腐、蒲菜；本地人称谓仅作者自述，未确认",
+      "why": "多种淮扬菜与红豆甜汤可一起尝，适合聚餐；食客口味分歧较大",
+      "risks": [
+        "正向帖列三个分店，给出承德总店地址，但无法独立确认每张照片的分店",
+        "正向文案较模板化且仅商家感谢评论，商业合作未知，不能作本地独立背书",
+        "4月反向体验不喜欢味淡、甜腻，另有评论喜欢红豆煲炒鸡芋粉卷蒲菜；属于个人体验，不是统一结论",
+        "点评近期差评列表App不可读，不能声称近期质量稳定"
+      ],
+      "scene": [
+        "正餐",
+        "家庭聚餐"
+      ],
+      "level": "caution",
+      "level_reason": "地址与营业双平台匹配，但独立近期点评及本地食客证据不足，XHS口味争议明显",
+      "address": "承德北路99-1号（丹桂苑对面）",
+      "price_cny_per_person": 98,
+      "price_basis": "2026-10-01点评店页可见98；专帖95-115，高德60不同，非到店报价保证",
+      "opening": "11:00-14:00、17:30-21:30",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "69f5716f0000000037037137",
+        "title": "真实测评 | 20年淮扬菜老店芳芳私房菜✨",
+        "author": "野原小新",
+        "url": "https://www.xiaohongshu.com/explore/69f5716f0000000037037137",
+        "body_summary": "5月2日专帖列承德路/大润发/玖珑湾三店，承德总店99-1号，人均95-115，推荐松鼠鱼、砂锅蒲菜、青椒塞肉、水煮肉片，称高峰需排队。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "实际无参数打开当前笔记暂时无法浏览/App扫码，搜索入口可读",
+        "comments_summary": "3条含回复，芳芳私房菜感谢支持，作者回复；没有独立菜品评价。反向帖26评论中包包赞红豆煲炒鸡芋粉卷蒲菜但不喜肥酒香肉；另有评论批贵量少与敷衍。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "浙江IP，66粉丝，简介私厨家常菜/美食探店，主页食谱与异地探店；未见明确合作声明但文案偏宣传，不是已验证本地人",
+        "commenter_check": "主帖仅商家感谢，主页名芳芳私房菜/简介精作淮扬菜属商家。另核对反向帖有具体反驳者包包🍞大不同，主页上海杨浦、烘焙配方生活帖559粉丝；不能确认淮安本地。",
+        "reverse_search": "真实店名搜索有多篇避雷，实际打开4月3日避雷：淮安 芳芳私房菜，作者四人五菜200+，不喜平桥豆腐/软兜/酒香肉/炒饼/蟹味菇；有评论问是否承德路但作者未在可见范围确认，意见有正反。",
+        "additional_posts": [
+          {
+            "note_id": "69cf6336000000001f005d34",
+            "url": "https://www.xiaohongshu.com/explore/69cf6336000000001f005d34",
+            "title": "避雷：淮安 芳芳私房菜",
+            "author": "长矛老师说的对",
+            "body_read": true,
+            "canonical_tested": false
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/4051885",
+        "kind": "shop",
+        "readable": true,
+        "status": "真实相册来源店ID亲开店页，可读评分地址营业，菜单详情App引导",
+        "matched_branch": true,
+        "rating": 4.7,
+        "price_cny_per_person": 98,
+        "recent_negative_review_scope": "未能读取近期点评评论列表，不能确认最近三个月负评",
+        "summary": "承德路店3738条，口味环境服务均4.7，99-1号丹桂苑对面，营业中11-14/17:30-21:30，菜品长鱼平桥蒲菜红豆煲芋粉卷"
+      },
+      "gaode": {
+        "url": "https://ditu.amap.com/place/B020506BJC",
+        "kind": "place",
+        "readable": true,
+        "status": "浏览器地点详情亲开可读，显示营业中与时间",
+        "summary": "芳芳私房菜(承德公寓店)，99-1号丹桂苑对面，11-14/17:30-21:30，4.6/30评价/60人均；可见2025-11-29好评和2024旧正负体验，不替代近期点评"
+      },
+      "photo": {
+        "note_id": "69f5716f0000000037037137",
+        "author": "野原小新",
+        "image_index": null,
+        "width": 1080,
+        "height": 1080,
+        "bytes": 120712,
+        "sha256": "a4b38e5656473d83a7661cacdc4b1189e044051a50c8a71daaf8754280e144b7",
+        "download_method": "CUA本帖note-container img第2元素downloadMedia正常下载静态WebP，虽帖有LIVE但保存为独立静态图片",
+        "watermark": "保留原图未经转换/裁切",
+        "visual_evidence": "本地view_image核对为青椒塞肉夹在筷子上、米饭蓝白盘背景，与正文推荐青椒塞肉对应；没有单独分店标识",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张展开核对，确认餐食实拍并核查原图文件SHA与来源对应"
+        },
+        "url": "assets/food/huaian_fangfang.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_ha_meals",
+      "status": "complete"
     },
     {
       "id": "huaian_laohuaian",
@@ -1257,6 +2657,186 @@
           "method": "本地原始文件逐张展开查看，并核对文件SHA及来源记录"
         },
         "url": "assets/food/huaian_laohuaian.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_ha_meals",
+      "status": "complete"
+    },
+    {
+      "id": "huaian_liji",
+      "city": "淮安",
+      "name": "淮安李记豆腐脑",
+      "branch": null,
+      "district": "河下古镇花巷",
+      "category": "dessert",
+      "specialties": [
+        "桂花豆腐脑",
+        "蜂蜜豆腐脑",
+        "咸豆腐脑"
+      ],
+      "local_character": "河下古镇街边豆腐脑店，专帖甜咸选择与点评桂花/蜂蜜/咸味标签吻合；店牌百年老店及评论非遗争议均未独立核实",
+      "why": "逛河下时可尝甜豆花或咸豆脑，但景区价格需先看菜单",
+      "risks": [
+        "评论人质疑景区价10-20与普通4元差距，属于单人价格体验及非遗质疑，不证实非遗真假",
+        "作者主页明确美食博主及商务合作，本文是否合作未知",
+        "高德搜索出现滑块验证码，未确认地图位置营业",
+        "近期点评差评不可读"
+      ],
+      "scene": [
+        "扫街",
+        "甜品"
+      ],
+      "level": "exclude",
+      "level_reason": "高德风控无法完成营业核对；保留候选资料不列优先推荐",
+      "address": "河下古镇花巷58号",
+      "price_cny_per_person": 16,
+      "price_basis": "2026-10-01点评店页16；评论称10-20不同种类未核，非到店保证",
+      "opening": "点评显示09:00-22:00，高德未确认",
+      "opening_checked": false,
+      "xhs": {
+        "note_id": "6a2d059d0000000021020655",
+        "title": "一定不可错过的中式甜品",
+        "author": "没关注不许评论",
+        "url": "https://www.xiaohongshu.com/explore/6a2d059d0000000021020655",
+        "body_summary": "6月13日豆腐脑专帖称细嫩、逛街可吃一碗，甜咸口都有，标签淮安李记豆腐脑。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "实际无签名打开当前笔记暂时无法浏览/App扫码；搜索入口可读",
+        "comments_summary": "4条含回复：小红薯65F2802A质疑河下景区售价比普通老城4元高、非遗招牌真实性；作者仅回哦表情，没有证明。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "江苏IP，美食/vlog博主，主页有商务合作联系方式、149粉丝，旅行猫车日常；不是已确认本地独立食客",
+        "commenter_check": "小红薯65F2802A主页所在地江苏淮安、IP上海、无简介，67粉丝无公开内容；仅同城倾向推断，不能认定可靠本地人",
+        "reverse_search": "实际搜索李记豆腐脑 避雷，可见混合汕头/潮州/苏稽/杭州异地结果与李记灌汤包帖子；未发现可直接确认本店新负评，不声称没有差评。主帖已有具体价格质疑。",
+        "additional_posts": []
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/G2z4bGYnifArbBPV",
+        "kind": "shop",
+        "readable": true,
+        "status": "由实际索引相册shop链接，浏览器亲开可读店页",
+        "matched_branch": true,
+        "rating": 3.9,
+        "price_cny_per_person": 16,
+        "recent_negative_review_scope": "未能读取近期评论列表，App详情引导",
+        "summary": "122条，口味3.9环境3.8服务4.0，花巷58号，营业中09-22；特质咸味/桂花/普通/蜂蜜豆腐脑"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=%E6%B7%AE%E5%AE%89%E6%9D%8E%E8%AE%B0%E8%B1%86%E8%85%90%E8%84%91",
+        "kind": "search_fallback",
+        "readable": false,
+        "status": "亲自正常地点搜索，出现滑块验证码，未解决或绕过",
+        "summary": "当前地图杭州无目标结果，继而验证码；地址与营业unknown"
+      },
+      "photo": {
+        "note_id": "6a2d059d0000000021020655",
+        "author": "没关注不许评论",
+        "image_index": null,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 255240,
+        "sha256": "1005ee3bf2962f82836235fc7c59efbcaec2281b5aace7b615f5dd0b438f482c",
+        "download_method": "CUA本帖note-container img第2元素downloadMedia正常下载原始WebP",
+        "watermark": "保留原图含小红书水印，未裁切加工",
+        "visual_evidence": "实际原图为淮安李记豆腐脑招牌与完整门面，右下平台水印保留。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
+        },
+        "url": "assets/food/huaian_liji.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_ha_meals",
+      "status": "complete"
+    },
+    {
+      "id": "huaian_nanlian",
+      "city": "淮安",
+      "name": "南涟淮安菜",
+      "branch": "工农路店（平台门店；专帖分店待确认）",
+      "district": "清江浦区工农路",
+      "category": "meal",
+      "specialties": [
+        "平桥豆腐",
+        "软兜长鱼",
+        "鱼头锅",
+        "红豆汤"
+      ],
+      "local_character": "正文平桥豆腐、点评软兜蒲菜肉圆与地图淮扬菜标签构成地方菜依据；没有本地独立食客背书",
+      "why": "淮安豆腐羹与鱼头类菜品集中，可作地方正餐候选",
+      "risks": [
+        "XHS专帖未写分店，不能确认照片拍在工农路店",
+        "点评提示近期营业时间有调整，点评10:30-23:30与高德11-14/17-23:30不同，应出发前确认",
+        "无评论且作者正文偏赞美模板，独立性未知",
+        "近期点评差评列表未读到，无法判断近期口碑"
+      ],
+      "scene": [
+        "正餐"
+      ],
+      "level": "caution",
+      "level_reason": "具体平台店铺位置与营业可读；但XHS分店与本地/近期负评证据不足，不列必去",
+      "address": "点评：工农路南首8号；高德：工农路南头192-8号门面房",
+      "price_cny_per_person": 84,
+      "price_basis": "2026-10-01点评当前可见84；高德86，非到店保证",
+      "opening": "点评10:30-23:30（提示近期有调整）；高德11:00-14:00、17:00-23:30",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a6d7fd700000000260364f0",
+        "title": "南涟",
+        "author": "Hallo",
+        "url": "https://www.xiaohongshu.com/explore/6a6d7fd700000000260364f0",
+        "body_summary": "8月1日专帖赞平桥豆腐汤、鱼头锅配鸡爪豆腐、虎皮青椒、红豆汤，称合胃口打算二刷，未写具体分店。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "真实无参数打开当前笔记暂时无法浏览/App扫码；搜索入口可读",
+        "comments_summary": "实际显示这是一片荒地，0条可见评论",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "28岁13粉丝，近帖餐厅/烘焙开业活动及冰箱分享；无可见所在地，本地身份未知，商业合作未知",
+        "commenter_check": "0条可见评论，无可核对的评论人",
+        "reverse_search": "实际搜索南涟 避雷，打开排雷. 南涟人家(2022)，正文大学城日常与红豆煲/麻婆豆腐；未证明同品牌同店且时间旧，不纳入目标店负评事实。其余可见结果混杂异地维权帖，未断言无差评。",
+        "additional_posts": []
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/58259761",
+        "kind": "shop",
+        "readable": true,
+        "status": "从芋颜相册附近商户真实链接取得，浏览器亲开可读店页",
+        "matched_branch": false,
+        "rating": 4.6,
+        "price_cny_per_person": 84,
+        "recent_negative_review_scope": "未读取近期评论列表，App详情限制",
+        "summary": "工农路店6554条，口味4.6环境4.7服务4.7；工农路南首8号；营业中10:30-23:30且提示近期有调整"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B0FFGK6WTM",
+        "kind": "place",
+        "readable": true,
+        "status": "浏览器真实地点详情可读，营业中",
+        "summary": "工农路店，南头192-8号，11-14/17-23:30；4.7/18评价/86人均；可见2025-01-25、2024旧评价，不代表近期稳定"
+      },
+      "photo": {
+        "note_id": "6a6d7fd700000000260364f0",
+        "author": "Hallo",
+        "image_index": null,
+        "width": 1440,
+        "height": 1080,
+        "bytes": 136132,
+        "sha256": "0ce788b3b62d83bb199c506f0c51ca2cbab729caa8600d8f4f02725157d46281",
+        "download_method": "CUA本帖note-container img第2元素downloadMedia正常保存原始静态WebP，未转换",
+        "watermark": "未裁切处理，保留原图状况",
+        "visual_evidence": "本地view_image核对为店内座位窗边与宝宝椅，墙上屏幕可见南涟品牌字样，对应本店环境；不能单独确定分店",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地原图逐张展开：真实餐食或带本店品牌的店内环境；核查SHA与单篇来源"
+        },
+        "url": "assets/food/huaian_nanlian.webp",
         "reuse_status": "private_personal_reference",
         "public_reuse_permission": "not_established"
       },

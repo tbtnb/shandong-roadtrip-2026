@@ -5,7 +5,9 @@ import fs from 'node:fs';
 import PhotosGallery from '../src/PhotosGallery.jsx';
 import FoodGuide from '../src/FoodGuide.jsx';
 const media=JSON.parse(fs.readFileSync('public/data/attraction-media.json'));
-const food=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
+const source=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
+// Isolate filter behavior from the growing research pool; identity fields retain actual originals.
+const food={...source,entries:[{...source.entries.find(e=>e.city==='连云港'),level:'exclude'},{...source.entries.find(e=>e.city==='威海'),level:'caution'}]};
 afterEach(cleanup);
 function Gallery(){const[expanded,setExpanded]=useState(false);return <PhotosGallery media={media} expanded={expanded} onExpanded={setExpanded}/>}
 it('six city previews open the full library without entering or changing the journey',()=>{
