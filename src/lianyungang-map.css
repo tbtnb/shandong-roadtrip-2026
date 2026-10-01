@@ -3,3 +3,5 @@
 @media(max-width:520px){.lyg-list{grid-template-columns:1fr}.lyg-item-main img{width:48px;height:55px}.lyg-item-main strong{font-size:15px}.lyg-toolbar{gap:8px}.lyg-item-foot{font-size:12px}}
 .lyg-list{grid-auto-rows:max-content}
 @media(max-width:520px){.lyg-heading{display:block}.lyg-heading h1{font-size:28px;letter-spacing:-.6px}.lyg-total{display:none}.lyg-toolbar>div{display:grid;grid-template-columns:repeat(3,1fr);width:100%;gap:5px}.lyg-toolbar>div button{font-size:11px;padding:9px 7px;white-space:nowrap}.lyg-toolbar{margin-top:17px}.lyg-help{margin-top:8px}.lyg-map-shell{border-radius:14px}}
+
+.leaflet-container .leaflet-marker-pane .lyg-marker img,.leaflet-container .leaflet-marker-pane .lyg-cluster img{width:100%;height:100%;object-fit:cover}
