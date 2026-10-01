@@ -682,7 +682,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     staticRoot.visible=!focusedLandmark;movingRoot.visible=!focusedLandmark;detailRoot.visible=Boolean(focusedLandmark);
     detailPreviews.forEach((preview,id)=>{preview.visible=id===focusedLandmark?.id});
     if(entry){entry.elapsed+=dt;if(entry.elapsed>=1.15)finishEntry();}
-    cameraYaw+=(targetYaw-cameraYaw)*(reducedMotion?1:.09);cameraPitch+=(targetPitch-cameraPitch)*(reducedMotion?1:.09);positionCamera();
+    cameraYaw+=(targetYaw-cameraYaw)*(reducedMotion||drag?1:.18);cameraPitch+=(targetPitch-cameraPitch)*(reducedMotion||drag?1:.18);positionCamera();
     if(motion&&dt){time+=dt;carProgress+=(targetCarProgress-carProgress)*Math.min(1,dt*2.8);if(Math.abs(targetCarProgress-carProgress)<.0002)carProgress=targetCarProgress;}
     const cp=routeCurve.getPointAt(carProgress),ct=routeCurve.getTangentAt(carProgress);car.position.copy(cp);car.position.y+=.018;carHalo.position.set(cp.x,cp.y+.025,cp.z);car.rotation.set(-Math.atan2(ct.y*carDirection,Math.hypot(ct.x,ct.z)),Math.atan2(ct.x*carDirection,ct.z*carDirection),0,'YXZ');
     boats.forEach((b,i)=>{b.rotation.z=motion?Math.sin(time*.8+i*1.3)*.025:0;b.position.y=.43+(motion?Math.sin(time*1.1+i)*.012:0);});
@@ -702,23 +702,23 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   function begin(x,y,isTouch,id,target){if(entry){finishEntry();render(0);}drag={x,y,yaw:targetYaw,pitch:targetPitch,isTouch,id,target};dragged=false;suppressClickUntil=0;}
   function applyMove(x,y){
     if(!drag)return;const dx=x-drag.x,dy=y-drag.y;
-    if(Math.abs(dx)+Math.abs(dy)>6)dragged=true;
-    if(dragged){targetYaw=THREE.MathUtils.clamp(drag.yaw-dx*(drag.isTouch?.0025:.0015),-yawLimit(),yawLimit());if(!drag.isTouch)targetPitch=THREE.MathUtils.clamp(drag.pitch+dy*.001,mode==='immersive'?-.22:-.14,mode==='immersive'?.22:.14);renderer.domElement.style.cursor='grabbing';}
+    if(Math.hypot(dx,dy)>3)dragged=true;
+    if(dragged){targetYaw=THREE.MathUtils.clamp(drag.yaw-dx*(drag.isTouch?.004:.0035),-yawLimit(),yawLimit());if(!drag.isTouch)targetPitch=THREE.MathUtils.clamp(drag.pitch+dy*.002,mode==='immersive'?-.22:-.14,mode==='immersive'?.22:.14);renderer.domElement.style.cursor='grabbing';drag.x=x;drag.y=y;drag.yaw=targetYaw;drag.pitch=targetPitch;}
   }
   function pick(x,y){if(focusedLandmark)return;const r=renderer.domElement.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects([...targets,...landmarkTargets],false)[0];if(hit){const landmarkId=hit.object.userData.landmarkId;if(landmarkId){focusLandmark(landmarkId);return;}selectCity(hit.object.userData.cityId);onSelect(hit.object.userData.cityId);}}
   function down(e){
     if(e.pointerType==='touch'||e.button!==0||drag||touchBlocked)return;
     const target=e.target===renderer.domElement?renderer.domElement:e.target.closest?.('.coastal-city-tag');
-    if(!target)return;begin(e.clientX,e.clientY,false,e.pointerId,target);target.setPointerCapture?.(e.pointerId);
+    if(!target)return;e.preventDefault();document.documentElement.classList.add('map-drag-active');begin(e.clientX,e.clientY,false,e.pointerId,target);target.setPointerCapture?.(e.pointerId);
   }
-  function move(e){if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;applyMove(e.clientX,e.clientY);if(dragged)suppressClick();}
+  function move(e){if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;e.preventDefault();applyMove(e.clientX,e.clientY);if(dragged)suppressClick();}
   function up(e){
     if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;
     const wasDragged=dragged,canvasTap=drag.target===renderer.domElement;
     if(wasDragged)suppressClick();cancel();if(!wasDragged&&canvasTap)pick(e.clientX,e.clientY);
   }
   function cancel(){
-    const previous=drag;drag=null;touchId=null;touchAxis=null;renderer.domElement.style.cursor='grab';
+    document.documentElement.classList.remove('map-drag-active');const previous=drag;drag=null;touchId=null;touchAxis=null;renderer.domElement.style.cursor='grab';
     if(previous&&!previous.isTouch&&previous.target?.hasPointerCapture?.(previous.id))previous.target.releasePointerCapture(previous.id);
   }
   function pointerCancel(e){if(e.pointerType!=='touch'&&drag&&!drag.isTouch&&e.pointerId===drag.id){suppressClick();cancel();}}
@@ -756,7 +756,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   }
   function touchCancel(e){if(!drag?.isTouch&&!touchBlocked)return;suppressClick();cancel();touchBlocked=e.touches.length>0;}
   function preventDragClick(e){if(e.detail!==0&&(touchBlocked||(drag&&dragged)||performance.now()<suppressClickUntil)){e.preventDefault();e.stopPropagation();}}
-  renderer.domElement.style.cursor='grab';container.addEventListener('pointerdown',down);window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);window.addEventListener('pointercancel',pointerCancel);container.addEventListener('lostpointercapture',pointerCancel);
+  renderer.domElement.style.cursor='grab';container.addEventListener('pointerdown',down);window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);window.addEventListener('pointercancel',pointerCancel);window.addEventListener('blur',cancel);container.addEventListener('lostpointercapture',pointerCancel);
   window.addEventListener('touchstart',touchStart,{passive:true});container.addEventListener('touchmove',touchMove,{passive:false});window.addEventListener('touchend',touchEnd,{passive:true});window.addEventListener('touchcancel',touchCancel,{passive:true});container.addEventListener('click',preventDragClick,true);
   const resizeObserver=new ResizeObserver(resize);resizeObserver.observe(container);
   const observer=typeof IntersectionObserver!=='undefined'?new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??true;if(visible)render(0);},{rootMargin:'120px'}):null;observer?.observe(container);
@@ -775,7 +775,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     setMotion(value){motion=Boolean(value)&&!reducedMotion;if(!motion){carProgress=targetCarProgress;render(0);}},
     reset(){finishEntry();cancel();targetYaw=0;targetPitch=0;if(reducedMotion){cameraYaw=0;cameraPitch=0;}render(0);},
     dispose(){
-      disposed=true;entry=null;cancelAnimationFrame(raf);resizeObserver.disconnect();observer?.disconnect();cancel();container.removeEventListener('pointerdown',down);container.removeEventListener('lostpointercapture',pointerCancel);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',pointerCancel);window.removeEventListener('touchstart',touchStart);container.removeEventListener('touchmove',touchMove);window.removeEventListener('touchend',touchEnd);window.removeEventListener('touchcancel',touchCancel);container.removeEventListener('click',preventDragClick,true);
+      disposed=true;entry=null;cancelAnimationFrame(raf);resizeObserver.disconnect();observer?.disconnect();cancel();container.removeEventListener('pointerdown',down);container.removeEventListener('lostpointercapture',pointerCancel);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',pointerCancel);window.removeEventListener('blur',cancel);window.removeEventListener('touchstart',touchStart);container.removeEventListener('touchmove',touchMove);window.removeEventListener('touchend',touchEnd);window.removeEventListener('touchcancel',touchCancel);container.removeEventListener('click',preventDragClick,true);
       const usedMaterials=new Set([...materialCache.values(),shadow.material]);scene.traverse(o=>{if(o.isMesh){o.geometry.dispose();for(const material of Array.isArray(o.material)?o.material:[o.material])usedMaterials.add(material)}});usedMaterials.forEach(m=>m.dispose());renderer.domElement.removeEventListener('webglcontextlost',contextLost);renderer.dispose();renderer.domElement.remove();labels.remove();style.remove();
     },
   };

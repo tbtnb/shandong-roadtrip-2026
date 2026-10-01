@@ -542,3 +542,14 @@ test('map zoom clamps both cameras and preserves the car route',()=>{
   assert.deepEqual(sceneState().carPosition,before);
  }finally{closeScene(api)}
 });
+
+test('mouse drag prevents selection, follows immediately and reverses at the edge',()=>{
+ const api=openScene(900,600,{reducedMotion:false}),canvas=root.querySelector('canvas');
+ const down=new window.Event('pointerdown',{bubbles:true,cancelable:true});
+ Object.assign(down,{button:0,pointerType:'mouse',pointerId:1,clientX:100,clientY:100});canvas.dispatchEvent(down);
+ assert.equal(down.defaultPrevented,true);assert.ok(document.documentElement.classList.contains('map-drag-active'));
+ pointer(window,'pointermove',1000,100);advanceFrames(1);const edge=lastCamera.matrixWorld.elements.slice();
+ pointer(window,'pointermove',980,100);advanceFrames(1);assert.notDeepEqual(lastCamera.matrixWorld.elements,edge,'small reverse movement responds despite overshoot');
+ window.dispatchEvent(new window.Event('blur'));assert.equal(document.documentElement.classList.contains('map-drag-active'),false);
+ api.dispose();
+});
