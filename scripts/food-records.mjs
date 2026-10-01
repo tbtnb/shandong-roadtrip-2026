@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 export const targets={'青岛':60,'威海':80,'连云港':40,'日照':40,'芜湖':40,'淮安':20};
+export function publicRecord(value){
+ if(typeof value==='string')return /^(?:\/|file:\/\/|[A-Za-z]:[\\/])/.test(value)||/\/(?:Users|home)\//.test(value)?undefined:value;
+ if(Array.isArray(value))return value.map(publicRecord).filter(v=>v!==undefined);
+ if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).filter(([k])=>k!=='local_file').map(([k,v])=>[k,publicRecord(v)]).filter(([,v])=>v!==undefined));
+ return value;
+}
 export function imageInfo(b){
  if(b.subarray(0,8).toString('hex')==='89504e470d0a1a0a')return{extension:'png',width:b.readUInt32BE(16),height:b.readUInt32BE(20)};
  if(b.subarray(0,4).toString()==='RIFF'&&b.subarray(8,12).toString()==='WEBP'){

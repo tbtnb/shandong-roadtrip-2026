@@ -301,5 +301,37 @@
     "reviewer": "root",
     "method": "本地原始文件逐张实际查看；哈希与来源记录核对",
     "visual_evidence": "本地原图为汤碗中勺子夹起一只大馄饨，背景多只馄饨，作者封面字样；同note正文明确湖北路分店。"
+  },
+  "ee63d571b3ced9e7b7d7c56d4aadbf23061b5d1fc813dfd50028bf041b41bd1d": {
+    "status": "accepted",
+    "id": "weihai_tianxiawuti",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对来源正文、作者及SHA，不裁切加工",
+    "visual_evidence": "root逐张查看实际原文件：黑椭圆盘内猪蹄及浅色菜包肉双拼，上撒芝麻；后有生菜、泡菜韭菜蒜片及蘸料，与专帖店名正文及该餐匹配。"
+  },
+  "1c7586eaf1978b95a6e9b3f24e30d65fff0fbf497d891f10132aed127e2c3b41": {
+    "status": "accepted",
+    "id": "lyg_xiongdi",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对来源正文、作者及SHA，不裁切加工",
+    "visual_evidence": "root逐张查看实际原文件：鱼籽青椒小碗旁吊饼，背景海蜇黄瓜菜，与专帖海昌路店餐食描述匹配；照片本身不证明具体分店，分店仍依赖正文及平台核验。"
+  },
+  "c406dd14a1ad92b42e8a39f38e398b93a194d3357837233b605d37ea20e68f4b": {
+    "status": "accepted",
+    "id": "huaian_wenlou",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图并核对来源正文、作者及SHA",
+    "visual_evidence": "root实看原文件为白盘切块带骨肉，本文作者称盐水鹅；上方作者文字明确文楼早茶淮扬菜（北门大街店），食品实拍与专帖匹配，保留原作者文字与完整原图。"
+  },
+  "d3d7568cde78ac12f583e0159402322dd1cefce09df9d594e04e738a94365c4f": {
+    "status": "accepted",
+    "id": "wuhu_erjie",
+    "checked_at": "2026-10-01",
+    "reviewer": "root",
+    "method": "本地view_image逐张查看实际原图，核对专帖与店牌照片描述及SHA",
+    "visual_evidence": "root实看原文件为手持透明杯红豆酒酿，底部红豆及金属勺，木桌红白砖背景；专帖首张店牌明确双桐巷店，饮品与正文餐食及同帖现场相符，照片本身不单独证明分店。"
   }
 }
