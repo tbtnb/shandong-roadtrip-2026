@@ -1,0 +1,28 @@
+{
+  "attraction_id": "qd_yunxiao_road",
+  "title": "青岛云霄路老东港",
+  "author": "D.C",
+  "note_id": "6a1c355b0000000006020e7c",
+  "body_summary": "作者记录云霄路老东港旅行第一餐，评价海鲜新鲜度、味道价格、纸巾饮料服务与团购选择，是具体餐饮街区的真实实吃反馈。",
+  "visual_evidence": "静态照片展示上桌贝类海鲜、蔬菜与啤酒杯，匹配云霄路老东港实吃正文，无攻略文字封面。",
+  "source_url": "https://www.xiaohongshu.com/explore/6a1c355b0000000006020e7c",
+  "image_index": 1,
+  "size_bytes": 441834,
+  "dimensions": {
+    "width": 2373,
+    "height": 1080
+  },
+  "sha256": "f61190356ab4b6d197fdbf0200d923290180b0e6a4da3abfb6293a109e28484a",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T04:05:48.845586+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "topic_kind": "food",
+  "local_file": "public/assets/places/xhs_qd_yunxiao_road.jpg"
+}

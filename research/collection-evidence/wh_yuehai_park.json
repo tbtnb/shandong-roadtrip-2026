@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_yuehai_park",
+  "title": "悦海公园的灯塔和灯塔下的海，也太浪漫了吧",
+  "author": "吃饭不放辣子",
+  "note_id": "6a714136000000002800a1b0",
+  "source_url": "https://www.xiaohongshu.com/explore/6a714136000000002800a1b0",
+  "body_summary": "正文明确悦海公园白灯塔礁石区、草坪，作者威海待5天现场记录；含售货机推广。",
+  "visual_evidence": "首图白色灯塔草顶基部、滨海护栏石块与海鸥，5图摄影无攻略文字。",
+  "image_index": 1,
+  "bytes": 216059,
+  "width": 1080,
+  "height": 1432,
+  "sha256": "a554af2d4fc1ec7383d9fa0fc749a67b690019a6fc6d0f155bcf0855195fb41a",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T04:05:23.890969+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1432
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_yuehai_park.jpg"
+}

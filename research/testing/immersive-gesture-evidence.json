@@ -1,0 +1,1154 @@
+[
+  {
+    "case": "immersive-baseline",
+    "state": {
+      "scroll": 149,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          5
+        ],
+        "matrix": [
+          0.5494062633767951,
+          4.163336342344337e-17,
+          0.8355553588855423,
+          0,
+          0.20838456750582762,
+          0.9684014634837032,
+          -0.13701998959287298,
+          0,
+          -0.8091530323664101,
+          0.24939648257868807,
+          0.5320458295012012,
+          0,
+          0.2,
+          1.43,
+          5,
+          1
+        ],
+        "data": {
+          "focusCity": "lianyungang",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.66,
+            0.98,
+            4.04
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    }
+  },
+  {
+    "case": "immersive-horizontal",
+    "state": {
+      "scroll": 149,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          5
+        ],
+        "matrix": [
+          0.4069873612983631,
+          1.3877787807814457e-17,
+          0.9134337894688349,
+          0,
+          0.22780717416204926,
+          0.9684014634837033,
+          -0.10150121636179345,
+          0,
+          -0.8845706185170845,
+          0.24939648257868807,
+          0.3941271563007055,
+          0,
+          0.2,
+          1.43,
+          5,
+          1
+        ],
+        "data": {
+          "focusCity": "lianyungang",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.66,
+            0.98,
+            4.04
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": true,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "immersive-reset",
+    "state": {
+      "scroll": 149,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          5
+        ],
+        "matrix": [
+          0.5494062633767951,
+          4.163336342344337e-17,
+          0.8355553588855423,
+          0,
+          0.20838456750582762,
+          0.9684014634837032,
+          -0.13701998959287298,
+          0,
+          -0.8091530323664101,
+          0.24939648257868807,
+          0.5320458295012012,
+          0,
+          0.2,
+          1.43,
+          5,
+          1
+        ],
+        "data": {
+          "focusCity": "lianyungang",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.66,
+            0.98,
+            4.04
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    }
+  },
+  {
+    "case": "immersive-vertical",
+    "state": {
+      "scroll": 284,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          5
+        ],
+        "matrix": [
+          0.5494062633767951,
+          4.163336342344337e-17,
+          0.8355553588855423,
+          0,
+          0.20838456750582762,
+          0.9684014634837032,
+          -0.13701998959287298,
+          0,
+          -0.8091530323664101,
+          0.24939648257868807,
+          0.5320458295012012,
+          0,
+          0.2,
+          1.43,
+          5,
+          1
+        ],
+        "data": {
+          "focusCity": "lianyungang",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.66,
+            0.98,
+            4.04
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "pointercancel",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "overview-mode-switch",
+    "state": {
+      "scroll": 0,
+      "camera": {
+        "name": "coastal-overview-camera",
+        "perspective": false,
+        "position": [
+          5.7,
+          23.8,
+          21.8
+        ],
+        "matrix": [
+          0.9676172723968439,
+          0,
+          -0.2524218971470027,
+          0,
+          -0.18133844631853313,
+          0.6956361568144132,
+          -0.6951307108877103,
+          0,
+          0.175593798427144,
+          0.7183942770738594,
+          0.6731095606373856,
+          0,
+          5.7,
+          23.8,
+          21.8,
+          1
+        ],
+        "data": {}
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": ""
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": ""
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": ""
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    }
+  },
+  {
+    "case": "immersive-mode-roundtrip",
+    "state": {
+      "scroll": 0,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          5
+        ],
+        "matrix": [
+          0.5494062633767951,
+          4.163336342344337e-17,
+          0.8355553588855423,
+          0,
+          0.20838456750582762,
+          0.9684014634837032,
+          -0.13701998959287298,
+          0,
+          -0.8091530323664101,
+          0.24939648257868807,
+          0.5320458295012012,
+          0,
+          0.2,
+          1.43,
+          5,
+          1
+        ],
+        "data": {
+          "focusCity": "lianyungang",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.66,
+            0.98,
+            4.04
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 110.02连云港"
+      ]
+    }
+  },
+  {
+    "case": "day2-focus-qingdao",
+    "state": {
+      "scroll": 305,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          0.2,
+          1.43,
+          1.9
+        ],
+        "matrix": [
+          0.8328603694555206,
+          -3.469446951953614e-18,
+          0.5534831569166435,
+          0,
+          0.052281236397563824,
+          0.9955287919110712,
+          -0.07867081286490556,
+          0,
+          -0.551008418548352,
+          0.09445858603686032,
+          0.8291364774346629,
+          0,
+          0.2,
+          1.43,
+          1.9,
+          1
+        ],
+        "data": {
+          "focusCity": "qingdao",
+          "groundHeight": 0.59,
+          "focusPoint": [
+            1.25,
+            1.25,
+            0.32
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "true",
+          "display": ""
+        },
+        {
+          "city": "weihai",
+          "selected": "false",
+          "display": "none"
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    }
+  },
+  {
+    "case": "city-focus-weihai",
+    "state": {
+      "scroll": 478.5,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    }
+  },
+  {
+    "case": "2d-mode",
+    "state": {
+      "scroll": 0,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    },
+    "canvasRect": {
+      "x": 15,
+      "y": 183.2890625,
+      "width": 360,
+      "height": 370,
+      "top": 183.2890625,
+      "right": 375,
+      "bottom": 553.2890625,
+      "left": 15
+    }
+  },
+  {
+    "case": "3d-return-immersive-and-reset",
+    "state": {
+      "scroll": 149,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    }
+  },
+  {
+    "case": "verified-2d-visibility",
+    "state": {
+      "scroll": 0,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    },
+    "sceneHidden": "true",
+    "sceneVisibility": "hidden",
+    "flat": true,
+    "flatCar": "小车位于青岛"
+  },
+  {
+    "case": "before-immersive-multi",
+    "state": {
+      "scroll": 33,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    }
+  },
+  {
+    "case": "immersive-multitouch-cancel",
+    "state": {
+      "scroll": 33,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9921092417824895,
+          4.336808689942018e-19,
+          0.12537644264284206,
+          0,
+          -0.0020500631543254777,
+          0.99986630916688,
+          0.016222238873358125,
+          0,
+          -0.12535968096177155,
+          -0.016351262734144247,
+          0.9919766058714096,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchstart",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 2
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 2
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 2
+      },
+      {
+        "type": "pointercancel",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false
+      },
+      {
+        "type": "pointercancel",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false
+      },
+      {
+        "type": "touchcancel",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false,
+        "touches": 0
+      },
+      {
+        "type": "touchcancel",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": false,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "immersive-label-drag",
+    "state": {
+      "scroll": 33,
+      "camera": {
+        "name": "coastal-immersive-camera",
+        "perspective": true,
+        "position": [
+          1.43,
+          2.05,
+          -3.4
+        ],
+        "matrix": [
+          0.9474246554811147,
+          0,
+          0.31997894022340173,
+          0,
+          -0.005232059720985879,
+          0.99986630916688,
+          0.015491589462577808,
+          0,
+          -0.3199361619723024,
+          -0.016351262734144254,
+          0.947297993489605,
+          0,
+          1.43,
+          2.05,
+          -3.4,
+          1
+        ],
+        "data": {
+          "focusCity": "weihai",
+          "groundHeight": 1.21,
+          "focusPoint": [
+            1.66,
+            2.08,
+            -5.22
+          ]
+        }
+      },
+      "labels": [
+        {
+          "city": "wuhu",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "lianyungang",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "rizhao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "qingdao",
+          "selected": "false",
+          "display": "none"
+        },
+        {
+          "city": "weihai",
+          "selected": "true",
+          "display": ""
+        }
+      ],
+      "day": [
+        "DAY 210.03青岛"
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchmove",
+        "trusted": true,
+        "prevented": true,
+        "cancelable": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "trusted": true,
+        "prevented": false,
+        "cancelable": true,
+        "touches": 0
+      }
+    ]
+  }
+]

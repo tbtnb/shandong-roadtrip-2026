@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_bluewis",
+  "title": "威海｜布鲁维斯号｜宿命感",
+  "author": "He.",
+  "note_id": "6a2bd3580000000015024758",
+  "source_url": "https://www.xiaohongshu.com/explore/6a2bd3580000000015024758",
+  "body_summary": "正文明确荣成环海路布鲁维斯沉船，拍照与临近咖啡实际评价。",
+  "visual_evidence": "首图海浪与搁浅锈船BLUEWAYS字样及海鸥，静态摄影，无攻略文字。",
+  "image_index": 1,
+  "bytes": 281307,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "5d49216671ba05da39c43144aa28c039c7cbc38173c0b31b630f2eaf8ad5e061",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:56:55.906775+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_bluewis.jpg"
+}

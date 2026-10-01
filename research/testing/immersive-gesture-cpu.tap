@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: single-frame reduced-motion rotate and reset keep HTML tags aligned
+ok 1 - single-frame reduced-motion rotate and reset keep HTML tags aligned
+  ---
+  duration_ms: 152.208667
+  type: 'test'
+  ...
+# Subtest: CPU touch handler rotates from canvas and city labels, preserves scroll/pinch and cancels
+ok 2 - CPU touch handler rotates from canvas and city labels, preserves scroll/pinch and cancels
+  ---
+  duration_ms: 112.1915
+  type: 'test'
+  ...
+# Subtest: mouse pointer cancellation and unrelated pointers do not continue a drag
+ok 3 - mouse pointer cancellation and unrelated pointers do not continue a drag
+  ---
+  duration_ms: 78.933583
+  type: 'test'
+  ...
+# Subtest: multi-touch stays blocked until all fingers end, including outside-scene fingers
+ok 4 - multi-touch stays blocked until all fingers end, including outside-scene fingers
+  ---
+  duration_ms: 81.828167
+  type: 'test'
+  ...
+# Subtest: outside-scene second finger and partial touchcancel block the remaining finger
+ok 5 - outside-scene second finger and partial touchcancel block the remaining finger
+  ---
+  duration_ms: 76.866584
+  type: 'test'
+  ...
+# Subtest: long scroll and browser-owned gestures suppress clicks until release
+ok 6 - long scroll and browser-owned gestures suppress clicks until release
+  ---
+  duration_ms: 84.448375
+  type: 'test'
+  ...
+# Subtest: mouse and pen can drag from a city label, ignore unrelated pointers, and reset
+ok 7 - mouse and pen can drag from a city label, ignore unrelated pointers, and reset
+  ---
+  duration_ms: 110.754458
+  type: 'test'
+  ...
+# Subtest: immersive Perspective mode roundtrip preserves selected city, car and day route
+ok 8 - immersive Perspective mode roundtrip preserves selected city, car and day route
+  ---
+  duration_ms: 99.682834
+  type: 'test'
+  ...
+# Subtest: immersive city focus is finite, low to the ground, and faces its landmark
+ok 9 - immersive city focus is finite, low to the ground, and faces its landmark
+  ---
+  duration_ms: 157.59525
+  type: 'test'
+  ...
+# Subtest: immersive touch handlers rotate horizontally while scroll and multitouch preserve the view
+ok 10 - immersive touch handlers rotate horizontally while scroll and multitouch preserve the view
+  ---
+  duration_ms: 77.683542
+  type: 'test'
+  ...
+# Subtest: switching view mode cancels active drag and preserves a blocked multitouch gesture
+ok 11 - switching view mode cancels active drag and preserves a blocked multitouch gesture
+  ---
+  duration_ms: 75.475416
+  type: 'test'
+  ...
+# Subtest: 288×348: all allowed yaw/pitch corners keep the entire model in frame
+ok 12 - 288×348: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 117.052959
+  type: 'test'
+  ...
+# Subtest: 330×348: all allowed yaw/pitch corners keep the entire model in frame
+ok 13 - 330×348: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 93.806708
+  type: 'test'
+  ...
+# Subtest: 360×370: all allowed yaw/pitch corners keep the entire model in frame
+ok 14 - 360×370: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 90.8545
+  type: 'test'
+  ...
+# Subtest: 400×370: all allowed yaw/pitch corners keep the entire model in frame
+ok 15 - 400×370: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 92.164417
+  type: 'test'
+  ...
+# Subtest: 570×440: all allowed yaw/pitch corners keep the entire model in frame
+ok 16 - 570×440: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 91.302583
+  type: 'test'
+  ...
+# Subtest: 1280×530: all allowed yaw/pitch corners keep the entire model in frame
+ok 17 - 1280×530: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 105.815542
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2017.215292

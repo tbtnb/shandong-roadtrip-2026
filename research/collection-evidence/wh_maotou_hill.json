@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_maotou_hill",
+  "title": "威海猫头山｜不做攻略，随观光车偶遇果冻海🌊",
+  "author": "L.",
+  "note_id": "6a9a5a8e000000002900cdab",
+  "source_url": "https://www.xiaohongshu.com/explore/6a9a5a8e000000002900cdab",
+  "body_summary": "作者打车至威海猫头山，乘观光车随站下车，记录悬崖大海和清晨黄昏观景经验。",
+  "visual_evidence": "首图是海岬岩岸蓝海湾及小船，前景树木，与猫头山正文地点一致，无攻略文字。",
+  "image_index": 1,
+  "bytes": 224166,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "4d88772442581aa539138d23f2dd0e214e1c407525f80fea374acc756d9c1979",
+  "download_method": "页面右键→下载图片，保持下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "当前笔记暂时无法浏览；要求打开App扫码查看",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:41:44.078473+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_maotou_hill.jpg"
+}

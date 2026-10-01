@@ -1,0 +1,1869 @@
+[
+  {
+    "case": "initial-overview",
+    "state": {
+      "disclosures": [
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 462.28125,
+            "height": 50,
+            "left": 31,
+            "right": 359,
+            "top": 412.28125,
+            "width": 328,
+            "x": 31,
+            "y": 412.28125
+          },
+          "text": "开始旅程"
+        }
+      ],
+      "stage": "先选天数，看看全程",
+      "visibleDecks": [],
+      "visibleH2": [
+        "先选天数，看看全程"
+      ]
+    }
+  },
+  {
+    "case": "day1-roadbook",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 1 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 1 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "day1-spots",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "浏览其他城市与途中备选",
+          "open": false
+        },
+        {
+          "name": "照片与出处说明",
+          "open": false
+        },
+        {
+          "name": "这一晚，为什么这样停",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 当天路书"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "继续第 2 天"
+        }
+      ],
+      "stage": "第 1 天 · 看看这一站",
+      "visibleDecks": [
+        "连云港景点卡"
+      ],
+      "visibleH2": [
+        "第 1 天 · 看看这一站",
+        "连云港去程歇一晚"
+      ]
+    }
+  },
+  {
+    "case": "day2-roadbook",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 2 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 2 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "guide-mode-from-day2-spots",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期与城市",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "原帖查看说明",
+          "open": false
+        },
+        {
+          "name": "其他参考帖",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": true
+        },
+        {
+          "name": "崂山",
+          "open": false
+        },
+        {
+          "name": "青岛海底世界",
+          "open": false
+        },
+        {
+          "name": "栈桥 / 中山路 / 八大关 / 浮山湾",
+          "open": false
+        },
+        {
+          "name": "刘公岛",
+          "open": false
+        },
+        {
+          "name": "半月湾—猫头山（外围停车后慢游）",
+          "open": false
+        },
+        {
+          "name": "火炬八街 / 国际海水浴场",
+          "open": false
+        },
+        {
+          "name": "那香海",
+          "open": false
+        },
+        {
+          "name": "民主路/盐河巷首晚二选一",
+          "open": false
+        },
+        {
+          "name": "栈桥外围—中山路青岛默认主片区",
+          "open": false
+        },
+        {
+          "name": "八大关—第二浴场岸上替换老城，非叠加",
+          "open": false
+        },
+        {
+          "name": "五四广场/奥帆夜景住宿顺路才加",
+          "open": false
+        },
+        {
+          "name": "信号山/小鱼山核心行程删除，有余量才二选一",
+          "open": false
+        },
+        {
+          "name": "崂山本次默认删除",
+          "open": false
+        },
+        {
+          "name": "青岛海底世界不默认列雨天必选",
+          "open": false
+        },
+        {
+          "name": "半月湾—猫头山北海岸默认主线，但换成外围停车＋步行/接驳",
+          "open": false
+        },
+        {
+          "name": "国际海水浴场/火炬八街同片区一次短逛；火炬非独立必去",
+          "open": false
+        },
+        {
+          "name": "刘公岛有历史兴趣且正常通航时替换北海岸主线",
+          "open": false
+        },
+        {
+          "name": "那香海/布鲁维斯号东线整日替换项；沉船仅可删",
+          "open": false
+        },
+        {
+          "name": "万平口/东夷小镇返程中转夜可删二选一",
+          "open": false
+        },
+        {
+          "name": "证据 A / B / C / D 分别意味着什么",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "false",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "true",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 368.78125,
+            "height": 44,
+            "left": 31,
+            "right": 133,
+            "top": 324.78125,
+            "width": 102,
+            "x": 31,
+            "y": 324.78125
+          },
+          "text": "返回沉浸体验"
+        },
+        {
+          "rect": {
+            "bottom": 368.28125,
+            "height": 43,
+            "left": 146,
+            "right": 248,
+            "top": 325.28125,
+            "width": 102,
+            "x": 146,
+            "y": 325.28125
+          },
+          "text": "5 天"
+        },
+        {
+          "rect": {
+            "bottom": 368.28125,
+            "height": 43,
+            "left": 252,
+            "right": 354,
+            "top": 325.28125,
+            "width": 102,
+            "x": 252,
+            "y": 325.28125
+          },
+          "text": "6 天"
+        }
+      ],
+      "stage": "攻略模式 · 第 2 天",
+      "visibleDecks": [
+        "青岛景点卡"
+      ],
+      "visibleH2": [
+        "攻略模式 · 第 2 天",
+        "青岛红瓦与碧海 · 1晚",
+        "这几天，就这样过",
+        "值得停留，也值得留白",
+        "为什么留下，为什么不赶",
+        "把准备做好，把路走轻",
+        "攻略翻过，才放进手账"
+      ]
+    }
+  },
+  {
+    "case": "guided-mode-roundtrip-preserves-spots-day2",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "浏览其他城市与途中备选",
+          "open": false
+        },
+        {
+          "name": "照片与出处说明",
+          "open": false
+        },
+        {
+          "name": "原帖查看说明",
+          "open": false
+        },
+        {
+          "name": "其他参考帖",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 当天路书"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "继续第 3 天"
+        }
+      ],
+      "stage": "第 2 天 · 看看这一站",
+      "visibleDecks": [
+        "青岛景点卡"
+      ],
+      "visibleH2": [
+        "第 2 天 · 看看这一站",
+        "青岛红瓦与碧海 · 1晚"
+      ]
+    }
+  },
+  {
+    "case": "before-final-day-qa",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "浏览其他城市与途中备选",
+          "open": false
+        },
+        {
+          "name": "照片与出处说明",
+          "open": false
+        },
+        {
+          "name": "原帖查看说明",
+          "open": false
+        },
+        {
+          "name": "其他参考帖",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 当天路书"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "继续第 3 天"
+        }
+      ],
+      "stage": "第 2 天 · 看看这一站",
+      "visibleDecks": [
+        "青岛景点卡"
+      ],
+      "visibleH2": [
+        "第 2 天 · 看看这一站",
+        "青岛红瓦与碧海 · 1晚"
+      ]
+    }
+  },
+  {
+    "case": "back-to-day2",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 2 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 2 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "huaian-reachable-within-day2",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "浏览其他城市与途中备选",
+          "open": true
+        },
+        {
+          "name": "照片与出处说明",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 当天路书"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "继续第 3 天"
+        }
+      ],
+      "stage": "第 2 天 · 看看这一站",
+      "visibleDecks": [
+        "淮安景点卡"
+      ],
+      "visibleH2": [
+        "第 2 天 · 看看这一站",
+        "淮安途中备选"
+      ]
+    }
+  },
+  {
+    "case": "jump-to-day6",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": true
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 6 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 6 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "day6-spots",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": true
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "浏览其他城市与途中备选",
+          "open": true
+        },
+        {
+          "name": "照片与出处说明",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 当天路书"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "完成旅程预览"
+        }
+      ],
+      "stage": "第 6 天 · 看看这一站",
+      "visibleDecks": [
+        "芜湖景点卡"
+      ],
+      "visibleH2": [
+        "第 6 天 · 看看这一站",
+        "芜湖江城出发"
+      ]
+    }
+  },
+  {
+    "case": "finish",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": true
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 97.1875,
+            "left": 21,
+            "right": 96.8125,
+            "top": 727.8125,
+            "width": 75.8125,
+            "x": 21,
+            "y": 727.8125
+          },
+          "text": "上一步 · 最后一站"
+        },
+        {
+          "rect": {
+            "bottom": 809.8046875,
+            "height": 66.796875,
+            "left": 104.8125,
+            "right": 201.375,
+            "top": 743.0078125,
+            "width": 96.5625,
+            "x": 104.8125,
+            "y": 743.0078125
+          },
+          "text": "出发准备"
+        },
+        {
+          "rect": {
+            "bottom": 800.40625,
+            "height": 48,
+            "left": 209.375,
+            "right": 285.1875,
+            "top": 752.40625,
+            "width": 75.8125,
+            "x": 209.375,
+            "y": 752.40625
+          },
+          "text": "返回当天"
+        },
+        {
+          "rect": {
+            "bottom": 800.40625,
+            "height": 48,
+            "left": 293.1875,
+            "right": 369,
+            "top": 752.40625,
+            "width": 75.8125,
+            "x": 293.1875,
+            "y": 752.40625
+          },
+          "text": "重新看全图"
+        }
+      ],
+      "stage": "旅程预览完成",
+      "visibleDecks": [],
+      "visibleH2": [
+        "旅程预览完成",
+        "把海风放进行程，准备出发"
+      ]
+    }
+  },
+  {
+    "case": "restart-overview-retains-day6",
+    "state": {
+      "disclosures": [
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 262.28125,
+            "height": 50,
+            "left": 31,
+            "right": 359,
+            "top": 212.28125,
+            "width": 328,
+            "x": 31,
+            "y": 212.28125
+          },
+          "text": "开始旅程"
+        }
+      ],
+      "stage": "先选天数，看看全程",
+      "visibleDecks": [],
+      "visibleH2": [
+        "先选天数，看看全程"
+      ]
+    }
+  },
+  {
+    "case": "restart-begins-retained-day6",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": false
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 6 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 6 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "guided-day6-2d",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 6 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 6 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "2d-city-browsing-retains-day6",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 824,
+            "height": 48,
+            "left": 21,
+            "right": 169.6953125,
+            "top": 776,
+            "width": 148.6953125,
+            "x": 21,
+            "y": 776
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 825,
+            "height": 50,
+            "left": 177.6953125,
+            "right": 369,
+            "top": 775,
+            "width": 191.3046875,
+            "x": 177.6953125,
+            "y": 775
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 6 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 6 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  },
+  {
+    "case": "guide-mode-has-no-fixed-actions",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期与城市",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": true
+        },
+        {
+          "name": "崂山",
+          "open": false
+        },
+        {
+          "name": "青岛海底世界",
+          "open": false
+        },
+        {
+          "name": "栈桥 / 中山路 / 八大关 / 浮山湾",
+          "open": false
+        },
+        {
+          "name": "刘公岛",
+          "open": false
+        },
+        {
+          "name": "半月湾—猫头山（外围停车后慢游）",
+          "open": false
+        },
+        {
+          "name": "火炬八街 / 国际海水浴场",
+          "open": false
+        },
+        {
+          "name": "那香海",
+          "open": false
+        },
+        {
+          "name": "民主路/盐河巷首晚二选一",
+          "open": false
+        },
+        {
+          "name": "栈桥外围—中山路青岛默认主片区",
+          "open": false
+        },
+        {
+          "name": "八大关—第二浴场岸上替换老城，非叠加",
+          "open": false
+        },
+        {
+          "name": "五四广场/奥帆夜景住宿顺路才加",
+          "open": false
+        },
+        {
+          "name": "信号山/小鱼山核心行程删除，有余量才二选一",
+          "open": false
+        },
+        {
+          "name": "崂山本次默认删除",
+          "open": false
+        },
+        {
+          "name": "青岛海底世界不默认列雨天必选",
+          "open": false
+        },
+        {
+          "name": "半月湾—猫头山北海岸默认主线，但换成外围停车＋步行/接驳",
+          "open": false
+        },
+        {
+          "name": "国际海水浴场/火炬八街同片区一次短逛；火炬非独立必去",
+          "open": false
+        },
+        {
+          "name": "刘公岛有历史兴趣且正常通航时替换北海岸主线",
+          "open": false
+        },
+        {
+          "name": "那香海/布鲁维斯号东线整日替换项；沉船仅可删",
+          "open": false
+        },
+        {
+          "name": "万平口/东夷小镇返程中转夜可删二选一",
+          "open": false
+        },
+        {
+          "name": "证据 A / B / C / D 分别意味着什么",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "false",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "true",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 368.78125,
+            "height": 44,
+            "left": 31,
+            "right": 133,
+            "top": 324.78125,
+            "width": 102,
+            "x": 31,
+            "y": 324.78125
+          },
+          "text": "返回沉浸体验"
+        },
+        {
+          "rect": {
+            "bottom": 368.28125,
+            "height": 43,
+            "left": 146,
+            "right": 248,
+            "top": 325.28125,
+            "width": 102,
+            "x": 146,
+            "y": 325.28125
+          },
+          "text": "5 天"
+        },
+        {
+          "rect": {
+            "bottom": 368.28125,
+            "height": 43,
+            "left": 252,
+            "right": 354,
+            "top": 325.28125,
+            "width": 102,
+            "x": 252,
+            "y": 325.28125
+          },
+          "text": "6 天"
+        }
+      ],
+      "stage": "攻略模式 · 第 6 天",
+      "visibleDecks": [
+        "青岛景点卡"
+      ],
+      "visibleH2": [
+        "攻略模式 · 第 6 天",
+        "青岛红瓦与碧海 · 1晚",
+        "这几天，就这样过",
+        "值得停留，也值得留白",
+        "为什么留下，为什么不赶",
+        "把准备做好，把路走轻",
+        "攻略翻过，才放进手账"
+      ]
+    }
+  },
+  {
+    "case": "360-page-end-safe-area",
+    "state": {
+      "actions": {
+        "bottom": 792,
+        "height": 79.59375,
+        "left": 10,
+        "right": 350,
+        "top": 712.40625,
+        "width": 340,
+        "x": 10,
+        "y": 712.40625
+      },
+      "doc": 360,
+      "footer": {
+        "bottom": 620.234375,
+        "height": 284.390625,
+        "left": 0,
+        "right": 360,
+        "top": 335.84375,
+        "width": 360,
+        "x": 0,
+        "y": 335.84375
+      },
+      "lastLink": {
+        "bottom": 584.234375,
+        "height": 44,
+        "left": 127,
+        "right": 233,
+        "top": 540.234375,
+        "width": 106,
+        "x": 127,
+        "y": 540.234375
+      },
+      "viewport": [
+        360,
+        800
+      ]
+    }
+  },
+  {
+    "case": "360-finish-actions",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 781,
+            "height": 156.578125,
+            "left": 21,
+            "right": 89.8359375,
+            "top": 624.421875,
+            "width": 68.8359375,
+            "x": 21,
+            "y": 624.421875
+          },
+          "text": "上一步 · 最后一站"
+        },
+        {
+          "rect": {
+            "bottom": 736.109375,
+            "height": 66.796875,
+            "left": 97.8359375,
+            "right": 185.328125,
+            "top": 669.3125,
+            "width": 87.4921875,
+            "x": 97.8359375,
+            "y": 669.3125
+          },
+          "text": "出发准备"
+        },
+        {
+          "rect": {
+            "bottom": 726.7109375,
+            "height": 48,
+            "left": 193.328125,
+            "right": 262.1640625,
+            "top": 678.7109375,
+            "width": 68.8359375,
+            "x": 193.328125,
+            "y": 678.7109375
+          },
+          "text": "返回当天"
+        },
+        {
+          "rect": {
+            "bottom": 731.5078125,
+            "height": 57.59375,
+            "left": 270.1640625,
+            "right": 339,
+            "top": 673.9140625,
+            "width": 68.8359375,
+            "x": 270.1640625,
+            "y": 673.9140625
+          },
+          "text": "重新看全图"
+        }
+      ],
+      "stage": "旅程预览完成",
+      "visibleDecks": [],
+      "visibleH2": [
+        "旅程预览完成",
+        "把海风放进行程，准备出发"
+      ]
+    }
+  },
+  {
+    "case": "360-finish-two-actions-final",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 781,
+            "height": 57.59375,
+            "left": 21,
+            "right": 156.6484375,
+            "top": 723.40625,
+            "width": 135.6484375,
+            "x": 21,
+            "y": 723.40625
+          },
+          "text": "上一步 · 最后一站"
+        },
+        {
+          "rect": {
+            "bottom": 777.203125,
+            "height": 50,
+            "left": 164.6484375,
+            "right": 339,
+            "top": 727.203125,
+            "width": 174.3515625,
+            "x": 164.6484375,
+            "y": 727.203125
+          },
+          "text": "出发准备"
+        }
+      ],
+      "stage": "旅程预览完成",
+      "visibleDecks": [],
+      "visibleH2": [
+        "旅程预览完成",
+        "把海风放进行程，准备出发"
+      ]
+    }
+  },
+  {
+    "case": "final-tool-return-overview",
+    "state": {
+      "disclosures": [
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": -179.71875,
+            "height": 50,
+            "left": 31,
+            "right": 329,
+            "top": -229.71875,
+            "width": 298,
+            "x": 31,
+            "y": -229.71875
+          },
+          "text": "开始旅程"
+        }
+      ],
+      "stage": "先选天数，看看全程",
+      "visibleDecks": [],
+      "visibleH2": [
+        "先选天数，看看全程"
+      ]
+    }
+  },
+  {
+    "case": "final-tool-restart-retains-day6",
+    "state": {
+      "disclosures": [
+        {
+          "name": "跳转日期",
+          "open": false
+        },
+        {
+          "name": "调整旅程",
+          "open": false
+        },
+        {
+          "name": "地图工具",
+          "open": true
+        },
+        {
+          "name": "停车、走路与吃饭怎么衔接",
+          "open": false
+        },
+        {
+          "name": "到晚了、累了、天气变了，就删这些",
+          "open": false
+        },
+        {
+          "name": "更多旅行资料城市口袋指南 · 出发准备 · 来源研究",
+          "open": false
+        },
+        {
+          "name": "这本 3D 立体书里的地标",
+          "open": false
+        }
+      ],
+      "modes": [
+        {
+          "pressed": "true",
+          "text": "沉浸体验"
+        },
+        {
+          "pressed": "false",
+          "text": "攻略模式"
+        }
+      ],
+      "primaryActions": [
+        {
+          "rect": {
+            "bottom": 781,
+            "height": 57.59375,
+            "left": 21,
+            "right": 156.6484375,
+            "top": 723.40625,
+            "width": 135.6484375,
+            "x": 21,
+            "y": 723.40625
+          },
+          "text": "上一步 · 全程路线"
+        },
+        {
+          "rect": {
+            "bottom": 777.203125,
+            "height": 50,
+            "left": 164.6484375,
+            "right": 339,
+            "top": 727.203125,
+            "width": 174.3515625,
+            "x": 164.6484375,
+            "y": 727.203125
+          },
+          "text": "看看这一站"
+        }
+      ],
+      "stage": "第 6 天 · 先读当天路书",
+      "visibleDecks": [],
+      "visibleH2": [
+        "第 6 天 · 先读当天路书",
+        "这几天，就这样过"
+      ]
+    }
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "attraction_id": "qd_xiaoyu_hill",
+  "title": "青岛小鱼山攻略",
+  "author": "一起去看海",
+  "note_id": "6aa93b390000000026030dac",
+  "body_summary": "作者清晨和小伙伴徒步小鱼山，描述山腰绿色琉璃瓦亭、登览潮阁和月牙湾，明确福山支路24号，实际逛不到半小时。",
+  "visual_evidence": "首图小鱼山山腰绿色琉璃瓦亭阁及山地松树，前海老城背景；无攻略文字，地点自身景物吻合。",
+  "source_url": "https://www.xiaohongshu.com/explore/6aa93b390000000026030dac",
+  "image_index": 1,
+  "size_bytes": 468598,
+  "dimensions": {
+    "width": 1440,
+    "height": 1080
+  },
+  "sha256": "fe5ae6a10580107dd48071f4e8ba414ed79bde5c4d75e44fcaa20d98e3707cc3",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T03:56:09.001354+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "local_file": "public/assets/places/xhs_qd_xiaoyu_hill.jpg"
+}

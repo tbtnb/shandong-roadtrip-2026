@@ -1,0 +1,27 @@
+{
+  "attraction_id": "qd_second_beach",
+  "title": "晴天的第二海水浴场出片啦",
+  "author": "青岛跟拍摄影师TJ",
+  "note_id": "6a445cf400000000210203a1",
+  "image_index": 2,
+  "body_summary": "摄影师在第二海水浴场海边山洞和大坝约11点跟拍旅行，正文明确地点、时间及白色穿搭建议。",
+  "visual_evidence": "静态实拍显示第二海水浴场石砌大坝、潮间礁石和蓝海，白裙游客站于坝上；与正文大坝拍摄位置吻合，没有文字攻略封面。",
+  "source_url": "https://www.xiaohongshu.com/explore/6a445cf400000000210203a1",
+  "size_bytes": 399686,
+  "dimensions": {
+    "width": 1080,
+    "height": 1509
+  },
+  "sha256": "34ae3134bce17f167155a61e9889f38018d577351ff0c1c2a1a31c759d4f3cb4",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T04:06:56.322506+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "local_file": "public/assets/places/xhs_qd_second_beach.jpg"
+}

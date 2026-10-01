@@ -1,0 +1,2065 @@
+{
+  "generated_at": "2026-10-01T04:16:48.749852+00:00",
+  "scope": "Independent metadata and local-file audit; browser status/title/author/body supplied by collection agents except separate lyg-recheck and earlier banyue verification. No independent browser reread here.",
+  "count": 34,
+  "records": [
+    {
+      "attraction_id": "qd_badaguan",
+      "metadata_file": "work/photo-collection/qingdao/qd_badaguan.json",
+      "title": "💌青岛八大关｜该怎么描述它的美呢？",
+      "author": "跳跳~",
+      "image_index": 2,
+      "note_id": "6aaa48af000000002900dc2b",
+      "source_url": "https://www.xiaohongshu.com/explore/6aaa48af000000002900dc2b",
+      "observed_file": "work/photo-collection/qingdao/qd_badaguan.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 589011,
+        "sha256": "74f8564175810c2b680558373dbb211a89d2755a7efeaebca5722ce6e84fa547",
+        "dimensions": {
+          "width": 1080,
+          "height": 1439
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文专讲八大关林荫路、老洋房、海边长堤和花石楼等点，建议情侣慢逛，给市南区武胜关支路10号。",
+      "visual_evidence_from_collector": "第2图单幅花石楼石砌圆塔和尖屋顶，绿树围绕，后方海湾；无攻略文字，吻合八大关标志建筑。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "qd_fushan_bay",
+      "metadata_file": "work/photo-collection/qingdao/qd_fushan_bay.json",
+      "title": "青岛｜浮山湾夜景",
+      "author": "菠萝的海",
+      "image_index": 1,
+      "note_id": "6a0075a7000000000803c4bd",
+      "source_url": "https://www.xiaohongshu.com/explore/6a0075a7000000000803c4bd",
+      "observed_file": "work/photo-collection/qingdao/qd_fushan_bay.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 331734,
+        "sha256": "e2095f0e16620d0109a814e0296937105d6f0981cd161ddf9d9a7e6eec82195e",
+        "dimensions": {
+          "width": 1080,
+          "height": 1384
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者体验52号顶楼酒吧拍浮山湾，正文描述平台视野限制、透明顶棚和低消费；器材Sony a6700+1655、华为Mate80。",
+      "visual_evidence_from_collector": "原图为三幅无文字实景拼接，浮山湾弧形海岸、CBD天际线与亮灯建筑海港，包含日落和夜景；未裁切。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。"
+    },
+    {
+      "attraction_id": "qd_laoshan",
+      "metadata_file": "work/photo-collection/qingdao/qd_laoshan.json",
+      "title": "青岛崂山一日游详细攻略🌊直接抄作业",
+      "author": "川渝暴龙",
+      "image_index": 1,
+      "note_id": "69e32f330000000021039cea",
+      "source_url": "https://www.xiaohongshu.com/explore/69e32f330000000021039cea",
+      "observed_file": "work/photo-collection/qingdao/qd_laoshan.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 491227,
+        "sha256": "b43536c3fb77c71e4f06d0588d14a727cfe5a8cdd7bc96799b763c4459430511",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者称此行最值景区，完整正文沿南线实走八水河海边栈道、太清宫、垭口青山渔村及仰口天苑，给观光车座位和返程路线。",
+      "visual_evidence_from_collector": "首图崂山青山渔村红顶石屋、背后绿色岩石山体环抱碧蓝海湾，山海本地实拍，无攻略文字封面。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "独立看本地图：红屋顶村落、海湾与山岩，吻合采集记录崂山青山渔村；不能标成崂山山顶。无攻略文字。未独立复读。"
+    },
+    {
+      "attraction_id": "qd_mayfour_square",
+      "metadata_file": "work/photo-collection/qingdao/qd_mayfour_square.json",
+      "title": "🇨🇳青岛｜五四广场💗",
+      "author": "岱岱是你吗",
+      "image_index": 1,
+      "note_id": "69ced994000000001e00f6ae",
+      "source_url": "https://www.xiaohongshu.com/explore/69ced994000000001e00f6ae",
+      "observed_file": "work/photo-collection/qingdao/qd_mayfour_square.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 320293,
+        "sha256": "b1d1ba6f0ae60393a49642d76b29b0516c7afb4a47b29926fe582d6b4c3ae496",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者实拍五四广场，正文抱怨地铁工程每年围起，标签含五月的风；已读正文。",
+      "visual_evidence_from_collector": "五月的风红色螺旋雕塑主体及广场、高楼实拍，吻合五四广场，无攻略文字封面。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "qd_minjiang_road",
+      "metadata_file": "work/photo-collection/qingdao/qd_minjiang_road.json",
+      "title": "青岛 | 老牌美食街闽江路上的 | 河粉🍜",
+      "author": "安阳🌟",
+      "image_index": 9,
+      "note_id": "6ab4a9b5000000000a027e75",
+      "source_url": "https://www.xiaohongshu.com/explore/6ab4a9b5000000000a027e75",
+      "observed_file": "work/photo-collection/qingdao/qd_minjiang_road.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 359449,
+        "sha256": "56a902bfb2e0efca94d03039f31736916d85247a9a701aae00ce749e50ba0562",
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者在闽江路北侧浮山巷小河餐厅实吃柠檬鸡肉河粉和鸡蛋卷，具体记录口味、服务、周二店休与江西路地铁口步行位置，明确从最后一图红门楼进入。",
+      "visual_evidence_from_collector": "原照片可见红色浮山巷门楼、美食街文字、沿街商铺与居民楼，吻合正文指定闽江路入口；餐饮街区真实实吃帖。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_audit_notes": "本地看图是浮山巷美食街红门楼，需明确为闽江路北侧浮山巷入口而非闽江路路牌。采集正文有柠檬鸡肉河粉、鸡蛋卷具体口味服务和店休，实吃专点证据充分。未独立复读。"
+    },
+    {
+      "attraction_id": "qd_olympic_sailing",
+      "metadata_file": "work/photo-collection/qingdao/qd_olympic_sailing.json",
+      "title": "Fuji📷 | 不是悉尼，是青岛奥帆中心🌊",
+      "author": "发福蝶",
+      "image_index": 1,
+      "note_id": "6a82dfa20000000006006b1a",
+      "source_url": "https://www.xiaohongshu.com/explore/6a82dfa20000000006006b1a",
+      "observed_file": "work/photo-collection/qingdao/qd_olympic_sailing.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 297872,
+        "sha256": "837e90da41512dc43563393f45ed3990cab851cc103cc74ad8028a15f975b84d",
+        "dimensions": {
+          "width": 1080,
+          "height": 1800
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文描述青岛奥帆中心建筑线条、海港桅杆，富士XT5/XF35拍摄，CC胶片模拟直出，明确定位奥帆中心。",
+      "visual_evidence_from_collector": "首图可见奥运五环及奥帆中心白色弧线场馆、码头、海面；FUJIFILM/FAFUDIE PHOTOGRAPHY原水印保留，非攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "qd_second_beach",
+      "metadata_file": "work/photo-collection/qingdao/qd_second_beach.json",
+      "title": "晴天的第二海水浴场出片啦",
+      "author": "青岛跟拍摄影师TJ",
+      "image_index": 2,
+      "note_id": "6a445cf400000000210203a1",
+      "source_url": "https://www.xiaohongshu.com/explore/6a445cf400000000210203a1",
+      "observed_file": "work/photo-collection/qingdao/qd_second_beach.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 399686,
+        "sha256": "34ae3134bce17f167155a61e9889f38018d577351ff0c1c2a1a31c759d4f3cb4",
+        "dimensions": {
+          "width": 1080,
+          "height": 1509
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "摄影师在第二海水浴场海边山洞和大坝约11点跟拍旅行，正文明确地点、时间及白色穿搭建议。",
+      "visual_evidence_from_collector": "静态实拍显示第二海水浴场石砌大坝、潮间礁石和蓝海，白裙游客站于坝上；与正文大坝拍摄位置吻合，没有文字攻略封面。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "本地看图为石砌大坝、海浪礁石和白裙游客，与采集原帖第二海水浴场大坝专点记录吻合。不是整片沙滩全景，精确地点仍依据原帖记录，无攻略文字；未独立复读。"
+    },
+    {
+      "attraction_id": "qd_signal_hill",
+      "metadata_file": "work/photo-collection/qingdao/qd_signal_hill.json",
+      "title": "青岛信号山爬了，最佳机位也找到了",
+      "author": "豆小蔻（殳影）",
+      "image_index": 3,
+      "note_id": "6ab5e12500000000150023fa",
+      "source_url": "https://www.xiaohongshu.com/explore/6ab5e12500000000150023fa",
+      "observed_file": "work/photo-collection/qingdao/qd_signal_hill.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 550473,
+        "sha256": "0676a70d04a4ccf82c184103217c69407219fe5da84a5f0664341b45d8b55c47",
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者爬信号山，十分钟登顶一路阶梯，建议看到两个大红球后沿图3指示走、右拐至老城俯瞰机位，图1为基督教堂。",
+      "visual_evidence_from_collector": "第3图是信号山标志红色球形观景塔及石砌塔身，山頂游客；含作者原粉色箭头指示但主体是实拍，自身地点清晰。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原粉色箭头保留，主体是红球观景塔。"
+    },
+    {
+      "attraction_id": "qd_st_michaels",
+      "metadata_file": "work/photo-collection/qingdao/qd_st_michaels.json",
+      "title": "⛪️青岛·圣弥厄尔天主堂",
+      "author": "杰克机长🇬🇧",
+      "image_index": 1,
+      "note_id": "69da2c06000000001f0066e9",
+      "source_url": "https://www.xiaohongshu.com/explore/69da2c06000000001f0066e9",
+      "observed_file": "work/photo-collection/qingdao/qd_st_michaels.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 380964,
+        "sha256": "d1ffa37c184e7c4e431cd46fb358db2036966363fcd84370f63f6680abc88702",
+        "dimensions": {
+          "width": 1080,
+          "height": 1615
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文专讲圣弥厄尔教堂双塔红顶花岗岩外墙及内部，给浙江路15号、拍摄器材Nikon Z5和到访交通。",
+      "visual_evidence_from_collector": "教堂黄色花岗岩外墙、两座红瓦尖塔及十字架，前景广场石路和游客，外观实拍；底部Jack Douglas作者水印完整保留。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "qd_underwater",
+      "metadata_file": "work/photo-collection/qingdao/qd_underwater.json",
+      "title": "青岛海底世界",
+      "author": "怪味萌小豆",
+      "image_index": 1,
+      "note_id": "6a069edd000000003603290b",
+      "source_url": "https://www.xiaohongshu.com/explore/6a069edd000000003603290b",
+      "observed_file": "work/photo-collection/qingdao/qd_underwater.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 169404,
+        "sha256": "685cff4c4c8f7ef83ed1b7ad57f00cfb66d8bdaaf069d77b6ca9bf50b684c298",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者带孩子亲访青岛海底世界，详细记录游客中心、地下穿行、多展馆、旋转海底隧道和标本馆，评价人少、亲子体验及未赶上表演。",
+      "visual_evidence_from_collector": "馆内水下实际拍摄的鳐鱼、鱼群与岩石，可对应正文头顶鱼游过的海底隧道体验；纯摄影没有攻略封面文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "本地看图为水族馆鳐鱼腹面及水下岩石，非攻略文字。精确青岛海底世界归属依赖采集agent读到的亲子专帖，而非图像能唯一确定；未独立复读。"
+    },
+    {
+      "attraction_id": "qd_xiaoyu_hill",
+      "metadata_file": "work/photo-collection/qingdao/qd_xiaoyu_hill.json",
+      "title": "青岛小鱼山攻略",
+      "author": "一起去看海",
+      "image_index": 1,
+      "note_id": "6aa93b390000000026030dac",
+      "source_url": "https://www.xiaohongshu.com/explore/6aa93b390000000026030dac",
+      "observed_file": "work/photo-collection/qingdao/qd_xiaoyu_hill.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 468598,
+        "sha256": "fe5ae6a10580107dd48071f4e8ba414ed79bde5c4d75e44fcaa20d98e3707cc3",
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者清晨和小伙伴徒步小鱼山，描述山腰绿色琉璃瓦亭、登览潮阁和月牙湾，明确福山支路24号，实际逛不到半小时。",
+      "visual_evidence_from_collector": "首图小鱼山山腰绿色琉璃瓦亭阁及山地松树，前海老城背景；无攻略文字，地点自身景物吻合。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "独立看本地图：绿色琉璃瓦亭与山地松树，海湾老城背景，与采集正文小鱼山自身亭阁吻合。不是攻略文字封面；未独立复读原帖。"
+    },
+    {
+      "attraction_id": "qd_yunxiao_road",
+      "metadata_file": "work/photo-collection/qingdao/qd_yunxiao_road.json",
+      "title": "青岛云霄路老东港",
+      "author": "D.C",
+      "image_index": 1,
+      "note_id": "6a1c355b0000000006020e7c",
+      "source_url": "https://www.xiaohongshu.com/explore/6a1c355b0000000006020e7c",
+      "observed_file": "work/photo-collection/qingdao/qd_yunxiao_road.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 441834,
+        "sha256": "f61190356ab4b6d197fdbf0200d923290180b0e6a4da3abfb6293a109e28484a",
+        "dimensions": {
+          "width": 2373,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者记录云霄路老东港旅行第一餐，评价海鲜新鲜度、味道价格、纸巾饮料服务与团购选择，是具体餐饮街区的真实实吃反馈。",
+      "visual_evidence_from_collector": "静态照片展示上桌贝类海鲜、蔬菜与啤酒杯，匹配云霄路老东港实吃正文，无攻略文字封面。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_audit_notes": "本地看图为上桌贝类海鲜、蔬菜啤酒，不能展示成云霄路街景；采集正文老东港旅行第一餐，含新鲜度味道价格服务团购反馈，专店实吃证据足够非全市合集。地点靠原帖正文记录，未独立复读。"
+    },
+    {
+      "attraction_id": "qd_zhongshan_road",
+      "metadata_file": "work/photo-collection/qingdao/qd_zhongshan_road.json",
+      "title": "中山路｜这不是国外，这是青岛！",
+      "author": "大方同学",
+      "image_index": 1,
+      "note_id": "6a58c274000000001101ed0a",
+      "source_url": "https://www.xiaohongshu.com/explore/6a58c274000000001101ed0a",
+      "observed_file": "work/photo-collection/qingdao/qd_zhongshan_road.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 355709,
+        "sha256": "d8b7f681445e76030871858371a3b395be896b9743c78c7459919e688b480cb1",
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome，原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者实访中山路瑞澜酒店餐吧；六点拍摄，饮料团购20至25元，提及换位与露台预订及海风。",
+      "visual_evidence_from_collector": "中山路餐吧高处视角，红屋顶老城建筑与海面实拍；无攻略文字封面。照片并非路面街景。",
+      "independent_browser_reread": false,
+      "visual_audit": "pending_street_level_replacement",
+      "visual_audit_notes": "已看图，只见红屋顶老城与海面；主任务要求补路面，首版不应接入。"
+    },
+    {
+      "attraction_id": "qd_zhongshan_road",
+      "metadata_file": "work/photo-collection/qingdao/qd_zhongshan_road_street.json",
+      "title": "📍青岛•中山路",
+      "author": "柒+壹 🐙🎀",
+      "image_index": 3,
+      "note_id": "69292823000000000d037f24",
+      "source_url": "https://www.xiaohongshu.com/explore/69292823000000000d037f24",
+      "observed_file": "work/photo-collection/qingdao/qd_zhongshan_road_street.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 593915,
+        "sha256": "66407fe3851a7357cbcfb37bfde8351eb0d2626ffa33d5309cfccd99b3a7ea49",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical": "404_app_required",
+        "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+        "environment": "当前已登录Chrome，原生浏览器；未验证匿名/手机环境",
+        "signed_search_read_verified": true,
+        "canonical_readable": false
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者记录中山路老城散步，正文称一条中山路半部青岛史，描述老城区的浪漫。",
+      "visual_evidence_from_collector": "街面实拍显示中山路壹号标牌、红色沿街历史楼宇、行人过街信号和斑马线；明确呈现地点本身。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_street_level_replacement",
+      "visual_audit_notes": "独立看新本地文件：中山路壹号招牌、红墙历史建筑、过街灯斑马线和路面可见，满足主任务路面替换要求，无攻略文字。原标题作者由采集agent核验，未独立复读。"
+    },
+    {
+      "attraction_id": "wh_banyue_bay",
+      "metadata_file": "work/photo-collection/weihai/wh_banyue_bay.json",
+      "title": "威海半月湾夯爆！",
+      "author": "媛",
+      "image_index": 1,
+      "note_id": "6a0e90cd00000000360186ec",
+      "source_url": "https://www.xiaohongshu.com/explore/6a0e90cd00000000360186ec",
+      "observed_file": "work/photo-collection/weihai/wh_banyue_bay.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 475446,
+        "sha256": "19f4121bff9f937a2891946c91368cb08e027bfb384055fd7e13d00cdbb3100b",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "同一turn /root/post_verification于2026-10-01独立导航无参数链接实测失败404",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文为看海标签，作者评论明确拍摄地点为半月湾景区，评论回应沙滩今年变了样子。",
+      "visual_evidence_from_collector": "首图为同一半月湾四幅海滩摄影拼图，草伞海滩、红顶临海建筑和离岸岛礁，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。"
+    },
+    {
+      "attraction_id": "wh_bluewis",
+      "metadata_file": "work/photo-collection/weihai/wh_bluewis.json",
+      "title": "威海｜布鲁维斯号｜宿命感",
+      "author": "He.",
+      "image_index": 1,
+      "note_id": "6a2bd3580000000015024758",
+      "source_url": "https://www.xiaohongshu.com/explore/6a2bd3580000000015024758",
+      "observed_file": "work/photo-collection/weihai/wh_bluewis.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 281307,
+        "sha256": "5d49216671ba05da39c43144aa28c039c7cbc38173c0b31b630f2eaf8ad5e061",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文明确荣成环海路布鲁维斯沉船，拍照与临近咖啡实际评价。",
+      "visual_evidence_from_collector": "首图海浪与搁浅锈船BLUEWAYS字样及海鸥，静态摄影，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "独立看本地图：锈船船体清楚写BLUEWAYS，海鸥浪花，布鲁威斯号主体；无攻略文字。原帖作者地点正文由采集agent读到，未独立复读。"
+    },
+    {
+      "attraction_id": "wh_city_museum",
+      "metadata_file": "work/photo-collection/weihai/wh_city_museum.json",
+      "title": "威海市博物馆｜诚实地说不太推荐",
+      "author": "晗浛焓HAN",
+      "image_index": 1,
+      "note_id": "6a70acee000000002701e471",
+      "source_url": "https://www.xiaohongshu.com/explore/6a70acee000000002701e471",
+      "observed_file": "work/photo-collection/weihai/wh_city_museum.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 376640,
+        "sha256": "b6beb54bae875480ce350de3302acbb639924273466a0ca22fe79002fdabdbf2",
+        "dimensions": {
+          "width": 1439,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "实际独立导航无参数URL后显示当前笔记暂时无法浏览，请打开小红书App扫码查看。",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者自驾实际参观市文化艺术中心三楼博物馆，描述停车、电梯误到办公区、展厅历史文化与临展、自助盖章桌和展陈较暗的体验。",
+      "visual_evidence_from_collector": "第一张静态照片清晰呈现威海博物馆石质题字墙、服务台和盖章桌，与正文位置证据吻合；右下角原始小红书标识保持。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "本地看图石墙清楚题威海博物馆与服务台，地点自身；图右下角有原小红书标识，visual_evidence正确、watermark_status未见明显水印措辞应统一。canonical待测，保持未知。未独立复读。"
+    },
+    {
+      "attraction_id": "wh_hanlefang",
+      "metadata_file": "work/photo-collection/weihai/wh_hanlefang.json",
+      "title": "旅行分享-韩乐坊 夜市超市美食一站式打卡",
+      "author": "逛吃的小双鱼",
+      "image_index": 1,
+      "note_id": "6aabf29b00000000120031e8",
+      "source_url": "https://www.xiaohongshu.com/explore/6aabf29b00000000120031e8",
+      "observed_file": "work/photo-collection/weihai/wh_hanlefang.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 504494,
+        "sha256": "fd0aa8957b141130b7db4b7eb4d3a02085bd782b3be8656104f0f353d5251d86",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者实吃群香玛特奥利奥奶酪与无花果米糕，评价无花果冰淇淋不错，19点前逛夜市，描述乞老板现场。",
+      "visual_evidence_from_collector": "首图为韩乐坊牌楼和夜市满街餐摊人流真实摄影，无攻略封面文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_audit_notes": "独立看本地图：韩乐坊牌匾与同地夜市摊位两景拼图，无攻略文字。采集正文记录具体实吃奶酪、米糕和冰淇淋及夜市时间，专点实吃证据足够，非全市合集；未独立复读原帖。"
+    },
+    {
+      "attraction_id": "wh_happiness_gate",
+      "metadata_file": "work/photo-collection/weihai/wh_happiness_gate.json",
+      "title": "威海幸福门",
+      "author": "momo",
+      "image_index": 1,
+      "note_id": "6a62d186000000000100c03b",
+      "source_url": "https://www.xiaohongshu.com/explore/6a62d186000000000100c03b",
+      "observed_file": "work/photo-collection/weihai/wh_happiness_gate.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 384916,
+        "sha256": "81dca0751443ec302a934586c7496480cae0a47c2d38e1c49212c230af94a608",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签1770998073实测404，error_code300031当前笔记暂时无法浏览",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文地点标签幸福门；8图街景旅行记录。",
+      "visual_evidence_from_collector": "首图完整幸福门玻璃门状地标、广场游客蓝天，画面无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "wh_international_beach",
+      "metadata_file": "work/photo-collection/weihai/wh_international_beach.json",
+      "title": "威海国际海水浴场",
+      "author": "mikasa",
+      "image_index": 1,
+      "note_id": "69fc1396000000001f0001e5",
+      "source_url": "https://www.xiaohongshu.com/explore/69fc1396000000001f0001e5",
+      "observed_file": "work/photo-collection/weihai/wh_international_beach.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 335847,
+        "sha256": "41b9c501d761b0218856c8329ac89de560c36c1e77877174c6e670efcf424cda",
+        "dimensions": {
+          "width": 1080,
+          "height": 1620
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "单独导航无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文拍摄日期2026.05.04，威海国际海水浴场标签；作者评论相同机位。",
+      "visual_evidence_from_collector": "首图海滩海平面日落与踏浪游客，13张摄影帖无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。"
+    },
+    {
+      "attraction_id": "wh_liugong_island",
+      "metadata_file": "work/photo-collection/weihai/wh_liugong_island.json",
+      "title": "09/05|📍威海.刘公岛  |不知道说什么版",
+      "author": "Seika🔆",
+      "image_index": 1,
+      "note_id": "6a9bab590000000012002294",
+      "source_url": "https://www.xiaohongshu.com/explore/6a9bab590000000012002294",
+      "observed_file": "work/photo-collection/weihai/wh_liugong_island.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 247780,
+        "sha256": "3b462b3740707f61ae99b20bee3054194fa9ea4795175826990686cf5d4587d9",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "10点上岛14点离岛；正文说明图234均摄于东泓炮台，游览甲午馆博览园定远舰。",
+      "visual_evidence_from_collector": "首图同一刘公岛摄影拼图，海鸥、松树海岬、东泓岩岸与渡船航迹，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。"
+    },
+    {
+      "attraction_id": "wh_maotou_hill",
+      "metadata_file": "work/photo-collection/weihai/wh_maotou_hill.json",
+      "title": "威海猫头山｜不做攻略，随观光车偶遇果冻海🌊",
+      "author": "L.",
+      "image_index": 1,
+      "note_id": "6a9a5a8e000000002900cdab",
+      "source_url": "https://www.xiaohongshu.com/explore/6a9a5a8e000000002900cdab",
+      "observed_file": "work/photo-collection/weihai/wh_maotou_hill.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 224166,
+        "sha256": "4d88772442581aa539138d23f2dd0e214e1c407525f80fea374acc756d9c1979",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "当前笔记暂时无法浏览；要求打开App扫码查看",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者打车至威海猫头山，乘观光车随站下车，记录悬崖大海和清晨黄昏观景经验。",
+      "visual_evidence_from_collector": "首图是海岬岩岸蓝海湾及小船，前景树木，与猫头山正文地点一致，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "wh_naxianghai",
+      "metadata_file": "work/photo-collection/weihai/wh_naxianghai.json",
+      "title": "那香海，终于懂你了",
+      "author": "六月未老",
+      "image_index": 1,
+      "note_id": "6a6f5be00000000026035342",
+      "source_url": "https://www.xiaohongshu.com/explore/6a6f5be00000000026035342",
+      "observed_file": "work/photo-collection/weihai/wh_naxianghai.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 597954,
+        "sha256": "c08baafdda945c93a8df020dca816dd2ca1e44c53c3341cbb08570e139f3171f",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "从成山头途经那香海，15:30沙地烫脚，海水凉，现场游玩玩沙踏水，沿路风车。",
+      "visual_evidence_from_collector": "首图为沙滩浅水游泳圈游客、浪花，10张实拍专帖，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。"
+    },
+    {
+      "attraction_id": "wh_oulefang",
+      "metadata_file": "work/photo-collection/weihai/wh_oulefang.json",
+      "title": "欧乐坊清悠面馆海肠捞饭",
+      "author": "不结絮果",
+      "image_index": 3,
+      "note_id": "6908911e0000000004012dc6",
+      "source_url": "https://www.xiaohongshu.com/explore/6908911e0000000004012dc6",
+      "observed_file": "work/photo-collection/weihai/wh_oulefang.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 375377,
+        "sha256": "340209a1a05ea045c9d44cbff21580ad9fc0761b719d2e684e77c80ffd0cf467",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "实际独立导航无参数URL后显示当前笔记暂时无法浏览，请打开小红书App扫码查看。",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者实吃欧乐坊清悠面馆，记录海肠捞饭25元、海参捞饭28元，老板补饭加汁，门口生蚝摊10元4个；评论回复海肠脆脆的好吃。",
+      "visual_evidence_from_collector": "第3张静态实拍清悠面馆夜间店面，海肠捞饭招牌和25元招牌菜摊位，与正文店名吻合；前2张LIVE未采用。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_with_metadata_correction",
+      "visual_audit_notes": "本地看图清悠面馆、海肠捞饭25元牌；body具体价格加饭加汁口感，符合实吃非全市合集。visual_evidence称第3张而image_index=1不一致，应校正为3。未独立复读。"
+    },
+    {
+      "attraction_id": "wh_torch_eighth",
+      "metadata_file": "work/photo-collection/weihai/wh_torch_eighth.json",
+      "title": "📍 在火炬八街，等一场通往大海的日出",
+      "author": "拾光絮语",
+      "image_index": 1,
+      "note_id": "6a390b880000000008033dd0",
+      "source_url": "https://www.xiaohongshu.com/explore/6a390b880000000008033dd0",
+      "observed_file": "work/photo-collection/weihai/wh_torch_eighth.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 179750,
+        "sha256": "de8e82493f301f19583d88b356a0da0bfdbbbc986f889945b6ae8df7161fccd2",
+        "dimensions": {
+          "width": 1080,
+          "height": 1295
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文明确火炬八街坡顶街道、海边秋千与货柜；清晨拍照经历和交通提醒。",
+      "visual_evidence_from_collector": "首图道路坡向海面，两侧白楼及彩色蓝顶房，无遮挡单点街景，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "wh_weihai_park",
+      "metadata_file": "work/photo-collection/weihai/wh_weihai_park.json",
+      "title": "把手给我",
+      "author": "冻干土豆",
+      "image_index": 1,
+      "note_id": "6a3bfa1f000000001502655d",
+      "source_url": "https://www.xiaohongshu.com/explore/6a3bfa1f000000001502655d",
+      "observed_file": "work/photo-collection/weihai/wh_weihai_park.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 217227,
+        "sha256": "19dfe24a82b81261c3142a6a5bdba347ae1266af2d48e47c9a7c73c98843fd3a",
+        "dimensions": {
+          "width": 864,
+          "height": 1152
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文威海大相框地点标签，3张相同地标摄影。",
+      "visual_evidence_from_collector": "首图人物伸手，背景为威海公园画中画巨型两手相框、海面护栏和海鸥，地标清晰，无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "独立看本地图：人物伸手占前景，但背景清楚展示威海公园两手巨型相框和海岸，地点自身地标可辨，无攻略文字。未独立浏览器复读。"
+    },
+    {
+      "attraction_id": "wh_yuehai_park",
+      "metadata_file": "work/photo-collection/weihai/wh_yuehai_park.json",
+      "title": "悦海公园的灯塔和灯塔下的海，也太浪漫了吧",
+      "author": "吃饭不放辣子",
+      "image_index": 1,
+      "note_id": "6a714136000000002800a1b0",
+      "source_url": "https://www.xiaohongshu.com/explore/6a714136000000002800a1b0",
+      "observed_file": "work/photo-collection/weihai/wh_yuehai_park.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 216059,
+        "sha256": "a554af2d4fc1ec7383d9fa0fc749a67b690019a6fc6d0f155bcf0855195fb41a",
+        "dimensions": {
+          "width": 1080,
+          "height": 1432
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "signed_search_open": "readable",
+        "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+        "mobile": "not_tested",
+        "canonical_readable": false,
+        "signed_search_read_verified": true
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文明确悦海公园白灯塔礁石区、草坪，作者威海待5天现场记录；含售货机推广。",
+      "visual_evidence_from_collector": "首图白色灯塔草顶基部、滨海护栏石块与海鸥，5图摄影无攻略文字。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "本地看图是悦海公园白灯塔、草顶基部、滨海护栏海鸥，吻合地点自身；无攻略文字。采集正文含售货机推广，照片不含广告文字。未独立复读。"
+    },
+    {
+      "attraction_id": "ha_hexia_town",
+      "metadata_file": "work/photo-collection/stopovers/ha_hexia_town.json",
+      "title": "淮安｜河下古镇🍃一半诗意一半烟火",
+      "author": "下一站没定",
+      "image_index": 1,
+      "note_id": "6a8ae85e000000002b0243d7",
+      "source_url": "https://www.xiaohongshu.com/explore/6a8ae85e000000002b0243d7",
+      "observed_file": "work/photo-collection/stopovers/ha_hexia_town.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 624494,
+        "sha256": "ca18c98b0c13ba06607da8aff40eb982bd9b1e22e9fd771df14e64bd053c673d",
+        "dimensions": {
+          "width": 1080,
+          "height": 1441
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文明确江苏淮安河下古镇，步行路线涵盖红玉鼓韵坛、程公桥、花巷水龙局、吴鞠通中医馆、状元里、魁星阁。",
+      "visual_evidence_from_collector": "首图为红花藤蔓拱门下青石板窄巷，两旁古建店铺与游客；右側导览牌及正文对应河下古镇。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "ha_li_canal",
+      "metadata_file": "work/photo-collection/stopovers/ha_li_canal.json",
+      "title": "📍淮安·里运河文化长廊",
+      "author": "yulou1006",
+      "image_index": 1,
+      "note_id": "6a681c41000000000f005601",
+      "source_url": "https://www.xiaohongshu.com/explore/6a681c41000000000f005601",
+      "observed_file": "work/photo-collection/stopovers/ha_li_canal.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 332268,
+        "sha256": "70a9b335a52a95cf2ba7dbf3cd5df2175cec8009226aad9336ca004e6fe78513",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "专帖介绍里运河文化长廊河岸景点：国师塔、清江浦楼、花街、清江闸，并说明沿河即可步行游览。",
+      "visual_evidence_from_collector": "首图是夜间金色国师塔和运河水面倒影，正文对应长廊标志建筑。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "ha_yumatou",
+      "metadata_file": "work/photo-collection/stopovers/ha_yumatou.json",
+      "title": "淮安城市漫步｜御码头",
+      "author": "汉堡薯条大王",
+      "image_index": 1,
+      "note_id": "683ef8de000000002300e6f0",
+      "source_url": "https://www.xiaohongshu.com/explore/683ef8de000000002300e6f0",
+      "observed_file": "work/photo-collection/stopovers/ha_yumatou.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 554809,
+        "sha256": "b1ffebf2feb440aa2792a3afef316665de2b39f56b413844644ad64d172e525e",
+        "dimensions": {
+          "width": 1620,
+          "height": 1080
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者记录御码头城市散步，涉及赛珍珠声音博物馆、御码头运河书房、花间堂与沿街咖啡店。",
+      "visual_evidence_from_collector": "首图牌坊清晰题字“淮安御码头美食街”，红灯笼与步行街实景；不是扬州御码头。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_with_metadata_correction",
+      "visual_audit_notes": "实景牌坊明确“淮安御码头美食街”；visual_evidence 写成“文旅街”有文字错误。地点未错。"
+    },
+    {
+      "attraction_id": "rz_dongyi_town",
+      "metadata_file": "work/photo-collection/stopovers/rz_dongyi_town.json",
+      "title": "日照东夷小镇",
+      "author": "月亮爱旅行",
+      "image_index": 1,
+      "note_id": "6aa33a3f0000000029010f79",
+      "source_url": "https://www.xiaohongshu.com/explore/6aa33a3f0000000029010f79",
+      "observed_file": "work/photo-collection/stopovers/rz_dongyi_town.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 397032,
+        "sha256": "b8ecf83c69439e25065ca67136ead3277f0b10f8a73940db6e372160c078d4de",
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "正文记录昨天下午到东夷小镇，主街小吃店纪念品店人多，侧街人少。",
+      "visual_evidence_from_collector": "首图是有“东夷小镇”牌匾的牌坊，正文明示日照。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "rz_lighthouse",
+      "metadata_file": "work/photo-collection/stopovers/rz_lighthouse.json",
+      "title": "日照·灯塔风景区",
+      "author": "许小仙",
+      "image_index": 1,
+      "note_id": "6a9e98300000000026023425",
+      "source_url": "https://www.xiaohongshu.com/explore/6a9e98300000000026023425",
+      "observed_file": "work/photo-collection/stopovers/rz_lighthouse.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 576172,
+        "sha256": "0338e4240801f8b1d59a6a75c8d20858704739b22a3c9ba27b5aa6a244e39057",
+        "dimensions": {
+          "width": 1080,
+          "height": 1620
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者自驾7小时到日照灯塔风景区，海边挖沙，评价礁石沙较粗。",
+      "visual_evidence_from_collector": "首图为白色日照灯塔全貌，背后海岸和防波堤。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    },
+    {
+      "attraction_id": "rz_wanpingkou",
+      "metadata_file": "work/photo-collection/stopovers/rz_wanpingkou.json",
+      "title": "山东日照，万平口海滨区",
+      "author": "南京楠楠、遛娃",
+      "image_index": 1,
+      "note_id": "6a979e7600000000280384df",
+      "source_url": "https://www.xiaohongshu.com/explore/6a979e7600000000280384df",
+      "observed_file": "work/photo-collection/stopovers/rz_wanpingkou.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 281075,
+        "sha256": "98cb81b10fc87a1f31378c65dc3b2f60cdf60526fc01c3b8ddd33eaf01e7ccb6",
+        "dimensions": {
+          "width": 1080,
+          "height": 1429
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测无参数链接：当前笔记暂时无法浏览，请打开小红书App扫码查看；搜索入口带参数可读。"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "作者9月1日抵达日照，实地体验万平口海滨，沙滩面积大、沙子较粗；置顶评论补充5号门细沙。",
+      "visual_evidence_from_collector": "第1张显示蓝天云层下的海浪、沙滩与游客，正文与作者现场拍摄评论明确万平口。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。"
+    },
+    {
+      "attraction_id": "wh_zhongjiang_pagoda",
+      "metadata_file": "work/photo-collection/stopovers/wh_zhongjiang_pagoda.json",
+      "title": "江南古塔系列｜芜湖·中江塔，中国式灯塔",
+      "author": "江南紫云英",
+      "image_index": 1,
+      "note_id": "6aa00b75000000000b00c053",
+      "source_url": "https://www.xiaohongshu.com/explore/6aa00b75000000000b00c053",
+      "observed_file": "work/photo-collection/stopovers/wh_zhongjiang_pagoda.jpg",
+      "actual": {
+        "format": "JPEG",
+        "bytes": 305480,
+        "sha256": "2f84cc5279e380181aef9dabd6a8b3aed0ecf3b3b39b2e728ef868f34b183db1",
+        "dimensions": {
+          "width": 1080,
+          "height": 1656
+        }
+      },
+      "file_metadata_issues": [],
+      "recorded_canonical_status": {
+        "canonical_readable": false,
+        "state": "app_scan_required",
+        "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+      },
+      "failure_text_present": true,
+      "canonical_readable_from_record": false,
+      "body_summary_from_collector": "专帖讲芜湖中江塔，位置明确为镜湖区青弋江与长江交汇处，介绍明清五层砖石塔及航标功能。",
+      "visual_evidence_from_collector": "首图为八角五层砖石塔，旁有现代建筑与绿地；地点由正文与作者长江边评论核验。",
+      "independent_browser_reread": false,
+      "visual_audit": "pass_local_visual",
+      "visual_audit_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。"
+    }
+  ],
+  "unique_attractions": 33,
+  "finalized_at": "2026-10-01T04:16:48.767564+00:00",
+  "selected_main_images": [
+    {
+      "attraction_id": "lyg_democracy_road",
+      "city": "连云港",
+      "name": "民主路老街",
+      "main_image": "assets/places/xhs_lyg_democracy_road.jpg",
+      "note_id": "6a4f6bf5000000001503ccf8",
+      "title": "慢逛民主路，解锁港城烟火与复古浪漫",
+      "author": "巧克力爱好者",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "f1452d08e7a12c312381ba692cf462c63d70c9059878b1e967cd76efdd85856b",
+        "bytes": 561239,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": true,
+      "provenance": "independent current Chrome original-post reread + local exact visual match",
+      "visual_audit": "pass",
+      "visual_notes": "visual exact match to first of six images: 民主路 iron gate, clouds, yellow stripe and 连云港之民主路老街 cover text",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "lyg_yanhe_lane",
+      "city": "连云港",
+      "name": "盐河巷",
+      "main_image": "assets/places/xhs_lyg_yanhe_lane.jpg",
+      "note_id": "6a508849000000001503d45d",
+      "title": "连云港盐河巷夜市",
+      "author": "行走的摄影师",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "f763b438fbf07e61521a53cfb6f16a2711c62c6e7f4ef115cfcc59b9f98df7e3",
+        "bytes": 538787,
+        "dimensions": {
+          "width": 1080,
+          "height": 1620
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": true,
+      "provenance": "independent current Chrome original-post reread + local exact visual match",
+      "visual_audit": "pass",
+      "visual_notes": "visual exact match to first of nine images: colorful hanging lanterns, red dining chairs, central hotel sign, same crowd and Photography by lower-left watermark",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_zhanqiao",
+      "city": "青岛",
+      "name": "栈桥 · 回澜阁",
+      "main_image": "assets/places/xhs_qd_zhanqiao.jpg",
+      "note_id": "6abd1e43000000000a026902",
+      "title": "青岛栈桥🌁9.30实况",
+      "author": "畅🌈",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "95aa87fb6afe3939527a6b8b74b753122836a85b0475bfd2f342bd39aa3293cd",
+        "bytes": 280831,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "root collection evidence + independent local visual review",
+      "visual_audit": "pass",
+      "visual_notes": "栈桥长堤、回澜阁、岸边礁石与海面；主体为地点实景，右下有原平台小水印。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_zhongshan_road",
+      "city": "青岛",
+      "name": "中山路",
+      "main_image": "assets/places/xhs_qd_zhongshan_road.jpg",
+      "note_id": "69292823000000000d037f24",
+      "title": "📍青岛•中山路",
+      "author": "柒+壹 🐙🎀",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "66407fe3851a7357cbcfb37bfde8351eb0d2626ffa33d5309cfccd99b3a7ea49",
+        "bytes": 593915,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_street_level_replacement",
+      "visual_notes": "独立看新本地文件：中山路壹号招牌、红墙历史建筑、过街灯斑马线和路面可见，满足主任务路面替换要求，无攻略文字。原标题作者由采集agent核验，未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_st_michaels",
+      "city": "青岛",
+      "name": "圣弥厄尔教堂外观",
+      "main_image": "assets/places/xhs_qd_st_michaels.jpg",
+      "note_id": "69da2c06000000001f0066e9",
+      "title": "⛪️青岛·圣弥厄尔天主堂",
+      "author": "杰克机长🇬🇧",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "d1ffa37c184e7c4e431cd46fb358db2036966363fcd84370f63f6680abc88702",
+        "bytes": 380964,
+        "dimensions": {
+          "width": 1080,
+          "height": 1615
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_badaguan",
+      "city": "青岛",
+      "name": "八大关",
+      "main_image": "assets/places/xhs_qd_badaguan.jpg",
+      "note_id": "6aaa48af000000002900dc2b",
+      "title": "💌青岛八大关｜该怎么描述它的美呢？",
+      "author": "跳跳~",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "74f8564175810c2b680558373dbb211a89d2755a7efeaebca5722ce6e84fa547",
+        "bytes": 589011,
+        "dimensions": {
+          "width": 1080,
+          "height": 1439
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_second_beach",
+      "city": "青岛",
+      "name": "第二海水浴场",
+      "main_image": "assets/places/xhs_qd_second_beach.jpg",
+      "note_id": "6a445cf400000000210203a1",
+      "title": "晴天的第二海水浴场出片啦",
+      "author": "青岛跟拍摄影师TJ",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "34ae3134bce17f167155a61e9889f38018d577351ff0c1c2a1a31c759d4f3cb4",
+        "bytes": 399686,
+        "dimensions": {
+          "width": 1080,
+          "height": 1509
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "本地看图为石砌大坝、海浪礁石和白裙游客，与采集原帖第二海水浴场大坝专点记录吻合。不是整片沙滩全景，精确地点仍依据原帖记录，无攻略文字；未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_mayfour_square",
+      "city": "青岛",
+      "name": "五四广场 · 五月的风",
+      "main_image": "assets/places/xhs_qd_mayfour_square.jpg",
+      "note_id": "69ced994000000001e00f6ae",
+      "title": "🇨🇳青岛｜五四广场💗",
+      "author": "岱岱是你吗",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "b1d1ba6f0ae60393a49642d76b29b0516c7afb4a47b29926fe582d6b4c3ae496",
+        "bytes": 320293,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_olympic_sailing",
+      "city": "青岛",
+      "name": "奥帆中心",
+      "main_image": "assets/places/xhs_qd_olympic_sailing.jpg",
+      "note_id": "6a82dfa20000000006006b1a",
+      "title": "Fuji📷 | 不是悉尼，是青岛奥帆中心🌊",
+      "author": "发福蝶",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "837e90da41512dc43563393f45ed3990cab851cc103cc74ad8028a15f975b84d",
+        "bytes": 297872,
+        "dimensions": {
+          "width": 1080,
+          "height": 1800
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_fushan_bay",
+      "city": "青岛",
+      "name": "浮山湾夜景",
+      "main_image": "assets/places/xhs_qd_fushan_bay.jpg",
+      "note_id": "6a0075a7000000000803c4bd",
+      "title": "青岛｜浮山湾夜景",
+      "author": "菠萝的海",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "e2095f0e16620d0109a814e0296937105d6f0981cd161ddf9d9a7e6eec82195e",
+        "bytes": 331734,
+        "dimensions": {
+          "width": 1080,
+          "height": 1384
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_signal_hill",
+      "city": "青岛",
+      "name": "信号山",
+      "main_image": "assets/places/xhs_qd_signal_hill.jpg",
+      "note_id": "6ab5e12500000000150023fa",
+      "title": "青岛信号山爬了，最佳机位也找到了",
+      "author": "豆小蔻（殳影）",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "0676a70d04a4ccf82c184103217c69407219fe5da84a5f0664341b45d8b55c47",
+        "bytes": 550473,
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原粉色箭头保留，主体是红球观景塔。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_xiaoyu_hill",
+      "city": "青岛",
+      "name": "小鱼山",
+      "main_image": "assets/places/xhs_qd_xiaoyu_hill.jpg",
+      "note_id": "6aa93b390000000026030dac",
+      "title": "青岛小鱼山攻略",
+      "author": "一起去看海",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "fe5ae6a10580107dd48071f4e8ba414ed79bde5c4d75e44fcaa20d98e3707cc3",
+        "bytes": 468598,
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "独立看本地图：绿色琉璃瓦亭与山地松树，海湾老城背景，与采集正文小鱼山自身亭阁吻合。不是攻略文字封面；未独立复读原帖。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_laoshan",
+      "city": "青岛",
+      "name": "崂山",
+      "main_image": "assets/places/xhs_qd_laoshan.jpg",
+      "note_id": "69e32f330000000021039cea",
+      "title": "青岛崂山一日游详细攻略🌊直接抄作业",
+      "author": "川渝暴龙",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "b43536c3fb77c71e4f06d0588d14a727cfe5a8cdd7bc96799b763c4459430511",
+        "bytes": 491227,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "独立看本地图：红屋顶村落、海湾与山岩，吻合采集记录崂山青山渔村；不能标成崂山山顶。无攻略文字。未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_underwater",
+      "city": "青岛",
+      "name": "青岛海底世界",
+      "main_image": "assets/places/xhs_qd_underwater.jpg",
+      "note_id": "6a069edd000000003603290b",
+      "title": "青岛海底世界",
+      "author": "怪味萌小豆",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "685cff4c4c8f7ef83ed1b7ad57f00cfb66d8bdaaf069d77b6ca9bf50b684c298",
+        "bytes": 169404,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "本地看图为水族馆鳐鱼腹面及水下岩石，非攻略文字。精确青岛海底世界归属依赖采集agent读到的亲子专帖，而非图像能唯一确定；未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_banyue_bay",
+      "city": "威海",
+      "name": "半月湾",
+      "main_image": "assets/places/xhs_wh_banyue_bay.jpg",
+      "note_id": "6a0e90cd00000000360186ec",
+      "title": "威海半月湾夯爆！",
+      "author": "媛",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "19f4121bff9f937a2891946c91368cb08e027bfb384055fd7e13d00cdbb3100b",
+        "bytes": 475446,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_maotou_hill",
+      "city": "威海",
+      "name": "猫头山",
+      "main_image": "assets/places/xhs_wh_maotou_hill.jpg",
+      "note_id": "6a9a5a8e000000002900cdab",
+      "title": "威海猫头山｜不做攻略，随观光车偶遇果冻海🌊",
+      "author": "L.",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "4d88772442581aa539138d23f2dd0e214e1c407525f80fea374acc756d9c1979",
+        "bytes": 224166,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_happiness_gate",
+      "city": "威海",
+      "name": "幸福门",
+      "main_image": "assets/places/xhs_wh_happiness_gate.jpg",
+      "note_id": "6a62d186000000000100c03b",
+      "title": "威海幸福门",
+      "author": "momo",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "81dca0751443ec302a934586c7496480cae0a47c2d38e1c49212c230af94a608",
+        "bytes": 384916,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_weihai_park",
+      "city": "威海",
+      "name": "威海公园",
+      "main_image": "assets/places/xhs_wh_weihai_park.jpg",
+      "note_id": "6a3bfa1f000000001502655d",
+      "title": "把手给我",
+      "author": "冻干土豆",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "19dfe24a82b81261c3142a6a5bdba347ae1266af2d48e47c9a7c73c98843fd3a",
+        "bytes": 217227,
+        "dimensions": {
+          "width": 864,
+          "height": 1152
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "独立看本地图：人物伸手占前景，但背景清楚展示威海公园两手巨型相框和海岸，地点自身地标可辨，无攻略文字。未独立浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_yuehai_park",
+      "city": "威海",
+      "name": "悦海公园",
+      "main_image": "assets/places/xhs_wh_yuehai_park.jpg",
+      "note_id": "6a714136000000002800a1b0",
+      "title": "悦海公园的灯塔和灯塔下的海，也太浪漫了吧",
+      "author": "吃饭不放辣子",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "a554af2d4fc1ec7383d9fa0fc749a67b690019a6fc6d0f155bcf0855195fb41a",
+        "bytes": 216059,
+        "dimensions": {
+          "width": 1080,
+          "height": 1432
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "本地看图是悦海公园白灯塔、草顶基部、滨海护栏海鸥，吻合地点自身；无攻略文字。采集正文含售货机推广，照片不含广告文字。未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_international_beach",
+      "city": "威海",
+      "name": "国际海水浴场",
+      "main_image": "assets/places/xhs_wh_international_beach.jpg",
+      "note_id": "69fc1396000000001f0001e5",
+      "title": "威海国际海水浴场",
+      "author": "mikasa",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "41b9c501d761b0218856c8329ac89de560c36c1e77877174c6e670efcf424cda",
+        "bytes": 335847,
+        "dimensions": {
+          "width": 1080,
+          "height": 1620
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_torch_eighth",
+      "city": "威海",
+      "name": "火炬八街",
+      "main_image": "assets/places/xhs_wh_torch_eighth.jpg",
+      "note_id": "6a390b880000000008033dd0",
+      "title": "📍 在火炬八街，等一场通往大海的日出",
+      "author": "拾光絮语",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "de8e82493f301f19583d88b356a0da0bfdbbbc986f889945b6ae8df7161fccd2",
+        "bytes": 179750,
+        "dimensions": {
+          "width": 1080,
+          "height": 1295
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_liugong_island",
+      "city": "威海",
+      "name": "刘公岛",
+      "main_image": "assets/places/xhs_wh_liugong_island.jpg",
+      "note_id": "6a9bab590000000012002294",
+      "title": "09/05|📍威海.刘公岛  |不知道说什么版",
+      "author": "Seika🔆",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "3b462b3740707f61ae99b20bee3054194fa9ea4795175826990686cf5d4587d9",
+        "bytes": 247780,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 原文件为同地实景摄影拼图。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_naxianghai",
+      "city": "威海",
+      "name": "那香海",
+      "main_image": "assets/places/xhs_wh_naxianghai.jpg",
+      "note_id": "6a6f5be00000000026035342",
+      "title": "那香海，终于懂你了",
+      "author": "六月未老",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "c08baafdda945c93a8df020dca816dd2ca1e44c53c3341cbb08570e139f3171f",
+        "bytes": 597954,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_bluewis",
+      "city": "威海",
+      "name": "布鲁维斯号",
+      "main_image": "assets/places/xhs_wh_bluewis.jpg",
+      "note_id": "6a2bd3580000000015024758",
+      "title": "威海｜布鲁维斯号｜宿命感",
+      "author": "He.",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "5d49216671ba05da39c43144aa28c039c7cbc38173c0b31b630f2eaf8ad5e061",
+        "bytes": 281307,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "独立看本地图：锈船船体清楚写BLUEWAYS，海鸥浪花，布鲁威斯号主体；无攻略文字。原帖作者地点正文由采集agent读到，未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_hanlefang",
+      "city": "威海",
+      "name": "韩乐坊",
+      "main_image": "assets/places/xhs_wh_hanlefang.jpg",
+      "note_id": "6aabf29b00000000120031e8",
+      "title": "旅行分享-韩乐坊 夜市超市美食一站式打卡",
+      "author": "逛吃的小双鱼",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "fd0aa8957b141130b7db4b7eb4d3a02085bd782b3be8656104f0f353d5251d86",
+        "bytes": 504494,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_notes": "独立看本地图：韩乐坊牌匾与同地夜市摊位两景拼图，无攻略文字。采集正文记录具体实吃奶酪、米糕和冰淇淋及夜市时间，专点实吃证据足够，非全市合集；未独立复读原帖。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_oulefang",
+      "city": "威海",
+      "name": "欧乐坊",
+      "main_image": "assets/places/xhs_wh_oulefang.jpg",
+      "note_id": "6908911e0000000004012dc6",
+      "title": "欧乐坊清悠面馆海肠捞饭",
+      "author": "不结絮果",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "340209a1a05ea045c9d44cbff21580ad9fc0761b719d2e684e77c80ffd0cf467",
+        "bytes": 375377,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_with_metadata_correction",
+      "visual_notes": "本地看图清悠面馆、海肠捞饭25元牌；body具体价格加饭加汁口感，符合实吃非全市合集。visual_evidence称第3张而image_index=1不一致，应校正为3。未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_city_museum",
+      "city": "威海",
+      "name": "威海市博物馆",
+      "main_image": "assets/places/xhs_wh_city_museum.jpg",
+      "note_id": "6a70acee000000002701e471",
+      "title": "威海市博物馆｜诚实地说不太推荐",
+      "author": "晗浛焓HAN",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "b6beb54bae875480ce350de3302acbb639924273466a0ca22fe79002fdabdbf2",
+        "bytes": 376640,
+        "dimensions": {
+          "width": 1439,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "本地看图石墙清楚题威海博物馆与服务台，地点自身；图右下角有原小红书标识，visual_evidence正确、watermark_status未见明显水印措辞应统一。canonical待测，保持未知。未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "rz_wanpingkou",
+      "city": "日照",
+      "name": "万平口",
+      "main_image": "assets/places/xhs_rz_wanpingkou.jpg",
+      "note_id": "6a979e7600000000280384df",
+      "title": "山东日照，万平口海滨区",
+      "author": "南京楠楠、遛娃",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "98cb81b10fc87a1f31378c65dc3b2f60cdf60526fc01c3b8ddd33eaf01e7ccb6",
+        "bytes": 281075,
+        "dimensions": {
+          "width": 1080,
+          "height": 1429
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。 海滩画面本身缺少可唯一辨认标志，需依赖采集者读到的专帖正文；图像未发现与记录矛盾。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "rz_dongyi_town",
+      "city": "日照",
+      "name": "东夷小镇",
+      "main_image": "assets/places/xhs_rz_dongyi_town.jpg",
+      "note_id": "6aa33a3f0000000029010f79",
+      "title": "日照东夷小镇",
+      "author": "月亮爱旅行",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "b8ecf83c69439e25065ca67136ead3277f0b10f8a73940db6e372160c078d4de",
+        "bytes": 397032,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "rz_lighthouse",
+      "city": "日照",
+      "name": "日照灯塔",
+      "main_image": "assets/places/xhs_rz_lighthouse.jpg",
+      "note_id": "6a9e98300000000026023425",
+      "title": "日照·灯塔风景区",
+      "author": "许小仙",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "0338e4240801f8b1d59a6a75c8d20858704739b22a3c9ba27b5aa6a244e39057",
+        "bytes": 576172,
+        "dimensions": {
+          "width": 1080,
+          "height": 1620
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "wh_zhongjiang_pagoda",
+      "city": "芜湖",
+      "name": "中江塔",
+      "main_image": "assets/places/xhs_wh_zhongjiang_pagoda.jpg",
+      "note_id": "6aa00b75000000000b00c053",
+      "title": "江南古塔系列｜芜湖·中江塔，中国式灯塔",
+      "author": "江南紫云英",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "2f84cc5279e380181aef9dabd6a8b3aed0ecf3b3b39b2e728ef868f34b183db1",
+        "bytes": 305480,
+        "dimensions": {
+          "width": 1080,
+          "height": 1656
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "ha_li_canal",
+      "city": "淮安",
+      "name": "里运河文化长廊",
+      "main_image": "assets/places/xhs_ha_li_canal.jpg",
+      "note_id": "6a681c41000000000f005601",
+      "title": "📍淮安·里运河文化长廊",
+      "author": "yulou1006",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "70a9b335a52a95cf2ba7dbf3cd5df2175cec8009226aad9336ca004e6fe78513",
+        "bytes": 332268,
+        "dimensions": {
+          "width": 1080,
+          "height": 1440
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "ha_yumatou",
+      "city": "淮安",
+      "name": "御码头",
+      "main_image": "assets/places/xhs_ha_yumatou.jpg",
+      "note_id": "683ef8de000000002300e6f0",
+      "title": "淮安城市漫步｜御码头",
+      "author": "汉堡薯条大王",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "b1ffebf2feb440aa2792a3afef316665de2b39f56b413844644ad64d172e525e",
+        "bytes": 554809,
+        "dimensions": {
+          "width": 1620,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_with_metadata_correction",
+      "visual_notes": "实景牌坊明确“淮安御码头美食街”；visual_evidence 写成“文旅街”有文字错误。地点未错。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "ha_hexia_town",
+      "city": "淮安",
+      "name": "河下古镇",
+      "main_image": "assets/places/xhs_ha_hexia_town.jpg",
+      "note_id": "6a8ae85e000000002b0243d7",
+      "title": "淮安｜河下古镇🍃一半诗意一半烟火",
+      "author": "下一站没定",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "ca18c98b0c13ba06607da8aff40eb982bd9b1e22e9fd771df14e64bd053c673d",
+        "bytes": 624494,
+        "dimensions": {
+          "width": 1080,
+          "height": 1441
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual",
+      "visual_notes": "已独立 view_image 看本地文件，画面为地点实景且无攻略文字封面；精确归属依据采集 agent 的原帖正文记录，并非本审核浏览器复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_minjiang_road",
+      "city": "青岛",
+      "name": "闽江路餐饮街区",
+      "main_image": "assets/places/xhs_qd_minjiang_road.jpg",
+      "note_id": "6ab4a9b5000000000a027e75",
+      "title": "青岛 | 老牌美食街闽江路上的 | 河粉🍜",
+      "author": "安阳🌟",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "56a902bfb2e0efca94d03039f31736916d85247a9a701aae00ce749e50ba0562",
+        "bytes": 359449,
+        "dimensions": {
+          "width": 1440,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_notes": "本地看图是浮山巷美食街红门楼，需明确为闽江路北侧浮山巷入口而非闽江路路牌。采集正文有柠檬鸡肉河粉、鸡蛋卷具体口味服务和店休，实吃专点证据充分。未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    },
+    {
+      "attraction_id": "qd_yunxiao_road",
+      "city": "青岛",
+      "name": "云霄路餐饮街区",
+      "main_image": "assets/places/xhs_qd_yunxiao_road.jpg",
+      "note_id": "6a1c355b0000000006020e7c",
+      "title": "青岛云霄路老东港",
+      "author": "D.C",
+      "actual": {
+        "format": "JPEG",
+        "sha256": "f61190356ab4b6d197fdbf0200d923290180b0e6a4da3abfb6293a109e28484a",
+        "bytes": 441834,
+        "dimensions": {
+          "width": 2373,
+          "height": 1080
+        }
+      },
+      "audit_issues": [],
+      "declared_bytes_missing": false,
+      "provenance": "collector metadata + independent local visual review",
+      "visual_audit": "pass_local_visual_and_collector_food_body",
+      "visual_notes": "本地看图为上桌贝类海鲜、蔬菜啤酒，不能展示成云霄路街景；采集正文老东港旅行第一餐，含新鲜度味道价格服务团购反馈，专店实吃证据足够非全市合集。地点靠原帖正文记录，未独立复读。",
+      "repo_canonical_readable_logged_in": false,
+      "repo_link_status_label": "无参数入口实测暂时无法浏览（404）；可在小红书按标题与作者搜索，或用 App 查看。"
+    }
+  ],
+  "selected_count": 36,
+  "mapping_issues": [],
+  "critical_remaining": [],
+  "media_status": "private_xhs_complete",
+  "media_note": "36/36处有已核对小红书私人参考照片；入口可用性逐帖标注，不代表匿名或真实iPhone可读。",
+  "resolved_corrections": [
+    "中山路使用第3张路面新版；屋顶首版保留记录但非主图",
+    "御码头牌匾已纠正为美食街",
+    "欧乐坊第3张已纠正",
+    "威海博物馆无参数入口实测为App扫码不可浏览；右下水印已保留说明"
+  ],
+  "browser_boundary": "Only two LYG originals were independently reread in this phase. Banyue original was independently read earlier this turn. Other titles/authors/bodies and link tests are collector/root evidence crosschecked against files and integration; no repeated browser reread, anonymous test, or real iPhone test."
+}

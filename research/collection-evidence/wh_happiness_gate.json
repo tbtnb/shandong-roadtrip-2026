@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_happiness_gate",
+  "title": "威海幸福门",
+  "author": "momo",
+  "note_id": "6a62d186000000000100c03b",
+  "source_url": "https://www.xiaohongshu.com/explore/6a62d186000000000100c03b",
+  "body_summary": "正文地点标签幸福门；8图街景旅行记录。",
+  "visual_evidence": "首图完整幸福门玻璃门状地标、广场游客蓝天，画面无攻略文字。",
+  "image_index": 1,
+  "bytes": 384916,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "81dca0751443ec302a934586c7496480cae0a47c2d38e1c49212c230af94a608",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签1770998073实测404，error_code300031当前笔记暂时无法浏览",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:48:00.207648+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_happiness_gate.jpg"
+}

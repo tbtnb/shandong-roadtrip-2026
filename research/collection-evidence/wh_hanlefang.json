@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_hanlefang",
+  "title": "旅行分享-韩乐坊 夜市超市美食一站式打卡",
+  "author": "逛吃的小双鱼",
+  "note_id": "6aabf29b00000000120031e8",
+  "source_url": "https://www.xiaohongshu.com/explore/6aabf29b00000000120031e8",
+  "body_summary": "作者实吃群香玛特奥利奥奶酪与无花果米糕，评价无花果冰淇淋不错，19点前逛夜市，描述乞老板现场。",
+  "visual_evidence": "首图为韩乐坊牌楼和夜市满街餐摊人流真实摄影，无攻略封面文字。",
+  "image_index": 1,
+  "bytes": 504494,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "fd0aa8957b141130b7db4b7eb4d3a02085bd782b3be8656104f0f353d5251d86",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T04:01:10.572721+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "food",
+  "local_file": "public/assets/places/xhs_wh_hanlefang.jpg"
+}

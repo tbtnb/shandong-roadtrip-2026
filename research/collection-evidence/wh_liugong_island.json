@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_liugong_island",
+  "title": "09/05|📍威海.刘公岛  |不知道说什么版",
+  "author": "Seika🔆",
+  "note_id": "6a9bab590000000012002294",
+  "source_url": "https://www.xiaohongshu.com/explore/6a9bab590000000012002294",
+  "body_summary": "10点上岛14点离岛；正文说明图234均摄于东泓炮台，游览甲午馆博览园定远舰。",
+  "visual_evidence": "首图同一刘公岛摄影拼图，海鸥、松树海岬、东泓岩岸与渡船航迹，无攻略文字。",
+  "image_index": 1,
+  "bytes": 247780,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "3b462b3740707f61ae99b20bee3054194fa9ea4795175826990686cf5d4587d9",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:53:41.154641+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_liugong_island.jpg"
+}

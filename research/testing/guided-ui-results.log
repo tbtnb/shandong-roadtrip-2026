@@ -1,0 +1,18 @@
+
+> shandong-roadtrip-2026@0.0.0 test:ui
+> vitest run --config vitest.config.mjs
+
+
+ RUN  v3.2.4 /Users/bit_1/Documents/Codex/2026-10-01/cloudflare-plugin-cloudflare-openai-curated-remote-2/outputs/shandong-roadtrip-2026
+
+ ✓ tests/ui.test.jsx (19 tests) 3945ms
+   ✓ map-first route, honest media and private journal state > 2D map is clickable and date controls move the route car  304ms
+   ✓ interruption and fallback resilience > saved stamps survive a remount and invalid storage values are ignored  329ms
+   ✓ guided journey visible stages and reading-mode state > starts with a single journey CTA, progresses through a day and spots, and completes  417ms
+   ✓ guided journey visible stages and reading-mode state > reading mode roundtrip preserves current day, expanded card, stamp and separate five/six-day plans  439ms
+ ✓ tests/getty.test.jsx (2 tests) 36ms
+
+ Test Files  2 passed (2)
+      Tests  21 passed (21)
+   Start at  12:14:25
+   Duration  6.30s (transform 151ms, setup 15ms, collect 1.69s, tests 3.98s, environment 392ms, prepare 61ms)

@@ -1,0 +1,29 @@
+{
+  "attraction_id": "rz_dongyi_town",
+  "title": "日照东夷小镇",
+  "author": "月亮爱旅行",
+  "note_id": "6aa33a3f0000000029010f79",
+  "source_url": "https://www.xiaohongshu.com/explore/6aa33a3f0000000029010f79",
+  "body_summary": "正文记录昨天下午到东夷小镇，主街小吃店纪念品店人多，侧街人少。",
+  "visual_evidence": "首图是有“东夷小镇”牌匾的牌坊，正文明示日照。",
+  "image_index": 1,
+  "bytes": 397032,
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "sha256": "b8ecf83c69439e25065ca67136ead3277f0b10f8a73940db6e372160c078d4de",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:49:46.551749+00:00",
+  "watermark": "原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_rz_dongyi_town.jpg"
+}

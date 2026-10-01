@@ -1,0 +1,29 @@
+{
+  "attraction_id": "ha_li_canal",
+  "title": "📍淮安·里运河文化长廊",
+  "author": "yulou1006",
+  "note_id": "6a681c41000000000f005601",
+  "source_url": "https://www.xiaohongshu.com/explore/6a681c41000000000f005601",
+  "body_summary": "专帖介绍里运河文化长廊河岸景点：国师塔、清江浦楼、花街、清江闸，并说明沿河即可步行游览。",
+  "visual_evidence": "首图是夜间金色国师塔和运河水面倒影，正文对应长廊标志建筑。",
+  "image_index": 1,
+  "bytes": 332268,
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "sha256": "70a9b335a52a95cf2ba7dbf3cd5df2175cec8009226aad9336ca004e6fe78513",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:53:05.559282+00:00",
+  "watermark": "原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_ha_li_canal.jpg"
+}

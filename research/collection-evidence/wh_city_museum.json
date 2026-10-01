@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_city_museum",
+  "title": "威海市博物馆｜诚实地说不太推荐",
+  "author": "晗浛焓HAN",
+  "note_id": "6a70acee000000002701e471",
+  "source_url": "https://www.xiaohongshu.com/explore/6a70acee000000002701e471",
+  "body_summary": "作者自驾实际参观市文化艺术中心三楼博物馆，描述停车、电梯误到办公区、展厅历史文化与临展、自助盖章桌和展陈较暗的体验。",
+  "visual_evidence": "第一张静态照片清晰呈现威海博物馆石质题字墙、服务台和盖章桌，与正文位置证据吻合；右下角原始小红书标识保持。",
+  "image_index": 1,
+  "bytes": 376640,
+  "width": 1439,
+  "height": 1080,
+  "sha256": "b6beb54bae875480ce350de3302acbb639924273466a0ca22fe79002fdabdbf2",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "实际独立导航无参数URL后显示当前笔记暂时无法浏览，请打开小红书App扫码查看。",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T04:11:36.737255+00:00",
+  "dimensions": {
+    "width": 1439,
+    "height": 1080
+  },
+  "watermark": "本地原图右下角小红书标识已目视核对并保留；原文件无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_city_museum.jpg"
+}

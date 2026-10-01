@@ -1,0 +1,29 @@
+{
+  "attraction_id": "rz_lighthouse",
+  "title": "日照·灯塔风景区",
+  "author": "许小仙",
+  "note_id": "6a9e98300000000026023425",
+  "source_url": "https://www.xiaohongshu.com/explore/6a9e98300000000026023425",
+  "body_summary": "作者自驾7小时到日照灯塔风景区，海边挖沙，评价礁石沙较粗。",
+  "visual_evidence": "首图为白色日照灯塔全貌，背后海岸和防波堤。",
+  "image_index": 1,
+  "bytes": 576172,
+  "dimensions": {
+    "width": 1080,
+    "height": 1620
+  },
+  "sha256": "0338e4240801f8b1d59a6a75c8d20858704739b22a3c9ba27b5aa6a244e39057",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:49:46.553177+00:00",
+  "watermark": "原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_rz_lighthouse.jpg"
+}

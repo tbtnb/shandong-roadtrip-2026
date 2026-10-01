@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_weihai_park",
+  "title": "把手给我",
+  "author": "冻干土豆",
+  "note_id": "6a3bfa1f000000001502655d",
+  "source_url": "https://www.xiaohongshu.com/explore/6a3bfa1f000000001502655d",
+  "body_summary": "正文威海大相框地点标签，3张相同地标摄影。",
+  "visual_evidence": "首图人物伸手，背景为威海公园画中画巨型两手相框、海面护栏和海鸥，地标清晰，无攻略文字。",
+  "image_index": 1,
+  "bytes": 217227,
+  "width": 864,
+  "height": 1152,
+  "sha256": "19dfe24a82b81261c3142a6a5bdba347ae1266af2d48e47c9a7c73c98843fd3a",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T04:04:00.210277+00:00",
+  "dimensions": {
+    "width": 864,
+    "height": 1152
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_weihai_park.jpg"
+}

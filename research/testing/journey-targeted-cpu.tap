@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: normal-motion journey transition advances over frames and settles when dynamics are paused
+ok 1 - normal-motion journey transition advances over frames and settles when dynamics are paused
+  ---
+  duration_ms: 150.831042
+  type: 'test'
+  ...
+# Subtest: city, mode and reset interrupt an in-flight journey safely
+ok 2 - city, mode and reset interrupt an in-flight journey safely
+  ---
+  duration_ms: 78.964083
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 566.175875

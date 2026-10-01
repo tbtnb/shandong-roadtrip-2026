@@ -1,0 +1,29 @@
+{
+  "attraction_id": "wh_zhongjiang_pagoda",
+  "title": "江南古塔系列｜芜湖·中江塔，中国式灯塔",
+  "author": "江南紫云英",
+  "note_id": "6aa00b75000000000b00c053",
+  "source_url": "https://www.xiaohongshu.com/explore/6aa00b75000000000b00c053",
+  "body_summary": "专帖讲芜湖中江塔，位置明确为镜湖区青弋江与长江交汇处，介绍明清五层砖石塔及航标功能。",
+  "visual_evidence": "首图为八角五层砖石塔，旁有现代建筑与绿地；地点由正文与作者长江边评论核验。",
+  "image_index": 1,
+  "bytes": 305480,
+  "dimensions": {
+    "width": 1080,
+    "height": 1656
+  },
+  "sha256": "2f84cc5279e380181aef9dabd6a8b3aed0ecf3b3b39b2e728ef868f34b183db1",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:49:46.553644+00:00",
+  "watermark": "原文件完整保留；右下角微小原图标记完整保留，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_wh_zhongjiang_pagoda.jpg"
+}

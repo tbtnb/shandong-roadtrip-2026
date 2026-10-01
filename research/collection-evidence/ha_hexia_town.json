@@ -1,0 +1,29 @@
+{
+  "attraction_id": "ha_hexia_town",
+  "title": "淮安｜河下古镇🍃一半诗意一半烟火",
+  "author": "下一站没定",
+  "note_id": "6a8ae85e000000002b0243d7",
+  "source_url": "https://www.xiaohongshu.com/explore/6a8ae85e000000002b0243d7",
+  "body_summary": "正文明确江苏淮安河下古镇，步行路线涵盖红玉鼓韵坛、程公桥、花巷水龙局、吴鞠通中医馆、状元里、魁星阁。",
+  "visual_evidence": "首图为红花藤蔓拱门下青石板窄巷，两旁古建店铺与游客；右側导览牌及正文对应河下古镇。",
+  "image_index": 1,
+  "bytes": 624494,
+  "dimensions": {
+    "width": 1080,
+    "height": 1441
+  },
+  "sha256": "ca18c98b0c13ba06607da8aff40eb982bd9b1e22e9fd771df14e64bd053c673d",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:53:05.562164+00:00",
+  "watermark": "原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_ha_hexia_town.jpg"
+}

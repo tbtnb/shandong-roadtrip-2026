@@ -1,0 +1,29 @@
+{
+  "attraction_id": "qd_zhongshan_road",
+  "title": "📍青岛•中山路",
+  "author": "柒+壹 🐙🎀",
+  "note_id": "69292823000000000d037f24",
+  "source_url": "https://www.xiaohongshu.com/explore/69292823000000000d037f24",
+  "body_summary": "作者记录中山路老城散步，正文称一条中山路半部青岛史，描述老城区的浪漫。",
+  "visual_evidence": "街面实拍显示中山路壹号标牌、红色沿街历史楼宇、行人过街信号和斑马线；明确呈现地点本身。",
+  "image_index": 3,
+  "size_bytes": 593915,
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "sha256": "66407fe3851a7357cbcfb37bfde8351eb0d2626ffa33d5309cfccd99b3a7ea49",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome，原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T04:08:25.644657+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；未见明显水印",
+  "media_note": "网站正常下载同时给出独立原JPG与LIVE视频；采用JPG，不转帧。",
+  "selection": "采用本街面图；此前屋顶俯瞰保留为补充原样资料。",
+  "local_file": "public/assets/places/xhs_qd_zhongshan_road.jpg"
+}

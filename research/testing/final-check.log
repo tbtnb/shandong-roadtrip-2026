@@ -1,0 +1,284 @@
+
+> shandong-roadtrip-2026@0.0.0 check
+> npm test && npm run test:ui && npm run test:scene && npm run build
+
+
+> shandong-roadtrip-2026@0.0.0 test
+> node --test tests/content.test.mjs
+
+TAP version 13
+# Subtest: five and six day itineraries retain safe overnight return
+ok 1 - five and six day itineraries retain safe overnight return
+  ---
+  duration_ms: 0.810583
+  type: 'test'
+  ...
+# Subtest: source links and all itinerary citations are valid
+ok 2 - source links and all itinerary citations are valid
+  ---
+  duration_ms: 0.48475
+  type: 'test'
+  ...
+# Subtest: no personal contact or participant identity published
+ok 3 - no personal contact or participant identity published
+  ---
+  duration_ms: 1.072792
+  type: 'test'
+  ...
+# Subtest: budget formula is explicit and safe with zero people
+ok 4 - budget formula is explicit and safe with zero people
+  ---
+  duration_ms: 0.293791
+  type: 'test'
+  ...
+# Subtest: sources filter and URL sanitization
+ok 5 - sources filter and URL sanitization
+  ---
+  duration_ms: 0.1505
+  type: 'test'
+  ...
+# Subtest: route buffers are not hidden as pure drive times
+ok 6 - route buffers are not hidden as pure drive times
+  ---
+  duration_ms: 0.041292
+  type: 'test'
+  ...
+# Subtest: XHS entries are distinct, actually read, and separate from official counts
+ok 7 - XHS entries are distinct, actually read, and separate from official counts
+  ---
+  duration_ms: 0.748291
+  type: 'test'
+  ...
+# Subtest: published real photos are licensed, attributed and public manifest contains no local paths or tokens
+ok 8 - published real photos are licensed, attributed and public manifest contains no local paths or tokens
+  ---
+  duration_ms: 1.562584
+  type: 'test'
+  ...
+# Subtest: public data does not expose private login workflow or internal file locations
+ok 9 - public data does not expose private login workflow or internal file locations
+  ---
+  duration_ms: 1.946083
+  type: 'test'
+  ...
+# Subtest: public XHS URLs are parameter-free and do not imply verified direct access
+ok 10 - public XHS URLs are parameter-free and do not imply verified direct access
+  ---
+  duration_ms: 1.500792
+  type: 'test'
+  ...
+# Subtest: new stopover evidence keeps driving rest buffers and makes Rizhao sightseeing optional
+ok 11 - new stopover evidence keeps driving rest buffers and makes Rizhao sightseeing optional
+  ---
+  duration_ms: 0.129833
+  type: 'test'
+  ...
+# Subtest: explicitly excluded XHS references do not fill the city reading target
+ok 12 - explicitly excluded XHS references do not fill the city reading target
+  ---
+  duration_ms: 0.472917
+  type: 'test'
+  ...
+# Subtest: all four city targets use only complete, explicitly eligible readings
+ok 13 - all four city targets use only complete, explicitly eligible readings
+  ---
+  duration_ms: 0.428875
+  type: 'test'
+  ...
+# Subtest: the Qingdao core and Wuhu landmark keep single-place references with honest entry links
+ok 14 - the Qingdao core and Wuhu landmark keep single-place references with honest entry links
+  ---
+  duration_ms: 0.849125
+  type: 'test'
+  ...
+# Subtest: private-reference assets preserve source identity without claiming a public license
+ok 15 - private-reference assets preserve source identity without claiming a public license
+  ---
+  duration_ms: 1.254334
+  type: 'test'
+  ...
+# Subtest: private photos bind to a dedicated note and report the actual parameter-free link test
+ok 16 - private photos bind to a dedicated note and report the actual parameter-free link test
+  ---
+  duration_ms: 0.622791
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54.2615
+
+> shandong-roadtrip-2026@0.0.0 test:ui
+> vitest run --config vitest.config.mjs
+
+
+ RUN  v3.2.4 /Users/bit_1/Documents/Codex/2026-10-01/cloudflare-plugin-cloudflare-openai-curated-remote-2/outputs/shandong-roadtrip-2026
+
+ ✓ tests/ui.test.jsx (19 tests) 3709ms
+   ✓ map-first route, honest media and private journal state > 2D map is clickable and date controls move the route car  315ms
+   ✓ interruption and fallback resilience > saved stamps survive a remount and invalid storage values are ignored  325ms
+   ✓ guided journey visible stages and reading-mode state > reading mode roundtrip preserves current day, expanded card, stamp and separate five/six-day plans  506ms
+ ✓ tests/getty.test.jsx (2 tests) 34ms
+
+ Test Files  2 passed (2)
+      Tests  21 passed (21)
+   Start at  12:21:50
+   Duration  6.03s (transform 123ms, setup 9ms, collect 1.67s, tests 3.74s, environment 384ms, prepare 61ms)
+
+
+> shandong-roadtrip-2026@0.0.0 test:scene
+> node scripts/smoke-scene.mjs && node --test tests/scene-interaction-bounds.test.mjs
+
+{"width":330,"height":348,"meshes":113,"triangles":69211,"finiteGeometry":true,"projectedBounds":{"minX":-0.7255297329571819,"maxX":0.70541930008205,"minY":-0.725409801585805,"maxY":0.7382835660387774},"cameraBounds":[-8.344827586206897,8.344827586206897,8.8,-8.8]}
+{"width":360,"height":370,"meshes":113,"triangles":69211,"finiteGeometry":true,"projectedBounds":{"minX":-0.8103132474653182,"maxX":0.7964645011116247,"minY":-0.7585878393019442,"maxY":0.7458644828640318},"cameraBounds":[-8.562162162162164,8.562162162162164,8.8,-8.8]}
+{"width":400,"height":370,"meshes":113,"triangles":69211,"finiteGeometry":true,"projectedBounds":{"minX":-0.7576955041234145,"maxX":0.7447460270134673,"minY":-0.7881432096643575,"maxY":0.7749241380405525},"cameraBounds":[-9.156756756756758,9.156756756756758,8.47,-8.47]}
+{"width":1280,"height":530,"meshes":113,"triangles":69211,"finiteGeometry":true,"projectedBounds":{"minX":-0.46060243324794814,"maxX":0.4578720048073759,"minY":-0.916475854231553,"maxY":0.871497004241301},"cameraBounds":[-17.630188679245283,17.630188679245283,7.3,-7.3]}
+TAP version 13
+# Subtest: single-frame reduced-motion rotate and reset keep HTML tags aligned
+ok 1 - single-frame reduced-motion rotate and reset keep HTML tags aligned
+  ---
+  duration_ms: 140.410708
+  type: 'test'
+  ...
+# Subtest: CPU touch handler rotates from canvas and city labels, preserves scroll/pinch and cancels
+ok 2 - CPU touch handler rotates from canvas and city labels, preserves scroll/pinch and cancels
+  ---
+  duration_ms: 107.723417
+  type: 'test'
+  ...
+# Subtest: mouse pointer cancellation and unrelated pointers do not continue a drag
+ok 3 - mouse pointer cancellation and unrelated pointers do not continue a drag
+  ---
+  duration_ms: 73.617833
+  type: 'test'
+  ...
+# Subtest: multi-touch stays blocked until all fingers end, including outside-scene fingers
+ok 4 - multi-touch stays blocked until all fingers end, including outside-scene fingers
+  ---
+  duration_ms: 76.35625
+  type: 'test'
+  ...
+# Subtest: outside-scene second finger and partial touchcancel block the remaining finger
+ok 5 - outside-scene second finger and partial touchcancel block the remaining finger
+  ---
+  duration_ms: 64.812542
+  type: 'test'
+  ...
+# Subtest: long scroll and browser-owned gestures suppress clicks until release
+ok 6 - long scroll and browser-owned gestures suppress clicks until release
+  ---
+  duration_ms: 68.268083
+  type: 'test'
+  ...
+# Subtest: mouse and pen can drag from a city label, ignore unrelated pointers, and reset
+ok 7 - mouse and pen can drag from a city label, ignore unrelated pointers, and reset
+  ---
+  duration_ms: 95.8605
+  type: 'test'
+  ...
+# Subtest: immersive Perspective mode roundtrip preserves selected city, car and day route
+ok 8 - immersive Perspective mode roundtrip preserves selected city, car and day route
+  ---
+  duration_ms: 73.37925
+  type: 'test'
+  ...
+# Subtest: immersive city focus is finite, low to the ground, and faces its landmark
+ok 9 - immersive city focus is finite, low to the ground, and faces its landmark
+  ---
+  duration_ms: 128.9835
+  type: 'test'
+  ...
+# Subtest: immersive touch handlers rotate horizontally while scroll and multitouch preserve the view
+ok 10 - immersive touch handlers rotate horizontally while scroll and multitouch preserve the view
+  ---
+  duration_ms: 66.34225
+  type: 'test'
+  ...
+# Subtest: switching view mode cancels active drag and preserves a blocked multitouch gesture
+ok 11 - switching view mode cancels active drag and preserves a blocked multitouch gesture
+  ---
+  duration_ms: 66.881791
+  type: 'test'
+  ...
+# Subtest: normal-motion journey transition advances over frames and settles when dynamics are paused
+ok 12 - normal-motion journey transition advances over frames and settles when dynamics are paused
+  ---
+  duration_ms: 78.454042
+  type: 'test'
+  ...
+# Subtest: city, mode and reset interrupt an in-flight journey safely
+ok 13 - city, mode and reset interrupt an in-flight journey safely
+  ---
+  duration_ms: 64.880166
+  type: 'test'
+  ...
+# Subtest: 288×348: all allowed yaw/pitch corners keep the entire model in frame
+ok 14 - 288×348: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 90.307875
+  type: 'test'
+  ...
+# Subtest: 330×348: all allowed yaw/pitch corners keep the entire model in frame
+ok 15 - 330×348: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 83.488416
+  type: 'test'
+  ...
+# Subtest: 360×370: all allowed yaw/pitch corners keep the entire model in frame
+ok 16 - 360×370: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 82.879708
+  type: 'test'
+  ...
+# Subtest: 400×370: all allowed yaw/pitch corners keep the entire model in frame
+ok 17 - 400×370: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 93.323666
+  type: 'test'
+  ...
+# Subtest: 570×440: all allowed yaw/pitch corners keep the entire model in frame
+ok 18 - 570×440: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 85.779
+  type: 'test'
+  ...
+# Subtest: 1280×530: all allowed yaw/pitch corners keep the entire model in frame
+ok 19 - 1280×530: all allowed yaw/pitch corners keep the entire model in frame
+  ---
+  duration_ms: 83.326959
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 19
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1829.586
+
+> shandong-roadtrip-2026@0.0.0 build
+> node scripts/verify-assets.mjs && vite build
+
+Verified 20 licensed images, 36 original private XHS photos, font license, and four data files
+vite v6.4.2 building for production...
+transforming...
+✓ 4581 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/index.html                   0.62 kB │ gzip:   0.50 kB
+dist/client/assets/index-C_Jy7HzL.css   56.50 kB │ gzip:  12.39 kB
+dist/client/assets/index-CXd_y7-G.js   320.83 kB │ gzip:  99.13 kB
+dist/client/assets/scene-fnfObDBs.js   603.37 kB │ gzip: 158.98 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 1.78s

@@ -1,0 +1,29 @@
+{
+  "attraction_id": "qd_minjiang_road",
+  "title": "青岛 | 老牌美食街闽江路上的 | 河粉🍜",
+  "author": "安阳🌟",
+  "note_id": "6ab4a9b5000000000a027e75",
+  "image_index": 9,
+  "body_summary": "作者在闽江路北侧浮山巷小河餐厅实吃柠檬鸡肉河粉和鸡蛋卷，具体记录口味、服务、周二店休与江西路地铁口步行位置，明确从最后一图红门楼进入。",
+  "visual_evidence": "原照片可见红色浮山巷门楼、美食街文字、沿街商铺与居民楼，吻合正文指定闽江路入口；餐饮街区真实实吃帖。",
+  "media_note": "网站LIVE下载同时给出独立JPG与MP4；采用网站直接下载的原JPG，未从视频抽帧。",
+  "source_url": "https://www.xiaohongshu.com/explore/6ab4a9b5000000000a027e75",
+  "size_bytes": 359449,
+  "dimensions": {
+    "width": 1440,
+    "height": 1080
+  },
+  "sha256": "56a902bfb2e0efca94d03039f31736916d85247a9a701aae00ce749e50ba0562",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T04:04:41.064954+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "topic_kind": "food",
+  "local_file": "public/assets/places/xhs_qd_minjiang_road.jpg"
+}

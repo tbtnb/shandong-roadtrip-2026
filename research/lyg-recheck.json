@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-10-01",
+  "method": "Native Chrome browser id 1, independent tab 1770998069; DOM search and navigation; no download and no credential access",
+  "loginState": "logged-in session",
+  "items": [
+    {
+      "place": "连云港民主路文化街",
+      "title": "慢逛民主路，解锁港城烟火与复古浪漫",
+      "author": "巧克力爱好者",
+      "noteId": "6a4f6bf5000000001503ccf8",
+      "localImage": "public/assets/places/xhs_lyg_democracy_road.jpg",
+      "imageMatch": "visual exact match to first of six images: 民主路 iron gate, clouds, yellow stripe and 连云港之民主路老街 cover text",
+      "placeEvidence": "Current original post body gives 民主中路民主路文化街 and 复古铁艺大门门头",
+      "signedSearchResult": "current actual title search hit; opened original post, author and full body readable",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a4f6bf5000000001503ccf8",
+      "canonicalActualResult": "404 redirect, error_code 300031, 当前笔记暂时无法浏览",
+      "canonicalUsable": false,
+      "historyBoundary": "The supplied title, author and note ID are historical/source expectations; all three plus image identity were independently verified in current browser. Historical download mechanism was not re-run. Signed readability does not prove canonical readability.",
+      "anonymousTest": "not tested"
+    },
+    {
+      "place": "连云港盐河巷夜市",
+      "title": "连云港盐河巷夜市",
+      "author": "行走的摄影师",
+      "noteId": "6a508849000000001503d45d",
+      "localImage": "public/assets/places/xhs_lyg_yanhe_lane.jpg",
+      "imageMatch": "visual exact match to first of nine images: colorful hanging lanterns, red dining chairs, central hotel sign, same crowd and Photography by lower-left watermark",
+      "placeEvidence": "Current original post title and body explicitly describe 连云港盐河巷, night lanterns and street food",
+      "signedSearchResult": "current actual title search hit; disambiguated identical title by given note ID; opened original post, author and full body readable",
+      "canonicalUrl": "https://www.xiaohongshu.com/explore/6a508849000000001503d45d",
+      "canonicalActualResult": "404 redirect, error_code 300031, 当前笔记暂时无法浏览; page explicitly says 请打开小红书App扫码查看",
+      "canonicalUsable": false,
+      "historyBoundary": "The supplied title, author and note ID are historical/source expectations; all three plus image identity were independently verified in current browser. Historical download mechanism was not re-run. Signed readability does not prove canonical readability.",
+      "anonymousTest": "not tested"
+    }
+  ]
+}

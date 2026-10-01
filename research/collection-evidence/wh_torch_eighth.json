@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_torch_eighth",
+  "title": "📍 在火炬八街，等一场通往大海的日出",
+  "author": "拾光絮语",
+  "note_id": "6a390b880000000008033dd0",
+  "source_url": "https://www.xiaohongshu.com/explore/6a390b880000000008033dd0",
+  "body_summary": "正文明确火炬八街坡顶街道、海边秋千与货柜；清晨拍照经历和交通提醒。",
+  "visual_evidence": "首图道路坡向海面，两侧白楼及彩色蓝顶房，无遮挡单点街景，无攻略文字。",
+  "image_index": 1,
+  "bytes": 179750,
+  "width": 1080,
+  "height": 1295,
+  "sha256": "de8e82493f301f19583d88b356a0da0bfdbbbc986f889945b6ae8df7161fccd2",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:52:04.500772+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1295
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_torch_eighth.jpg"
+}

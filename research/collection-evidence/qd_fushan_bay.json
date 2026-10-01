@@ -1,0 +1,27 @@
+{
+  "attraction_id": "qd_fushan_bay",
+  "title": "青岛｜浮山湾夜景",
+  "author": "菠萝的海",
+  "note_id": "6a0075a7000000000803c4bd",
+  "body_summary": "作者体验52号顶楼酒吧拍浮山湾，正文描述平台视野限制、透明顶棚和低消费；器材Sony a6700+1655、华为Mate80。",
+  "visual_evidence": "原图为三幅无文字实景拼接，浮山湾弧形海岸、CBD天际线与亮灯建筑海港，包含日落和夜景；未裁切。",
+  "source_url": "https://www.xiaohongshu.com/explore/6a0075a7000000000803c4bd",
+  "image_index": 1,
+  "size_bytes": 331734,
+  "dimensions": {
+    "width": 1080,
+    "height": 1384
+  },
+  "sha256": "e2095f0e16620d0109a814e0296937105d6f0981cd161ddf9d9a7e6eec82195e",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T03:51:07.508153+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "local_file": "public/assets/places/xhs_qd_fushan_bay.jpg"
+}

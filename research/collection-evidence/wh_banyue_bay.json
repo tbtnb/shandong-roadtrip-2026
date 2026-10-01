@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_banyue_bay",
+  "title": "威海半月湾夯爆！",
+  "author": "媛",
+  "note_id": "6a0e90cd00000000360186ec",
+  "source_url": "https://www.xiaohongshu.com/explore/6a0e90cd00000000360186ec",
+  "body_summary": "正文为看海标签，作者评论明确拍摄地点为半月湾景区，评论回应沙滩今年变了样子。",
+  "visual_evidence": "首图为同一半月湾四幅海滩摄影拼图，草伞海滩、红顶临海建筑和离岸岛礁，无攻略文字。",
+  "image_index": 1,
+  "bytes": 475446,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "19f4121bff9f937a2891946c91368cb08e027bfb384055fd7e13d00cdbb3100b",
+  "download_method": "页面右键→下载图片，保持下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "同一turn /root/post_verification于2026-10-01独立导航无参数链接实测失败404",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:41:44.093256+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_banyue_bay.jpg"
+}

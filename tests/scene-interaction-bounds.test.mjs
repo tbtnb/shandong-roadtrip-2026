@@ -14,6 +14,8 @@ globalThis.window = dom.window;
 globalThis.document = dom.window.document;
 let callbackId = 0;
 let now = 0;
+// Drive click suppression deadlines deterministically, without real sleeps.
+Object.defineProperty(globalThis, 'performance', {configurable: true, value: {now: () => now}});
 const callbacks = new Map();
 globalThis.requestAnimationFrame = callback => {
   callbacks.set(++callbackId, callback);
@@ -78,9 +80,9 @@ function advanceFrames(count = 190) {
     pending.forEach(callback => callback(now));
   }
 }
-function pointer(target, type, x, y, pointerType = 'mouse') {
+function pointer(target, type, x, y, pointerType = 'mouse', pointerId = 1) {
   const event = new window.Event(type, {bubbles: true});
-  Object.assign(event, {button: 0, pointerType, clientX: x, clientY: y});
+  Object.assign(event, {button: 0, pointerType, pointerId, clientX: x, clientY: y});
   target.dispatchEvent(event);
 }
 function dragToLimit(yawSign, pitchSign) {
@@ -165,7 +167,7 @@ function touch(target,type,points,changed=points,cancelable=true){
  Object.assign(e,{touches:points.map(([identifier,clientX,clientY])=>({identifier,clientX,clientY})),changedTouches:changed.map(([identifier,clientX,clientY])=>({identifier,clientX,clientY}))});
  target.dispatchEvent(e);return e;
 }
-test('native touch path rotates from canvas and city labels, preserves scroll/pinch and cancels',()=>{
+test('CPU touch handler rotates from canvas and city labels, preserves scroll/pinch and cancels',()=>{
  const selected=[];const api=openScene(360,370,{onSelect:id=>selected.push(id)});
  try{
  const canvas=root.querySelector('canvas'),label=root.querySelector('.coastal-city-tag');
@@ -198,6 +200,7 @@ test('native touch path rotates from canvas and city labels, preserves scroll/pi
  api.reset();touch(canvas,'touchstart',[[4,100,100]]);touch(canvas,'touchmove',[[4,190,100]],[[4,190,100]],false);advanceFrames();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
  // Keyboard city activation is never suppressed by a preceding touch drag.
  label.click();assert.equal(selected.length,1);
+ touch(canvas,'touchend',[],[[4,190,100]]);
  touch(label,'touchstart',[[5,100,100]]);touch(label,'touchend',[],[[5,100,100]]);label.dispatchEvent(new window.MouseEvent('click',{bubbles:true,cancelable:true,detail:1}));assert.equal(selected.length,2,'a fresh tap after dragging is not swallowed');
  }finally{closeScene(api);}
 });
@@ -208,6 +211,249 @@ test('mouse pointer cancellation and unrelated pointers do not continue a drag',
  const stopped=lastCamera.matrixWorld.elements.slice();assert.notDeepEqual(stopped,initial);
  pointer(window,'pointermove',-300,200);advanceFrames();assert.deepEqual(lastCamera.matrixWorld.elements,stopped);
  api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+ }finally{closeScene(api);}
+});
+
+function physicalClick(target) {
+  const event = new window.MouseEvent('click', {bubbles: true, cancelable: true, detail: 1});
+  target.dispatchEvent(event);
+  return event;
+}
+
+test('multi-touch stays blocked until all fingers end, including outside-scene fingers', () => {
+  const selected = [], api = openScene(360,370,{onSelect:id=>selected.push(id)});
+  try {
+    const canvas=root.querySelector('canvas'),label=root.querySelector('.coastal-city-tag');
+    const initial=lastCamera.matrixWorld.elements.slice();
+    touch(label,'touchstart',[[1,100,100],[2,160,100]]);
+    touch(label,'touchend',[[2,160,100]],[[1,100,100]]);
+    // A scene-local touchstart can report a remaining finger whose touch began outside it.
+    touch(label,'touchstart',[[2,160,100]],[[2,160,100]]);
+    assert.equal(touch(label,'touchmove',[[2,250,100]]).defaultPrevented,false);
+    advanceFrames();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+    assert.equal(physicalClick(label).defaultPrevented,true);
+    assert.equal(selected.length,0);
+    touch(label,'touchend',[],[[2,250,100]]);
+    touch(canvas,'touchstart',[[3,100,100]]);
+    assert.equal(touch(canvas,'touchmove',[[3,180,100]]).defaultPrevented,true);
+    advanceFrames();assert.notDeepEqual(lastCamera.matrixWorld.elements,initial);
+    touch(canvas,'touchend',[],[[3,180,100]]);
+    touch(label,'touchstart',[[4,100,100]]);touch(label,'touchend',[],[[4,100,100]]);
+    assert.equal(physicalClick(label).defaultPrevented,false);assert.equal(selected.length,1);
+  } finally {closeScene(api);}
+});
+
+test('outside-scene second finger and partial touchcancel block the remaining finger', () => {
+  const selected=[],api=openScene(360,370,{onSelect:id=>selected.push(id)});
+  try {
+    const label=root.querySelector('.coastal-city-tag'),outside=document.body;
+    const initial=lastCamera.matrixWorld.elements.slice();
+    touch(label,'touchstart',[[1,100,100]]);
+    touch(outside,'touchstart',[[1,100,100],[2,300,500]],[[2,300,500]]);
+    assert.equal(touch(label,'touchmove',[[1,190,100],[2,300,500]]).defaultPrevented,false);
+    touch(outside,'touchcancel',[[1,100,100]],[[2,300,500]]);
+    touch(label,'touchmove',[[1,190,100]]);advanceFrames();
+    assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+    assert.equal(physicalClick(label).defaultPrevented,true);assert.equal(selected.length,0);
+    touch(outside,'touchend',[],[[1,190,100]]);
+    touch(label,'touchstart',[[3,100,100]]);
+    assert.equal(touch(label,'touchmove',[[3,180,100]]).defaultPrevented,true);
+    touch(label,'touchcancel',[],[[3,180,100]]);advanceFrames();
+    const stopped=lastCamera.matrixWorld.elements.slice();
+    touch(label,'touchmove',[[3,-300,100]]);advanceFrames();
+    assert.deepEqual(lastCamera.matrixWorld.elements,stopped);
+  } finally {closeScene(api);}
+});
+
+test('long scroll and browser-owned gestures suppress clicks until release', () => {
+  const selected = [], api = openScene(360,370,{onSelect:id=>selected.push(id)});
+  try {
+    const label=root.querySelector('.coastal-city-tag');
+    const initial=lastCamera.matrixWorld.elements.slice();
+    for (const mode of ['scroll','noncancelable','multi']) {
+      touch(label,'touchstart',[[1,100,100]]);
+      if(mode==='scroll')assert.equal(touch(label,'touchmove',[[1,102,180]]).defaultPrevented,false);
+      if(mode==='noncancelable')assert.equal(touch(label,'touchmove',[[1,180,102]],undefined,false).defaultPrevented,false);
+      if(mode==='multi')touch(label,'touchstart',[[1,100,100],[2,180,100]]);
+      advanceFrames(90); // > 800ms, while the same gesture is still active.
+      assert.deepEqual(lastCamera.matrixWorld.elements,initial,mode);
+      assert.equal(physicalClick(label).defaultPrevented,true,mode+' active click');
+      assert.equal(selected.length,0);
+      touch(label,'touchend',[],[[1,100,180],[2,180,100]]);
+      assert.equal(physicalClick(label).defaultPrevented,true,mode+' release click');
+      // Keyboard activation remains available during suppression.
+      label.click();assert.equal(selected.length,1);selected.length=0;
+    }
+  } finally {closeScene(api);}
+});
+
+test('mouse and pen can drag from a city label, ignore unrelated pointers, and reset', () => {
+  const selected = [], api = openScene(360,370,{onSelect:id=>selected.push(id)});
+  try {
+    const label=root.querySelector('.coastal-city-tag');
+    const initial=lastCamera.matrixWorld.elements.slice();
+    for (const kind of ['mouse','pen']) {
+      pointer(label,'pointerdown',100,100,kind,11);
+      pointer(window,'pointermove',200,120,kind,12);advanceFrames();
+      assert.deepEqual(lastCamera.matrixWorld.elements,initial,'unrelated pointer');
+      pointer(window,'pointermove',190,120,kind,11);advanceFrames();
+      assert.notDeepEqual(lastCamera.matrixWorld.elements,initial,kind+' label drag');
+      pointer(window,'pointerup',190,120,kind,11);
+      assert.equal(physicalClick(label).defaultPrevented,true);assert.equal(selected.length,0);
+      api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+      pointer(label,'pointerdown',100,100,kind,11);
+      pointer(window,'pointerup',100,100,kind,11);
+      physicalClick(label);assert.equal(selected.length,1,kind+' fresh click');selected.length=0;
+      pointer(label,'pointerdown',100,100,kind,11);
+      pointer(window,'pointermove',190,120,kind,11);pointer(window,'pointercancel',190,120,kind,11);advanceFrames();
+      const stopped=lastCamera.matrixWorld.elements.slice();
+      pointer(window,'pointermove',-300,200,kind,11);advanceFrames();
+      assert.deepEqual(lastCamera.matrixWorld.elements,stopped,kind+' canceled');
+      api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+    }
+  } finally {closeScene(api);}
+});
+
+function sceneState() {
+  const car=lastScene.getObjectByName('route-car'),route=lastScene.getObjectByName('day-route-highlight');
+  return {selected:root.querySelector('[data-selected="true"]').dataset.city,
+    carPosition:car.position.toArray(),carRotation:car.rotation.toArray(),
+    routeChildren:route.children.map(x=>x.uuid)};
+}
+function assertFiniteCamera() {
+  assert.ok(lastCamera.position.toArray().every(Number.isFinite));
+  assert.ok(lastCamera.matrixWorld.elements.every(Number.isFinite));
+  assert.ok(lastCamera.projectionMatrix.elements.every(Number.isFinite));
+  assert.ok(lastCamera.near>0 && lastCamera.far>lastCamera.near);
+}
+
+test('immersive Perspective mode roundtrip preserves selected city, car and day route',()=>{
+ const api=openScene(360,370);
+ try{
+   api.selectCity('qingdao');api.setDayRoute('qingdao','weihai');
+   const before=sceneState();
+   assert.equal(lastCamera.isOrthographicCamera,true);
+   const overview=lastCamera.matrixWorld.elements.slice();
+   api.setViewMode('immersive');assert.equal(lastCamera.isPerspectiveCamera,true);assertFiniteCamera();
+   assert.deepEqual(sceneState(),before);
+   api.rotate(1);advanceFrames();assertFiniteCamera();
+   api.setViewMode('overview');assert.equal(lastCamera.isOrthographicCamera,true);assertFiniteCamera();
+   assert.deepEqual(sceneState(),before);
+   api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,overview);
+   api.setViewMode('immersive');const immersive=lastCamera.matrixWorld.elements.slice();
+   api.rotate(-1);advanceFrames();assert.notDeepEqual(lastCamera.matrixWorld.elements,immersive);
+   api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,immersive);
+   assert.deepEqual(sceneState(),before);
+ }finally{closeScene(api);}
+});
+
+test('immersive city focus is finite, low to the ground, and faces its landmark',()=>{
+ for(const [width,height] of [[360,370],[1280,530]]){
+ const api=openScene(width,height,{viewMode:'immersive'});
+ try{
+   for(const id of ['wuhu','lianyungang','rizhao','qingdao','weihai']){
+     const previous=lastCamera.position.toArray();api.selectCity(id);assertFiniteCamera();
+     assert.equal(lastCamera.isPerspectiveCamera,true);
+     assert.equal(lastCamera.name,'coastal-immersive-camera');
+     assert.equal(lastCamera.userData.focusCity,id);
+     assert.ok(Math.abs(lastCamera.aspect-width/height)<1e-9);
+     assert.ok(Array.isArray(lastCamera.userData.focusPoint));
+     const focus=new Three.Vector3(...lastCamera.userData.focusPoint),eye=lastCamera.position;
+     assert.ok(focus.toArray().every(Number.isFinite));
+     assert.ok(eye.y-lastCamera.userData.groundHeight>0 && eye.y-lastCamera.userData.groundHeight<1.4,'eye remains at walking height');
+     const toward=focus.clone().sub(eye),forward=lastCamera.getWorldDirection(new Three.Vector3());
+     assert.ok(toward.dot(forward)>0,'landmark is in front of the viewer');
+     assert.ok(Math.abs(toward.y)/Math.max(.001,Math.hypot(toward.x,toward.z))<.65,'view is shallow rather than top-down');
+     const projectedFocus=focus.clone().project(lastCamera);
+     assert.ok(Math.abs(projectedFocus.x)<1 && Math.abs(projectedFocus.y)<1 && projectedFocus.z>-1 && projectedFocus.z<1,'focused landmark projects into visible frustum');
+     assert.notDeepEqual(eye.toArray(),previous,'selectCity moves the viewer');
+     const visibleLabels=[...root.querySelectorAll('.coastal-city-tag')].filter(x=>x.style.display!=='none'&&!x.hidden);
+     assert.equal(visibleLabels.length,1);assert.equal(visibleLabels[0].dataset.city,id);
+   }
+   api.setViewMode('overview');assert.equal(lastCamera.name,'coastal-overview-camera');
+   assert.equal([...root.querySelectorAll('.coastal-city-tag')].filter(x=>x.style.display!=='none'&&!x.hidden).length,5);
+ }finally{closeScene(api);}
+ }
+});
+
+test('immersive touch handlers rotate horizontally while scroll and multitouch preserve the view',()=>{
+ const selected=[],api=openScene(360,370,{viewMode:'immersive',onSelect:id=>selected.push(id)});
+ try{
+   assert.equal(lastCamera.isPerspectiveCamera,true);assertFiniteCamera();
+   const canvas=root.querySelector('canvas'),label=root.querySelector('[data-selected="true"]');
+   const initial=lastCamera.matrixWorld.elements.slice();
+   touch(canvas,'touchstart',[[1,100,100]]);
+   assert.equal(touch(canvas,'touchmove',[[1,102,180]]).defaultPrevented,false);
+   assert.equal(touch(canvas,'touchmove',[[1,240,190]]).defaultPrevented,false);
+   touch(canvas,'touchend',[],[[1,240,190]]);advanceFrames();
+   assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+   touch(label,'touchstart',[[2,100,100]]);
+   assert.equal(touch(label,'touchmove',[[2,180,102]]).defaultPrevented,true);
+   advanceFrames();assert.notDeepEqual(lastCamera.matrixWorld.elements,initial);assertFiniteCamera();
+   touch(label,'touchend',[],[[2,180,102]]);physicalClick(label);assert.equal(selected.length,0);
+   api.reset();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+   touch(canvas,'touchstart',[[3,100,100]]);
+   touch(document.body,'touchstart',[[3,100,100],[4,300,500]],[[4,300,500]]);
+   touch(document.body,'touchend',[[3,100,100]],[[4,300,500]]);
+   assert.equal(touch(canvas,'touchmove',[[3,240,100]]).defaultPrevented,false);
+   advanceFrames();assert.deepEqual(lastCamera.matrixWorld.elements,initial);
+   touch(canvas,'touchend',[],[[3,240,100]]);
+   touch(label,'touchstart',[[5,100,100]]);touch(label,'touchend',[],[[5,100,100]]);
+   physicalClick(label);assert.equal(selected.length,1);
+ }finally{closeScene(api);}
+});
+
+test('switching view mode cancels active drag and preserves a blocked multitouch gesture',()=>{
+ const selected=[],api=openScene(360,370,{viewMode:'immersive',onSelect:id=>selected.push(id)});
+ try{
+   const canvas=root.querySelector('canvas'),label=root.querySelector('[data-selected="true"]');
+   touch(canvas,'touchstart',[[1,100,100]]);touch(canvas,'touchmove',[[1,180,100]]);advanceFrames();
+   api.setViewMode('overview');const overview=lastCamera.matrixWorld.elements.slice();
+   touch(canvas,'touchmove',[[1,260,100]]);advanceFrames();
+   assert.deepEqual(lastCamera.matrixWorld.elements,overview);
+   touch(canvas,'touchend',[],[[1,260,100]]);
+   touch(canvas,'touchstart',[[2,100,100],[3,200,100]]);
+   api.setViewMode('immersive');const blocked=lastCamera.matrixWorld.elements.slice();
+   touch(canvas,'touchend',[[2,100,100]],[[3,200,100]]);
+   assert.equal(touch(canvas,'touchmove',[[2,260,100]]).defaultPrevented,false);
+   advanceFrames();assert.deepEqual(lastCamera.matrixWorld.elements,blocked);
+   physicalClick(label);assert.equal(selected.length,0);
+   touch(canvas,'touchend',[],[[2,260,100]]);
+   touch(label,'touchstart',[[4,100,100]]);touch(label,'touchend',[],[[4,100,100]]);
+   physicalClick(label);assert.equal(selected.length,1);
+ }finally{closeScene(api);}
+});
+
+test('normal-motion journey transition advances over frames and settles when dynamics are paused',()=>{
+ const api=openScene(360,370,{reducedMotion:false});
+ try{
+   api.setMotion(false);const overview=lastCamera.position.toArray();
+   api.setViewMode('immersive');advanceFrames(12);
+   assertFiniteCamera();assert.equal(lastCamera.userData.transitioning,true);const middle=lastCamera.position.toArray();
+   assert.notDeepEqual(middle,overview,'journey progresses over frames');
+   advanceFrames(100);assertFiniteCamera();
+   assert.equal(lastCamera.isPerspectiveCamera,true);assert.equal(lastCamera.userData.transitioning,false);
+   const final=lastCamera.matrixWorld.elements.slice();
+   assert.notDeepEqual(lastCamera.position.toArray(),middle,'journey has an intermediate camera position');
+   assert.ok(lastCamera.position.y<3,'journey finishes at walking height');
+   advanceFrames(90);assert.deepEqual(lastCamera.matrixWorld.elements,final,'paused dynamics cannot strand transition or keep camera moving');
+ }finally{closeScene(api);}
+});
+
+test('city, mode and reset interrupt an in-flight journey safely',()=>{
+ const api=openScene(360,370,{reducedMotion:false});
+ try{
+   api.setMotion(false);api.setDayRoute('qingdao','weihai');
+   const route=sceneState();
+   api.setViewMode('immersive');advanceFrames(8);api.selectCity('qingdao');advanceFrames(110);
+   assertFiniteCamera();assert.equal(lastCamera.userData.focusCity,'qingdao');assert.ok(lastCamera.position.y<3);
+   assert.deepEqual(sceneState().carPosition,route.carPosition);assert.deepEqual(sceneState().routeChildren,route.routeChildren);
+   api.setViewMode('overview');advanceFrames(8);api.setViewMode('immersive');advanceFrames(8);api.reset();advanceFrames(110);
+   assertFiniteCamera();assert.equal(lastCamera.isPerspectiveCamera,true);assert.equal(lastCamera.userData.focusCity,'qingdao');
+   assert.equal(lastCamera.userData.transitioning,false);const reset=lastCamera.matrixWorld.elements.slice();advanceFrames(90);assert.deepEqual(lastCamera.matrixWorld.elements,reset);
+   api.setViewMode('overview');advanceFrames(110);
+   assertFiniteCamera();assert.equal(lastCamera.isOrthographicCamera,true);
+   assert.equal(sceneState().selected,'qingdao');assert.deepEqual(sceneState().carPosition,route.carPosition);
  }finally{closeScene(api);}
 });
 

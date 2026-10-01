@@ -62,6 +62,18 @@ test('the Qingdao core and Wuhu landmark keep single-place references with hones
 
 test('private-reference assets preserve source identity without claiming a public license',()=>{
  const media=JSON.parse(fs.readFileSync('public/data/attraction-media.json'));const allowed=JSON.parse(fs.readFileSync('PRIVATE-REFERENCE-FILES.json'));
- const imgs=media.attractions.flatMap(a=>a.private_reference_images||[]);assert.equal(imgs.length,2);
+ const imgs=media.attractions.flatMap(a=>a.private_reference_images||[]);assert.ok(imgs.length>=2);assert.equal(new Set(imgs.map(i=>i.url)).size,imgs.length);
  for(const i of imgs){assert.equal(i.reuse_status,'private_personal_reference');assert.equal(i.public_reuse_permission,'not_established');assert.ok(i.author&&i.note_id&&i.attribution);assert.equal(new URL(i.source_url).search,'');assert.ok(allowed.includes(i.url));assert.ok(fs.statSync('public/'+i.url).size>0);}
+});
+
+// Photo-to-post identity matters: one verified picture must not link to a different note.
+test('private photos bind to a dedicated note and report the actual parameter-free link test',()=>{
+ const m=JSON.parse(fs.readFileSync('public/data/attraction-media.json'));
+ for(const a of m.attractions)for(const i of a.private_reference_images||[]){
+  const n=a.xhs_notes.find(n=>n.note_id===i.note_id);assert.ok(n,a.id);
+  assert.equal(n.author,i.author);assert.equal(n.url,i.source_url);
+  assert.ok(n.dedicated_scenery_post||n.topic_kind==='food',a.id);
+  assert.equal(typeof n.canonical_readable_logged_in,'boolean',a.id);
+  assert.ok(n.link_checked_at&&n.link_status_label,a.id);
+ }
 });

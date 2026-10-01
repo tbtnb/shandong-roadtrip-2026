@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_oulefang",
+  "title": "欧乐坊清悠面馆海肠捞饭",
+  "author": "不结絮果",
+  "note_id": "6908911e0000000004012dc6",
+  "source_url": "https://www.xiaohongshu.com/explore/6908911e0000000004012dc6",
+  "body_summary": "作者实吃欧乐坊清悠面馆，记录海肠捞饭25元、海参捞饭28元，老板补饭加汁，门口生蚝摊10元4个；评论回复海肠脆脆的好吃。",
+  "visual_evidence": "第3张静态实拍清悠面馆夜间店面，海肠捞饭招牌和25元招牌菜摊位，与正文店名吻合；前2张LIVE未采用。",
+  "image_index": 3,
+  "bytes": 375377,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "340209a1a05ea045c9d44cbff21580ad9fc0761b719d2e684e77c80ffd0cf467",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "实际独立导航无参数URL后显示当前笔记暂时无法浏览，请打开小红书App扫码查看。",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T04:10:18.446728+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "food",
+  "local_file": "public/assets/places/xhs_wh_oulefang.jpg"
+}

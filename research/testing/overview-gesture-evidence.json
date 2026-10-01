@@ -1,0 +1,636 @@
+[
+  {
+    "case": "baseline",
+    "state": {
+      "scroll": 33,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "80.1918px",
+          "y": "306.286px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "111.943px",
+          "y": "257.286px",
+          "selected": "true"
+        },
+        {
+          "city": "rizhao",
+          "x": "123.52px",
+          "y": "208.286px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "132.816px",
+          "y": "159.286px",
+          "selected": "false"
+        },
+        {
+          "city": "weihai",
+          "x": "171.377px",
+          "y": "97.3031px",
+          "selected": "false"
+        }
+      ]
+    }
+  },
+  {
+    "case": "label-horizontal-drag",
+    "state": {
+      "scroll": 33,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "104.361px",
+          "y": "313.336px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "127.864px",
+          "y": "264.336px",
+          "selected": "true"
+        },
+        {
+          "city": "rizhao",
+          "x": "131.239px",
+          "y": "215.336px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.158px",
+          "y": "166.336px",
+          "selected": "false"
+        },
+        {
+          "city": "weihai",
+          "x": "150.859px",
+          "y": "100.021px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchmove",
+        "cancelable": true,
+        "prevented": true,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "fresh-label-tap-after-drag",
+    "state": {
+      "scroll": 33,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "104.361px",
+          "y": "313.336px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "127.864px",
+          "y": "264.336px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "131.239px",
+          "y": "215.336px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.158px",
+          "y": "166.336px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "150.859px",
+          "y": "100.021px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 0
+      },
+      {
+        "type": "click",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true
+      }
+    ]
+  },
+  {
+    "case": "before-multi",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "80.1918px",
+          "y": "306.286px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "111.943px",
+          "y": "257.286px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "123.52px",
+          "y": "208.286px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "132.816px",
+          "y": "159.286px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "171.377px",
+          "y": "97.3031px",
+          "selected": "false"
+        }
+      ]
+    }
+  },
+  {
+    "case": "outside-scene-second-finger-and-one-remaining",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "80.1918px",
+          "y": "306.286px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "111.943px",
+          "y": "257.286px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "123.52px",
+          "y": "208.286px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "132.816px",
+          "y": "159.286px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "171.377px",
+          "y": "97.3031px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 2
+      },
+      {
+        "type": "touchmove",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 2
+      },
+      {
+        "type": "touchmove",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 2
+      },
+      {
+        "type": "pointercancel",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true
+      },
+      {
+        "type": "pointercancel",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true
+      },
+      {
+        "type": "touchend",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 2
+      },
+      {
+        "type": "touchend",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "browser-touchcancel",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "99.5697px",
+          "y": "311.977px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "124.701px",
+          "y": "262.977px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "129.634px",
+          "y": "213.977px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.694px",
+          "y": "164.977px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "154.642px",
+          "y": "99.2884px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchmove",
+        "cancelable": true,
+        "prevented": true,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "pointercancel",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true
+      },
+      {
+        "type": "touchcancel",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 0
+      }
+    ]
+  },
+  {
+    "case": "browser-mouse-label-drag",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "98.9393px",
+          "y": "311.795px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "124.285px",
+          "y": "262.795px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "129.425px",
+          "y": "213.795px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.77px",
+          "y": "164.795px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "155.149px",
+          "y": "99.1368px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": []
+  },
+  {
+    "case": "browser-pen-label-drag",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "98.9393px",
+          "y": "311.795px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "124.285px",
+          "y": "262.795px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "129.425px",
+          "y": "213.795px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.77px",
+          "y": "164.795px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "155.149px",
+          "y": "99.1368px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "click",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true
+      }
+    ]
+  },
+  {
+    "case": "verified-trusted-pen-label-drag",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "98.9393px",
+          "y": "311.795px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "124.285px",
+          "y": "262.795px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "129.425px",
+          "y": "213.795px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "129.77px",
+          "y": "164.795px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "155.149px",
+          "y": "99.1368px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "pointerdown",
+        "pointerType": "pen",
+        "trusted": true
+      },
+      {
+        "type": "pointermove",
+        "pointerType": "pen",
+        "trusted": true
+      },
+      {
+        "type": "pointerup",
+        "pointerType": "pen",
+        "trusted": true
+      }
+    ]
+  },
+  {
+    "case": "before-vertical-stable",
+    "state": {
+      "scroll": 85,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "80.1918px",
+          "y": "306.286px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "111.943px",
+          "y": "257.286px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "123.52px",
+          "y": "208.286px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "132.816px",
+          "y": "159.286px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "171.377px",
+          "y": "97.3031px",
+          "selected": "false"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stable-vertical-scroll",
+    "state": {
+      "scroll": 256.5,
+      "labels": [
+        {
+          "city": "wuhu",
+          "x": "80.1918px",
+          "y": "306.286px",
+          "selected": "false"
+        },
+        {
+          "city": "lianyungang",
+          "x": "111.943px",
+          "y": "257.286px",
+          "selected": "false"
+        },
+        {
+          "city": "rizhao",
+          "x": "123.52px",
+          "y": "208.286px",
+          "selected": "false"
+        },
+        {
+          "city": "qingdao",
+          "x": "132.816px",
+          "y": "159.286px",
+          "selected": "true"
+        },
+        {
+          "city": "weihai",
+          "x": "171.377px",
+          "y": "97.3031px",
+          "selected": "false"
+        }
+      ]
+    },
+    "events": [
+      {
+        "type": "pointerdown",
+        "pointerType": "touch",
+        "trusted": true
+      },
+      {
+        "type": "touchstart",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "pointermove",
+        "pointerType": "touch",
+        "trusted": true
+      },
+      {
+        "type": "touchmove",
+        "cancelable": true,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "pointercancel",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true
+      },
+      {
+        "type": "touchmove",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 1
+      },
+      {
+        "type": "touchend",
+        "cancelable": false,
+        "prevented": false,
+        "trusted": true,
+        "touches": 0
+      }
+    ]
+  }
+]

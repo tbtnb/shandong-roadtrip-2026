@@ -1,0 +1,29 @@
+{
+  "attraction_id": "ha_yumatou",
+  "title": "淮安城市漫步｜御码头",
+  "author": "汉堡薯条大王",
+  "note_id": "683ef8de000000002300e6f0",
+  "source_url": "https://www.xiaohongshu.com/explore/683ef8de000000002300e6f0",
+  "body_summary": "作者记录御码头城市散步，涉及赛珍珠声音博物馆、御码头运河书房、花间堂与沿街咖啡店。",
+  "visual_evidence": "首图牌坊清晰题字“淮安御码头美食街”，红灯笼与步行街实景；不是扬州御码头。",
+  "image_index": 1,
+  "bytes": 554809,
+  "dimensions": {
+    "width": 1620,
+    "height": 1080
+  },
+  "sha256": "b1ffebf2feb440aa2792a3afef316665de2b39f56b413844644ad64d172e525e",
+  "download_method": "小红书网页原帖照片右键→下载图片",
+  "link_status": {
+    "canonical_readable": false,
+    "state": "app_scan_required",
+    "label": "已登录Chrome实测：当前笔记暂时无法浏览，请打开小红书App扫码查看；带参数搜索入口原帖可读"
+  },
+  "checked_at": "2026-10-01T03:53:05.561006+00:00",
+  "watermark": "原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+  "dedicated_topic_verified": true,
+  "visual_verified": true,
+  "public_publish_allowed": false,
+  "usage_scope": "用户私人旅行参考",
+  "local_file": "public/assets/places/xhs_ha_yumatou.jpg"
+}

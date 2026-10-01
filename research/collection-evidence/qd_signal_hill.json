@@ -1,0 +1,27 @@
+{
+  "attraction_id": "qd_signal_hill",
+  "title": "青岛信号山爬了，最佳机位也找到了",
+  "author": "豆小蔻（殳影）",
+  "note_id": "6ab5e12500000000150023fa",
+  "image_index": 3,
+  "body_summary": "作者爬信号山，十分钟登顶一路阶梯，建议看到两个大红球后沿图3指示走、右拐至老城俯瞰机位，图1为基督教堂。",
+  "visual_evidence": "第3图是信号山标志红色球形观景塔及石砌塔身，山頂游客；含作者原粉色箭头指示但主体是实拍，自身地点清晰。",
+  "source_url": "https://www.xiaohongshu.com/explore/6ab5e12500000000150023fa",
+  "size_bytes": 550473,
+  "dimensions": {
+    "width": 1440,
+    "height": 1080
+  },
+  "sha256": "0676a70d04a4ccf82c184103217c69407219fe5da84a5f0664341b45d8b55c47",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T03:53:11.262584+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "local_file": "public/assets/places/xhs_qd_signal_hill.jpg"
+}

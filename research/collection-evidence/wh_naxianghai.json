@@ -1,0 +1,31 @@
+{
+  "attraction_id": "wh_naxianghai",
+  "title": "那香海，终于懂你了",
+  "author": "六月未老",
+  "note_id": "6a6f5be00000000026035342",
+  "source_url": "https://www.xiaohongshu.com/explore/6a6f5be00000000026035342",
+  "body_summary": "从成山头途经那香海，15:30沙地烫脚，海水凉，现场游玩玩沙踏水，沿路风车。",
+  "visual_evidence": "首图为沙滩浅水游泳圈游客、浪花，10张实拍专帖，无攻略文字。",
+  "image_index": 1,
+  "bytes": 597954,
+  "width": 1080,
+  "height": 1440,
+  "sha256": "c08baafdda945c93a8df020dca816dd2ca1e44c53c3341cbb08570e139f3171f",
+  "download_method": "页面右键→下载图片，正常浏览器下载原文件复制",
+  "link_status": {
+    "signed_search_open": "readable",
+    "canonical": "独立标签无参数实测当前笔记暂时无法浏览/App扫码",
+    "mobile": "not_tested",
+    "canonical_readable": false,
+    "signed_search_read_verified": true
+  },
+  "checked_at": "2026-10-01T03:55:45.937093+00:00",
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "watermark": "本地原图已目视核对；原始下载文件与其中标识完整保留，无裁剪、涂抹或修改。",
+  "signed_search_read_verified": true,
+  "topic_kind": "scenery",
+  "local_file": "public/assets/places/xhs_wh_naxianghai.jpg"
+}

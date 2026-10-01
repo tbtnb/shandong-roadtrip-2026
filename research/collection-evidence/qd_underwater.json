@@ -1,0 +1,28 @@
+{
+  "attraction_id": "qd_underwater",
+  "title": "青岛海底世界",
+  "author": "怪味萌小豆",
+  "note_id": "6a069edd000000003603290b",
+  "body_summary": "作者带孩子亲访青岛海底世界，详细记录游客中心、地下穿行、多展馆、旋转海底隧道和标本馆，评价人少、亲子体验及未赶上表演。",
+  "visual_evidence": "馆内水下实际拍摄的鳐鱼、鱼群与岩石，可对应正文头顶鱼游过的海底隧道体验；纯摄影没有攻略封面文字。",
+  "media_note": "LIVE右键下载图片同时保存独立原JPG与MP4；采用网站直接下载原JPG，不从视频抽帧。",
+  "source_url": "https://www.xiaohongshu.com/explore/6a069edd000000003603290b",
+  "image_index": 1,
+  "size_bytes": 169404,
+  "dimensions": {
+    "width": 1080,
+    "height": 1440
+  },
+  "sha256": "685cff4c4c8f7ef83ed1b7ad57f00cfb66d8bdaaf069d77b6ca9bf50b684c298",
+  "download_method": "网站照片右键 → 下载图片；已开始下载，Downloads原文件落盘原样复制",
+  "link_status": {
+    "canonical": "404_app_required",
+    "message": "当前笔记暂时无法浏览；请打开小红书App扫码查看",
+    "environment": "当前已登录Chrome原生浏览器；未验证匿名/手机环境",
+    "signed_search_read_verified": true,
+    "canonical_readable": false
+  },
+  "checked_at": "2026-10-01T04:10:10.537037+00:00",
+  "watermark": "保留网站下载原文件，不裁切不修改；保留原有水印和文字",
+  "local_file": "public/assets/places/xhs_qd_underwater.jpg"
+}

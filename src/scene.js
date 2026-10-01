@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
 /** A small, real-time paper world. Everything in the diorama is modeled geometry. */
-export function createScene(container, { onSelect = () => {}, onReady = () => {}, onError = () => {}, reducedMotion = false } = {}) {
+export function createScene(container, { onSelect = () => {}, onReady = () => {}, onError = () => {}, reducedMotion = false, viewMode = 'overview' } = {}) {
   if (!container.style.position) container.style.position = 'relative';
   const scene = new THREE.Scene();
   const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
@@ -17,7 +17,12 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   renderer.domElement.style.cssText = 'display:block;width:100%;height:100%;touch-action:pan-y pinch-zoom;outline:none;';
   container.appendChild(renderer.domElement);
   const contextLost=()=>{visible=false;onError();};renderer.domElement.addEventListener('webglcontextlost',contextLost);
-  const camera = new THREE.OrthographicCamera(-7, 7, 8, -8, .1, 90);
+  const overviewCamera = new THREE.OrthographicCamera(-7, 7, 8, -8, .1, 90);
+  overviewCamera.name='coastal-overview-camera';
+  const immersiveCamera = new THREE.PerspectiveCamera(60,1,.05,90);
+  immersiveCamera.name='coastal-immersive-camera';
+  let mode=viewMode==='immersive'?'immersive':'overview';
+  let camera=mode==='immersive'?immersiveCamera:overviewCamera;
   const world = new THREE.Group(); scene.add(world);
   const staticRoot = new THREE.Group(); world.add(staticRoot);
   const movingRoot = new THREE.Group(); world.add(movingRoot);
@@ -543,14 +548,14 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
 
   let selected='weihai',motion=!reducedMotion,disposed=false,width=1,height=1,raf=0,lastTime=0,time=0;
   let cameraYaw=0,cameraPitch=0,targetYaw=0,targetPitch=0,drag=null,dragged=false,visible=true;
-  let carProgress=0,targetCarProgress=0,carDirection=1;
+  let carProgress=0,targetCarProgress=0,carDirection=1,entry=null;
   const cityProgress=Object.fromEntries(cityData.map(c=>{let best=0,dist=Infinity;const pos=new THREE.Vector3(...c.p);for(let i=0;i<=600;i++){const t=i/600,d=routeCurve.getPointAt(t).distanceToSquared(pos);if(d<dist){dist=d;best=t;}}return[c.id,best]}));
   const routeFocus=new THREE.Group();routeFocus.name='day-route-highlight';movingRoot.add(routeFocus);
   const focusMat=new THREE.MeshBasicMaterial({color:'#b95e3e',toneMapped:false});materialCache.set('day-route-focus',focusMat);
   const ringMat=new THREE.MeshBasicMaterial({color:'#246478',transparent:true,opacity:.78,toneMapped:false,side:THREE.DoubleSide});materialCache.set('car-halo',ringMat);
   const carHalo=mesh(new THREE.RingGeometry(.20,.235,24),ringMat,0,0,0,movingRoot);carHalo.rotation.x=-Math.PI/2;
   function setDayRoute(fromId,toId){
-    const from=cityProgress[fromId],to=cityProgress[toId];if(from===undefined||to===undefined)return;
+    const from=cityProgress[fromId],to=cityProgress[toId];if(from===undefined||to===undefined)return;finishEntry();
     routeFocus.traverse(o=>{if(o.isMesh)o.geometry.dispose()});routeFocus.clear();
     if(Math.abs(to-from)>.005){
       const pts=Array.from({length:72},(_,i)=>{const p=routeCurve.getPointAt(from+(to-from)*i/71);p.y+=.065;return p;});
@@ -559,22 +564,63 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     }
     carProgress=from;setDestination(toId);
   }
-  function setDestination(id){if(cityProgress[id]===undefined)return;targetCarProgress=cityProgress[id];carDirection=targetCarProgress>=carProgress?1:-1;if(!motion||reducedMotion)carProgress=targetCarProgress;render(0);}
+  function setDestination(id){if(cityProgress[id]===undefined)return;finishEntry();targetCarProgress=cityProgress[id];carDirection=targetCarProgress>=carProgress?1:-1;if(!motion||reducedMotion)carProgress=targetCarProgress;render(0);}
   const projected=new THREE.Vector3(),raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();
+  // Standing on the paper road beside each city, facing its modeled landmark.
+  // City changes jump between safe viewpoints instead of flying through buildings.
+  const immersiveViews={
+    wuhu:{eye:[-.9,1.43,7],focus:[-2.05,1.75,5.45],ground:.59},
+    lianyungang:{eye:[.2,1.43,5],focus:[1.66,.98,4.04],ground:.59},
+    rizhao:{eye:[-.15,1.43,3.65],focus:[1.10,1.34,1.83],ground:.59},
+    qingdao:{eye:[.2,1.43,1.9],focus:[1.25,1.25,.32],ground:.59},
+    weihai:{eye:[1.43,2.05,-3.4],focus:[1.66,2.08,-5.22],ground:1.21},
+  };
+  const immersiveEye=new THREE.Vector3(),immersiveDirection=new THREE.Vector3(),immersiveTarget=new THREE.Vector3();
   const baseCamera=new THREE.Vector3(5.7,23.8,21.8),lookAt=new THREE.Vector3(0,.48,-.05);
+  function finishEntry(){
+    if(!entry)return;entry=null;immersiveCamera.fov=60;immersiveCamera.updateProjectionMatrix();
+    immersiveCamera.userData.transitioning=false;immersiveCamera.userData.transitionProgress=1;
+  }
+  function yawLimit(){return mode==='immersive'?.68:.25;}
   function positionCamera(){
+    if(mode==='immersive'){
+      const view=immersiveViews[selected];
+      camera.userData.focusCity=selected;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
+      if(entry){
+        const progress=Math.min(1,entry.elapsed/1.15),ease=progress*progress*(3-2*progress);
+        camera.position.copy(entry.eye).lerp(immersiveEye.fromArray(view.eye),ease);
+        immersiveTarget.copy(entry.focus).lerp(immersiveDirection.fromArray(view.focus),ease);camera.lookAt(immersiveTarget);
+        camera.fov=THREE.MathUtils.lerp(entry.fov,60,ease);camera.updateProjectionMatrix();
+        camera.userData.transitioning=true;camera.userData.transitionProgress=progress;camera.updateMatrixWorld(true);return;
+      }
+      camera.userData.transitioning=false;camera.userData.transitionProgress=1;immersiveEye.fromArray(view.eye);
+      immersiveDirection.fromArray(view.focus).sub(immersiveEye);
+      immersiveDirection.applyAxisAngle(new THREE.Vector3(0,1,0),cameraYaw);
+      immersiveDirection.y+=cameraPitch*immersiveDirection.length();
+      immersiveTarget.copy(immersiveEye).add(immersiveDirection);
+      camera.position.copy(immersiveEye);camera.lookAt(immersiveTarget);
+      camera.userData.focusCity=selected;camera.userData.groundHeight=view.ground;camera.userData.focusPoint=[...view.focus];
+      camera.updateMatrixWorld(true);return;
+    }
     const offset=baseCamera.clone();if(width/height>1.75)offset.x=12;else if(width/height<.95)offset.x=2.4;offset.applyAxisAngle(new THREE.Vector3(0,1,0),cameraYaw);offset.y+=cameraPitch*10;camera.position.copy(offset);camera.lookAt(lookAt);camera.updateMatrixWorld(true);
   }
   function resize(){
-    if(disposed)return;const rect=container.getBoundingClientRect();width=Math.max(1,rect.width);height=Math.max(1,rect.height);
+    if(disposed)return;finishEntry();const rect=container.getBoundingClientRect();width=Math.max(1,rect.width);height=Math.max(1,rect.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,width<600?1.6:2));renderer.setSize(width,height,false);
     const aspect=width/height;
     const vertical=aspect<.8?16.65:aspect<1.05?16.0:aspect>1.75?14.6:15.4;
     // Projected bounds include the rings and elevated lighthouse; narrow views remain uncut.
     const halfH=Math.max(vertical/2,(aspect<.95?6.2:7.0)/aspect)*(width<320?1.18:width<600?1.10:1),halfW=halfH*aspect;
-    camera.left=-halfW;camera.right=halfW;camera.top=halfH;camera.bottom=-halfH;camera.updateProjectionMatrix();positionCamera();render(0);
+    overviewCamera.left=-halfW;overviewCamera.right=halfW;overviewCamera.top=halfH;overviewCamera.bottom=-halfH;overviewCamera.updateProjectionMatrix();immersiveCamera.aspect=aspect;immersiveCamera.updateProjectionMatrix();positionCamera();render(0);
   }
   function updateLabels(){
+    cityData.forEach(c=>{c.el.style.display=mode==='immersive'&&c.id!==selected?'none':'';});
+    if(mode==='immersive'){
+      const c=cityData.find(c=>c.id===selected);
+      const halfW=(c.el.offsetWidth||140)/2;
+      c.el.style.left=`${width<600?Math.min(width/2,halfW+14):width/2}px`;
+      c.el.style.top=`${height-36}px`;c.el.style.zIndex='2';return;
+    }
     const items=cityData.map(c=>{projected.copy(c.worldTag).applyMatrix4(world.matrixWorld).project(camera);const halfW=(c.el.offsetWidth||80)/2+5,halfH=Math.max(44,c.el.offsetHeight||44)/2;return{c,x:Math.max(halfW,Math.min(width-halfW,(projected.x*.5+.5)*width)),y:(-projected.y*.5+.5)*height,halfH,depth:projected.z}}).sort((a,b)=>a.y-b.y);
     const top=height<420?63:57,bottom=height-14,gap=5;
     for(let i=0;i<items.length;i++){const item=items[i];item.y=Math.max(top+item.halfH,Math.min(bottom-item.halfH,item.y));if(i){const p=items[i-1];item.y=Math.max(item.y,p.y+p.halfH+item.halfH+gap);}}
@@ -582,11 +628,26 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     for(const item of items){item.c.el.style.left=`${item.x}px`;item.c.el.style.top=`${item.y}px`;item.c.el.style.zIndex=String(Math.round((1-item.depth)*100));}
   }
   function selectCity(id){
-    if(!cityData.some(c=>c.id===id))return;selected=id;
+    if(!cityData.some(c=>c.id===id))return;const changed=selected!==id;selected=id;
+    if(changed&&mode==='immersive'){finishEntry();cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;cancel();}
     cityData.forEach(c=>{const active=c.id===id;c.el.dataset.selected=String(active);c.el.setAttribute('aria-pressed',String(active));c.marker.scale.setScalar(active?1.16:1);c.halo.visible=active;});
-    if(!motion)render(0);
+    if(!motion||mode==='immersive')render(0);
+  }
+  function setViewMode(value){
+    if(value!=='immersive'&&value!=='overview')return;
+    if(value===mode)return;
+    const entering=value==='immersive'&&!reducedMotion;
+    finishEntry();cancel();
+    if(entering){
+      // Match the overview framing at the current distance, then descend and
+      // widen the lens together. This avoids a distant zoom-out before entry.
+      const distance=overviewCamera.position.distanceTo(lookAt);
+      entry={eye:overviewCamera.position.clone(),focus:lookAt.clone(),fov:THREE.MathUtils.radToDeg(2*Math.atan((overviewCamera.top-overviewCamera.bottom)/2/distance)),elapsed:0};
+    }
+    mode=value;camera=mode==='immersive'?immersiveCamera:overviewCamera;cameraYaw=targetYaw=0;cameraPitch=targetPitch=0;render(0);
   }
   function render(dt){
+    if(entry){entry.elapsed+=dt;if(entry.elapsed>=1.15)finishEntry();}
     cameraYaw+=(targetYaw-cameraYaw)*(reducedMotion?1:.09);cameraPitch+=(targetPitch-cameraPitch)*(reducedMotion?1:.09);positionCamera();
     if(motion&&dt){time+=dt;carProgress+=(targetCarProgress-carProgress)*Math.min(1,dt*2.8);if(Math.abs(targetCarProgress-carProgress)<.0002)carProgress=targetCarProgress;}
     const cp=routeCurve.getPointAt(carProgress),ct=routeCurve.getTangentAt(carProgress);car.position.copy(cp);car.position.y+=.05;carHalo.position.set(cp.x,cp.y+.10,cp.z);car.rotation.y=Math.atan2(ct.x*carDirection,ct.z*carDirection);
@@ -598,51 +659,71 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   function animate(now){
     if(disposed)return;raf=requestAnimationFrame(animate);const dt=Math.min((now-lastTime)/1000,.045);lastTime=now;
     if(!visible)return;
-    if(motion||Math.abs(cameraYaw-targetYaw)>.0001||Math.abs(cameraPitch-targetPitch)>.0001||drag)render(dt);
+    if(entry||motion||Math.abs(cameraYaw-targetYaw)>.0001||Math.abs(cameraPitch-targetPitch)>.0001||drag)render(dt);
   }
-  // Safari touch gestures use a non-passive, scene-wide touch listener. Pointer
-  // events remain the mouse/pen path, avoiding duplicate handling on iOS.
-  let touchId=null,touchAxis=null,suppressClickUntil=0;
-  function begin(x,y,isTouch,id){drag={x,y,yaw:targetYaw,pitch:targetPitch,isTouch,id};dragged=false;}
+  // Touch uses axis locking so vertical scrolling and browser pinch stay native.
+  // Observe the full gesture on window: a second finger can start outside the scene.
+  let touchId=null,touchAxis=null,touchBlocked=false,suppressClickUntil=0;
+  function suppressClick(){suppressClickUntil=performance.now()+800;}
+  function begin(x,y,isTouch,id,target){if(entry){finishEntry();render(0);}drag={x,y,yaw:targetYaw,pitch:targetPitch,isTouch,id,target};dragged=false;suppressClickUntil=0;}
   function applyMove(x,y){
     if(!drag)return;const dx=x-drag.x,dy=y-drag.y;
     if(Math.abs(dx)+Math.abs(dy)>6)dragged=true;
-    if(dragged){targetYaw=THREE.MathUtils.clamp(drag.yaw-dx*(drag.isTouch?.0025:.0015),-.25,.25);if(!drag.isTouch)targetPitch=THREE.MathUtils.clamp(drag.pitch+dy*.001,-.14,.14);renderer.domElement.style.cursor='grabbing';}
+    if(dragged){targetYaw=THREE.MathUtils.clamp(drag.yaw-dx*(drag.isTouch?.0025:.0015),-yawLimit(),yawLimit());if(!drag.isTouch)targetPitch=THREE.MathUtils.clamp(drag.pitch+dy*.001,mode==='immersive'?-.22:-.14,mode==='immersive'?.22:.14);renderer.domElement.style.cursor='grabbing';}
   }
   function pick(x,y){const r=renderer.domElement.getBoundingClientRect();pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects(targets,false)[0];if(hit){selectCity(hit.object.userData.cityId);onSelect(hit.object.userData.cityId);}}
-  function down(e){if(e.pointerType==='touch'||e.button!==0)return;begin(e.clientX,e.clientY,false,e.pointerId);renderer.domElement.setPointerCapture?.(e.pointerId);}
-  function move(e){if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;applyMove(e.clientX,e.clientY);}
-  function up(e){if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;const wasDragged=dragged;cancel();if(!wasDragged)pick(e.clientX,e.clientY);}
-  function cancel(){drag=null;touchId=null;touchAxis=null;renderer.domElement.style.cursor='grab';}
-  function pointerCancel(e){if(e.pointerType!=='touch'&&drag&&!drag.isTouch&&e.pointerId===drag.id)cancel();}
+  function down(e){
+    if(e.pointerType==='touch'||e.button!==0||drag||touchBlocked)return;
+    const target=e.target===renderer.domElement?renderer.domElement:e.target.closest?.('.coastal-city-tag');
+    if(!target)return;begin(e.clientX,e.clientY,false,e.pointerId,target);target.setPointerCapture?.(e.pointerId);
+  }
+  function move(e){if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;applyMove(e.clientX,e.clientY);if(dragged)suppressClick();}
+  function up(e){
+    if(e.pointerType==='touch'||!drag||drag.isTouch||e.pointerId!==drag.id)return;
+    const wasDragged=dragged,canvasTap=drag.target===renderer.domElement;
+    if(wasDragged)suppressClick();cancel();if(!wasDragged&&canvasTap)pick(e.clientX,e.clientY);
+  }
+  function cancel(){
+    const previous=drag;drag=null;touchId=null;touchAxis=null;renderer.domElement.style.cursor='grab';
+    if(previous&&!previous.isTouch&&previous.target?.hasPointerCapture?.(previous.id))previous.target.releasePointerCapture(previous.id);
+  }
+  function pointerCancel(e){if(e.pointerType!=='touch'&&drag&&!drag.isTouch&&e.pointerId===drag.id){suppressClick();cancel();}}
+  function blockTouch(){if(entry){finishEntry();render(0);}touchBlocked=true;suppressClick();cancel();}
   function touchStart(e){
-    if(e.touches.length!==1){suppressClickUntil=performance.now()+800;cancel();return;}
-    suppressClickUntil=0;const t=e.touches[0];touchId=t.identifier;touchAxis=null;begin(t.clientX,t.clientY,true,t.identifier);
+    const inScene=container.contains(e.target);
+    if(!inScene&&!drag?.isTouch&&!touchBlocked)return;
+    if(touchBlocked||e.touches.length!==1){blockTouch();return;}
+    if(!inScene||drag)return;
+    const t=e.touches[0];touchId=t.identifier;touchAxis=null;begin(t.clientX,t.clientY,true,t.identifier,e.target);
   }
   function touchMove(e){
+    if(touchBlocked){suppressClick();return;}
     if(!drag||!drag.isTouch)return;
-    if(e.touches.length!==1){suppressClickUntil=performance.now()+800;cancel();return;}
-    const t=Array.from(e.touches).find(t=>t.identifier===touchId);if(!t)return;
+    if(e.touches.length!==1){blockTouch();return;}
+    const t=Array.from(e.touches).find(t=>t.identifier===touchId);if(!t){blockTouch();return;}
     const dx=t.clientX-drag.x,dy=t.clientY-drag.y;
     if(!touchAxis&&Math.max(Math.abs(dx),Math.abs(dy))>6)touchAxis=Math.abs(dx)>Math.abs(dy)?'rotate':'scroll';
-    if(touchAxis==='scroll'){dragged=true;return;}
+    if(touchAxis==='scroll'){dragged=true;suppressClick();return;}
     if(touchAxis==='rotate'){
       // Never cancel vertical scrolling or two-finger browser zoom. Once the
       // browser owns a non-cancelable gesture, don't fight it with rotation.
-      if(!e.cancelable){suppressClickUntil=performance.now()+800;cancel();return;}
-      e.preventDefault();applyMove(t.clientX,t.clientY);suppressClickUntil=performance.now()+800;
+      if(!e.cancelable){blockTouch();return;}
+      e.preventDefault();applyMove(t.clientX,t.clientY);suppressClick();
     }
   }
   function touchEnd(e){
+    if(touchBlocked){suppressClick();if(e.touches.length===0)touchBlocked=false;return;}
     if(!drag||!drag.isTouch)return;
     const t=Array.from(e.changedTouches).find(t=>t.identifier===touchId);if(!t)return;
-    const wasDragged=dragged;if(wasDragged)suppressClickUntil=performance.now()+800;
-    const canvasTap=e.target===renderer.domElement;cancel();if(!wasDragged&&canvasTap)pick(t.clientX,t.clientY);
+    const wasDragged=dragged,canvasTap=drag.target===renderer.domElement;
+    if(wasDragged)suppressClick();cancel();
+    if(e.touches.length){blockTouch();return;}
+    if(!wasDragged&&canvasTap)pick(t.clientX,t.clientY);
   }
-  function touchCancel(){suppressClickUntil=performance.now()+800;cancel();}
-  function preventDragClick(e){if(e.detail!==0&&performance.now()<suppressClickUntil){e.preventDefault();e.stopPropagation();}}
-  renderer.domElement.style.cursor='grab';renderer.domElement.addEventListener('pointerdown',down);window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);window.addEventListener('pointercancel',pointerCancel);
-  container.addEventListener('touchstart',touchStart,{passive:true});container.addEventListener('touchmove',touchMove,{passive:false});container.addEventListener('touchend',touchEnd,{passive:true});container.addEventListener('touchcancel',touchCancel,{passive:true});container.addEventListener('click',preventDragClick,true);
+  function touchCancel(e){if(!drag?.isTouch&&!touchBlocked)return;suppressClick();cancel();touchBlocked=e.touches.length>0;}
+  function preventDragClick(e){if(e.detail!==0&&(touchBlocked||(drag&&dragged)||performance.now()<suppressClickUntil)){e.preventDefault();e.stopPropagation();}}
+  renderer.domElement.style.cursor='grab';container.addEventListener('pointerdown',down);window.addEventListener('pointermove',move);window.addEventListener('pointerup',up);window.addEventListener('pointercancel',pointerCancel);container.addEventListener('lostpointercapture',pointerCancel);
+  window.addEventListener('touchstart',touchStart,{passive:true});container.addEventListener('touchmove',touchMove,{passive:false});window.addEventListener('touchend',touchEnd,{passive:true});window.addEventListener('touchcancel',touchCancel,{passive:true});container.addEventListener('click',preventDragClick,true);
   const resizeObserver=new ResizeObserver(resize);resizeObserver.observe(container);
   const observer=typeof IntersectionObserver!=='undefined'?new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??true;if(visible)render(0);},{rootMargin:'120px'}):null;observer?.observe(container);
   selectCity(selected);resize();raf=requestAnimationFrame(animate);
@@ -651,11 +732,12 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
     selectCity,
     setDestination,
     setDayRoute,
-    rotate(direction){targetYaw=THREE.MathUtils.clamp(targetYaw+direction*.10,-.25,.25);if(reducedMotion){cameraYaw=targetYaw;render(0);}},
+    setViewMode,
+    rotate(direction){finishEntry();targetYaw=THREE.MathUtils.clamp(targetYaw+direction*.10,-yawLimit(),yawLimit());if(reducedMotion){cameraYaw=targetYaw;render(0);}},
     setMotion(value){motion=Boolean(value)&&!reducedMotion;if(!motion){carProgress=targetCarProgress;render(0);}},
-    reset(){targetYaw=0;targetPitch=0;if(reducedMotion){cameraYaw=0;cameraPitch=0;}render(0);},
+    reset(){finishEntry();cancel();targetYaw=0;targetPitch=0;if(reducedMotion){cameraYaw=0;cameraPitch=0;}render(0);},
     dispose(){
-      disposed=true;cancelAnimationFrame(raf);resizeObserver.disconnect();observer?.disconnect();renderer.domElement.removeEventListener('pointerdown',down);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',pointerCancel);container.removeEventListener('touchstart',touchStart);container.removeEventListener('touchmove',touchMove);container.removeEventListener('touchend',touchEnd);container.removeEventListener('touchcancel',touchCancel);container.removeEventListener('click',preventDragClick,true);
+      disposed=true;entry=null;cancelAnimationFrame(raf);resizeObserver.disconnect();observer?.disconnect();cancel();container.removeEventListener('pointerdown',down);container.removeEventListener('lostpointercapture',pointerCancel);window.removeEventListener('pointermove',move);window.removeEventListener('pointerup',up);window.removeEventListener('pointercancel',pointerCancel);window.removeEventListener('touchstart',touchStart);container.removeEventListener('touchmove',touchMove);window.removeEventListener('touchend',touchEnd);window.removeEventListener('touchcancel',touchCancel);container.removeEventListener('click',preventDragClick,true);
       scene.traverse(o=>{if(o.isMesh)o.geometry.dispose();});new Set([...materialCache.values(),shadow.material]).forEach(m=>m.dispose());renderer.domElement.removeEventListener('webglcontextlost',contextLost);renderer.dispose();renderer.domElement.remove();labels.remove();style.remove();
     },
   };
