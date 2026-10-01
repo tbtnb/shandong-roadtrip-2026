@@ -9,7 +9,8 @@
       ],
       "branch": "嘉瑞宝店 · 东园路与军民路交叉口",
       "source": "https://www.amap.com/place/B0FFHQZNFK",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_daguanyun.webp"
     },
     "lyg_dasao": {
       "gcj02": [
@@ -18,7 +19,8 @@
       ],
       "branch": "苍梧生活广场店 · 兴隆路22号",
       "source": "https://www.amap.com/place/B0FFGPDH1Y",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_dasao.webp"
     },
     "lyg_hongxia": {
       "gcj02": [
@@ -27,7 +29,8 @@
       ],
       "branch": "海州古城店 · 新建西路23-7",
       "source": "https://www.amap.com/place/B0206021MI",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_hongxia.webp"
     },
     "lyg_qiutian": {
       "gcj02": [
@@ -36,7 +39,8 @@
       ],
       "branch": "青年路店 · 青年路9号",
       "source": "https://www.amap.com/place/B0FFHZ6L1Q",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_qiutian.webp"
     },
     "lyg_xinxingyuan": {
       "gcj02": [
@@ -45,7 +49,8 @@
       ],
       "branch": "通化街店 · 矿山院6-1-1",
       "source": "https://www.amap.com/place/B020600X51",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_xinxingyuan.webp"
     },
     "lyg_xiaogu": {
       "gcj02": [
@@ -54,7 +59,8 @@
       ],
       "branch": "嘉年华店 · A幢116号",
       "source": "https://www.amap.com/place/B0LA6OCY77",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_xiaogu.webp"
     },
     "lyg_huanglaotou": {
       "gcj02": [
@@ -63,7 +69,8 @@
       ],
       "branch": "新河路7号",
       "source": "https://www.amap.com/place/B0FFHQZKXT",
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_huanglaotou.webp"
     },
     "lyg_suji": {
       "gcj02": [
@@ -78,7 +85,8 @@
         4086053.840314
       ],
       "precision": "poi",
-      "note": "整洁路店：地图地址9-7号，原点评记作9-4号。"
+      "note": "整洁路店：地图地址9-7号，原点评记作9-4号。",
+      "thumbnail": "assets/map-thumbnails/lyg_suji.webp"
     },
     "lyg_chenjiawei": {
       "gcj02": [
@@ -92,7 +100,8 @@
         13268564.763823,
         4085177.464769
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_chenjiawei.webp"
     },
     "lyg_gucuo": {
       "gcj02": [
@@ -106,7 +115,8 @@
         13267785.98193,
         4085052.206526
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_gucuo.webp"
     },
     "lyg_jianwei": {
       "gcj02": [
@@ -120,7 +130,8 @@
         13268400.738504,
         4086487.716119
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_jianwei.webp"
     },
     "lyg_qinji": {
       "gcj02": [
@@ -134,7 +145,8 @@
         13263060.153411,
         4082313.645669
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_qinji.webp"
     },
     "lyg_xufengqin": {
       "gcj02": [
@@ -149,7 +161,8 @@
         4086813.68573
       ],
       "precision": "poi",
-      "note": "按大众点评、百度的民主路店位置标注；高德地址写作津海巷7号，请核对店招。"
+      "note": "按大众点评、百度的民主路店位置标注；高德地址写作津海巷7号，请核对店招。",
+      "thumbnail": "assets/map-thumbnails/lyg_xufengqin.webp"
     },
     "lyg_democracy_road": {
       "gcj02": [
@@ -164,7 +177,8 @@
         4086692.066
       ],
       "precision": "poi",
-      "note": "老街为街区，标记为地图地点代表位置。"
+      "note": "老街为街区，标记为地图地点代表位置。",
+      "thumbnail": "assets/map-thumbnails/lyg_democracy_road.webp"
     },
     "lyg_xianghe": {
       "gcj02": [
@@ -178,7 +192,8 @@
         13267564.638,
         4086792.62845
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_xianghe.webp"
     },
     "lyg_danjie": {
       "gcj02": [
@@ -193,7 +208,8 @@
         4103424.704243
       ],
       "precision": "poi",
-      "note": "连云老街店：百度及点评为临海路17-5，高德记作17-4。"
+      "note": "连云老街店：百度及点评为临海路17-5，高德记作17-4。",
+      "thumbnail": "assets/map-thumbnails/lyg_danjie.webp"
     },
     "lyg_xiongdi": {
       "gcj02": [
@@ -208,7 +224,8 @@
         4085202.206897
       ],
       "precision": "poi",
-      "note": "海昌南路店：百度门牌24号，既有高德资料22号，请核对店招。"
+      "note": "海昌南路店：百度门牌24号，既有高德资料22号，请核对店招。",
+      "thumbnail": "assets/map-thumbnails/lyg_xiongdi.webp"
     },
     "lyg_zhengbing": {
       "gcj02": [
@@ -223,7 +240,8 @@
         4085876.25431
       ],
       "precision": "poi",
-      "note": "分店待确认：暂标新海花园店，原清单未指定分店。"
+      "note": "分店待确认：暂标新海花园店，原清单未指定分店。",
+      "thumbnail": "assets/map-thumbnails/lyg_zhengbing.webp"
     },
     "lyg_weifanglou": {
       "gcj02": [
@@ -238,7 +256,8 @@
         4085205.124214
       ],
       "precision": "poi",
-      "note": "分店待确认：暂标通灌南路店，原清单未指定分店。"
+      "note": "分店待确认：暂标通灌南路店，原清单未指定分店。",
+      "thumbnail": "assets/map-thumbnails/lyg_weifanglou.webp"
     },
     "lyg_yanheyan": {
       "gcj02": [
@@ -252,7 +271,8 @@
         13271186.782153,
         4087896.754599
       ],
-      "precision": "poi"
+      "precision": "poi",
+      "thumbnail": "assets/map-thumbnails/lyg_yanheyan.webp"
     }
   }
 }
