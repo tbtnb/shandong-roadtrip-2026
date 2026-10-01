@@ -1,6 +1,6 @@
 {
   "status": "research_in_progress",
-  "updated_at": "2026-10-01T06:37:40.913Z",
+  "updated_at": "2026-10-01T06:41:47.978Z",
   "targets": {
     "青岛": 60,
     "威海": 80,
@@ -1786,6 +1786,106 @@
       ]
     },
     {
+      "id": "lyg_xiongdi",
+      "city": "连云港",
+      "name": "兄弟酒家",
+      "branch": "海昌路店（主帖明确）",
+      "district": "海州海昌路",
+      "category": "meal",
+      "specialties": [
+        "鱼籽酱吊饼",
+        "油煎凉粉",
+        "海鲜疙瘩汤",
+        "河杂鱼贴饼"
+      ],
+      "local_character": "主帖明确连云港特色鱼籽酱吊饼及油煎凉粉",
+      "why": "主帖称老店排队转到海昌路新店，实吃6菜约200元，分享价格与不同菜口感",
+      "risks": [
+        "点评8月4日食客称大厅喧闹吸烟，不适合需要安静或介意烟味的人",
+        "点评9月8日称二店排队占座服务混乱；7月2日称偏咸，均是个人当次体验",
+        "XHS主帖17评论口味有分歧；有关老店疙瘩预制的说法未证实，不作质量指控",
+        "8月10日反向帖指两个黄色门头，未证实是海昌路，不能把该帖等待和口味问题全部归此分店",
+        "主帖200元六菜与点评人均69/高德59不同，不承诺价格和无需排队"
+      ],
+      "scene": [
+        "正餐",
+        "聚餐"
+      ],
+      "level": "caution",
+      "level_reason": "海昌路分店XHS明确，点评当前时间表与地图地址匹配；可有条件正餐备选，近期投诉大厅吸烟喧闹和排队服务，未达必去",
+      "address": "海昌南路22号（高德）；点评为海昌南路天然居往南20米",
+      "price_cny_per_person": 69,
+      "price_basis": "点评当前可见69元人均，主帖约200元六菜非当前保证",
+      "opening": "点评休息中10:30-14:00,16:30-21:30；高德未显示营业",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "6a69ee72000000001101ec3c",
+        "title": "连云港老店新吃之兄弟酒家",
+        "author": "能能",
+        "url": "https://www.xiaohongshu.com/explore/6a69ee72000000001101ec3c",
+        "body_summary": "7月29日老店电话排15桌，转海昌路新店。鱼籽酱吊饼38、海蜇22、花甲28、油煎凉粉20、海鲜疙瘩汤38、河杂鱼贴饼48；称新店环境卡座更舒适，味道喜欢、份量大，番茄汤偏甜，6菜约200元",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome实际单独打开当前笔记暂时无法浏览，需扫码App；签名搜索可读",
+        "comments_summary": "17条实读至THE END，朋友互动多。飞天的猪询问海昌路和常乐是否同老板无可见回复；喵喵喵质疑老店疙瘩预制，新店不明，作者只说新旧形状不同；天天向上主观反驳不好吃",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "江苏IP272粉丝3746获赞收藏，大量连云港吃饭日记；未见合作入口，推断本地美食分享号而非确认居民，推广风险仍需保留",
+        "commenter_check": "喵喵喵好物分享进行ing实际主页江苏IP345粉丝，自填江苏连云港，养猫酒店转让住宿会员日常、护肤好物且有公开合作邮箱，推断同城生活倾向并有商业内容可能；其面疙瘩指控不可验证",
+        "reverse_search": "实际搜兄弟酒家海昌路避雷，并读6a79e29d000000002500697a冬瓜皮西瓜皮8月10日帖，称等菜1h、鱼籽辣海肠难嚼。125评论讨论多个同名店，作者仅辨两个黄色门头，未确定海昌路；因此作为品牌分店识别与排队争议，不能直接套该分店。主帖自身7月30日亦有口味反驳。",
+        "additional_posts": [
+          {
+            "note_id": "6a79e29d000000002500697a",
+            "url": "https://www.xiaohongshu.com/explore/6a79e29d000000002500697a",
+            "title": "连云港的兄弟酒家避个雷吧",
+            "body_read": true,
+            "scope": "分店未明确，不直接归海昌路，canonical未单独测试"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/shop/kaJfhd7VbRgRNPX0",
+        "kind": "shop",
+        "readable": true,
+        "status": "Chrome实际搜索海昌路分店获得真实链接并亲开",
+        "matched_branch": true,
+        "rating": 3.9,
+        "price_cny_per_person": 69,
+        "recent_negative_review_scope": "可见8月4日大厅吵且烟味、7月2日偏咸服务、9月8日排队占座服务问题；未全量扫描近期差评",
+        "summary": "509评3.9，人均69，休息中10:30-14:00,16:30-21:30，海昌南路天然居往南20米；平台标付费停车非保障有空位"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/search?query=连云港兄弟酒家海昌路店",
+        "kind": "search_fallback",
+        "readable": true,
+        "status": "Chrome亲开显示唯一同名海昌路店",
+        "summary": "海昌南路22号，人均59；与点评描述同道路店名，营业未显示，不影响点评已有营业时间表确认"
+      },
+      "photo": {
+        "note_id": "6a69ee72000000001101ec3c",
+        "author": "能能",
+        "image_index": 1,
+        "width": 1440,
+        "height": 1080,
+        "bytes": 242562,
+        "sha256": "1c7586eaf1978b95a6e9b3f24e30d65fff0fbf497d891f10132aed127e2c3b41",
+        "download_method": "Chrome轮播nth1 downloadMedia，data-swiper-slide-index0，原WebP未转换",
+        "watermark": "原图未见明显作者水印；下载完整原图未加工",
+        "visual_evidence": "root逐张查看实际原文件：鱼籽青椒小碗旁吊饼，背景海蜇黄瓜菜，与专帖海昌路店餐食描述匹配；照片本身不证明具体分店，分店仍依赖正文及平台核验。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地view_image逐张查看实际原图，核对来源正文、作者及SHA，不裁切加工"
+        },
+        "url": "assets/food/lyg_xiongdi.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_lyg_snacks",
+      "status": "complete"
+    },
+    {
       "id": "lyg_xufengqin",
       "city": "连云港",
       "name": "徐凤芹酸辣粉",
@@ -2067,6 +2167,102 @@
           "method": "本地原始文件逐张实际查看；哈希与来源记录核对"
         },
         "url": "assets/food/rz_fuqimeishi.webp",
+        "reuse_status": "private_personal_reference",
+        "public_reuse_permission": "not_established"
+      },
+      "checked_at": "2026-10-01",
+      "collector": "food_rz_meals",
+      "status": "complete"
+    },
+    {
+      "id": "rz_hujia",
+      "city": "日照",
+      "name": "胡家猪蹄店",
+      "branch": "黄海一路店",
+      "district": "石臼海纳商城对面",
+      "category": "meal",
+      "specialties": [
+        "卤猪蹄",
+        "家常炒菜",
+        "卤汁拌饭"
+      ],
+      "local_character": "石臼黄海一路社区老菜馆，高德可见多年老顾客评价，专店作者自述海纳对面并长期分享日照工作日用餐；本地生活倾向是主页推断。猪蹄虽为青岛流亭风味来源，已是日照当地常见老店菜品。",
+      "why": "猪蹄软烂、家常菜份量足，可选作石臼正餐；适合能接受偏咸口味的人。",
+      "risks": [
+        "主帖2026年5月8日称猪蹄与炒菜偏咸，门口停车不便。",
+        "点评站内搜索0匹配，暂无该分店点评评分、近期差评正文可核。",
+        "高德评价全部2017-2023年，不能代表近3月口碑；一条2023年称口味一般、涨价未回落。"
+      ],
+      "scene": [
+        "正餐",
+        "家庭聚餐"
+      ],
+      "level": "optional",
+      "level_reason": "明确海纳对面专帖实吃原图、长期日照用餐作者、地图同址当前营业可选，负面反查相关帖实际指大学城未名摊，不误归胡家。点评只能真实搜索fallback，缺近3月差评不升必去。",
+      "address": "黄海一路34号",
+      "price_cny_per_person": 36,
+      "price_basis": "高德36元/人；XHS2026年5月8日猪蹄小30大35，非当前价格保证。",
+      "opening": "高德11:30-14:30、16:30-21:00",
+      "opening_checked": true,
+      "xhs": {
+        "note_id": "69fdb3f2000000003601cf2e",
+        "title": "日照｜胡家猪蹄",
+        "author": "请叫我大王",
+        "url": "https://www.xiaohongshu.com/explore/69fdb3f2000000003601cf2e",
+        "body_summary": "2026年5月8日明确海纳对面胡家猪蹄，猪蹄软烂偏咸，小30大35，炒菜也偏咸但份量很足，作者表示会再吃，门口不好停车。",
+        "body_read": true,
+        "canonical_readable": false,
+        "canonical_status": "Chrome单独打开当前笔记暂时无法浏览/App扫码；搜索入口实际正文照片可读。",
+        "comments_summary": "主帖这是一片荒地，无评论。反查大学城价格争议帖73评论可见部分，有人提胡家此前35一个，椰子称目前仍同价格，但没有明确分店。",
+        "comments_checked": true,
+        "author_profile_checked": true,
+        "author_risk": "主页55粉丝IP山东、自填山东日照，长期日照工作日午餐/下班餐、跑步生活与正负食记（源麦甜饱饱碗NO）；未见合作标识，有当地生活倾向为推断，非身份证明。",
+        "commenter_check": "主帖无评论；另外实际打开大学城价格帖评论人椰子主页28粉丝，内容为长期养猫家居，未见商业探店，未明确城市，胡家价格未作分店当前保证。",
+        "reverse_search": "实搜日照胡家猪蹄避雷，实际打开6a00598f0000000008027735日照杀生客，正文大学城未名摊3猪蹄140、海鲜95，不能归黄海一路胡家；评论有人提胡家35元作价格比较。其余检索含全城合集/其他猪蹄店，未全部读取。",
+        "additional_posts": [
+          {
+            "note_id": "6a00598f0000000008027735",
+            "title": "日照杀生客",
+            "body_read": true,
+            "summary": "2026年5月10日大学城未名夜市摊价格争议，73评论可见一部分；仅排除误归胡家，非本店负面证据。"
+          }
+        ]
+      },
+      "dianping": {
+        "url": "https://www.dianping.com/search/keyword/153/0_%E8%83%A1%E5%AE%B6%E7%8C%AA%E8%B9%84",
+        "kind": "search_fallback",
+        "readable": true,
+        "matched_branch": false,
+        "rating": null,
+        "price_cny_per_person": null,
+        "status": "2026-10-01 Chrome亲测搜索0匹配，推荐列表非本店，不能借评分。",
+        "recent_negative_review_scope": "搜索0匹配，未取得该分店评分或评论，不借推荐列表其他店内容。",
+        "summary": "Chrome实搜胡家猪蹄无本店匹配，仅搜索fallback。"
+      },
+      "gaode": {
+        "url": "https://www.amap.com/place/B02790OVBM",
+        "kind": "place",
+        "readable": true,
+        "summary": "2026-10-01 Chrome亲测胡家猪蹄店黄海一路店，4.6/36元，电话18663386853，黄海一路34号。营业中11:30-14:30、16:30-21:00。可见7条2017-2023年评价，大多猪蹄软烂，一条2023-02-17称普通且涨价不回落，非近3月评价。",
+        "status": "Chrome直接打开真实place入口详情可读，已亲核当前营业与地址。"
+      },
+      "photo": {
+        "note_id": "69fdb3f2000000003601cf2e",
+        "author": "请叫我大王",
+        "image_index": 1,
+        "width": 1080,
+        "height": 1440,
+        "bytes": 181754,
+        "sha256": "261425598081840706c6c6bc7d9ebc0bea65a49924396ef03e3e0e887ce48fd7",
+        "download_method": "CUA locator.downloadMedia网站正常原图下载，WebP未转换",
+        "watermark": "未见明显作者水印，原文件不裁切不处理。",
+        "visual_evidence": "root实看原文件为白盘切块卤猪蹄、木桌及青花茶杯，符合专帖该餐；正文明确海纳对面，地图对应黄海一路店。图片无店牌，不能只凭盘子证明分店。",
+        "independent_review": {
+          "checked_at": "2026-10-01",
+          "reviewer": "root",
+          "method": "本地view_image逐张查看实际原图，核对来源专帖与SHA"
+        },
+        "url": "assets/food/rz_hujia.webp",
         "reuse_status": "private_personal_reference",
         "public_reuse_permission": "not_established"
       },
