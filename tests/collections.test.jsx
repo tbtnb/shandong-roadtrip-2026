@@ -10,7 +10,7 @@ const food=JSON.parse(fs.readFileSync('public/data/food-guide.json'));
 const props={media,food};
 afterEach(()=>{cleanup();localStorage.clear();vi.restoreAllMocks()});
 it('includes every attraction and food in six distinct collections, including excluded records',()=>{
- const cards=makeCards(media,food);expect(cards).toHaveLength(139);expect(new Set(cards.map(c=>c.key)).size).toBe(139);expect(cards.filter(c=>c.raw.level==='exclude')).toHaveLength(16);
+ const cards=makeCards(media,food);expect(cards).toHaveLength(139);expect(new Set(cards.map(c=>c.key)).size).toBe(139);expect(cards.filter(c=>c.raw.level==='exclude').map(c=>c.raw.id).sort()).toEqual(food.entries.filter(e=>e.level==='exclude').map(e=>e.id).sort());
  render(<CardCollections {...props}/>);expect(screen.getAllByRole('button',{name:/打开.*卡片集合/})).toHaveLength(6);expect(screen.getByText('139 张卡片')).toBeTruthy();
 });
 it('like/dislike advance cards, undo restores the card, and selections survive remount',()=>{

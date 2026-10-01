@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/verify-assets.mjs && node scripts/verify-food-assets.mjs && vite build",
+    "build": "node scripts/verify-assets.mjs && node scripts/verify-food-assets.mjs && node scripts/verify-editorial.mjs && vite build",
     "preview": "vite preview",
     "test": "node --test tests/content.test.mjs tests/food-records.test.mjs",
     "test:ui": "vitest run --config vitest.config.mjs",

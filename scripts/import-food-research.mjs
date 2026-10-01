@@ -2,7 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {cities,targets,validateRecord,publicRecord} from './food-records.mjs';
+import {applyFoodUpdate} from './food-updates.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const updatesFile=path.join(root,'research/food-verified-updates.json');
+const verifiedUpdates=fs.existsSync(updatesFile)?JSON.parse(fs.readFileSync(updatesFile)):{};
 const source=path.resolve(process.argv[2]||path.join(root,'../../work/food-research'));
 const agents=['food_qd_oldtown','food_wh_hanlefang','food_lyg_snacks','food_rz_meals','food_wuhu_snacks','food_ha_meals'];
 const reviews=JSON.parse(fs.readFileSync(path.join(root,'research/food-photo-audit.json')));
@@ -14,17 +17,17 @@ for(const agent of agents){const dir=path.join(source,agent,'records');if(!fs.ex
  const b=fs.readFileSync(original),info=validateRecord(e,b),shop=e.city+'|'+e.name.replace(/[\s·（）()]/g,'');
  const review=reviews[e.photo.sha256];if(!review||review.status!=='accepted'){unreviewed++;continue;}if(review.id!==e.id)throw Error('Photo review identity mismatch');e.photo.visual_evidence=review.visual_evidence;e.photo.independent_review={checked_at:review.checked_at,reviewer:review.reviewer,method:review.method};
  if(ids.has(e.id)||shops.has(shop))throw Error(`Duplicate shop: ${e.id}`);ids.add(e.id);shops.add(shop);
- const url=`assets/food/${e.id}.${info.extension}`;files.push({url,b});e.photo.url=url;e.photo.reuse_status='private_personal_reference';e.photo.public_reuse_permission='not_established';entries.push(publicRecord(e));
+ const url=`assets/food/${e.id}.${info.extension}`;files.push({url,b});e.photo.url=url;e.photo.reuse_status='private_personal_reference';e.photo.public_reuse_permission='not_established';entries.push(applyFoodUpdate(publicRecord(e),verifiedUpdates[e.id]));
 }}
 entries.sort((a,b)=>cities.indexOf(a.city)-cities.indexOf(b.city)||a.id.localeCompare(b.id));
 const city_notes={'芜湖':'半天出发中转 · 已有早餐参考 · 暂停补采'};
-const data={status:'research_stopped_partial',updated_at:new Date().toISOString(),cities,targets,city_notes,entries,note:'本轮研究已停止，当前为已完成记录的汇总，尚未达到原定目标。目标不是已完成数量。芜湖按用户要求暂停补采，仅保留已有出发早餐参考，不计其余五城240家目标。采集记录齐全与口碑营业核实分开；所有照片保留原作者及水印；采集时为私人旅行参考，用户于2026-10-01确认公开展示，原作者再使用许可未建立。'};
+const data={status:'research_stopped_partial',updated_at:new Date().toISOString(),cities,targets,city_notes,entries,note:'本轮研究已停止，当前为已完成记录的汇总，尚未达到原定目标。目标不是已完成数量。芜湖按用户要求暂停补采，仅保留已有出发早餐参考，不计其余五城240家目标。采集记录齐全与口碑营业核实分开；所有照片保留原作者及水印；原采集权限字段保留历史记录；用户于2026-10-01确认已取得相关图片转载授权，公开展示保留作者、水印和来源。'};
 function write(relative,content){const p=path.join(root,relative);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p+'.tmp',content);fs.renameSync(p+'.tmp',p);}
 for(const f of files)write('public/'+f.url,f.b);
 for(const old of previous)if(!files.some(f=>f.url===old)){if(!/^assets\/food\/[a-z0-9_-]+\.(jpg|png|webp)$/.test(old))throw Error('Unsafe prior asset');const obsolete=path.join(root,'public',old);if(fs.existsSync(obsolete))fs.unlinkSync(obsolete);}
 write('FOOD-REFERENCE-FILES.json',JSON.stringify(files.map(f=>f.url).sort(),null,2)+'\n');write('public/data/food-guide.json',JSON.stringify(data,null,2)+'\n');
 write('research/food-source-ledger.json',JSON.stringify(data,null,2)+'\n');
-let ledger='# 美食采集账本\n\n本轮研究已停止，以下为已完成记录的汇总，尚未达到原定目标。其余五城一城一位调研负责人；240家为目标。芜湖半天出发中转，按用户要求暂停补采，保留已有早餐参考，不计目标。正文、图片和入口记录齐全才导入。推荐等级另按口碑、分店和营业证据判断，暂不推荐的记录不进入默认筛选。全部原图保留作者与水印；采集时为私人旅行参考，用户于2026-10-01确认公开展示，原作者再使用许可未建立。\n\n';
+let ledger='# 美食采集账本\n\n本轮研究已停止，以下为已完成记录的汇总，尚未达到原定目标。其余五城一城一位调研负责人；240家为目标。芜湖半天出发中转，按用户要求暂停补采，保留已有早餐参考，不计目标。正文、图片和入口记录齐全才导入。推荐等级另按口碑、分店和营业证据判断，暂不推荐的记录不进入默认筛选。全部原图保留作者与水印；原采集权限字段保留历史记录；用户于2026-10-01确认已取得相关图片转载授权，公开展示保留作者、水印和来源。\n\n';
 for(const city of cities)ledger+=`- ${city}：${entries.filter(e=>e.city===city).length}${targets[city]?` / ${targets[city]} 家采集记录`:' 家出发早餐参考（暂停补采，无数量目标）'}\n`;
 ledger+='\n';for(const e of entries)ledger+=`## ${e.city} · ${e.name}\n\n等级：${e.level}。${e.level_reason}\n\n![${e.name}原图](../public/${e.photo.url})\n\n- 小红书：[${e.xhs.title} · ${e.xhs.author}](${e.xhs.url})。${e.xhs.canonical_status}\n- 点评：[${e.dianping.kind==='shop'?'具体门店':'搜索备选'}](${e.dianping.url})。${e.dianping.status}\n- 高德：[${e.gaode.kind==='place'?'地点':'搜索备选'}](${e.gaode.url})。${e.gaode.status}\n- 图像原文件 SHA256：${e.photo.sha256}，${e.photo.width}×${e.photo.height}。${e.photo.visual_evidence}\n\n`;
 write('research/food-source-ledger.md',ledger.trimEnd()+'\n');console.log(JSON.stringify({imported:entries.length,pending,unreviewed,by_city:Object.fromEntries(Object.keys(targets).map(c=>[c,entries.filter(e=>e.city===c).length]))}));

@@ -1,6 +1,6 @@
 {
   "status": "research_stopped_partial",
-  "updated_at": "2026-10-01T09:36:15.552Z",
+  "updated_at": "2026-10-01T11:58:07.358Z",
   "cities": [
     "青岛",
     "威海",
@@ -83,7 +83,7 @@
         "url": "https://www.dianping.com/shop/554230",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome完整同店头部与默认3评",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 3.8,
         "price_cny_per_person": 79,
@@ -174,12 +174,12 @@
         "url": "https://www.dianping.com/shop/H3MN6f5Mw6UkQryp",
         "kind": "shop",
         "readable": true,
-        "status": "青岛站具体分店搜索取得实际链接后Chrome亲开头部与推荐菜可读。",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.3,
         "price_cny_per_person": 21,
-        "recent_negative_review_scope": "门店头部及推荐菜可读，评论列表未出现，未做低分筛选，近3个月差评未读。",
-        "summary": "中山路店4.3/343/¥21，营业中08:00–20:00，中山路129号天真摄影旁；上海风味生煎15人推荐。"
+        "recent_negative_review_scope": "5月18日、5月20日、9月10日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：5月18日食客觉得上海风味偏甜、更喜欢北方风味和虾仁；9月10日食客认可味道却觉得包子皮稍厚，并提到当次洗手间维修；5月20日喜欢素虾仁及带汤甜口上海风味。"
       },
       "gaode": {
         "url": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E9%82%93%E8%AE%B0%E4%B8%80%E5%93%81%E7%94%9F%E7%85%8E%20%E4%B8%AD%E5%B1%B1%E8%B7%AF129%E5%8F%B7",
@@ -274,7 +274,7 @@
         "url": "https://www.dianping.com/shop/G7GIG3SkioxWJHyl",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开同分店头部+默认3评论",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.1,
         "price_cny_per_person": 22,
@@ -422,7 +422,7 @@
         "url": "https://www.dianping.com/shop/H5sDWwMjVI2BzjQs",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开4.1/1807/¥22，营业中07–21，湖北河南路西北角百盛西侧",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.1,
         "price_cny_per_person": 22,
@@ -490,7 +490,7 @@
       "address": "台东街道和兴路27号；高德称27号丙网点",
       "price_cny_per_person": 32,
       "price_basis": "2026-10-01 实开大众点评门店页 ¥32/人；高德搜索结果 ¥33/人",
-      "opening": "大众点评显示营业中 08:00–22:00",
+      "opening": "本轮大众点评营业中08:00—23:00；较早记录08:00—22:00存在差异",
       "opening_checked": true,
       "xhs": {
         "note_id": "6a705e860000000021022c98",
@@ -521,12 +521,12 @@
         "url": "https://www.dianping.com/shop/EWyvSfNaBoJxf4uy",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome实际打开门店页：4.3，4505条评价，¥32/人，营业中08:00-22:00",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.3,
         "price_cny_per_person": 32,
-        "recent_negative_review_scope": "页面仅提供概览和App入口，未读取近三个月差评",
-        "summary": "台东步行街店、和兴路27号，推荐大虾/海胆/墨鱼/鲅鱼锅贴及海鲜甜沫。"
+        "recent_negative_review_scope": "9月19日、10小时前、4天前默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：9月19日喜欢四种锅贴组合、认为双人餐份量足并等约15分钟；10小时前食客觉得一般但馅多，偏爱海胆、吃不惯甜沫；4天前食客喜欢现煎脆底与多汁口感。"
       },
       "gaode": {
         "url": "https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%E6%B5%B7%E7%87%95%E5%A5%B6%E5%A5%B6%E5%8F%B0%E4%B8%9C",
@@ -630,7 +630,7 @@
         "url": "https://www.dianping.com/shop/G1GYGoVVsiNq7xdV",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开头部推荐菜可读",
+        "status": "本轮匹配上清路店头部与主图可读；未出现评论列表，完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.3,
         "price_cny_per_person": 27,
@@ -740,12 +740,12 @@
         "url": "https://www.dianping.com/shop/jmP2AoOq5mUT5o0p",
         "kind": "shop",
         "readable": true,
-        "status": "本次青岛具体湖北路搜索取得真实链接后Chrome亲开，头部推荐菜可读。",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 3.9,
         "price_cny_per_person": 27,
-        "recent_negative_review_scope": "头部推荐菜菜单可读，评论列表未出现，近3个月差评未读。",
-        "summary": "3.9/2240/¥27，营业中08:30–19:00，湖北14甲；栗子蛋糕1134人推荐。"
+        "recent_negative_review_scope": "7月6日两评、9月21日一评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：7月6日一位觉得味道还行，另一位认为主要吃情怀且不满意拒绝堂食的安排；9月21日喜欢栗子颗粒和不甜的栗子酱，但觉得蛋糕胚偏干。"
       },
       "gaode": {
         "url": "https://www.amap.com/ssr/search?query_type=TQUERY&query=%E9%9D%92%E5%B2%9B%E7%BA%A2%E5%AE%9D%E7%9F%B3%E8%9B%8B%E7%B3%95%E5%BA%97&city=330100&geoobj=119.806233%7C30.107939%7C120.684308%7C30.516621&zoom=11.1",
@@ -849,7 +849,7 @@
         "url": "https://www.dianping.com/shop/G40Pks0F0u8RLngP",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开：3.9/1375条/¥70/人，营业中10:30–22:00，闽江路109丙",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 3.9,
         "price_cny_per_person": 70,
@@ -961,12 +961,12 @@
         "url": "https://www.dianping.com/shop/EszDnMLqL8OmDPkr",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome原生青岛金麦园搜索结果取得真实链接后直接亲开，头部推荐菜可读。",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.4,
         "price_cny_per_person": 14,
-        "recent_negative_review_scope": "仅门店头部、推荐菜和菜单入口可见，近3个月差评未读，未做低分筛选。",
-        "summary": "湖北路店，4.4/4103/¥14，营业中05:30–15:00，安徽18甲；花生/牛角/糯米/黄米推荐。"
+        "recent_negative_review_scope": "7月29日、8月6日、9月4日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：7月29日觉得主要胜在价格与情怀，提到午间排队和停车紧张；8月6日认为面包扎实、甜香饱腹；9月4日喜欢咸酥，认为面包大、适合分享。"
       },
       "gaode": {
         "url": "https://www.amap.com/place/B021401ADB",
@@ -1060,12 +1060,12 @@
         "url": "https://www.dianping.com/shop/iDQsgJ0cZkcjDveJ",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开4.2/1959条/¥11，营业中05:30-14:00，四平路23甲",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.2,
         "price_cny_per_person": 11,
-        "recent_negative_review_scope": "商店页只展示推荐菜菜单，去App查看，未读取近三个月差评",
-        "summary": "肉馅饼、甜沫、青萝卜/韭菜素馅饼与专帖匹配，营业已见；评分不是独立口味保证。"
+        "recent_negative_review_scope": "8月30日、6月6日、6月5日默认三评；后两条不在近三个月，未筛全部低分。",
+        "summary": "已读默认三条：8月30日喜欢松软面香和季节馅料；6月6日自述常吃早餐、喜欢甜沫与馅饼；6月5日觉得甜沫不错，但品种少、环境拥挤。后两条较旧。"
       },
       "gaode": {
         "url": "https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E8%80%81%E6%96%B9%E5%AD%90%E9%A6%85%E9%A5%BC%E7%B2%A5%20%E5%9B%9B%E5%B9%B3%E8%B7%AF",
@@ -1159,7 +1159,7 @@
         "url": "https://www.dianping.com/shop/jJK5gGoR4T92FDTF",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开同台东店头部与默认3评论",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.1,
         "price_cny_per_person": 20,
@@ -1264,12 +1264,12 @@
         "url": "https://www.dianping.com/shop/H9TrdAx2FBuJVTho",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开真实同分店头部推荐菜可读",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 3.8,
         "price_cny_per_person": 62,
-        "recent_negative_review_scope": "无评价列表，近3个月差评未读/未低分筛选。",
-        "summary": "3.8/142/¥62，营业中06:30–18:30，四川31馨大众市场TD-063；肥瘦42人、精瘦21人推荐。"
+        "recent_negative_review_scope": "9月18日、6月16日、2025年11月17日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：9月18日喜欢酥脆、不油的口感；6月16日喜欢肥瘦五花款并区分软脂渣与风干口感；2025年11月17日觉得酥脆但价格贵。后两条较旧。"
       },
       "gaode": {
         "url": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%E8%94%9A%E9%81%93%E8%80%81%E6%9D%8E%E6%9D%91%E8%84%82%E6%B8%A3%E5%9B%A2%E5%B2%9B",
@@ -1371,7 +1371,7 @@
         "url": "https://www.dianping.com/shop/98074948",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开4.2/673条/¥24，营业中06:00-21:00，新疆路8号",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.2,
         "price_cny_per_person": 24,
@@ -1472,12 +1472,12 @@
         "url": "https://www.dianping.com/shop/2384992",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开4.1/1628条/¥30，营业中07:30-21:00，沈阳路28",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.1,
         "price_cny_per_person": 30,
-        "recent_negative_review_scope": "网页版仅推荐菜，近三个月差评未读",
-        "summary": "牛肉、虾仁、虾虎等51菜品与正文菜品一致；免费停车标签与专帖难停车体验并存，现场停车未确认"
+        "recent_negative_review_scope": "9月4日、9月21日、3天前默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：9月4日喜欢锅贴，却对当次电烤肉的气味不满意，这是个人反馈；3天前食客喜欢现做虾虎锅贴；9月21日回访食客喜欢虾仁、鲅鱼和焦脆底，提到饭点人多。"
       },
       "gaode": {
         "url": "https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%20%E5%8A%88%E6%9F%B4%E9%99%A2%E9%94%85%E8%B4%B4%20%E6%B2%88%E9%98%B3%E8%B7%AF28",
@@ -1525,21 +1525,21 @@
       "local_character": "专帖称青岛老式糕点；店面照片生活林招牌、门牌8号与作者置顶河北路地址相符。历史年限尚未独立核实。",
       "why": "适合作为传统糕点伴手礼候选，作者分享购买五仁月饼的具体口感及与青大附院月饼的价格比较。",
       "risks": [
-        "帖子没有具体报价，作者称比青大附院月饼贵一点。",
-        "五仁款式多，青红丝配料需提前确认，作者回复自己所买一款没有。",
-        "点评近期差评、地图营业尚未核实，当前仅作候选。"
+        "不同款式甜度和配料差异大，五仁是否含青红丝需向店员确认。",
+        "大众点评¥34/人为平台估算，不是单品报价。",
+        "已读默认三条点评，未筛全近期低分；到店前再确认营业。"
       ],
       "scene": [
         "扫街",
         "伴手礼"
       ],
-      "level": "exclude",
-      "level_reason": "采集材料齐全但跨平台可读验证不足、营业未知，排除推荐；不冒用同名酒店信息。",
-      "address": "市南区河北路8号（作者置顶评论）",
-      "price_cny_per_person": null,
-      "price_basis": "unknown，正文只有相对价格",
-      "opening": null,
-      "opening_checked": false,
+      "level": "caution",
+      "level_reason": "本轮已核实河北路店大众点评地址与营业时段，可作老式糕点备选；口味偏甜、配料因款式不同，近期全部低分评论尚未筛全。",
+      "address": "青岛市市南区河北路8号",
+      "price_cny_per_person": 34,
+      "price_basis": "2026-10-01本轮大众点评¥34/人，平台估算非单品报价",
+      "opening": "大众点评营业中08:00—20:00（2026-10-01本轮核实）",
+      "opening_checked": true,
       "xhs": {
         "note_id": "6ab34b810000000018005412",
         "title": "青岛生活林老式糕点店",
@@ -1560,13 +1560,13 @@
       "dianping": {
         "url": "https://www.dianping.com/shop/H55t8vyPu9A4hcxI",
         "kind": "shop",
-        "readable": false,
-        "status": "Chrome青岛search实际得到河北路店直链及1175评价/¥34；导航直店时报标签不属session、重绑定native pipe关闭。评分营业未读；web另实际open直链工具不可访问",
+        "readable": true,
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
-        "rating": null,
+        "rating": 4.5,
         "price_cny_per_person": 34,
-        "recent_negative_review_scope": "未能读取",
-        "summary": "具体河北路店实际搜索发现；评分、营业、近期差评unknown"
+        "recent_negative_review_scope": "7月4日、9月17日、20小时前默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：7月4日喜欢老式可可点心与萨其马；9月17日觉得可可点心甜腻，认可蜜三刀和八宝月饼，也觉得服务热情；20小时前评价认为甜度较过去更合口味。均为个人感受。"
       },
       "gaode": {
         "url": "https://ditu.amap.com/search?query=%E9%9D%92%E5%B2%9B%E7%94%9F%E6%B4%BB%E6%9E%97%E6%B2%B3%E5%8C%97%E8%B7%AF",
@@ -1679,12 +1679,12 @@
         "url": "https://www.dianping.com/shop/H9kukpsJPz4Lz6IJ",
         "kind": "shop",
         "readable": true,
-        "status": "青岛具体昆明路搜索取得实际链接，Chrome亲开。",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.6,
         "price_cny_per_person": 34,
-        "recent_negative_review_scope": "仅头部套餐推荐菜可读，近3个月评论/低分筛选未读。",
-        "summary": "4.6/10230/¥34，营业中08:30–22:00，昆明70台六小学旁；芋泥流沙、抹茶黑巧、榴莲乳酪可见推荐。"
+        "recent_negative_review_scope": "9月13日、5月27日、5月13日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：9月13日喜欢芋泥流沙、榴莲乳酪和黑巧酥皮；5月27日分享早期红豆饼回购记忆；5月13日游客喜欢榴莲与抹茶黑巧。后两条较旧，不代表近期全部意见。"
       },
       "gaode": {
         "url": "https://ditu.amap.com/place/B0FFFRUEH2",
@@ -1802,12 +1802,12 @@
         "url": "https://www.dianping.com/shop/k5xKDCEpgWiMcuqe",
         "kind": "shop",
         "readable": true,
-        "status": "青岛具体搜索实际链接亲开头部推荐菜可读",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.3,
         "price_cny_per_person": 20,
-        "recent_negative_review_scope": "只有门店头部推荐菜菜单，无评价列表，未低分筛选，近3个月差评未读。",
-        "summary": "4.3/4439/¥20，台东面包蛋糕好评榜第1，营业07–21:30，顺兴100；油酥花生牛角面包68人推荐。"
+        "recent_negative_review_scope": "9月12日、8月9日、8月8日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：9月12日食客按推荐买多款，正文未作完整口味结论；8月9日喜欢油酥牛角的香与价格，但觉得单吃干噎，更喜欢紫米面包；8月8日喜欢油酥的层次和火烧。"
       },
       "gaode": {
         "url": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%E9%A1%BA%E5%85%B4%E9%A3%9F%E5%93%81%E9%A1%BA%E5%85%B4%E8%B7%AF100%E5%8F%B7",
@@ -1924,7 +1924,7 @@
         "url": "https://www.dianping.com/shop/l3Rdu0KogFGBZ7rG",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开同分店头部及默认3评论",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4,
         "price_cny_per_person": 35,
@@ -2044,7 +2044,7 @@
         "url": "https://www.dianping.com/shop/k4wItWds68ZsFbh7",
         "kind": "shop",
         "readable": true,
-        "status": "青岛搜索实际店链接亲开完整店页",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.1,
         "price_cny_per_person": 26,
@@ -2146,12 +2146,12 @@
         "url": "https://www.dianping.com/shop/3634069",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开总店头部推荐菜与团购",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.4,
         "price_cny_per_person": 24,
-        "recent_negative_review_scope": "无评价列表，近3月低分未读。",
-        "summary": "4.4/858/¥24营业中10–21秀湛1南侧；233人肋边/129白菜/67土豆海带。平台套餐脊骨或肋边18.9、双拼26.9显示未购买。"
+        "recent_negative_review_scope": "4月10日、5月13日、7月6日默认三评；前两条较旧，未筛近三个月全部低分。",
+        "summary": "已读默认三条：4月10日喜欢脊骨、肋排配白菜与汤泡饭；5月13日喜欢清淡白菜款及酸菜款；7月6日认可软烂和酸菜开胃，但自述吃后口干，不能由此推断成分。"
       },
       "gaode": {
         "url": "https://www.amap.com/place/B0FFFAH0IE",
@@ -2256,12 +2256,12 @@
         "url": "https://www.dianping.com/shop/F15hclUyOFfnkMbs",
         "kind": "shop",
         "readable": true,
-        "status": "青岛具体宁化路搜索取得链接并亲开。",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.2,
         "price_cny_per_person": 13,
-        "recent_negative_review_scope": "仅头部推荐菜菜单可读，近3个月差评未读。",
-        "summary": "4.2/285/¥13，休息中次日06开始，宁化39号1-5；甜沫萝卜馅饼肉火烧推荐。"
+        "recent_negative_review_scope": "6月7日、9月10日、3天前默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：6月7日提到9点半仍有人排队、周边难停车；9月10日喜欢咸鲜料足的甜沫与炸物；3天前较差评价觉得品质下降，并称当次火烧吃出酸味，是个人体验，未独立检验。"
       },
       "gaode": {
         "url": "https://www.amap.com/place/B0FFF9PFAZ",
@@ -2378,12 +2378,12 @@
         "url": "https://www.dianping.com/shop/19585035",
         "kind": "shop",
         "readable": true,
-        "status": "Chrome亲开同分店头部与推荐菜",
+        "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码",
         "matched_branch": true,
         "rating": 4.2,
         "price_cny_per_person": 10,
-        "recent_negative_review_scope": "仅头部及推荐菜可读，无评价列表；近3个月低分未读。",
-        "summary": "4.2/218/¥10，营业中06:30–16:30，广饶107小学大门对面，地铁1号线广饶路C口步行80m；70人荐烤肉火烧、52人秘方茶叶蛋、47人经典甜沫。"
+        "recent_negative_review_scope": "4月4日、9月11日、4月27日默认三评；未筛近三个月全部低分。",
+        "summary": "已读默认三条：4月4日喜欢圆葱肉火烧配甜沫；9月11日回访食客喜欢火烧和茶蛋，但对一位工作人员态度不满；4月27日游客觉得火烧一般。前后两条较旧。"
       },
       "gaode": {
         "url": "https://www.amap.com/search?query=%E9%9D%92%E5%B2%9B%E4%BA%8E%E8%AE%B0%E8%80%81%E7%94%9C%E6%B2%AB%E5%B9%BF%E9%A5%B6%E8%B7%AF107%E5%8F%B7",
@@ -9965,8 +9965,8 @@
       "address": "西长街20-1号",
       "price_cny_per_person": 82,
       "price_basis": "2026-10-01浏览器点评店页可见，非当前保证；高德搜索人均64不一致",
-      "opening": "点评店页显示11:00-13:30,17:00-20:30；高德未见营业时间",
-      "opening_checked": false,
+      "opening": "点评2026-10-01当前营业中，11:00-13:30、17:00-20:30；到店前再确认",
+      "opening_checked": true,
       "xhs": {
         "note_id": "689980b40000000025027e8d",
         "title": "淮安美食4.0｜蒲鲜菜馆",
@@ -10247,7 +10247,7 @@
       "address": "上海路利苑新村二区十四幢107号（点评）；高德同栋105，门头电话18652307177",
       "price_cny_per_person": 10,
       "price_basis": "2026-10-01点评10元/高德13元人均；08-13主帖中份10元、6-7块为当次价，非保证",
-      "opening": "点评休息中16:00开始营业；高德休息中16:00-23:00",
+      "opening": "点评2026-10-01当前营业中16:00-23:00",
       "opening_checked": true,
       "xhs": {
         "note_id": "6a7d9ffc0000000006006bc3",
@@ -10542,5 +10542,5 @@
       "strict_recommendation_eligible": true
     }
   ],
-  "note": "本轮研究已停止，当前为已完成记录的汇总，尚未达到原定目标。目标不是已完成数量。芜湖按用户要求暂停补采，仅保留已有出发早餐参考，不计其余五城240家目标。采集记录齐全与口碑营业核实分开；所有照片保留原作者及水印；采集时为私人旅行参考，用户于2026-10-01确认公开展示，原作者再使用许可未建立。"
+  "note": "本轮研究已停止，当前为已完成记录的汇总，尚未达到原定目标。目标不是已完成数量。芜湖按用户要求暂停补采，仅保留已有出发早餐参考，不计其余五城240家目标。采集记录齐全与口碑营业核实分开；所有照片保留原作者及水印；原采集权限字段保留历史记录；用户于2026-10-01确认已取得相关图片转载授权，公开展示保留作者、水印和来源。"
 }

@@ -5,8 +5,25 @@ import fs from 'node:fs';
 vi.mock('../src/scene.js',()=>({createScene:vi.fn((el,{onReady})=>{onReady();return{selectCity:vi.fn(),setMotion:vi.fn(),setDayRoute:vi.fn(),rotate:vi.fn(),reset:vi.fn(),setViewMode:vi.fn(),dispose:vi.fn()}})}));
 import App from '../src/App.jsx';
 import {createScene} from '../src/scene.js';
-const data=JSON.parse(fs.readFileSync('public/data/official-route.json')),media=JSON.parse(fs.readFileSync('public/data/attraction-media.json')),food=JSON.parse(fs.readFileSync('public/data/food-guide.json')),xhs=JSON.parse(fs.readFileSync('public/data/xiaohongshu.json'));
-beforeEach(()=>{localStorage.clear();global.fetch=vi.fn(url=>Promise.resolve({ok:true,json:()=>Promise.resolve(String(url).includes('food-guide')?food:String(url).includes('xiaohongshu')?xhs:String(url).includes('attraction-media')?media:data)}))});afterEach(cleanup);
+const data=JSON.parse(fs.readFileSync('public/data/official-route.json'));
+const sourceMedia=JSON.parse(fs.readFileSync('public/data/attraction-media.json')),sourceFood=JSON.parse(fs.readFileSync('public/data/food-guide.json')),sourceXhs=JSON.parse(fs.readFileSync('public/data/xiaohongshu.json')),sourceEditorial=JSON.parse(fs.readFileSync('public/data/editorial.json'));
+// These integration cases exercise the journey and resource state machine. Keep
+// authentic records for every city and the exact originals used by the assertions,
+// while collections/content tests separately cover the full 139-entry research pool.
+// App keeps resource panels mounted under [hidden]; rendering the growing entire
+// corpus here makes every accessibility query traverse thousands of irrelevant nodes.
+const attractionIds=['wh_zhongjiang_pagoda','lyg_democracy_road','qd_zhanqiao','wh_banyue_bay','rz_wanpingkou','ha_yumatou'];
+const media={...sourceMedia,attractions:sourceMedia.attractions.filter(a=>attractionIds.includes(a.id))};
+const fixtureCities=['芜湖','连云港','青岛','威海','日照','淮安'];
+const food={...sourceFood,entries:fixtureCities.map(city=>sourceFood.entries.find(e=>e.city===city&&e.level!=='exclude')).filter(Boolean)};
+const xhs={...sourceXhs,entries:fixtureCities.map(city=>sourceXhs.entries.find(e=>e.city===city)).filter(Boolean)};
+const editorial={...sourceEditorial,entries:sourceEditorial.entries.filter(e=>e.kind==='spot'?attractionIds.includes(e.id):food.entries.some(f=>f.id===e.id))};
+const fetchFixtures=new Map([['official-route.json',data],['attraction-media.json',media],['food-guide.json',food],['xiaohongshu.json',xhs],['editorial.json',editorial]]);
+beforeEach(()=>{localStorage.clear();global.fetch=vi.fn(url=>{
+ const name=String(url).split('/').at(-1),fixture=fetchFixtures.get(name);
+ if(!fixture)throw new Error(`Unexpected App fixture request: ${url}`);
+ return Promise.resolve({ok:true,json:()=>Promise.resolve(fixture)});
+})});afterEach(cleanup);
 async function ready(guide=false){render(<App/>);await screen.findByRole('heading',{name:'是时候去看海了。'});await waitFor(()=>expect(createScene.mock.results.at(-1)?.value).toBeDefined());if(guide)fireEvent.click(screen.getByRole('button',{name:'查看全部',exact:true}));}
 function begin(){fireEvent.click(screen.getByRole('button',{name:'开始旅程',exact:true}))}
 function day(i){fireEvent.click(screen.getAllByRole('tab')[i])}
@@ -55,4 +72,19 @@ it('card collections open beside full guide, keep day selection and do not chang
  fireEvent.click(screen.getByRole('button',{name:'卡片集合',exact:true}));expect(screen.getByRole('region',{name:'卡片集合'})).toBeTruthy();expect(screen.getByRole('button',{name:'卡片集合',exact:true}).getAttribute('aria-pressed')).toBe('true');expect(screen.queryByRole('article',{name:/行程安排/})).toBeNull();
  fireEvent.click(screen.getByRole('button',{name:'打开日照卡片集合'}));fireEvent.click(screen.getByRole('button',{name:'喜欢当前卡片'}));expect(api.setDayRoute).not.toHaveBeenCalled();
  fireEvent.click(screen.getByRole('button',{name:'按天看行程',exact:true}));expect(screen.getAllByRole('tab')[2].getAttribute('aria-selected')).toBe('true');expect(screen.queryByRole('region',{name:'卡片集合'})).toBeNull();
+});
+
+it('the journey attraction opens the shared editorial text and album without losing the current day',async()=>{
+ await ready();begin();day(1);stage('想去哪里');
+ const entry=editorial.entries.find(e=>e.id==='qd_zhanqiao');
+ fireEvent.click(screen.getByRole('button',{name:/阅读完整介绍与相册/}));
+ const modal=screen.getByRole('dialog',{name:'栈桥 · 回澜阁详情'});
+ expect(visible(modal)).toBeTruthy();
+ expect(within(modal).getByText(entry.overview[0])).toBeTruthy();
+ expect(within(modal).getByText(entry.review_summary.dianping)).toBeTruthy();
+ expect(within(modal).getByRole('combobox',{name:'筛选照片来源'})).toBeTruthy();
+ fireEvent.click(within(modal).getByRole('button',{name:'关闭详情'}));
+ expect(screen.queryByRole('dialog')).toBeNull();
+ expect(screen.getByRole('heading',{name:'第 2 天 · 想去哪里'})).toBeTruthy();
+ expect(screen.getAllByRole('tab')[1].getAttribute('aria-selected')).toBe('true');
 });

@@ -5,3 +5,4 @@ dist/
 *.har
 *storage-state*
 *cookies*
+work/content-enrichment/

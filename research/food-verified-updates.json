@@ -1,0 +1,208 @@
+{
+  "qingdao_chunhelou": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_dengji": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "5月18日、5月20日、9月10日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：5月18日食客觉得上海风味偏甜、更喜欢北方风味和虾仁；9月10日食客认可味道却觉得包子皮稍厚，并提到当次洗手间维修；5月20日喜欢素虾仁及带汤甜口上海风味。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_fuxishan": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_haiping": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_haiyan_nainai": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "9月19日、10小时前、4天前默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：9月19日喜欢四种锅贴组合、认为双人餐份量足并等约15分钟；10小时前食客觉得一般但馅多，偏爱海胆、吃不惯甜沫；4天前食客喜欢现煎脆底与多汁口感。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "opening": "本轮大众点评营业中08:00—23:00；较早记录08:00—22:00存在差异",
+    "opening_checked": true,
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_haomeiwei": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配上清路店头部与主图可读；未出现评论列表，完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_hongbaoshi": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "7月6日两评、9月21日一评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：7月6日一位觉得味道还行，另一位认为主要吃情怀且不满意拒绝堂食的安排；9月21日喜欢栗子颗粒和不甜的栗子酱，但觉得蛋糕胚偏干。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_jiefujia": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_jinmaiyuan": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "7月29日、8月6日、9月4日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：7月29日觉得主要胜在价格与情怀，提到午间排队和停车紧张；8月6日认为面包扎实、甜香饱腹；9月4日喜欢咸酥，认为面包大、适合分享。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_laofangzi": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "8月30日、6月6日、6月5日默认三评；后两条不在近三个月，未筛全部低分。",
+      "summary": "已读默认三条：8月30日喜欢松软面香和季节馅料；6月6日自述常吃早餐、喜欢甜沫与馅饼；6月5日觉得甜沫不错，但品种少、环境拥挤。后两条较旧。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_laojimo901": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_laolicun_tuandao": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "9月18日、6月16日、2025年11月17日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：9月18日喜欢酥脆、不油的口感；6月16日喜欢肥瘦五花款并区分软脂渣与风干口感；2025年11月17日觉得酥脆但价格贵。后两条较旧。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_lianji": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_pichaiyuan": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "9月4日、9月21日、3天前默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：9月4日喜欢锅贴，却对当次电烤肉的气味不满意，这是个人反馈；3天前食客喜欢现做虾虎锅贴；9月21日回访食客喜欢虾仁、鲅鱼和焦脆底，提到饭点人多。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_shenghuolin": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "7月4日、9月17日、20小时前默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：7月4日喜欢老式可可点心与萨其马；9月17日觉得可可点心甜腻，认可蜜三刀和八宝月饼，也觉得服务热情；20小时前评价认为甜度较过去更合口味。均为个人感受。",
+      "rating": 4.5,
+      "price_cny_per_person": 34,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "address": "青岛市市南区河北路8号",
+    "opening": "大众点评营业中08:00—20:00（2026-10-01本轮核实）",
+    "opening_checked": true,
+    "price_cny_per_person": 34,
+    "price_basis": "2026-10-01本轮大众点评¥34/人，平台估算非单品报价",
+    "checked_at": "2026-10-01",
+    "level": "caution",
+    "level_reason": "本轮已核实河北路店大众点评地址与营业时段，可作老式糕点备选；口味偏甜、配料因款式不同，近期全部低分评论尚未筛全。",
+    "risks": [
+      "不同款式甜度和配料差异大，五仁是否含青红丝需向店员确认。",
+      "大众点评¥34/人为平台估算，不是单品报价。",
+      "已读默认三条点评，未筛全近期低分；到店前再确认营业。"
+    ]
+  },
+  "qingdao_shisanbukao": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "9月13日、5月27日、5月13日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：9月13日喜欢芋泥流沙、榴莲乳酪和黑巧酥皮；5月27日分享早期红豆饼回购记忆；5月13日游客喜欢榴莲与抹茶黑巧。后两条较旧，不代表近期全部意见。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_shunxing": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "9月12日、8月9日、8月8日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：9月12日食客按推荐买多款，正文未作完整口味结论；8月9日喜欢油酥牛角的香与价格，但觉得单吃干噎，更喜欢紫米面包；8月8日喜欢油酥的层次和火烧。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_wangjie": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_wanhechun": {
+    "dianping": {
+      "readable": true,
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_wanzhongyuan": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "4月10日、5月13日、7月6日默认三评；前两条较旧，未筛近三个月全部低分。",
+      "summary": "已读默认三条：4月10日喜欢脊骨、肋排配白菜与汤泡饭；5月13日喜欢清淡白菜款及酸菜款；7月6日认可软烂和酸菜开胃，但自述吃后口干，不能由此推断成分。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_xujia": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "6月7日、9月10日、3天前默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：6月7日提到9点半仍有人排队、周边难停车；9月10日喜欢咸鲜料足的甜沫与炸物；3天前较差评价觉得品质下降，并称当次火烧吃出酸味，是个人体验，未独立检验。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "qingdao_yuji": {
+    "dianping": {
+      "readable": true,
+      "recent_negative_review_scope": "4月4日、9月11日、4月27日默认三评；未筛近三个月全部低分。",
+      "summary": "已读默认三条：4月4日喜欢圆葱肉火烧配甜沫；9月11日回访食客喜欢火烧和茶蛋，但对一位工作人员态度不满；4月27日游客觉得火烧一般。前后两条较旧。",
+      "status": "本轮匹配分店头部、默认三条评论与对应可见缩略图可读；完整图集需要App扫码"
+    },
+    "checked_at": "2026-10-01"
+  },
+  "huaian_puxian": {
+    "opening": "点评2026-10-01当前营业中，11:00-13:30、17:00-20:30；到店前再确认",
+    "opening_checked": true,
+    "checked_at": "2026-10-01"
+  },
+  "huaian_tangshigong": {
+    "opening": "点评2026-10-01当前营业中16:00-23:00",
+    "opening_checked": true,
+    "checked_at": "2026-10-01"
+  }
+}

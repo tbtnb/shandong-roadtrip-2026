@@ -1,7 +1,10 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useMemo,useState} from 'react';
 import {ArrowUpRight,MapPin,Plus,Minus,Check,Stamp,ImageSquare,Clock,Warning,Copy} from '@phosphor-icons/react';
 import {safeExternal} from './utils.js';
 import GettyPhoto from './GettyPhoto.jsx';
+import EditorialDetails from './EditorialDetails.jsx';
+import {albumImages,editorialFor,useEditorial} from './editorial.js';
+import {makeCards} from './collection-model.js';
 const B=import.meta.env.BASE_URL;
 const featuredIds=new Set(['lyg_democracy_road','lyg_yanhe_lane','qd_zhanqiao','qd_zhongshan_road','qd_mayfour_square','wh_happiness_gate','wh_banyue_bay','wh_maotou_hill','wh_international_beach','rz_wanpingkou','rz_lighthouse','wh_zhongjiang_pagoda']);
 const licensedImage=a=>a.images?.find(i=>i.reuse_status==='explicitly_licensed'&&i.visual_verified&&i.url);
@@ -10,12 +13,14 @@ const roleLabels={first_night_optional:'到得早再逛',default_short_walk:'行
 function Link({href,children}){return safeExternal(href)?<a href={href} target="_blank" rel="noopener noreferrer">{children}<ArrowUpRight size={13}/></a>:<span>{children}</span>}
 function readStore(){try{const x=JSON.parse(localStorage.getItem('coastal-journal-v1')||'{}');const plans={};for(const [key,val] of Object.entries(x.plans||{})){if(!/^[56]-2026-10-0[2-7]$/.test(key)||!val||typeof val!=='object')continue;plans[key]=Object.fromEntries(Object.entries(val).filter(([id,n])=>/^[a-z0-9_]+$/.test(id)&&[30,60,90,120,180,240].includes(n)));}return{plans,stamps:[...new Set(Array.isArray(x.stamps)?x.stamps.filter(v=>['wuhu','lianyungang','qingdao','weihai','rizhao'].includes(v)):[])]}}catch{return{plans:{},stamps:[]}}}
 export default function AttractionDeck({media,city:routeCity,day,days,activeDay,data,onChooseDay,onCity,itinerary,guided=false}){
- const [alternateCity,setAlternateCity]=useState(false);
+ const [alternateCity,setAlternateCity]=useState(false),[detail,setDetail]=useState(null);
+ const editorial=useEditorial(),cards=useMemo(()=>makeCards(media,{entries:[]}),[media]);
+ const cardFor=id=>cards.find(c=>c.id===id);
  const city=alternateCity?{id:'huaian',name:'淮安',en:'HUAIAN',tag:'途中备选',desc:'这些地点供途中停靠比较，不自动加入当前行程。'}:routeCity;
  const [journal,setJournal]=useState(readStore),[storageFailed,setStorageFailed]=useState(false),[copied,setCopied]=useState(''),[openId,setOpenId]=useState(''),[showCandidates,setShowCandidates]=useState(false);
  useEffect(()=>{try{localStorage.setItem('coastal-journal-v1',JSON.stringify(journal));setStorageFailed(false)}catch{setStorageFailed(true)}},[journal]);
  useEffect(()=>{setAlternateCity(false)},[routeCity.id]);
- useEffect(()=>{setOpenId('');setShowCandidates(false)},[city.id]);
+ useEffect(()=>{setOpenId('');setShowCandidates(false);setDetail(null)},[city.id]);
  const attractions=(media.attractions||[]).filter(a=>a.city===city.name);
  const shown=showCandidates||alternateCity?attractions:attractions.filter(a=>featuredIds.has(a.id));const candidateCount=alternateCity?0:attractions.length-attractions.filter(a=>featuredIds.has(a.id)).length;const synthesis=data.city_synthesis?.[city.name];
  const featured=(media.attractions||[]).filter(a=>featuredIds.has(a.id));const featuredPhotoCount=featured.filter(a=>!privateImage(a)&&licensedImage(a)).length;
@@ -29,7 +34,7 @@ export default function AttractionDeck({media,city:routeCity,day,days,activeDay,
  async function copy(n){try{await navigator.clipboard.writeText(n.copy_fallback||`${n.title} ${n.author}`);setCopied(n.note_id)}catch{setCopied(`failed-${n.note_id}`)}}
  const matchingDay=itinerary.days.findIndex(d=>d.sleep===city.name);
  const cityTabs=<div className="deck-city-tabs" role="group" aria-label="按城市查看景点照片">{[{id:'wuhu',name:'芜湖'},{id:'lianyungang',name:'连云港'},{id:'qingdao',name:'青岛'},{id:'weihai',name:'威海'},{id:'rizhao',name:'日照'},{id:'huaian',name:'淮安'}].map(c=><button key={c.id} aria-pressed={city.id===c.id} onClick={()=>{setAlternateCity(c.id==='huaian');if(c.id!=='huaian')onCity?.(c.id)}}>{c.name}{c.id==='huaian'?' · 备选':''}</button>)}</div>;
- const photoCoverage=<>{featured.length>0&&<p className="small muted">精选 {featured.length} 个地点中，{featuredPhotoCount} 个已有站内许可实景图，{featuredPrivate} 个已有小红书私人参考图，{featuredMissing} 个请打开原帖 / 来源页看实景。占位图标不是现场照片；全站其他许可照片还包含研究候选。</p>}<p className="small muted">全量 {all.length} 张景点卡：{privatePhotos} 张已有小红书私人参考图，{all.length-privatePhotos} 张仍待补小红书图片；另有 {allPhotos} 张许可实景图，{allPosts} 张有景点或餐区专帖。许可照片并非小红书下载图；所有署名与缺口保留。</p></>;
+ const photoCoverage=<p className="small muted">全站 {all.length} 处景点。打开完整详情，可直接阅读综合介绍、浏览多篇帖子图片及来源。照片保留作者与水印；历史影像不代表当前客流或天气。</p>;
  function noteContent(n,primary=false){return <div className="dedicated-note" key={n.note_id}><small>{n.dedicated_scenery_post?'景点专门攻略':n.topic_kind==='food'?'街区餐饮专门攻略':'仅停车 / 交通主题，景观专帖仍待补'}</small>{!primary&&<><Link href={n.url}>{n.title}</Link><p>作者：{n.author}</p></>}<p>{n.date_visible||'页面未显示日期'} · {n.link_status_label||'此入口尚未重验，可能需 App / 登录；可按标题与作者在小红书搜索'}</p>{n.body_summary&&<p>{n.body_summary}</p>}{!primary&&<><button className="secondary" onClick={()=>copy(n)}><Copy size={15}/>{copied===n.note_id?'标题已复制':'复制标题与作者'}</button>{copied===`failed-${n.note_id}`&&<p role="status">剪贴板不可用，请手动复制上方文字</p>}</>}<details className="note-verification"><summary>原帖查看说明</summary>{n.current_body_read_verified===true&&<p className="small muted">本次已阅读正文{n.link_checked_at?`（${n.link_checked_at.slice(0,10)}）`:''}。</p>}<p className="small muted">{n.link_status_label||'此入口尚未重验，可能需 App / 登录；可按标题与作者在小红书搜索。'}</p>{(n.anonymous_access_verified===false||n.mobile_link_verified===false)&&<p className="small muted">{n.anonymous_access_verified===false&&n.mobile_link_verified===false?'匿名及手机打开未验证':n.anonymous_access_verified===false?'匿名打开未验证':'手机打开未验证'}。</p>}</details></div>}
 
  return <section id="city-attractions" className="attraction-deck" aria-label={`${city.name}景点卡`}>
@@ -44,8 +49,9 @@ export default function AttractionDeck({media,city:routeCity,day,days,activeDay,
    <button className="spot-cover" aria-expanded={openId===a.id} aria-controls={`spot-${a.id}`} onClick={()=>setOpenId(openId===a.id?'':a.id)}>{im?<img src={`${B}${im.url}`} alt={im.alt} width={im.width} height={im.height} loading="lazy" decoding="async"/>:<span className="photo-pending"><ImageSquare size={30}/><span>{a.embeds?.length?'实景图请打开来源':'实景图片待核'}</span><small>{a.embeds?.length?'非现场照片 · 打开来源查看':'占位图标，非现场照片'}</small></span>}<span className="spot-cover-title"><strong>{a.name}</strong><small>{openId===a.id?'收起详情':'查看实景与攻略'}<Plus size={16}/></small></span></button>
    {primaryNote&&<div className="original-photo-link"><Link href={primaryNote.url}>{privateRef?`照片原帖：${primaryNote.title}`:`地点原帖：${primaryNote.title}`}</Link><small>作者：{primaryNote.author}</small><small>{primaryNote.link_status_label||'此入口尚未重验，可能需 App / 登录'}</small><button className="text-button" onClick={()=>copy(primaryNote)}><Copy size={14}/>{copied===primaryNote.note_id?'标题已复制':'复制标题与作者'}</button>{copied===`failed-${primaryNote.note_id}`&&<small role="status">请手动复制上方标题与作者</small>}</div>}
    <span className="role-chip">{roleLabels[a.route_role]||'可选候选'}</span>
-   {im&&<p className="photo-credit"><Link href={im.source_url}>{im.author} · {im.source_name||'实景摄影'}</Link>{privateRef?<span>私人旅行参考 · 未取得公开转载许可</span>:<Link href={im.license_url}>{im.license}</Link>}<span>{im.attribution}</span><span>{im.capture_year?`${im.capture_year} 年影像`:'拍摄年份未明'} · 不能据此判断当前客流</span></p>}
-   <div id={`spot-${a.id}`} hidden={openId!==a.id} className="spot-expanded"><p>{a.description||im?.caption||`${a.name}是${city.name}的一个候选看点。是否前往取决于当天时段、天气和停车条件。`}</p>{im&&<p className="small muted">{im.source_label}<br/>{im.changes}</p>}
+   <button className="ed-open-details" onClick={()=>setDetail(cardFor(a.id))}>阅读完整介绍与相册 · {albumImages(cardFor(a.id),editorialFor(editorial,cardFor(a.id))).length} 张实拍</button>
+   {im&&<p className="photo-credit"><Link href={im.source_url}>{im.author} · {im.source_name||'实景摄影'}</Link>{privateRef?<span>授权展示 · 保留原作者与来源</span>:<Link href={im.license_url}>{im.license}</Link>}<span>{im.attribution}</span><span>{im.capture_year?`${im.capture_year} 年影像`:'拍摄年份未明'} · 不能据此判断当前客流</span></p>}
+   <div id={`spot-${a.id}`} hidden={openId!==a.id} className="spot-expanded"><p>{editorialFor(editorial,cardFor(a.id))?.overview?.[0]||a.description||im?.caption||`${a.name}是${city.name}的一个候选看点。是否前往取决于当天时段、天气和停车条件。`}</p>{im&&<p className="small muted">{im.source_label}<br/>{im.changes}</p>}
     {(openId===a.id?(a.embeds||[]).slice(0,1):[]).map(item=><GettyPhoto key={item.asset_id} item={item}/>)}
     {primaryNote&&noteContent(primaryNote,true)}
     {notes.some(n=>n.note_id!==primaryNote?.note_id)&&<details className="other-notes"><summary>其他参考帖</summary>{notes.filter(n=>n.note_id!==primaryNote?.note_id).map(n=>noteContent(n))}</details>}
@@ -60,5 +66,6 @@ export default function AttractionDeck({media,city:routeCity,day,days,activeDay,
    <p className="small muted">印章是可选收藏，什么都不加、不盖章，也可以继续下一天。</p>
    <p className="storage-note">{storageFailed?'本设备禁止存储，选择只在当前页面有效':'自选和印章仅保存在当前浏览器，可随时移除；5 / 6 天分别保存'} · 已收集 {journal.stamps.length} / 5 城印章</p>
   </div>
+ {detail&&<EditorialDetails card={detail} onClose={()=>setDetail(null)}/>}
  </section>
 }
