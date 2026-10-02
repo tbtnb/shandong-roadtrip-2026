@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "node scripts/verify-assets.mjs && node scripts/verify-food-assets.mjs && node scripts/verify-editorial.mjs && vite build",
     "preview": "vite preview",
-    "test": "node --test tests/content.test.mjs tests/food-records.test.mjs tests/lianyungang.test.mjs",
+    "test": "node --test tests/content.test.mjs tests/food-records.test.mjs tests/lianyungang.test.mjs tests/huaian.test.mjs",
     "test:ui": "vitest run --config vitest.config.mjs",
     "test:scene": "node scripts/smoke-scene.mjs && node --test tests/scene-interaction-bounds.test.mjs",
     "check": "npm test && npm run test:ui && npm run test:scene && npm run build",

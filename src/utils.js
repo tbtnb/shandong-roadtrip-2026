@@ -1,6 +1,6 @@
 export const cityIds={芜湖:'wuhu',连云港:'lianyungang',青岛:'qingdao',威海:'weihai',日照:'rizhao',淮安:'huaian'};
 export const cityNames=Object.fromEntries(Object.entries(cityIds).map(([name,id])=>[id,name]));
-export function itineraryFor(data,days){return data.itineraries.find(x=>x.days.length===Number(days))??data.itineraries[0]}
+export function itineraryFor(data,days,firstNight='连云港'){const base=data.itineraries.find(x=>x.days.length===Number(days))??data.itineraries[0];if(firstNight!=='淮安'||!data.huaian_variant)return base;return {...base,overnights:['淮安',...base.overnights.slice(1)],days:base.days.map((day,i)=>i<2?{...day,...data.huaian_variant.days[i],date:day.date}:day)};}
 export function safeExternal(url){try{return ['http:','https:'].includes(new URL(url).protocol)}catch{return false}}
 export function filterSources(entries,{city='全部',type='全部',query=''}={}){const q=query.trim().toLocaleLowerCase();return entries.filter(e=>(city==='全部'||e.city===city||e.city?.includes(city))&&(type==='全部'||e.category===type||e.type===type)&&(!q||[e.title,e.summary,e.note,e.city,e.author,...(e.tags||[])].join(' ').toLocaleLowerCase().includes(q)))}
 export function budgetEstimate({nights=5,rooms=2,roomPrice=450,people=4,foodDay=120,km=2000,consumption=8,oilPrice=8,extras=500}){const hotel=Math.max(0,nights*rooms*roomPrice),food=Math.max(0,(nights+1)*people*foodDay),fuel=Math.max(0,km*consumption/100*oilPrice),total=hotel+food+fuel+Math.max(0,extras);return {hotel,food,fuel,extras,total,perPerson:total/Math.max(1,people)}}

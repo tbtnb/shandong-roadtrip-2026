@@ -56,3 +56,4 @@
 @media(prefers-reduced-motion:reduce){.trip-workspace *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 .coastal-preview figcaption details{font:11px/1.6 sans-serif;margin-top:4px}.coastal-preview figcaption summary{cursor:pointer;min-height:24px;padding:2px 0}.coastal-preview figcaption details p{font:11px/1.6 sans-serif;margin-top:4px}
+.first-night-choice{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:16px 20px;color:#496653;font-size:13px}.first-night-choice button{border:1px solid #b8b4a1;border-radius:20px;background:transparent;padding:7px 13px;color:inherit}.first-night-choice button[aria-pressed=true]{background:#425d4d;color:#fff}.first-night-choice span{margin-right:5px}

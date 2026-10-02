@@ -495,6 +495,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
 
   // Tangible dots pair with readable HTML labels. Both are interactive.
   const cityData = [
+    {id:'huaian',name:'淮安',note:'古镇 · 首晚可选',p:[-2.70,.74,5.65],tag:[-3.00,1.03,5.6]},
     {id:'wuhu',name:'芜湖',note:'中江塔 · 江畔出发',p:[-1.86,.72,6.35],tag:[-3.25,1.03,6.3]},
     {id:'lianyungang',name:'连云港',note:'向海中转',p:[-.12,.74,4.15],tag:[-2.25,1.04,4.15]},
     {id:'rizhao',name:'日照',note:'灯塔 · 返程可选',p:[.05,.74,2.36],tag:[-2.2,1.04,2.16]},
@@ -595,6 +596,7 @@ export function createScene(container, { onSelect = () => {}, onReady = () => {}
   // Standing on the paper road beside each city, facing its modeled landmark.
   // City changes jump between safe viewpoints instead of flying through buildings.
   const immersiveViews={
+    huaian:{eye:[-.4,2.7,8.5],focus:[-2.9,1.05,5.85],ground:.59},
     wuhu:{eye:[.9,2.4,7.3],focus:[-2.05,1.1,5.45],ground:.59},
     lianyungang:{eye:[.8,2.4,5.9],focus:[-1.4,.98,3.9],ground:.59},
     rizhao:{eye:[1.4,2.5,4.1],focus:[-1.0,1.05,2.1],ground:.59},

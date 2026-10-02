@@ -1,6 +1,6 @@
 import {cityIds} from './utils.js';
 
-export const initialJourney={days:6,activeDay:0,activeCity:'lianyungang',step:'overview',mode:'guided',screen:'journey',camera:'overview'};
+export const initialJourney={firstNight:'连云港',days:6,activeDay:0,activeCity:'lianyungang',step:'overview',mode:'guided',screen:'journey',camera:'overview'};
 const stages=['day','spots','food'];
 function dayState(state,index,itinerary){
  const activeDay=Math.max(0,Math.min(index,itinerary.days.length-1));
@@ -9,6 +9,7 @@ function dayState(state,index,itinerary){
 // Date and destination form one selection. Camera and reference views never reset it.
 export function journeyReducer(state,action){
  switch(action.type){
+  case 'FIRST_NIGHT':return {...dayState({...state,firstNight:action.firstNight},state.activeDay,action.itinerary)};
   case 'START':return {...state,step:'day',screen:'journey',camera:'immersive'};
   case 'STAGE':return stages.includes(action.step)?{...state,step:action.step,screen:'journey'}:state;
   case 'DAY':return {...dayState(state,action.index,action.itinerary),step:state.step==='overview'?'overview':'day',screen:'journey'};
@@ -33,7 +34,7 @@ export function journeyReducer(state,action){
   }
   case 'OVERVIEW':return {...state,step:'overview',screen:'journey',camera:'overview'};
   case 'MODE':return {...state,mode:action.mode,screen:'journey'};
-  case 'SCREEN':return ['journey','photos','food','prepare','sources','collections','lianyungang'].includes(action.screen)?{...state,screen:action.screen}:state;
+  case 'SCREEN':return ['journey','photos','food','prepare','sources','collections','lianyungang','huaian'].includes(action.screen)?{...state,screen:action.screen}:state;
   case 'CAMERA':return ['overview','immersive'].includes(action.camera)?{...state,camera:action.camera}:state;
   default:return state;
  }

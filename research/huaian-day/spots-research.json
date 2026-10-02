@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "city": "淮安",
+  "checked_at": "2026-10-02T13:20:28+08:00",
+  "scope": "新增一日、住一晚的自驾停靠；芜湖来、次日青岛",
+  "summary": "下午河下古镇，萧湖可选；晚间清江浦里运河＋御码头；晚到只留河下片区。",
+  "date_handling": "不擅自指定入住日期；茶巷非遗市集仅标10月1日至3日，其他时段不能承诺仍有该市集。",
+  "id_reuse": [
+    "ha_hexia_town",
+    "ha_li_canal",
+    "ha_yumatou"
+  ],
+  "new_id_optional": "ha_xiaohu，可先只作为河下附属文字可选项。",
+  "route_structure": {
+    "zones": [
+      {
+        "id": "huaian_oldtown",
+        "name": "淮安区·河下/萧湖",
+        "ids": [
+          "ha_hexia_town",
+          "ha_xiaohu"
+        ]
+      },
+      {
+        "id": "qingjiangpu_canal",
+        "name": "清江浦区·里运河清江浦段/御码头",
+        "ids": [
+          "ha_li_canal",
+          "ha_yumatou"
+        ]
+      }
+    ],
+    "between_zones": "驾车换片，实时导航决定入口与用时；不能渲染成全部连续步行。"
+  },
+  "timeline": [
+    {
+      "time": "上午",
+      "action": "芜湖出发，按实时导航前往淮安，路上休息",
+      "type": "drive",
+      "ids": [],
+      "note": "未取得当天实时导航；不承诺芜湖到淮安固定时长。"
+    },
+    {
+      "time": "抵达后至14:00",
+      "action": "午饭＋放行李，优先靠近河下片区",
+      "type": "meal",
+      "ids": [],
+      "note": "餐厅由美食研究结果合并；抵达已晚则缩短或取消跨区。"
+    },
+    {
+      "time": "14:00–16:00",
+      "action": "河下古镇茶巷、花巷和街巷慢逛",
+      "type": "sightseeing",
+      "ids": [
+        "ha_hexia_town"
+      ],
+      "note": "时间为建议游览框架，非景区活动时刻。"
+    },
+    {
+      "time": "16:00–16:40",
+      "action": "萧湖短走，累了直接跳过",
+      "type": "optional_sightseeing",
+      "ids": [
+        "ha_xiaohu"
+      ],
+      "note": "文字可选项，不需要为新增ID伪造照片或坐标。"
+    },
+    {
+      "time": "16:40–18:00",
+      "action": "按导航驾车到清江浦片区，入住与停车",
+      "type": "transfer",
+      "ids": [],
+      "note": "这是换片与办理入住缓冲，非声称车程80分钟；本轮无精确实测车程。"
+    },
+    {
+      "time": "18:00–19:00",
+      "action": "吃一顿淮扬菜",
+      "type": "meal",
+      "ids": [],
+      "note": "优先靠近酒店/夜游片区的具体店，按订座及营业安排。"
+    },
+    {
+      "time": "19:00–20:30",
+      "action": "御码头＋里运河清江浦段饭后散步",
+      "type": "sightseeing",
+      "ids": [
+        "ha_yumatou",
+        "ha_li_canal"
+      ],
+      "note": "同片区组合，总计约60—90分钟，随体力缩短。"
+    },
+    {
+      "time": "20:30之后",
+      "action": "回酒店休息，次日早餐后去青岛",
+      "type": "rest",
+      "ids": [],
+      "note": "翌日长途以导航与司机状态为准。"
+    }
+  ],
+  "late_arrival_fallback": {
+    "trigger": "16:00以后才抵达或司机疲劳",
+    "action": "河下古镇短逛＋淮扬菜＋萧湖可选夜色，取消清江浦换片；晚到先入住吃饭",
+    "reason": "次日还要青岛长途，保留休息。"
+  },
+  "hotel_area_note": "自驾住宿先比有停车位的酒店；若执行两片线，可住清江浦晚饭/夜游片附近，若晚到只游河下则住淮安区古城外围。价格和车位需要按入住日确认。",
+  "places": [
+    {
+      "id": "ha_hexia_town",
+      "reuse_id": true,
+      "name": "河下古镇",
+      "zone": "淮安区·河下老城片",
+      "role": "daytime_main",
+      "address": "江苏省淮安市淮安区花巷",
+      "navigation_names": [
+        "河下古镇",
+        "茶巷停车场"
+      ],
+      "navigation_source_ids": [
+        "ha_hexia_ctrip",
+        "ha_hexia_parking_names"
+      ],
+      "navigation_poi_verified": false,
+      "overview": [
+        "先把车停在古镇外围，从茶巷、花巷与湖嘴街巷挑一小圈慢慢走。河下适合看青石街巷、园林门头与状元文化，也可以边走边买少量小吃；建议留1.5—2小时，不用找完所有打卡点。",
+        "10月1日至3日，茶巷有官方非遗市集，可以按当天摊位和演出来逛。喜欢街巷生活就以免费街区为主，吴承恩故居、沈坤状元府等室内景点另看票务；沈坤府国庆延至21点是官方公布时间，最后入场仍须现场确认。"
+      ],
+      "suggested_duration_minutes": [
+        90,
+        120
+      ],
+      "open_reference": "古镇街区全年全天开放（携程）；商铺与收费场馆另有时段。",
+      "fee_reference": "街区免费步行；收费场馆/体验另算，当前票价未核实。",
+      "fee_confidence": "cross_platform_reference_not_operator_price_confirmation",
+      "parking": [
+        "导航先检索茶巷停车场/河下古镇外围正规停车场，实际选入口以地图和现场指引为准。",
+        "2026国庆淮安区机关企事业单位内部停车场对游客免费开放，但官方新闻未给本轮可核对的完整名单；不写任一机关全天随到随停。"
+      ],
+      "cautions": [
+        "国庆茶巷有活动，不能以非节假日帖子推断人少。",
+        "古镇与清江浦里运河属于不同片区，需要驾车换片。"
+      ],
+      "source_ids": [
+        "ha_festival_2026",
+        "ha_hexia_ctrip",
+        "ha_hexia_parking_names"
+      ]
+    },
+    {
+      "id": "ha_xiaohu",
+      "reuse_id": false,
+      "new_id_optional": true,
+      "name": "萧湖",
+      "zone": "淮安区·河下老城片",
+      "role": "optional_adjacent_short_walk",
+      "address": "江苏省淮安市淮安区桃花岛北50米（里运河东堤东）；官方定位为古城北、北临河下古镇。",
+      "navigation_names": [
+        "萧湖景区"
+      ],
+      "navigation_source_ids": [
+        "ha_xiaohu_official",
+        "ha_xiaohu_ctrip"
+      ],
+      "navigation_poi_verified": false,
+      "overview": [
+        "河下逛完还有体力，可以到萧湖选一段湖岸走30—40分钟。它的重点是水面、园林与廊桥，适合坐一坐、缓一缓；不用为了环完整个湖把晚饭拖迟。"
+      ],
+      "suggested_duration_minutes": [
+        30,
+        40
+      ],
+      "open_reference": "全年全天开放（携程平台参考）；园内设施另有时段。",
+      "fee_reference": "常规公园免票有二手和历史住客反馈；临时活动收费不在此保证。",
+      "parking": [
+        "与河下属相邻片区，是否从当前入口步行贯通请看现场导览。",
+        "本轮未核实具体停车场入口与费用，不用旧点评“好停车”当今日余位事实。"
+      ],
+      "cautions": [
+        "未核实2026国庆喷泉、灯光秀时刻，不承诺定点表演。",
+        "目前没有已选并确认出处的萧湖照片；可作为河下游后文字可选项，不套用河下照片充当萧湖。"
+      ],
+      "source_ids": [
+        "ha_xiaohu_official",
+        "ha_xiaohu_ctrip",
+        "ha_xiaohu_bendibao"
+      ]
+    },
+    {
+      "id": "ha_li_canal",
+      "reuse_id": true,
+      "name": "里运河文化长廊·清江浦段",
+      "zone": "清江浦区·清江大闸/中洲岛水岸片",
+      "role": "evening_main",
+      "address": "江苏省淮安市清江浦区越河街、淮安运河博物馆一带。",
+      "navigation_names": [
+        "里运河文化长廊清江浦景区",
+        "淮安运河博物馆"
+      ],
+      "navigation_source_ids": [
+        "ha_canal_ctrip"
+      ],
+      "navigation_poi_verified": false,
+      "overview": [
+        "晚上把路线收在清江浦水岸：选清江浦楼、国师塔与清江大闸附近一段，看水面倒影和沿河街景。它更适合晚饭后慢走，预留45—60分钟就能体验运河夜色，不必沿整条文化长廊走到底。",
+        "御码头在这一片运河北岸，可接在同一段饭后散步中。夜游船留作现场可选：本轮未核实2026国庆班次、船票和排队，岸上散步即可完成当天安排。"
+      ],
+      "suggested_duration_minutes": [
+        45,
+        60
+      ],
+      "open_reference": "户外河岸全年全天开放（携程参考）；博物馆、寺观及内展馆另有时段。",
+      "fee_reference": "本路线按户外免费散步安排；船票、内展馆与体验另算，未核实当前统一价格。",
+      "parking": [
+        "优先酒店或晚餐店正规停车场，确认可以停到散步结束；否则导航找景区附近正规停车场。",
+        "清江浦停车收费和余位本轮没有同日核实；不把淮安区机关免费政策套用到这里。"
+      ],
+      "cautions": [
+        "里运河是一条较长的景观带，页面应明确本次只游清江浦段。",
+        "不把清江浦街区“御码头”与船线终点“河下古镇御码头”混成同一地点。"
+      ],
+      "source_ids": [
+        "ha_festival_2026",
+        "ha_canal_ctrip",
+        "ha_boat_official"
+      ]
+    },
+    {
+      "id": "ha_yumatou",
+      "reuse_id": true,
+      "name": "御码头运河文化美食街",
+      "zone": "清江浦区·清江大闸/中洲岛水岸片",
+      "role": "evening_with_canal",
+      "address": "淮安市清江浦区越河街，里运河北岸、承德北路至圩北路附近。",
+      "navigation_names": [
+        "御码头运河文化美食街",
+        "越河街"
+      ],
+      "navigation_source_ids": [
+        "ha_yumatou_official"
+      ],
+      "navigation_poi_verified": false,
+      "overview": [
+        "御码头适合与清江浦河岸合成一段饭后散步：看牌坊、老建筑与咖啡书房，喜欢哪处就停一会儿。这里是清江浦区越河街上的御码头美食街，与河下古镇不是一处。",
+        "把它作为夜间街区体验就够了。书房、咖啡店及场馆按到店营业确认；想吃正式淮扬菜，先选具体餐厅和菜单，不因为街名有“美食”就假定每家值得专程排队。"
+      ],
+      "suggested_duration_minutes": [
+        20,
+        30
+      ],
+      "open_reference": "户外街区散步，店铺/书房/场馆营业时间未逐一核实。",
+      "fee_reference": "本路线为户外街区散步；餐饮及经营项目另付。",
+      "parking": [
+        "同清江浦段，晚餐店或酒店停车后步行一小段；本轮未核实街区专属停车余位。"
+      ],
+      "cautions": [
+        "书房和咖啡营业未核实，不能安排必须入内的固定体验。"
+      ],
+      "source_ids": [
+        "ha_yumatou_official"
+      ]
+    }
+  ],
+  "photo_reuse": [
+    {
+      "id": "ha_hexia_town",
+      "reuse_editorial_entry": true,
+      "editorial_images_count": 18,
+      "preferred_existing_image": {
+        "url": "https://sns-webpic-qc.xhscdn.com/202610011946/9d7d0610bcdad26965b7de79a11cbede/notes_uhdr/1040g3qg3247b1ohd7kl05oms0487qk80dc1b38g!nd_dft_wlteh_webp_3",
+        "source_url": "https://www.xiaohongshu.com/explore/6a8ae85e000000002b0243d7",
+        "source_name": "小红书",
+        "author": "下一站没定",
+        "caption": "淮安｜河下古镇🍃一半诗意一半烟火 · 原帖第1张",
+        "source_id": "6a8ae85e000000002b0243d7",
+        "image_index": 0,
+        "permission": "user_confirmed",
+        "observed_at": "2026-10-01T11:52:44.611826+00:00",
+        "width": 1080,
+        "height": 1441,
+        "fallback_url": "assets/editorial/bc8800536acf77d2b0e16ac3e0a7e7e6256bfdcebdca3585d2de137e51125b6c.webp",
+        "sha256": "bc8800536acf77d2b0e16ac3e0a7e7e6256bfdcebdca3585d2de137e51125b6c",
+        "bytes": 407724,
+        "backup_status": "verified_original_bytes"
+      },
+      "historical_private_reference": [
+        {
+          "url": "assets/places/xhs_ha_hexia_town.jpg",
+          "source_url": "https://www.xiaohongshu.com/explore/6a8ae85e000000002b0243d7",
+          "note_id": "6a8ae85e000000002b0243d7",
+          "author": "下一站没定",
+          "source_name": "小红书",
+          "source_label": "淮安｜河下古镇🍃一半诗意一半烟火 · 第1张",
+          "alt": "河下古镇 · 下一站没定的小红书实拍",
+          "reuse_status": "private_personal_reference",
+          "public_reuse_permission": "not_established",
+          "visual_verified": true,
+          "display_mode": "local_private_reference",
+          "width": 1080,
+          "height": 1441,
+          "capture_year": null,
+          "changes": "网站正常下载原文件，像素未修改；原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+          "attribution": "下一站没定 / 小红书《淮安｜河下古镇🍃一半诗意一半烟火》",
+          "usage_scope": "仅私人旅行参考；不配置网站托管，不上传公开仓库",
+          "origin_type": "xiaohongshu_personal_reference",
+          "license": null,
+          "public_publish_allowed": false,
+          "sha256": "ca18c98b0c13ba06607da8aff40eb982bd9b1e22e9fd771df14e64bd053c673d",
+          "bytes": 624494,
+          "download_method": "小红书网页原帖照片右键→下载图片",
+          "image_index": 1,
+          "visual_evidence": "首图为红花藤蔓拱门下青石板窄巷，两旁古建店铺与游客；右側导览牌及正文对应河下古镇。",
+          "checked_at": "2026-10-01T03:53:05.562164+00:00"
+        }
+      ],
+      "reference_evidence_file": "research/collection-evidence/ha_hexia_town.json",
+      "note": "保留已授权现有原图与作者来源；当 images 为空时可复用既有研究图，按项目现有 owner confirmation 处理授权。不得将河下街景标成萧湖实拍。"
+    },
+    {
+      "id": "ha_li_canal",
+      "reuse_editorial_entry": true,
+      "editorial_images_count": 0,
+      "preferred_existing_image": null,
+      "historical_private_reference": [
+        {
+          "url": "assets/places/xhs_ha_li_canal.jpg",
+          "source_url": "https://www.xiaohongshu.com/explore/6a681c41000000000f005601",
+          "note_id": "6a681c41000000000f005601",
+          "author": "yulou1006",
+          "source_name": "小红书",
+          "source_label": "📍淮安·里运河文化长廊 · 第1张",
+          "alt": "里运河文化长廊 · yulou1006的小红书实拍",
+          "reuse_status": "private_personal_reference",
+          "public_reuse_permission": "not_established",
+          "visual_verified": true,
+          "display_mode": "local_private_reference",
+          "width": 1080,
+          "height": 1440,
+          "capture_year": null,
+          "changes": "网站正常下载原文件，像素未修改；原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+          "attribution": "yulou1006 / 小红书《📍淮安·里运河文化长廊》",
+          "usage_scope": "仅私人旅行参考；不配置网站托管，不上传公开仓库",
+          "origin_type": "xiaohongshu_personal_reference",
+          "license": null,
+          "public_publish_allowed": false,
+          "sha256": "70a9b335a52a95cf2ba7dbf3cd5df2175cec8009226aad9336ca004e6fe78513",
+          "bytes": 332268,
+          "download_method": "小红书网页原帖照片右键→下载图片",
+          "image_index": 1,
+          "visual_evidence": "首图是夜间金色国师塔和运河水面倒影，正文对应长廊标志建筑。",
+          "checked_at": "2026-10-01T03:53:05.559282+00:00"
+        }
+      ],
+      "reference_evidence_file": "research/collection-evidence/ha_li_canal.json",
+      "note": "保留已授权现有原图与作者来源；当 images 为空时可复用既有研究图，按项目现有 owner confirmation 处理授权。不得将河下街景标成萧湖实拍。"
+    },
+    {
+      "id": "ha_yumatou",
+      "reuse_editorial_entry": true,
+      "editorial_images_count": 13,
+      "preferred_existing_image": {
+        "url": "https://sns-webpic-qc.xhscdn.com/202610011945/e7e19f489aa5592a0a6403f93b8dada6/notes_pre_post/1040g3k831i9620ks6s605oigvvood4cs68ilo1o!nd_dft_wgth_webp_3",
+        "source_url": "https://www.xiaohongshu.com/explore/683ef8de000000002300e6f0",
+        "source_name": "小红书",
+        "author": "汉堡薯条大王",
+        "caption": "淮安城市漫步｜御码头 · 原帖第1张",
+        "source_id": "683ef8de000000002300e6f0",
+        "image_index": 0,
+        "permission": "user_confirmed",
+        "observed_at": "2026-10-01T11:52:44.611826+00:00",
+        "width": 1620,
+        "height": 1080,
+        "fallback_url": "assets/editorial/45c12a9098d75ff2526dbfc679719ee039515abc1bfbd7c05745a874f4bb0bc4.webp",
+        "sha256": "45c12a9098d75ff2526dbfc679719ee039515abc1bfbd7c05745a874f4bb0bc4",
+        "bytes": 336866,
+        "backup_status": "verified_original_bytes"
+      },
+      "historical_private_reference": [
+        {
+          "url": "assets/places/xhs_ha_yumatou.jpg",
+          "source_url": "https://www.xiaohongshu.com/explore/683ef8de000000002300e6f0",
+          "note_id": "683ef8de000000002300e6f0",
+          "author": "汉堡薯条大王",
+          "source_name": "小红书",
+          "source_label": "淮安城市漫步｜御码头 · 第1张",
+          "alt": "御码头 · 汉堡薯条大王的小红书实拍",
+          "reuse_status": "private_personal_reference",
+          "public_reuse_permission": "not_established",
+          "visual_verified": true,
+          "display_mode": "local_private_reference",
+          "width": 1620,
+          "height": 1080,
+          "capture_year": null,
+          "changes": "网站正常下载原文件，像素未修改；原文件完整保留；照片已视觉核对，未见明显平台或作者水印，未改动任何像素",
+          "attribution": "汉堡薯条大王 / 小红书《淮安城市漫步｜御码头》",
+          "usage_scope": "仅私人旅行参考；不配置网站托管，不上传公开仓库",
+          "origin_type": "xiaohongshu_personal_reference",
+          "license": null,
+          "public_publish_allowed": false,
+          "sha256": "b1ffebf2feb440aa2792a3afef316665de2b39f56b413844644ad64d172e525e",
+          "bytes": 554809,
+          "download_method": "小红书网页原帖照片右键→下载图片",
+          "image_index": 1,
+          "visual_evidence": "首图牌坊清晰题字“淮安御码头美食街”，红灯笼与步行街实景；不是扬州御码头。",
+          "checked_at": "2026-10-01T03:53:05.561006+00:00"
+        }
+      ],
+      "reference_evidence_file": "research/collection-evidence/ha_yumatou.json",
+      "note": "保留已授权现有原图与作者来源；当 images 为空时可复用既有研究图，按项目现有 owner confirmation 处理授权。不得将河下街景标成萧湖实拍。"
+    }
+  ],
+  "xiaohongshu_evidence": [
+    {
+      "id": "ha_hexia_town",
+      "title": "淮安｜河下古镇🍃一半诗意一半烟火",
+      "author": "下一站没定",
+      "url": "https://www.xiaohongshu.com/explore/6a8ae85e000000002b0243d7",
+      "historical_read_verified": true,
+      "historical_checked_at": "2026-10-01T03:53:05.562164+00:00",
+      "evidence_file": "research/collection-evidence/ha_hexia_town.json",
+      "body_summary": "正文明确江苏淮安河下古镇，步行路线涵盖红玉鼓韵坛、程公桥、花巷水龙局、吴鞠通中医馆、状元里、魁星阁。",
+      "reread_this_round": false,
+      "current_access": "原生搜索触发扫码身份验证，未处理验证；保留旧证据，未将旧帖写成10月2日实况。",
+      "comments_this_round": "未重读"
+    },
+    {
+      "id": "ha_li_canal",
+      "title": "📍淮安·里运河文化长廊",
+      "author": "yulou1006",
+      "url": "https://www.xiaohongshu.com/explore/6a681c41000000000f005601",
+      "historical_read_verified": true,
+      "historical_checked_at": "2026-10-01T03:53:05.559282+00:00",
+      "evidence_file": "research/collection-evidence/ha_li_canal.json",
+      "body_summary": "专帖介绍里运河文化长廊河岸景点：国师塔、清江浦楼、花街、清江闸，并说明沿河即可步行游览。",
+      "reread_this_round": false,
+      "current_access": "原生搜索触发扫码身份验证，未处理验证；保留旧证据，未将旧帖写成10月2日实况。",
+      "comments_this_round": "未重读"
+    },
+    {
+      "id": "ha_yumatou",
+      "title": "淮安城市漫步｜御码头",
+      "author": "汉堡薯条大王",
+      "url": "https://www.xiaohongshu.com/explore/683ef8de000000002300e6f0",
+      "historical_read_verified": true,
+      "historical_checked_at": "2026-10-01T03:53:05.561006+00:00",
+      "evidence_file": "research/collection-evidence/ha_yumatou.json",
+      "body_summary": "作者记录御码头城市散步，涉及赛珍珠声音博物馆、御码头运河书房、花间堂与沿街咖啡店。",
+      "reread_this_round": false,
+      "current_access": "原生搜索触发扫码身份验证，未处理验证；保留旧证据，未将旧帖写成10月2日实况。",
+      "comments_this_round": "未重读"
+    }
+  ],
+  "sources": [
+    {
+      "id": "ha_festival_2026",
+      "tier": "official",
+      "title": "2026淮安大运河城市非遗文化旅游节启幕",
+      "url": "https://wgj.huaian.gov.cn/whdt/whdt/art/o/17881920/1790232602498UCLIvTBO.html",
+      "published_at": "2026-09-24",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "10月1日至3日河下茶巷非遗市集",
+        "国庆淮安区机关企事业单位内部停车场向游客免费开放",
+        "沈坤状元府国庆开放延至21点",
+        "9月22日至10月20日清江浦等消费区有夜间活动"
+      ],
+      "limits": "具体场次、表演时刻、免费停车单位清单和实时余位未给出；机关停车范围是淮安区，不能推广到清江浦所有停车场。"
+    },
+    {
+      "id": "ha_xiaohu_official",
+      "tier": "official_local_history",
+      "title": "萧湖公园：古韵今风相辉映的淮上名园",
+      "url": "https://zx.huaian.gov.cn/col/14067_717366/art/m/17197632/1721717584318yhL5iH49.html",
+      "published_at": "2024-07-24",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "萧湖位于淮安区古城北、里运河畔，北临河下古镇",
+        "2017年改造后对外开放"
+      ],
+      "limits": "历史介绍不证明当日灯光秀/音乐喷泉时刻。"
+    },
+    {
+      "id": "ha_yumatou_official",
+      "tier": "official_local_history",
+      "title": "淮安政协文史：淮安御码头美食街",
+      "url": "https://zx.huaian.gov.cn/col/14067_717366/art/17329824/1735609830014JhKK70Zc.html",
+      "published_at": "2025-01-06",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "清江浦区御码头标准路名越河街，南临里运河",
+        "该片区有咖啡、书房和文化餐厅"
+      ],
+      "limits": "2025历史与改造说明，店家当日营业未核实。"
+    },
+    {
+      "id": "ha_parking_2026",
+      "tier": "official",
+      "title": "淮安市城管局：对市九届人大六次会议第054号建议的答复",
+      "url": "https://cgj.huaian.gov.cn/col/4846_576558/art/o/17828352/1783755137352SINaQUJF.html",
+      "published_at": "2026-06-25",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "2024河下周边落实8小时免费停车措施",
+        "2026春节/清明/五一曾向社会开放公共车位",
+        "上线公共停车一网统管平台"
+      ],
+      "limits": "历史免费时长不能直接成为2026国庆任一停车场保证；不使用总量推算当日空位。",
+      "document_signed_at": "2026-06-22"
+    },
+    {
+      "id": "ha_hexia_parking_names",
+      "tier": "official",
+      "title": "淮安区：文旅深度融合 点燃古城烟火气",
+      "url": "https://www.huaian.gov.cn/col/16656_366471/art/17144928/1715234301445cfxZ6hIC.html",
+      "published_at": "2024-05-09",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "茶巷停车场、蓝·数字文旅产业园停车场曾投入服务"
+      ],
+      "limits": "此为2024五一公告，当前入口、费用和余位未实访；只可用作地图检索候选。"
+    },
+    {
+      "id": "ha_boat_official",
+      "tier": "official",
+      "title": "淮安交通运输局：关于开通运河水上公交建议的答复",
+      "url": "https://jtj.huaian.gov.cn/col/6186_827528/art/17592480/1761641378132IMYiKWq9.html",
+      "published_at": "2025-07-18",
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "2025已有白班到河下、夜班市区环线观光船"
+      ],
+      "limits": "非2026国庆运营公告；未核实当前发船时刻或票价，不把船作为必需交通。"
+    },
+    {
+      "id": "ha_hexia_ctrip",
+      "tier": "booking_platform_place_listing",
+      "title": "携程：河下古镇",
+      "url": "https://you.ctrip.com/sight/huaian351/125604.html",
+      "published_at": null,
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "地址淮安区花巷",
+        "全年全天开放的街区参考"
+      ],
+      "limits": "平台资料，场馆开放和收费另外确认。"
+    },
+    {
+      "id": "ha_xiaohu_ctrip",
+      "tier": "booking_platform_place_listing",
+      "title": "携程：萧湖",
+      "url": "https://you.ctrip.com/sight/huaian351/144365.html",
+      "published_at": null,
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "地址桃花岛北50米（里运河东堤东）",
+        "全年全天开放参考",
+        "评论历史免票反馈"
+      ],
+      "limits": "点评2023/2025免票体验不保证国庆临时活动收费或灯光时段。"
+    },
+    {
+      "id": "ha_canal_ctrip",
+      "tier": "booking_platform_place_listing",
+      "title": "携程：里运河文化长廊",
+      "url": "https://you.ctrip.com/sight/huaian351/1513617.html",
+      "published_at": null,
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "opened_full_text",
+      "supports": [
+        "清江浦区越河街、运河博物馆一带",
+        "户外全年全天开放参考"
+      ],
+      "limits": "平台游船描述含8点与9点起、30元/50元等历史内容，未取得2026官方统一票务，不发布船价保证。"
+    },
+    {
+      "id": "ha_xiaohu_bendibao",
+      "tier": "secondary_local_guide",
+      "title": "淮安本地宝：萧湖景区",
+      "url": "https://m.ha.bendibao.com/live/17697_6.shtm",
+      "published_at": null,
+      "checked_at": "2026-10-02T13:20:28+08:00",
+      "access": "search_index_text",
+      "supports": [
+        "门票免费参考"
+      ],
+      "limits": "二手来源，不是2026国庆票务公告。"
+    }
+  ],
+  "integration_notes": [
+    "现有 editorial overview 将淮安写成首晚/返程备选且要求两片选一；新增完整一天后应改成这份有分区、有晚到减法的安排。",
+    "保留既有图组、作者、来源和授权，不能新增生成图替代实拍。",
+    "不要把平台营业参考、历史停车政策、旧游船票价写成2026国庆现场承诺。",
+    "本轮没有修改 src/public，只有工作研究文件。"
+  ],
+  "search_method": {
+    "skill": "/Users/bit_1/.codex/skills/search/SKILL.md",
+    "paths": [
+      "聚合搜索",
+      "官方站点定向搜索与原文打开",
+      "携程景点平台定向搜索与原文打开",
+      "小红书原生搜索（遇扫码身份验证）"
+    ],
+    "multi_engine_mode": "工具不可显式选择引擎，采用聚合搜索＋官方/平台回查",
+    "limits": [
+      "小红书本轮未重读",
+      "未取得同日地图POI实访、停车余位或具体收费",
+      "未核实当日船班/灯光秀时刻"
+    ]
+  }
+}
